@@ -1,0 +1,82 @@
+.well .module-title.nav-header {
+    color: #555;
+    text-shadow: 1px 1px 1px #ccc;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 5px;
+}
+
+.zhbdm-panel-comment {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.zhbdm-panel-image {
+    padding: 10px;
+}
+
+.zhbdm-panel-icon {
+	text-align: center;
+	float: left;
+	padding: 5px 0 5px 10px;
+}
+
+.zhbdm-panel-ul {
+    list-style: none;
+}
+
+.zhbdm-panel-icon a {
+	display: block;
+	float: left;
+	border: 1px solid #c5c5c5;
+	height: 130px;
+	width: 115px;
+	color: #666666;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.zhbdm-panel-icon a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #f9f9f9;
+	color: #0B55C4;
+	text-decoration:none;
+}
+
+.zhbdm-panel-icon-wrapper span {
+	display: block;
+	text-align: center;
+}
+
+.zhbdm-panel-icon-wrapper img {
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+.zhbdm-panel-icon-wrapper {
+	float: left;
+}
+
+.dl-horizontal dt {
+    text-align: left !important;
+    margin-left: 10px !important;
+    font-weight: normal !important;
+    width: 90px !important;
+
+}
+
+.dl-horizontal dt.zhbdm-dt {
+    text-align: right !important;
+    margin-left: 10px !important;
+    font-weight: normal !important;
+}
+
+.dl-horizontal dd {
+
+    text-align: left !important;
+    margin-left: 10px !important;
+    font-weight: normal !important;
+}

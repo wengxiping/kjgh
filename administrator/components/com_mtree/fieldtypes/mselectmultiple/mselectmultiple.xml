@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+    <name>mselectmultiple</name>
+    <caption>Number</caption>
+    <author>Lee Cher Yeong</author>
+    <creationDate>November 2015</creationDate>
+    <copyright>(C) 2015-present Mosets Consulting. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>mtree@mosets.com</authorEmail>
+    <authorUrl>www.mosets.com</authorUrl>
+    <version>3.7.0</version>
+    <description>Select Multiple field allows you to select one or more value in a multiple select list.</description>
+    <useElements>1</useElements>
+    <useSize>1</useSize>
+    <taggable>1</taggable>
+    <fileset>
+        <files folder="." target="administrator/components/com_mtree/fieldtypes/mselectmultiple">
+            <filename>mselectmultiple.php</filename>
+            <filename>mselectmultiple.xml</filename>
+        </files>
+    </fileset>
+    <config>
+        <fields>
+            <fieldset name="basic">
+                <field name="searchFieldType" type="list" default="1" label="Search Field Type" description="Select how your user search this field.&lt;br&gt;Single Select List: A single select list that lets users to choose one value for searching.&lt;br&gt;Multiple Select List: A multiple select list that lets users to choose one or more value for search.">
+                    <option value="1">Single Select List</option>
+                    <option value="2">Multiple Select List</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension">http://update.mosets.com/mtree/fieldtypes/mselectmultiple.xml</server>
+    </updateservers>
+</extension>

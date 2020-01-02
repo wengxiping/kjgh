@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	type="module" 
+	version="2.5" 
+	client="site" 
+	method="upgrade">
+	<name>JA Quick Contact</name>
+	<author>JoomlArt.com</author>
+	<creationDate>14 Dec 2018</creationDate>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>2.6.5</version>
+	<description>
+	 <![CDATA[
+		<div style="text-align: left;">
+	 	<span style="color: #008000;"><strong>JA Quick Contact Module for Joomla! 2.5 and Joomla 3.x</strong></span><br />
+	 	<p><img alt="JA Quick Contact Module" src="http://ja.static.s3.amazonaws.com/images/stories/extensions/joomla/jaec_ja_quickcontact_mod.png" /></p>
+		<div style='font-weight:normal'>
+	 	JA Quick Contact module help you to add a quick contact form in a module. 
+	 	<p style="clear:both"><span style="color: #ff6600;"><strong>Features:</strong></span></p>
+		<ul>
+			  <li>Add a quick contact form on your home page. It is compact and sleek. Worried of spams? Do not worry, install Multiple Captcha Engine (free) and say goodbye to spammers. Supports AJAX method.</li>
+		</ul>
+	 	
+		<p><strong><span style="color: #ff0000;">Upgrade Methods:</span><br /></strong></p>
+		<ul>
+			  <li>You can install new version directly over this version. Uninstallation is not required. Backup any customized files before upgrading. OR</li><li>Use <strong><a href="http://extensions.joomla.org/extensions/core-enhancements/installers/12077" target="_blank">JA Extensions Manager</a></strong> Component for easy upgrades and rollbacks. <strong><a href="http://www.youtube.com/user/JoomlArt#p/c/BC9B0C0BFE98657E/2/mNAuJRmifG8" target="_blank">Watch Video..</a></strong></li>
+		</ul>
+		<p><span style="color: #008000;"><strong>Links:</strong></span></p>
+		<ul><li><a target="_blank" href="https://www.joomlart.com/forums/forum/joomla-extensions-discussion/ja-quick-contact-module/">JA Quick Contact Forum</a></li><li><a target="_blank" href="http://pm.joomlart.com/browse/JAECMODQUICKCONTACTJVI">Report Bug</a></li><li><a target="_blank" href="http://update.joomlart.com/">Updates &amp; Versions</a></li></ul>
+		<p>Copyright 2004 - 2018 <a href="http://www.joomlart.com/" title="Visit Joomlart.com!">JoomlArt.com</a>.</p>
+		</div>
+		</div>
+	 ]]>
+	</description>
+	<files>
+		<filename module="mod_jaquickcontact">mod_jaquickcontact.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>admin</folder>
+	</files>
+	<languages>
+        <language tag="en-GB">en-GB.mod_jaquickcontact.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_jaquickcontact/assets/elements">
+				<field name="jastyle"
+				type="jathumbnail"
+				label="JAQ_JASTYLE"
+				dedication="JAQ_JASTYLE_DESC" />
+				<field 
+					name="sender_label" 
+					type="text" 
+					default="Name" 
+					label="SENDER_NAME_LABEL" 
+					size="30" 
+					description="SENDER_NAME_LABEL_DES" />
+				<field 
+					name="email_label" 
+					type="text" 
+					default="Email" 
+					label="SENDER_EMAIL_LABEL" 
+					size="30" 
+					description="SENDER_EMAIL_LABEL_DES" />
+				<field 
+					name="subject_label" 
+					type="text" 
+					default="Subject" 
+					label="EMAIL_SUBJECT_LABEL" 
+					size="30" 
+					description="EMAIL_SUBJECT_LABEL_DES" />
+				<field
+					name="temp_message"
+					type="textarea"
+					default=""
+					label="TEMPLATE_MESSAGE_LABEL"
+					cols="40"
+					rows="5"
+					description="TEMPLATE_MESSAGE_DESC" />
+				<field 
+					name="message_label" 
+					type="text" 
+					default="Message" 
+					label="MESSAGE_LABEL" 
+					size="30" 
+					description="MESSAGE_LABEL" />
+				<field 
+					name="recipient" 
+					type="text"
+					default="" 
+					label="RECIPIENT" 
+					size="30" 
+					description="RECIPIENT_DES" />
+								
+				<field 
+					name="subject" 
+					type="text" 
+					default=""  
+					size="30" 
+					label="SUBJECT" 
+					description="EMAIL_SUBJECT" />
+					
+				<field type="spacer" hr="true" />
+				<field 
+					name="thank_msg" 
+					type="text" 
+					default="Thank you!"  
+					label="THANKS_MESSAGE" 
+					description="THANKS_MESSAGE_DES" />	
+				<field 
+					name="intro_text" 
+					type="textarea" 
+					default="Contact us"  
+					label="INTRO_TEXT" 
+					cols="40" 
+					rows="5" 
+					size="120" 
+					filter="safehtml"
+					description="INTRO_TEXT_DES" />	
+				<field 
+					name="show_email_copy" 
+					type="radio" 
+					class=""
+					default="0"  
+					label="SEND_ME_A_COPIED_EMAIL" 
+					description="ALLOW_COPIED_EMAIL_DES" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field 
+					name="max_chars" 
+					type="text" 
+					default="1000"  
+					filter="integer"
+					class="validate-numeric"
+					label="CHARACTER_LIMIT" 
+					description="CHARACTER_LIMIT_DES" />
+				<field 
+					name="redirect_url" 
+					type="text" 
+					default="index.php"  
+					size="30" 
+					label="RETURN_URL" 
+					description="RETURN_URL_DES" />
+				
+				<field 
+					name="use_ajax" 
+					type="radio" 
+					class=""
+					default="0"  
+					label="Use ajax sending" 					 
+					description="USE_AJAX_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field type="spacer" hr="true" />
+				<field 
+					name="show_term" 
+					type="radio" 
+					class=""
+					default="1"  
+					label="SHOW_TERM_AND_CONDITION" 
+					description="SHOW_TERM_AND_CONDITION_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field 
+					name="show_term_text" 
+					type="textarea" 
+					rows="7"
+					filter="raw"
+					default="We have read and agreed with &lt;a href=&quot;#&quot;&gt;Terms of use&lt;/a&gt; and &lt;a href=&quot;#&quot;&gt;privacy policy&lt;/a&gt;"  
+					label="SHOW_TERM_MESSAGE" 
+					description="SHOW_TERM_MESSAGE_DESC" />
+				
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<!--<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />-->
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					filter="integer"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+		<updateservers>
+	    <server type="extension">http://update.joomlart.com/service/tracking/j16/mod_jaquickcontact.xml</server>
+	</updateservers>
+
+</extension>

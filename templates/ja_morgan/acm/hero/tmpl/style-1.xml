@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Hero Intro</title>
+	<sampledata></sampledata>
+	<fields name="hero-intro">
+		<fieldset name="basic" label="HERO_BASIC_LABEL" description="HERO_BASIC_DESC">
+			<field name="hero-align" type="list" label="HERO_ALIGN_LABEL" description="HERO_ALIGN_DESC" default="left">
+				<option value="left">Left</option>
+				<option value="center">Center</option>
+			</field>
+
+			<field name="ft-bg" type="media" default="" label="HERO_BACKGROUND_LABEL" description="HERO_BACKGROUND_DESC" required="1" />
+
+			<field name="ft-bg-xs" type="media" default="" label="HERO_BACKGROUND_MOBILE_LABEL" description="HERO_BACKGROUND_MOBILE_DESC" />
+
+			<field name="description" type="textarea" default="" label="HERO_DESCRIPTION_LABEL" description="HERO_DESCRIPTION_DESC" rows="5" cols="40" />
+
+			<field name="id-video" type="text" default="" label="HERO_ID_VIDEO_LABEL" description="HERO_ID_VIDEO_DESC" rows="5" cols="40" />
+
+			<field name="hero-arrow" type="list" label="HERO_ARROW_BUTTON_LABEL" description="HERO_ARROW_BUTTON_DESC" default="no">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</field>
+
+			<field name="hero-space" type="list" label="HERO_SPACE_LABEL" description="HERO_SPACE_DESC" default="normal">
+				<option value="normal">Normal</option>
+				<option value="large">Large</option>
+				<option value="extra-large">Extra Large</option>
+			</field>
+		</fieldset>
+
+		<fieldset name="action" label="HERO_ACTION_LABEL" description="HERO_ACTION_DESC">
+			<field name="btn-title" type="text" default="" label="HERO_BUTTON_LABEL" description="HERO_BUTTON_DESC" rows="5" cols="40" />
+			<field name="btn-link" type="text" default="" size="40" label="HERO_BUTTOM_LINK_LABEL" description="HERO_BUTTOM_LINK_DESC"  />
+			<field name="btn-type" type="list" default="default" size="40" label="HERO_BUTTOM_TYPE_LABEL" description="HERO_BUTTOM_TYPE_DESC">
+				<option value="default">Default</option>
+				<option value="primary">Primary</option>
+				<option value="success">Success</option>
+				<option value="warning">Warning</option>
+				<option value="danger">Danger</option>
+				<option value="info">Info</option>
+			</field>
+
+		</fieldset>
+  </fields>
+</form>

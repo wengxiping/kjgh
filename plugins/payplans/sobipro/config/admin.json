@@ -1,0 +1,56 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "addEntryIn",
+				"type": "dependency",
+				"title": "COM_PAYPLANS_APP_SOBIPRO_ADD_ENTRY_IN",
+				"tooltip": "COM_PAYPLANS_APP_SOBIPRO_ADD_ENTRY_IN_DESC",
+				"default": "any_category",
+				"options": [
+					{
+						"title": "COM_PAYPLANS_APP_SOBIPRO_ADD_ENTRY_IN_ANY_CATEGORY",
+						"value": "any_category"
+					},
+					{
+						"title": "COM_PAYPLANS_APP_SOBIPRO_ADD_ENTRY_IN_SPECIFIC_CATEGORY",
+						"value": "on_specific_category",
+						"for": "data-addEntryInCategory"
+					},
+					{
+						"title": "Section",
+						"value": "on_section",
+						"for": "data-addEntryInSection"
+					}
+				]
+
+			},
+			{
+				"name": "addEntryInCategory",
+				"type": "custom",
+				"path": "plugins:/payplans/sobipro/elements/categories",
+				"title": "COM_PAYPLANS_APP_SOBIPRO_SELECT_CATEGORY",
+				"tooltip": "COM_PAYPLANS_APP_SOBIPRO_SELECT_CATEGORY_DESC",
+				"attributes": "data-addEntryInCategory",
+				"default": ""
+			},
+			{
+				"name": "addEntryInSection",
+				"type": "custom",
+				"path": "plugins:/payplans/sobipro/elements/sections",
+				"title": "COM_PAYPLANS_APP_SOBIPRO_SELECT_SECTION",
+				"tooltip": "COM_PAYPLANS_APP_SOBIPRO_SELECT_SECTION_DESC",
+				"attributes": "data-addEntryInSection",
+				"default": ""
+			},
+			{
+				"name": "entriesToPublish",
+				"type": "text",
+				"title": "Number of entries user can submit(On Subscription Active)",
+				"tooltip": "COM_PAYPLANS_APP_SOBIPRO_PUBLISH_ENTRIES_DESC",
+				"default": ""
+			}
+		]
+	}
+]

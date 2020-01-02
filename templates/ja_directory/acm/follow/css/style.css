@@ -1,0 +1,32 @@
+.uber-social a {
+  display: inline-block;
+  border: none;
+  margin-right: 5px;
+}
+.uber-social a:hover,
+.uber-social a:active,
+.uber-social a:focus {
+  border: none;
+}
+.uber-social .fa {
+  color: #6D717C;
+  font-size: 18px;
+  margin: 0 26px 0 0;
+  height: 48px;
+  line-height: 48px;
+}
+.uber-social .fa.fa-facebook:hover {
+  color: #3b5998;
+}
+.uber-social .fa.fa-twitter:hover {
+  color: #3a92c8;
+}
+.uber-social .fa.fa-google-plus:hover {
+  color: #dd4b39;
+}
+.uber-social .fa.fa-pinterest:hover {
+  color: #cb2027;
+}
+.uber-social .fa.fa-linkedin:hover {
+  color: #287bbc;
+}

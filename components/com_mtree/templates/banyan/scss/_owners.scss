@@ -1,0 +1,58 @@
+//** Listing Owners
+
+//-----------------------------------------------------------------------------
+// "Listing Owners" page showing all listing owners
+//
+.mt-listing-owners {
+
+  // Using @at-root directive here because .owner-profile ruleset are being
+  // used by "Listing Owners" page (.mt-listing-owners).
+  @at-root {
+    .owner-profile {
+      margin-bottom: 30px;
+      //margin-bottom: 15px;
+
+    }
+  }
+
+  .owner-profile {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+
+    .profile-picture {
+      text-align: center;
+    }
+
+    .mt-owner-name {
+      font-weight: 600;
+    }
+  }
+
+  .mt-listings-owners-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// One of the sub-page of an individual Owner page showing their reviews.
+//
+.mt-page-users-review {
+
+  // .review .review-text imposed a minimum of 86px height to match the profile
+  // height. Since we are not using profile picture here, we reset the
+  // min-height back to 0.
+  .review-text {
+    min-height: 0;
+  }
+
+  .review-listing {
+    margin-bottom: 1em;
+  }
+
+  .pagination {
+    //margin-top: 2em;
+  }
+}

@@ -1,0 +1,374 @@
+//** Listing Details
+
+@import "settings";
+
+@import "listing-details-share";
+
+@import "listing-details-gallery";
+
+.mt-page-listing {
+  // Navigate Adjacent Listing
+  .navigate-adjacent-listing {
+    margin-top: 2em;
+    padding-top: 1.5em;
+    text-align: center;
+    border-top: 1px solid #ededed;
+  }
+
+  h1 {
+    box-sizing: border-box;
+    font-size: 1.4em;
+    font-weight: normal;
+    padding: 5px 2px;
+
+  }
+
+  h3.listing_details {
+    margin-top: $standard_vertical_spacing;
+    border-bottom: 3px solid #ddd;
+    padding: 0.25rem 0.25rem 0.25rem 0;
+    margin-bottom: 0;
+  }
+
+  .mt-ld-field {
+      display: inline-block;
+      vertical-align: top;
+      padding: .35em 0;
+      background-color: transparent;
+      border-bottom: 1px solid #ddd;
+
+    .caption {
+      display: inline-block;
+      width: 28%;
+      padding: 0px;
+      color: #777;
+    }
+  }
+
+  .images {
+    margin-top: $margin_top_container_big;
+  }
+
+  .mt-page-ld-style-1 {
+    .images {
+      margin-top: 0;
+    }
+  }
+
+  .mt-page-ld-style-2 {
+    .images {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+    h3.listing_details {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .mt-page-ld-style-3 {
+    .images {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+  }
+
+  .mt-page-ld-style-4 {
+    .images {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+    h3.listing_details {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .mt-page-ld-style-6 {
+    .images {
+      margin-top: 0;
+      //margin-bottom: 1em;
+    }
+    h3.listing_details {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .fields {
+      margin-bottom: 1em;
+    }
+  }
+
+  .mt-page-ld-style-7 #listing {
+      h1 {
+        margin-bottom: 0.7em;
+      }
+    .images {
+      margin-top: 0em;
+    }
+  }
+
+  .mt-page-ld-style-8 {
+    .fields {
+      margin-bottom: 1em;
+    }
+  }
+
+  .mt-page-ld-style-9 {
+    .images {
+      margin-top: 1em;
+    }
+    .mt-ld-main_stats {
+      .mt-ld-field {
+        border-bottom: none;
+      }
+    }
+  }
+
+}
+//#listing .mt-ld-field {
+//-----------------------------------------------------------------------------
+// Container for "Listing Details"
+//
+.mt-ld-property_details {
+  //margin-top: 1em;
+
+  .fields {
+    .mt-ld-field {
+      min-height: 0;
+      padding-bottom: $margin_bottom_field;
+      .caption {
+        display: inline-block;
+        width: 28%;
+        //padding:0px;
+        color: #777;
+      }
+
+      .output {
+        margin-right: 0;
+        margin-left: 0;
+        display: block;
+        width: 70%;
+        float: right;
+      }
+
+    }
+  }
+}
+.mt-ld-field {
+
+    //overflow:hidden;
+    //width:100%;
+
+  //.output {
+  //  font-size: 1.6em;
+  //  margin-right: 3.4em;
+  //  line-height: 2em;
+  //  padding: 0;
+  //}
+
+  //  display:inline-block;
+  //  width:28%;
+  //  //padding:0px;
+  //  color:#777;
+
+  .caption {
+    color: $color_field_caption;
+    //padding-bottom: 0.4em;
+
+  }
+}
+
+.mt-ld-main_stats {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: $margin_bottom_field;
+
+  .caption {
+    padding-bottom: 0;
+  }
+
+  .output {
+    font-size: 1.6em;
+    margin-right: 3.4em;
+    line-height: 2em;
+    padding: 0;
+    font-weight: bold;
+    float: none;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Sets a consistent size and styling for all the titles in listing details
+// page. ie: "Listing Details", "Description", "Reviews (#)", Map, "Images"
+//
+h3.listing_details, .mt-ld-property_desc h3, .reviews .title,.map .title,.images .title, .user .title, #contact-form .title {
+  font-size: 1.6em;
+  margin-bottom: $margin_bottom_field;
+  padding:0;
+  margin-top:0;
+}
+
+//-----------------------------------------------------------------------------
+// Containers that are highlighted with grey background. ie: "User", "Contact
+// Owner".
+//
+#contact-form, .user {
+  margin-top: $margin_top_container_big;
+  border: 1px solid $color_border_container_big;
+  padding: 1em;
+  background: $bg_color_container_big;
+  overflow:hidden;
+
+  // Titles in these container has a border bottom.
+  .title {
+    font-size:1.3em;
+    padding-bottom:0.75em;
+    border-bottom: 1px solid $color_border_container_big;
+    margin-bottom:1em;
+  }
+}
+
+//.user .title, #contact-form .title {
+//  padding-bottom:0.75em;
+//  border-bottom: 1px solid #ccc;
+//  margin-bottom:1em;
+//  //font-size:1.3em;
+//}
+
+//-----------------------------------------------------------------------------
+// Sets a consistent top margin for these biggish container:
+// Rating & Favourite, Actions, Map & Reviews
+//
+//.map, .reviews, .rating-fav, .actions-rating-fav {
+.mt-ld-main_stats, .mt-ld-property_details, .mt-ld-property_desc, .map, .reviews, .rating-fav, .actions {
+  margin-top: $margin_top_container_big;
+}
+
+//-----------------------------------------------------------------------------
+// Description
+//
+.mt-ld-property_desc {
+  //display:inline-block;
+  margin-bottom: $margin_bottom_field;
+}
+
+//-----------------------------------------------------------------------------
+// Rating & Favourite box.
+//
+.rating-fav {
+  background-color: $bg_color_container_big;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  padding:1em;
+
+  .favourite {
+    overflow: hidden;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Rating
+//
+.rating {
+  //overflow:hidden;
+  padding:.15em 0 .65em;
+
+  #rating-msg {
+    display:inline-block;
+    text-align:center;
+    margin-left:1em;
+  }
+
+  img {
+    float:left;
+    position:relative;
+    top:1px;
+    margin-right:2px;
+  }
+
+  #total-votes {
+    float:left;
+    font-weight:bold;
+    margin-left:1em;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Favourite
+//
+.favourite {
+
+  #fav-count {
+    float: left;
+    margin-left: .5em;
+    font-weight: 700;
+  }
+
+  #fav-msg {
+    float: left;
+    margin-left: 1em;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Actions
+//
+.actions a {
+  margin:0 .5em .5em 0;
+}
+
+//#field_4 {
+//  margin-bottom: 2em;
+//}
+.mt-ld-main_stats .mt-ld-field {
+  display: inline-block;
+}
+
+.mt-ld-main {
+  .mt-ld-field .output, .mt-ld-field .caption {
+    display: block;
+    width: auto;
+    float: none;
+  }
+
+}
+.mt-ld-container {
+  margin-bottom: 10px;
+}
+//#listing .output {
+.output {
+  margin-right:0;
+  margin-left:0;
+  display:block;
+  width:70%;
+  float:right;
+}
+
+#listing .fields > div {
+  //padding:3px 0;
+  //margin-left: 0px;
+}
+
+.mt-ls-field.mfieldtype_category .output ul li {
+  list-style-type: none;
+  background-image: none;
+}
+
+//-----------------------------------------------------------------------------
+// User container
+
+.user h3 {
+  font-size: 1.3em;
+  border: none;
+
+  a {
+    text-decoration: underline;
+  }
+
+  .profile-picture {
+    margin-right:0;
+    margin-bottom:10px;
+  }
+}
+
+

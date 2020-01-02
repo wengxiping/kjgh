@@ -1,0 +1,71 @@
+.t3-content{
+    background:#FFFFFF;
+}
+.xp-well{
+    width: 100%;display: flex;justify-content: flex-start;align-items: center;
+}
+.xp-well .xp-well-line{
+    width: 100%;display: flex;justify-content: flex-start;align-items: center;
+}
+.xp-well .xp-well-line .xp-well-line-left{
+    width: 14%;
+}
+.xp-well .xp-well-line .xp-well-line-left .checkbox{
+    display: flex;justify-content: flex-start;align-items: center;cursor: pointer;padding-left: 10%;
+}
+.xp-well .xp-well-line .xp-well-line-left .checkbox input[type=checkbox]{
+    visibility:hidden;
+}
+
+.xp-well .xp-well-line .xp-well-line-right{
+    width: 80%;display: flex;justify-content: flex-start;align-items: center;
+}
+
+.xp-well .xp-well-line .xp-well-line-right .label-text{
+    margin-left: 4px;
+    height: 14px;
+    opacity: 1;
+    font-size: 10px;
+    font-family: MicrosoftYaHei;
+    color: rgba(255,153,37,1);
+    line-height: 14px;
+    letter-spacing: 0px;
+}
+.middle{width:60px; color: rgba(153,153,153,1);text-align: center;border: 1px solid #E2E2E2;height: 2.6em;line-height: 2.6em;margin: 0 5px;}
+.input-width{
+    width:60%;border:1px solid #E2E2E2;border-radius:2px;height: 2.6em;background: #FFFFFF;display: flex;justify-content: space-between;align-items: center;
+    max-width: 200px;
+;
+}
+.input-width>span{width: 40px;text-align: center;
+    opacity: 1;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153,153,153,1);
+    line-height: 2.6em;
+    letter-spacing: 0px;}
+.input-width>input{
+    width: 90%!important;height: 100%;border:none;outline: none;text-shadow: none;background: none;box-shadow: none!important;
+}
+.xp-well .xp-well-line .xp-well-line-right .xp-label{
+    background: linear-gradient(left,#FF9925,#FF6010)!important;
+}
+.xp-margin-top{margin-top: 20px}
+.default-img{
+    width: 14px;height: 14px;
+}
+.selected-img{
+    width: 14px;height: 14px;
+    background: url("../../images/register/agree-selected.png");
+}
+.default-img{
+    width: 14px;height: 14px;
+    background: url("../../images/register/agree-default.png");
+}
+.img-ipt{visibility: hidden}
+.jbf-image>.search-img{
+ width: 100%;height: 100%;
+}
+.jbf-image>.search-img>img{
+    width: 100%!important;height: 100% !important;border: none!important;
+}

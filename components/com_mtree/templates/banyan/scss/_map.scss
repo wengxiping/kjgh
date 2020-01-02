@@ -1,0 +1,60 @@
+/* Cluster Map */
+
+@import "settings";
+
+.mt-map-cluster-popup {
+  width: 240px;
+
+  .mt-map-cluster-popup-image {
+    float:left;
+    position: relative;
+    margin-right: 1em;
+  }
+
+  .mt-map-cluster-popup-info {
+
+  }
+}
+
+.mt-map-toggle-button {
+
+  &.btn {
+    text-decoration: none;
+    //border:1px solid #ccc;
+    padding: 0.5em 1em;
+    margin: 0 0 $standard_vertical_spacing 0.5em;
+    display: inline-block;
+    float: right;
+    position: relative;
+    //border-radius: 5px;
+  }
+
+
+ span {
+   font-size: 12px;
+ }
+  &:hover, &:active, &:focus {
+    //color: #333;
+    text-decoration: none;
+  }
+
+}
+//.toggleMap:hover {
+//  border:1px solid #08c;
+//  text-decoration: none;
+//}
+.toggleMap:active {
+  //text-decoration: none;
+}
+
+.toggleMap {
+  //text-decoration: none;
+  //border:1px solid #ccc;
+  //padding: 0.5em 1em;
+  //margin: 0.5em;
+  //display: inline-block;
+  //float: right;
+  //position: relative;
+  //border-radius: 5px;
+}
+

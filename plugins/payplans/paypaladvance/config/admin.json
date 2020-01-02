@@ -1,0 +1,42 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "partner",
+				"type": "text",
+				"title": "Partner",
+				"tooltip": "The ID provided to you by the authorized PayPal Reseller who registered you for the Gateway gateway",
+				"default": ""
+			},
+			{
+				"name": "user",
+				"type": "text",
+				"title": "Username",
+				"tooltip": "If you set up one or more additional users on the account, this value<br/> is the ID of the user authorized to process transactions. If, however, you have<br/> not set up additional users on the account, USER has the same value as VENDOR",
+				"default": ""
+			},
+			{
+				"name": "password",
+				"type": "text",
+				"title": "Password",
+				"tooltip": "The password that you defined while registering for the account",
+				"default": ""
+			},
+			{
+				"name": "vendor",
+				"type": "text",
+				"title": "Vendor",
+				"tooltip": "Merchant login ID that you created when you registered for the account",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			}
+		]
+	}
+]

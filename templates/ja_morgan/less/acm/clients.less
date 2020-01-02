@@ -1,0 +1,72 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+// ---------------------------
+// CLIENTS STYLE
+// ---------------------------
+.acm-cliens { 
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+
+    > div {
+      padding-left: 0;
+      padding-right: 0;
+      line-height: 1;
+    }
+  }
+
+
+  .client-item {
+    .client-img {
+      background: transparent;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      .transition(all 500ms);
+
+      // Mobile view
+      @media (max-width: @screen-xs-max) {
+        height: 100px;
+        padding-bottom: 0;
+      }
+
+      img {
+        display: inline-block;
+        max-height: 200px;
+      }
+    }
+
+    &:hover .client-img img{
+      .opacity(1)!important;
+    }
+  }
+
+  .client-item {
+    @media (max-width: @screen-xs-max) {
+      padding-top: @t3-global-padding / 2;
+      padding-bottom: @t3-global-padding / 2;
+      width: 50% !important;
+      text-align: center;
+    }
+
+    .client-img > img {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+    }
+  }
+
+  // Action
+  .action {
+    margin-top: @grid-gutter-width;
+  }
+}

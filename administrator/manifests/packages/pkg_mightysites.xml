@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>   
+<extension type="package" version="3.8" method="upgrade">  
+	<name>MightySites</name>  
+	<author>AlterBrains</author>       
+	<authorEmail>alterbrains@gmail.com</authorEmail>          
+	<authorUrl>http://alterbrains.com</authorUrl>
+	<packagename>mightysites</packagename>
+	<url>http://alterbrains.com</url>
+	<packager>AlterBrains</packager>
+	<packagerurl>http://alterbrains.com</packagerurl>
+	<description>Joomla multi-site manager.</description>
+	<copyright>(C) 2009-2017 AlterBrains. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<creationDate>11/23/2017</creationDate>
+	<version>3.3.3</version>
+
+	<files>
+		<file type="component" 	id="com_mightysites">com_mightysites.zip</file>
+		<file type="plugin"		id="mightysites" 	group="system"			>plg_mightysites.zip</file>
+	</files>
+
+	<updateservers>
+		<server type="collection" priority="1" name="AlterBrains Updates">http://www.alterbrains.com/update.xml</server>
+	</updateservers>
+
+</extension>

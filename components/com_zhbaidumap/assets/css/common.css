@@ -1,0 +1,487 @@
+/* Placemark InfoWin Toolbar */
+
+.zhbdm-placemark-action-div
+{
+	width:100%  !important;
+	padding: 0  !important;
+	margin: 0  !important;
+	border: 0  !important;
+}
+
+
+.zhbdm-placemark-action-toolbar
+{
+	margin: 0  !important;
+	padding: 2px 2px 2px 2px  !important;
+	border-top: 1px dotted black  !important;
+	border-bottom: 1px dotted black  !important;
+	height: 25px  !important;
+}
+
+
+.zhbdm-placemark-action-toolbaritem
+{
+	margin: 0  !important;
+	padding: 0 5px  !important;
+	display: inline!important;
+	text-align:left  !important;
+	vertical-align:top  !important;
+	height: 25px  !important;
+}
+
+a.zhbdm-placemark-action-link-a:visited, 
+a.zhbdm-placemark-action-link-a:link
+{
+	text-decoration: none  !important;
+}
+
+.zhbdm-image-loading
+{
+	position:fixed;
+	z-index:900;
+	top:50%;
+	left:50%;
+	border: 0px none; 
+	padding: 0px; 
+	margin: 0px; 
+	width: 32px; 
+	height: 32px;
+    opacity: 1 !important;	
+}
+
+/* Plugin GeoTags */
+
+.zhbdm-geotag-wrapping-div-advanced
+{
+	width:100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+.zhbdm-geotag-wrapping-tagbar-advanced
+{
+	margin: 0;
+	padding: 2px 2px 2px 2px;
+	line-height: 2.2;
+}
+
+
+.zhbdm-geotag-wrapping-tagbar-item-advanced
+{
+	padding: 2px 5px;
+	display: inline;
+	text-align:left;
+	vertical-align:top;
+	background-color: #E0EAF1;
+    margin: 5px 2px 5px 0;
+	border-radius: 5px 5px 5px 5px;	
+    border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+}
+
+.zhbdm-geotag-wrapping-tagbar-image-advanced
+{
+	display: inline;
+	border: 0;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.zhbdm-geotag-wrapping-div-simple
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+.zhbdm-geotag-wrapping-tagbar-simple
+{
+	margin: 0;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px #666666;	
+}
+
+
+.zhbdm-geotag-wrapping-tagbar-item-simple
+{
+	margin: 0;
+	display: inline;
+	text-align:left;
+	vertical-align:top;
+}
+
+div.zhbdm-map-default img,
+div.zhbdm-map-default svg
+{
+	max-width: none !important;
+}
+
+div.zhbdm-map-streetview-default iframe,
+div.zhbdm-map-streetview-default svg, 
+div.zhbdm-map-streetview-default img
+{
+    max-width: none !important;
+}
+
+div.placemarkContent img,
+div.placemarkContent svg,
+div.placemarkContent canvas
+{
+    max-width: 100% !important;
+}
+
+.zhbdm-map-mainpanel-wrap-default {
+	position: relative;
+}
+.zhbdm-map-mainpanel-default {
+	position: absolute;
+	top: 0px;
+	display: inline;
+	
+}
+
+.placemarkRate {
+	height: 18px;
+}
+
+.placemarkHead  {
+	line-height:normal !important;
+	white-space:nowrap !important;
+}
+
+.placemarkContent,
+.placemarkBody
+ {
+	line-height:normal !important;
+	font-size: 11px !important;
+}
+
+.placemarkGPS  {
+	line-height:0.5 !important;
+	font-size: 11px !important;
+}
+
+
+
+/* ---- Buttons ---- */
+.zhbdm-mapcenter-button-text-star,
+.zhbdm-traffic-button-text-star,
+.zhbdm-transit-button-text-star,
+.zhbdm-panoramio-button-text-star,
+.zhbdm-bike-button-text-star
+{
+	font-family: Arial,sans-serif;   
+	padding: 3px 3px 3px 3px;
+	line-height: normal;
+}
+
+.zhbdm-mapcenter-button-ui,
+.zhbdm-traffic-button-ui,
+.zhbdm-transit-button-ui,
+.zhbdm-panoramio-button-ui,
+.zhbdm-bike-button-ui,
+.zhbdm-opacityoverlay-slider-ui
+{
+	text-align: center; 
+	font-size: 13px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+.zhbdm-mapcenter-button-text,
+.zhbdm-traffic-button-text,
+.zhbdm-transit-button-text,
+.zhbdm-panoramio-button-text,
+.zhbdm-bike-button-text
+{
+	font-family: Arial,sans-serif;   
+	padding: 1px 6px 1px 6px;
+	line-height: 1.5;	
+}
+
+.zhbdm-opacityoverlay-slider-input
+{
+	font-family: Arial,sans-serif;   
+	padding: 1px 1px 1px 1px;
+	line-height: 1.5;	
+	width: 50px;	
+}
+
+.zhbdm-mapcenter-button-ui-star,
+.zhbdm-traffic-button-ui-star,
+.zhbdm-transit-button-ui-star,
+.zhbdm-panoramio-button-ui-star,
+.zhbdm-bike-button-ui-star
+{
+	text-align: center; 
+	font-size: 13px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+/* panel styles - begin */
+.zhbdm-panel-button-ui2-star,
+.zhbdm-panel-button-ui2-star.active,
+.zhbdm-panel-button-ui-star,
+.zhbdm-panel-button-ui-star.active
+ {
+	text-align: center; 
+	cursor: pointer;
+	line-height: normal!important;
+}
+
+.zhbdm-panel-button2-star,
+.zhbdm-panel-button-star
+ {
+	margin: 0px!important;	
+	line-height: normal!important;
+}
+
+div.zhbdm-panel-button2-star.active div.zhbdm-panel-button-ui2-star div.zhbdm-panel-button-text2-star,
+div.zhbdm-panel-button-star.active div.zhbdm-panel-button-ui-star div.zhbdm-panel-button-text-star
+ {
+	background: url('/components/com_zhgooglemap/assets/utils/panel_right.png');
+	width: 17px;
+	height: 21px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	border-radius: 3px 0px 0px 3px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+	margin: 0px;	
+	line-height: normal!important;
+}
+
+div.zhbdm-panel-button2-star div.zhbdm-panel-button-ui2-star div.zhbdm-panel-button-text2-star,
+div.zhbdm-panel-button-star div.zhbdm-panel-button-ui-star div.zhbdm-panel-button-text-star
+ {
+	background: url('/components/com_zhgooglemap/assets/utils/panel_left.png');
+	width: 17px;
+	height: 21px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(113, 123, 135);
+	border-radius: 3px 0px 0px 3px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); 
+	margin: 0px;
+	line-height: normal!important;
+	}
+/* panel styles - end */
+
+/* ---- Button for v=3.22+ ---- */
+.zhbdm-mapcenter-button-text2-star,
+.zhbdm-traffic-button-text2-star,
+.zhbdm-transit-button-text2-star,
+.zhbdm-panoramio-button-text2-star,
+.zhbdm-bike-button-text2-star
+{
+	font-family: Roboto,Arial,sans-serif;
+	padding: 3px 3px 3px 3px;
+	line-height: normal;
+}
+
+.zhbdm-mapcenter-button-ui2,
+.zhbdm-traffic-button-ui2,
+.zhbdm-transit-button-ui2,
+.zhbdm-panoramio-button-ui2,
+.zhbdm-bike-button-ui2,
+.zhbdm-opacityoverlay-slider-ui2
+{
+	text-align: center; 
+	font-size: 11px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-radius: 2px;
+	box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); 
+	background: #FFFFFF;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.zhbdm-mapcenter-button-text2,
+.zhbdm-traffic-button-text2,
+.zhbdm-transit-button-text2,
+.zhbdm-panoramio-button-text2,
+.zhbdm-bike-button-text2
+{
+	font-family: Roboto,Arial,sans-serif; 
+	padding: 8px;
+	line-height: 1.5;	
+}
+
+.zhbdm-opacityoverlay-slider-input2
+{
+	font-family: Roboto,Arial,sans-serif; 
+	padding: 3px;
+	line-height: 1.5;	
+	width: 50px;	
+}
+
+
+.zhbdm-mapcenter-button-ui2-star,
+.zhbdm-traffic-button-ui2-star,
+.zhbdm-transit-button-ui2-star,
+.zhbdm-panoramio-button-ui2-star,
+.zhbdm-bike-button-ui2-star
+{
+	text-align: center; 
+	font-size: 11px; 
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-radius: 2px;
+	box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3); 
+	background: #FFFFFF;
+	cursor: pointer;
+	margin: 5px;
+	padding: 1px 3px 1px 3px;
+}
+
+
+
+/* placemark info */
+.zhbdm-placemark-stamp-top-div,
+.zhbdm-placemark-stamp-bottom-div,
+.zhbdm-placemark-stamp-top-bottom-div
+{
+	width:100%  !important;
+	margin: 0  !important;
+	padding: 0 !important;
+	border-style: none;
+    background: #EDF9FF;
+}
+
+.zhbdm-placemark-stamp-top-bottom-div
+{
+	border-top: 1px dotted black  !important;
+	border-bottom: 1px dotted black  !important;
+}
+
+
+.zhbdm-placemark-stamp-top-div
+{
+	border-top: 1px dotted black  !important;
+}
+
+.zhbdm-placemark-stamp-bottom-div
+{
+	border-bottom: 1px dotted black  !important;
+}
+
+.zhbdm-placemark-tag-simple-div,
+.zhbdm-placemark-tag-advanced-div
+{
+    width:100% !important;
+    padding: 0 !important;
+    margin: 5px 0px 5px 0px !important;
+    border: 0 !important;
+}
+
+
+.zhbdm-placemark-tag-contact-simple-div,
+.zhbdm-placemark-tag-contact-advanced-div,
+.zhbdm-placemark-tag-marker-simple-div,
+.zhbdm-placemark-tag-marker-advanced-div
+{
+    
+}
+
+.zhbdm-placemark-tag-item-simple-div,
+.zhbdm-placemark-tag-item-advanced-div
+{
+    display: inline;
+    text-align:left;
+    vertical-align:top;
+}
+
+.zhbdm-placemark-tag-item-simple-div
+{
+    padding: 0 0 0 2px;
+    margin: 5px 0 5px 0;    
+}
+
+.zhbdm-placemark-tag-item-advanced-div
+{
+    padding: 2px 5px;
+    margin: 5px 2px 5px 0;    
+    background-color: #E0EAF1;
+    border-radius: 5px 5px 5px 5px;	
+    border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+}
+
+
+.zhbdm-geolocation-main,
+.zhbdm-panoramio-filter-main,
+.zhbdm-find-address-main
+{
+	margin: 5px !important;
+}
+
+.zhbdm-geolocation-button,
+.zhbdm-panoramio-filter-text,
+.zhbdm-panoramio-filter-button,
+.zhbdm-find-address-button,
+.zhbdm-find-find-button,
+.zhbdm-find-panel,
+.zhbdm-find-mode,
+.zhbdm-find-field
+{
+	margin: 0 !important;
+}
+
+/* for panel tabs*/
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-nav
+{
+	line-height: normal!important;
+	font-size: 11px!important;
+}
+
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-nav li
+{
+	line-height: normal!important;
+}
+
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion h3.ui-accordion-header 
+{
+	line-height: normal!important;
+	font-size : 12px!important;
+}
+
+
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion .ui-accordion-content
+{
+	font-size : 11px!important;
+	line-height: normal!important;
+	padding: 5px!important;
+}
+
+.zhbdm-map-mainpanel-default .ui-tabs div.ui-tabs-panel 
+{
+	overflow: auto!important;
+}
+
+/*fix placemark titles*/
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion .ui-accordion-content h2,
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-panel .ui-accordion .ui-accordion-content h3,
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-panel h2.placemarkHead,
+.zhbdm-map-mainpanel-default .ui-tabs .ui-tabs-panel h3.placemarkHead
+{
+	font-size : 12px!important;
+	line-height: normal!important;
+	font-weight: 600;
+}

@@ -1,0 +1,47 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.uber-stats  {
+	.stats-list {
+		color: @gray-dark;
+		padding: 0;
+		list-style: none;
+		margin-bottom: 0;
+
+		> li {
+			// Tablet/Mobile view
+			@media (max-width: @screen-sm-max) {
+				margin-bottom: @t3-global-margin;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	// Icon
+	.stats-item-icon {
+		display: block;
+		font-size: @font-size-h2;
+		line-height: 1;
+		margin-bottom: @t3-global-margin / 2;
+	}
+
+	// Counter
+	.stats-item-counter {	
+		display: block;
+		font-weight: @badge-font-weight;
+		font-size: @font-size-h2;
+	}
+
+	// Subject
+	.stats-subject {
+		text-transform: uppercase;
+	}
+}

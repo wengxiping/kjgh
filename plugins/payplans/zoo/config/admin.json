@@ -1,0 +1,66 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "add_entry_in",
+				"type": "dependency",
+				"title": "COM_PAYPLANS_APP_ZOO_SUBMISSION_USER_CAN_POST",
+				"tooltip": "COM_PAYPLANS_APP_ZOO_SUBMISSION_USER_CAN_POST_DESC",
+				"default": "any_category",
+				"options": [
+					{
+						"title": "COM_PAYPLANS_APP_ZOO_SUBMISSION_ANY_CAT",
+						"value": "any_category"
+					},
+					{
+						"title": "COM_PAYPLANS_APP_ZOO_SUBMISSION_SPEC_CAT",
+						"value": "on_specific_category",
+						"for": "data-zoo-category"
+					}
+				]
+			},
+			{
+				"name": "zoo_category",
+				"type": "custom",
+				"path": "plugins:/payplans/zoo/elements/categories",
+				"title": "COM_PAYPLANS_APP_ZOO_CATEGORY_SELECT_APPLICATION",
+				"tooltip": "COM_PAYPLANS_APP_ZOO_CATEGORY_SELECT_APPLICATION_DESC",
+				"attributes": "data-zoo-category",
+				"default": ""
+			},
+			{
+				"name": "controlOn",
+				"type": "dependency",
+				"title": "COM_PAYPLANS_APP_ZOO_CATEGORY_RESTRICTION_ON",
+				"tooltip": "COM_PAYPLANS_APP_ZOO_CATEGORY_RESTRICTION_ON_DESC",
+				"default": "on_view",
+				"options": [
+					{
+						"title": "COM_PAYPLANS_APP_ZOO_CATEGORY_RESTRICTION_ON_VIEW",
+						"value": "on_view"
+					},
+					{
+						"title": "COM_PAYPLANS_APP_ZOO_CATEGORY_RESTRICTION_ON_SUBMIT",
+						"value": "on_submit",
+						"for": "data-allowedSubmissions"
+					},
+					{
+						"title": "COM_PAYPLANS_APP_ZOO_CATEGORY_RESTRICTION_ON_BOTH",
+						"value": "on_both",
+						"for": "data-allowedSubmissions"
+					}
+				]
+
+			},
+			{
+				"name": "allowedSubmissions",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_ZOO_CATEGORY_SUBMISSION",
+				"tooltip": "COM_PAYPLANS_APP_ZOO_CATEGORY_SUBMISSION_DESC",
+				"attributes": "data-allowedSubmissions",
+				"default": 0
+			}
+		]
+	}
+]

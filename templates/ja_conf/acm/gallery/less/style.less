@@ -1,0 +1,527 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// ----------------------------------------
+// GALLERY STYLE
+// ----------------------------------------
+.acm-gallery {
+
+  .btn {
+    margin-top: @t3-global-margin;
+    > fa {
+      margin-left: 5px;
+    }
+  }
+
+  .isotope-layout {
+    overflow: hidden;
+
+    .custom.bg-image {
+      padding: 0;
+      position: static;
+    }
+
+    .isotope{
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .mask {
+        background: @black;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        .opacity(0.6);
+      }
+    }
+
+    // Set Width
+    // -----------------------
+    // Mobile
+    .grid-xs-1 { 
+      width: 100%;
+
+      &.item-2 {
+        width: 100%;
+      }
+    }
+
+    .grid-xs-2 { 
+      width: 50%;
+      
+      &.item-2 {
+        width: 100%;
+      }
+    }
+
+    .grid-xs-3 { 
+      width: 33.3%;
+      
+      &.item-2 {
+        width: 66.6%;
+      }
+    }
+
+    .grid-xs-4 { 
+      width: 25%;
+      
+      &.item-2 {
+        width: 50%;
+      }
+    }
+
+    .grid-xs-5 { 
+      width: 20%;
+      
+      &.item-2 {
+        width: 40%;
+      }
+    }
+
+    .grid-xs-6 { 
+      width: 16.6%;
+      
+      &.item-2 {
+        width: 33.2%;
+      }
+    }
+
+    .grid-xs-7 { 
+      width: 14.28%;
+      
+      &.item-2 {
+        width: 28.56%;
+      }
+    }
+
+    .grid-xs-8 { 
+      width: 12.5%;
+      
+      &.item-2 {
+        width: 25%;
+      }
+    }
+
+    .grid-xs-9 { 
+      width: 11.1%;
+      
+      &.item-2 {
+        width: 22.2%;
+      }
+    }
+
+    .grid-xs-10 { 
+      width: 10%;
+      
+      &.item-2 {
+        width: 20%;
+      }
+    }
+
+    // Tablet
+    @media screen and (min-width: @screen-sm-min) {
+      .grid-sm-1 { 
+        width: 100%;
+      
+        &.item-2 {
+          width: 100%;
+        }
+      }
+
+      .grid-sm-2 { 
+        width: 50%;
+      
+        &.item-2 {
+          width: 100%;
+        }
+      }
+
+      .grid-sm-3 { 
+        width: 33.3%;
+      
+        &.item-2 {
+          width: 66.6%;
+        }
+      }
+
+      .grid-sm-4 { 
+        width: 25%;
+      
+        &.item-2 {
+          width: 50%;
+        }
+      }
+
+      .grid-sm-5 { 
+        width: 20%;
+      
+        &.item-2 {
+          width: 40%;
+        }
+      }
+
+      .grid-sm-6 { 
+        width: 16.6%;
+      
+        &.item-2 {
+          width: 33.2%;
+        }
+      }
+
+      .grid-sm-7 { 
+        width: 14.28%;
+      
+        &.item-2 {
+          width: 28.56%;
+        }
+      }
+
+      .grid-sm-8 { 
+        width: 12.5%;
+      
+        &.item-2 {
+          width: 25%;
+        }
+      }
+
+      .grid-sm-9 { 
+        width: 11.1%;
+      
+        &.item-2 {
+          width: 22.2%;
+        }
+      }
+
+      .grid-sm-10 { 
+        width: 10%;
+      
+        &.item-2 {
+          width: 20%;
+        }
+      }
+    }
+
+    // Desktop
+    @media screen and (min-width: @screen-md-min) {
+      .grid-md-1 { 
+        width: 100%;
+      
+        &.item-2 {
+          width: 100%;
+        }
+      }
+
+      .grid-md-2 { 
+        width: 50%;
+      
+        &.item-2 {
+          width: 100%;
+        }
+      }
+
+      .grid-md-3 { 
+        width: 33.3%;
+      
+        &.item-2 {
+          width: 66.6%;
+        }
+      }
+
+      .grid-md-4 { 
+        width: 25%;
+      
+        &.item-2 {
+          width: 50%;
+        }
+      }
+
+      .grid-md-5 { 
+        width: 20%;
+      
+        &.item-2 {
+          width: 40%;
+        }
+      }
+
+      .grid-md-6 { 
+        width: 16.6%;
+      
+        &.item-2 {
+          width: 33.2%;
+        }
+      }
+
+      .grid-md-7 { 
+        width: 14.28%;
+      
+        &.item-2 {
+          width: 28.56%;
+        }
+      }
+
+      .grid-md-8 { 
+        width: 12.5%;
+      
+        &.item-2 {
+          width: 25%;
+        }
+      }
+
+      .grid-md-9 { 
+        width: 11.1%;
+      
+        &.item-2 {
+          width: 22.2%;
+        }
+      }
+
+      .grid-md-10 { 
+        width: 10%;
+      
+        &.item-2 {
+          width: 20%;
+        }
+      }
+    }
+
+    // Caption
+    .caption {
+      color: @inverse-color;
+      font-size: @font-size-large;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+      .animation(eff-2 2s);
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+
+      // Control screen tablet
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        font-size: @font-size-h3;
+      }
+
+      // Control screen desktop
+      @media screen and (min-width: @screen-md-min) {
+        font-size: @font-size-large * 3;
+      }
+
+      span {
+        font-size: @font-size-h3;
+
+        // Control screen tablet
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+          font-size: @font-size-large * 5;
+        }
+
+        // Control screen tablet
+        @media screen and (min-width: @screen-md-min) {
+          font-size: @font-size-large * 7;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+    }
+
+    // Item Isotop
+    .item {
+      background: transparent;
+      float: left;
+      
+      a {
+        display: block;
+        overflow: hidden;
+      }
+
+      // Control screen tablet
+      @media (min-width: @screen-sm-min) and (max-width: 1024px) {
+        &.item-2 {
+          margin-left: -1px;
+        }
+      }
+
+      .item-image {
+        overflow: hidden;
+        margin-bottom: 0;
+      }
+
+      img {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// MISC & FIX BUG IE 8
+// --------------------
+
+// Popup Image Gallery
+.ekko-lightbox {
+  .modal-loading {
+    display: none;
+  }
+
+  &.fade {
+    transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);;
+    .opacity(0);
+    .transition(all 1.2s);
+  }
+
+  &.fade.show,
+  &.fade.in {
+    transform: translateY(0);
+      -webkit-transform: translateY(0);
+    .opacity(1)
+  }
+
+  .modal-dialog {
+    margin-top: 15%;
+
+    // Control screen tablet/ desktop
+    @media screen and (min-width: @screen-xs-min) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: auto;
+      .translate(-50%,-50%) !important;
+    }
+  }
+
+  // Button close
+  .modal-header {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    .close {
+      background: @inverse-color;
+      color: @black;
+      height: 35px;
+      margin: 0;
+      width: 35px;
+    }
+  }
+
+  // Body
+  .modal-body {
+    padding: 0;
+
+    // Button 
+    .ekko-lightbox-nav-overlay {
+      position: absolute;
+      top: 50%;
+      margin-top: -28px;
+      width: 100%;
+
+      a {
+        background: rgba(0,0,0,0.5);
+        color: @inverse-color;
+        padding: (@t3-global-padding - 6)!important;
+
+        &.glyphicon-chevron-right {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .img-responsive {
+    margin: 0;
+    max-height: 80vh;
+  }
+}
+
+// Effect 1
+@keyframes effect-item-1 {
+  0% {.scale(0.3);}
+  20% {.scale(0.3);}
+  100% {.scale(1);}
+}
+
+@-webkit-keyframes effect-item-1 {
+  0% {.scale(0.3);}
+  20% {.scale(0.3);}
+  100% {.scale(1);}
+}
+
+@keyframes effect-item-2 {
+  0% {.scale(0.3);}
+  100% {.scale(1);}
+}
+
+@-webkit-keyframes effect-item-2 {
+  0% {.scale(0.3);}
+  100% {.scale(1);}
+}
+
+// Effect 2
+@keyframes eff-2 {
+  0% {top: 40%; .opacity(0);}
+  100% {top: 50%; .opacity(1);}
+}
+
+@-webkit-keyframes eff-2 {
+  0% {top: 40%; .opacity(0);}
+  100% {top: 50%; .opacity(1);}
+}
+
+// FIX BUG IE 8
+.ie8 {
+  // Isotope
+  .isotope-layout {
+    .caption {
+      top: 12%;
+    }
+
+    .item, .grid-sizer {
+      margin-left: -0.5px;
+    }
+  }
+
+  // Popup gallery
+  .ekko-lightbox {
+    .modal-dialog {
+      position: relative;
+      top: 5%;
+      left: 0;
+      width: 600px!important;
+      overflow: hidden;
+    }
+
+    .img-responsive {
+      max-width: 100%;
+    }
+  }
+}
+
+.full-screen {
+  overflow: hidden;
+  position: relative;
+
+  // Control screen tablet/mobile
+  @media screen and (max-width: @screen-sm-max) {
+    height: auto !important;
+  }
+}

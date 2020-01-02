@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhbaidumaps_markers` ADD `rating_value` FLOAT NOT NULL DEFAULT '0';

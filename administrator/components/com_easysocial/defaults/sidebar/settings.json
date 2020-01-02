@@ -1,0 +1,144 @@
+{
+	"title"	: "COM_EASYSOCIAL_MENU_GROUP_SETTINGS",
+	"link"	: "index.php?option=com_easysocial&view=settings",
+	"class"	: "fa fa-cogs",
+	"access": "easysocial.access.settings",
+	"view"	: "settings",
+	"active": "page",
+	"childs":
+	[
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_STREAM",
+			"class" : "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "stream"
+			},
+			"childs": []
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_GENERAL",
+			"class"	: "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "general"
+			},
+			"childs": []
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_PHOTOS",
+			"class" : "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "photos"
+			},
+			"childs": []
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_SOCIAL_INTEGRATIONS",
+			"class" : "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "social"
+			},
+			"childs": []
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_USERS",
+			"class" : "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "users"
+			},
+			"childs": []
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_EVENTS",
+			"class"	: "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "events"
+			}
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_GROUPS",
+			"class"	: "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "groups"
+			}
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_PAGES",
+			"class"	: "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "pages"
+			}
+		},
+		{
+			"title": "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_AUDIOS",
+			"class": "",
+			"url": {
+				"view": "settings",
+				"layout": "form",
+				"page": "audios"
+			}
+		},
+		{
+			"title": "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_VIDEOS",
+			"class": "",
+			"url": {
+				"view": "settings",
+				"layout": "form",
+				"page": "videos"
+			}
+		},
+		{
+			"title": "COM_ES_MENU_ITEM_LAYOUT",
+			"class": "",
+			"url": {
+				"view": "settings",
+				"layout": "form",
+				"page": "layout"
+			}
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_SETTINGS_STORAGE",
+			"class" : "",
+			"url"	:
+			{
+				"view"	: "settings",
+				"layout": "form",
+				"page"	: "storage"
+			},
+			"childs": []
+		},
+		{
+			"title": "COM_ES_MENU_SETTINGS_SHARER",
+			"class": "",
+			"url": {
+				"view": "settings",
+				"layout": "form",
+				"page": "sharer"
+			},
+			"childs": []
+		}
+	]
+}

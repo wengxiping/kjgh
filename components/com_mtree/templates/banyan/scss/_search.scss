@@ -1,0 +1,86 @@
+//** Search
+
+.mt-component-search {
+
+  position: relative;
+  display: block;
+  max-width: 590px;
+  margin: auto;
+}
+
+.mt-search-form {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  //display: block;
+  display: flex;
+  position: relative;
+  height: 2.5rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.06);
+  //box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  //padding-left: .75em;
+  //padding-right: 6.5em;
+  margin-bottom: 2rem;
+
+  .typeahead-query {
+    //border:1px solid #ccc;
+    width: auto;
+    flex-grow: 1;
+  }
+
+  //input {
+  #mt-component-search-form-input {
+    width: 99%;
+    height: 100%;
+    box-sizing: border-box;
+    //width: 415px;
+    //height: 1.55rem;
+    border: 0;
+    margin-left: 0.3rem;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: transparent;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .mt-search-button {
+    //border: 1px solid red;
+    border: 0;
+    padding: 0 1.5rem;
+    background: url('../../../../media/com_mtree/images/search.png') no-repeat center center;
+    background-size: 25px;
+    box-shadow: none;
+    width: 30px;
+    height: 100%;
+
+    &:hover {
+      //background-color: rgba(0,0,0,0.15);
+      //background-color: rgba(74, 170, 242, 1);
+    }
+  }
+}
+
+.mt-page-search {
+
+  .mt-component-search {
+    margin-left: 0;
+  }
+
+  .mt-category-subcats {
+    margin-bottom: 2rem;
+
+    .mt-category-subcats-item {
+      padding-left: 10px;
+    }
+  }
+
+}

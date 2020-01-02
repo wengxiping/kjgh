@@ -1,0 +1,56 @@
+[
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_BEING_ACTIVATED",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "urlOnActive",
+				"type": "textarea",
+				"title": "COM_PP_AUTOMATION_URL",
+				"default": ""
+			},
+			{
+				"name": "queryOnActive",
+				"type": "textarea",
+				"title": "COM_PP_AUTOMATION_URL_VARIABLES",
+				"default": ""
+			}
+		]
+	},
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_BEING_SET_TO_HOLD",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "urlOnHold",
+				"type": "textarea",
+				"title": "COM_PP_AUTOMATION_URL",
+				"default": ""
+			},
+			{
+				"name": "queryOnHold",
+				"type": "textarea",
+				"title": "COM_PP_AUTOMATION_URL_VARIABLES",
+				"default": ""
+			}
+		]
+	},
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_EXPIRED",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "urlOnExpire",
+				"type": "textarea",
+				"title": "COM_PP_AUTOMATION_URL",
+				"default": ""
+			},
+			{
+				"name": "queryOnExpire",
+				"type": "textarea",
+				"title": "COM_PP_AUTOMATION_URL_VARIABLES",
+				"default": ""
+			}
+		]
+	}
+]

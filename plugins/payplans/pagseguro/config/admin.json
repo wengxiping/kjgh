@@ -1,0 +1,21 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchant",
+				"type": "text",
+				"title": "Merchant Email",
+				"tooltip": "Pagseguro Account Merchant Email",
+				"default": ""
+			},
+			{
+				"name": "token",
+				"type": "text",
+				"title": "Token",
+				"tooltip": "Token Given by Pagseguro",
+				"default": ""
+			}
+		]
+	}
+]

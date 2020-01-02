@@ -1,0 +1,1 @@
+ALTER TABLE `#__jblance_project` ADD (`project_image` text NOT NULL);

@@ -1,0 +1,182 @@
+.acm-teams .row + .row {
+  margin-top: 30px;
+}
+.acm-teams img {
+  max-width: 100%;
+}
+.acm-teams .member-title {
+  font-size: 12px;
+  text-transform: none;
+}
+@media (max-width: 991px) {
+  .acm-teams .item {
+    margin-bottom: 30px;
+  }
+}
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+  width: 100%;
+}
+.grid figure figcaption {
+  padding: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.grid figure h2 span {
+  font-weight: 800;
+}
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.team-detail {
+  background: #162633;
+  text-align: left;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  figure.team-detail {
+    max-height: 345px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  figure.team-detail {
+    max-height: 213px;
+  }
+}
+figure.team-detail img {
+  -webkit-transition: opacity 0.45s;
+  transition: opacity 0.45s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+figure.team-detail figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/triangle.svg) no-repeat center center;
+  background-size: 100% 100%;
+  content: '';
+  -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+  transition: opacity 0.45s, transform 0.45s;
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+  -webkit-transform-origin: -35% 90%;
+  transform-origin: -35% 90%;
+}
+figure.team-detail h2 {
+  font-size: 24px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+figure.team-detail .social-links {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 6.5px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  figure.team-detail .social-links {
+    padding: 0;
+  }
+}
+figure.team-detail a {
+  margin: 0 10px;
+  color: #5d504f;
+  font-size: 170%;
+}
+figure.team-detail a:hover,
+figure.team-detail a:focus {
+  color: #1d9bdc;
+}
+figure.team-detail p a i {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
+}
+figure.team-detail:hover img {
+  opacity: 0.6;
+}
+figure.team-detail:hover h2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.team-detail:hover figcaption::before {
+  opacity: 0.7;
+  -webkit-transform: rotate3d(0, 0, 1, 20deg);
+  transform: rotate3d(0, 0, 1, 20deg);
+}
+figure.team-detail:hover p i {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+figure.team-detail:hover p a:nth-child(3) i {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+figure.team-detail:hover p a:nth-child(2) i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.team-detail:hover p a:first-child i {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}

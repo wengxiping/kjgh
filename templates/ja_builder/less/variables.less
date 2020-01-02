@@ -1,0 +1,460 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       JA BUILDER - VARIABLES
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+
+//== Color Palletes
+//
+//**
+
+// Opacity Levels
+//** Mostly use for text transparency on different color backgrounds
+//** Higher level means lighter or darker text color, depend on text color
+@opacity-base:          1;
+@opacity-lv1:           0.87;
+@opacity-lv2:           0.70;
+@opacity-lv3:           0.54;
+
+// Gray Levels
+@black:                  #000;
+@white:                  #fff;
+
+@dark:                   rgba(0,0,0,@opacity-lv2); //** added
+@light:                  rgba(255,255,255,@opacity-lv2); //** added
+
+@dark-text:              rgba(0,0,0,@opacity-lv1); //** added
+@light-text:             rgba(255,255,255,@opacity-lv1); //** added
+
+
+// Gray Levels
+@gray-base:              #000000;
+@gray-darkest:           #212121;  //** added
+@gray-darker:            #424242;
+@gray-dark:              #616161;
+@gray:                   #9e9e9e;
+@gray-light:             #bdbdbd;
+@gray-lighter:           #eeeeee;
+@gray-lightest:          #fafafa;  //** added
+
+// Blue Gray levels
+@bluegray-darkest:       #263238;  
+@bluegray-darker:        #455a64;
+@bluegray-dark:          #607d8b;
+@bluegray:               #90a4ae;
+@bluegray-light:         #cfd8dc;
+@bluegray-lighter:       #eceff1;
+@bluegray-lightest:      #f6f8f8; 
+
+// Accent colors
+@blue:                   #2196f3;
+@green:                  #4caf50;
+@lime:                   #cddc39;
+@cyan:                   #00bcd4;
+@teal:                   #009688;
+@red:                    #f44336;
+@yellow:                 #ffeb3b;
+@amber:                  #ffc107;
+@orange:                 #ff9800;
+@brown:                  #795548;
+@pink:                   #e91e63;
+@purple:                 #9c27b0;
+@indigo:                 #3f51b5;
+
+@blue-dark:              darken(@blue,10%);
+@green-dark:             darken(@green,10%);
+@lime-dark:              darken(@lime,10%);
+@cyan-dark:              darken(@cyan,10%);
+@teal-dark:              darken(@teal,10%);
+@red-dark:               darken(@red,10%);
+@yellow-dark:            darken(@yellow,10%);
+@amber-dark:             darken(@amber,10%);
+@orange-dark:            darken(@orange,10%);
+@brown-dark:             darken(@brown,10%);
+@pink-dark:              darken(@pink,10%);
+@purple-dark:            darken(@purple,10%);
+@indigo-dark:            darken(@indigo,10%);
+
+
+// Brand Colors
+@brand-primary:         @blue;
+@brand-accent:          @green;  // Added
+@brand-success:         @green-dark;
+@brand-info:            @cyan;
+@brand-danger:          @red;
+@brand-warning:         @orange;
+
+// Other Brand colors
+@brand-facebook:        #3b5998;
+@brand-twitter:         #3a92c8;
+@brand-google:          #dd4b39;
+@brand-dribbble:        #c32361;
+@brand-youtube:         #b00;
+@brand-pinterest:       #cb2027;
+@brand-linkedin:        #006fa6;
+
+
+//== Scaffolding
+//
+//**
+@text-color:            @gray-darker;
+@body-bg:               @white;
+
+
+//== Typography
+//
+//**
+
+@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       "Roboto Slab", "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Monaco, Consolas, "Courier New", monospace;
+@font-family-cursive:     cursive;
+@font-family-fantasy:     fantasy;
+
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          16px;
+
+@font-size-large:         @font-size-base*1.125;
+@font-size-larger:        @font-size-base*1.25;
+
+@font-size-lg:            @font-size-base*1.125; // @font-size-large
+@font-size-xl:            @font-size-base*1.25; // @font-size-larger
+@font-size-xxl:           @font-size-base*1.375;
+@font-size-huge:          @font-size-base*1.5;
+
+@font-size-small:         @font-size-base*0.875;
+@font-size-mini:          @font-size-base*0.75;
+
+@font-size-sm:            @font-size-base*0.875; // @font-size-small
+@font-size-xs:            @font-size-base*0.75; // @font-size-mini
+
+@font-size-hero:          @font-size-base*5;
+@font-size-title:         @font-size-base*2.75;
+
+@font-size-h1:            @font-size-base*2.75;
+@font-size-h2:            @font-size-base*2.125;
+@font-size-h3:            @font-size-base*1.625;
+@font-size-h4:            @font-size-base*1.5;
+@font-size-h5:            @font-size-base*1.375;
+@font-size-h6:            @font-size-base*1.25;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.75;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base));
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    @font-weight-semibold;
+@headings-line-height:    1.25;
+@headings-color:          inherit;
+@leading-color:           inherit;
+@heading-small-color:     inherit;
+
+
+// Font weight variations
+// -------------------------
+@font-weight-black:         900;
+@font-weight-bold:          700;
+@font-weight-semibold:      600;
+@font-weight-medium:        500;
+@font-weight-regular:       400;
+@font-weight-light:         300;
+@font-weight-extralight:    200;
+@font-weight-thin:          100;
+
+@font-weight-base:          @font-weight-light;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+@btn-font-weight:                @font-weight-light;
+
+@btn-default-color:              @dark-text;
+@btn-default-bg:                 @light-text;
+
+@btn-link-disabled-color:        @gray-light;
+
+// Allows for customizing button radius independently from global border radius
+@btn-border-radius-base:         @border-radius-base;
+@btn-border-radius-large:        @border-radius-large;
+@btn-border-radius-small:        @border-radius-small;
+
+
+//== Forms
+//
+//##
+@input-font-weight:                @font-weight-light;
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @gray;
+//** `<input>` border color
+@input-border:                   #ccc;
+
+// TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+@input-border-radius:            @border-radius-base;
+//** Large `.form-control` border radius
+@input-border-radius-large:      @border-radius-large;
+//** Small `.form-control` border radius
+@input-border-radius-small:      @border-radius-small;
+
+//** Border color for inputs on focus
+@input-border-focus:             #66afe9;
+
+//** Placeholder text color
+@input-color-placeholder:        #999;
+
+//** Default `.form-control` height
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+//** `.form-group` margin
+@form-group-margin-bottom:       15px;
+
+@legend-color:                   @gray-dark;
+@legend-border-color:            #e5e5e5;
+
+//** Background color for textual input addons
+@input-group-addon-bg:           @gray-lighter;
+//** Border color for textual input addons
+@input-group-addon-border-color: @input-border;
+
+
+
+//== Media queries breakpoints
+//
+//** Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1280px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// Extra Large screen / extra wide desktop
+//** Uber II Added
+@screen-xl:                  1440px;
+@screen-xl-min:              @screen-xl;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-xl-min;
+
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1px);
+@screen-sm-max:              (@screen-md-min - 1px);
+@screen-md-max:              (@screen-lg-min - 1px);
+@screen-lg-max:              (@screen-xl-min - 1px);
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+
+// Small screen / tablet
+@container-phone:             (420px + @grid-gutter-width);
+//** For `@screen-sm-min` and up.
+@container-xs:                 @container-phone;
+
+// Small screen / tablet
+@container-tablet:             (720px + @grid-gutter-width);
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            (940px + @grid-gutter-width);
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      (1140px + @grid-gutter-width);
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+
+// Extra Large screen / Extra wide desktop
+//** Uber II Added
+@container-xlarge-desktop:      (1340px + @grid-gutter-width);
+//** For `@screen-xl-min` and up.
+@container-xl:                  @container-xlarge-desktop;
+
+
+// Media queries breakpoints
+@grid-float-breakpoint:         @screen-md-min;
+
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+//
+// Global Spacing
+@spacing:         @line-height-computed;
+@spacing-huge:    @spacing*10;
+@spacing-xxl:     @spacing*5;
+@spacing-xl:      @spacing*4;
+@spacing-lg:      @spacing*3;
+@spacing-md:      @spacing*2;
+@spacing-sm:      @spacing/2;
+@spacing-xs:      @spacing/3;
+@spacing-none:    0;
+
+
+//
+// Global Components Spacing
+@padding-base-vertical:       12px;
+@padding-base-horizontal:     16px;
+
+@padding-large-vertical:      14px;
+@padding-large-horizontal:    18px;
+
+@padding-lg-vertical:         14px;
+@padding-lg-horizontal:       18px;
+
+@padding-xl-vertical:         16px;
+@padding-xl-horizontal:       20px;
+
+@padding-xxl-vertical:        18px;
+@padding-xxl-horizontal:      22px;
+
+@padding-huge-vertical:       20px;
+@padding-huge-horizontal:     24px;
+
+@padding-small-vertical:      10px;
+@padding-small-horizontal:    14px;
+
+@padding-sm-vertical:         10px;
+@padding-sm-horizontal:       14px;
+
+@padding-xs-vertical:         8px;
+@padding-xs-horizontal:       12px;
+
+
+@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small:         1.5;
+
+//
+// Global Radius
+@border-radius-base:        3px;
+@border-radius-large:       6px;
+@border-radius-small:       1px;
+
+
+
+//== Helpers
+//
+//**
+
+// Depth
+//** Defining the depth level
+//** https://material.google.com/material-design/elevation-shadows.html#elevation-shadows-object-relationships
+
+@z-depth-0:             none;
+// 2dp
+@z-depth-1:             0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+// 3dp
+@z-depth-2:             0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12), 0 3px 3px -2px rgba(0,0,0,.4);
+// 4dp
+@z-depth-3:             0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.4);
+// 6dp
+@z-depth-4:             0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.4);
+// 8dp
+@z-depth-5:             0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.4);
+// 16dp
+@z-depth-6:             0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.4);
+// 24dp
+@z-depth-7:             0 9px 46px 8px rgba(0,0,0,.14), 0 24px 38px 3px rgba(0,0,0,.12), 0 11px 15px -7px rgba(0,0,0,.4);
+
+// Simplify Shadow Value
+@s-z-depth-1:           0 2px 1px rgba(0,0,0,0.3);
+@s-z-depth-2:           0 3px 1.5px rgba(0,0,0,0.4);
+@s-z-depth-3:           0 4px 2px rgba(0,0,0,0.4);
+@s-z-depth-4:           0 6px 3px rgba(0,0,0,0.4);
+@s-z-depth-5:           0 8px 4px rgba(0,0,0,0.4);
+@s-z-depth-6:           0 16px 8px rgba(0,0,0,0.4);
+@s-z-depth-7:           0 24px 12px rgba(0,0,0,0.4);
+
+
+@z-depth-focus:         0 0 8px rgba(0,0,0,.18), 0 8px 16px rgba(0,0,0,.36);
+@z-depth-transition:    box-shadow .28s cubic-bezier(.4,0,.2,1);
+
+
+//
+// Global Icon Sizes
+@icon-size-xs:    18px;
+@icon-size-sm:    24px;
+@icon-size-md:    36px;
+@icon-size-lg:    48px;
+@icon-size-xl:    64px;
+@icon-size-xxl:   82px;
+@icon-size-huge:  128px;
+
+
+//
+// Global Button Height
+@btn-xs:    32px;
+@btn-sm:    36px;
+@btn-md:    48px;
+@btn-lg:    56px;
+@btn-xl:    64px;
+@btn-xxl:   72px;
+@btn-huge:  80px;
+
+
+//
+// Global Input Height
+@input-xs:    32px;
+@input-sm:    36px;
+@input-md:    48px;
+@input-lg:    56px;
+@input-xl:    64px;
+@input-xxl:   72px;
+@input-huge:  80px;
+
+
+//
+// Misc
+@border-color:    @gray-lighter;
+
+

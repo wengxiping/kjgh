@@ -1,0 +1,754 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+
+// -------------------------------------------------------
+//  DEFAULT BOOTSTRAP NAVBAR (navbars.less)
+// -------------------------------------------------------
+
+// Base Navbars
+// --------------------------------------------------
+.navbar {
+  @media (min-width: @grid-float-breakpoint) {
+  }
+}
+
+
+// Navbar heading
+// --------------
+.navbar-header {
+  @media (min-width: @grid-float-breakpoint) {
+  }
+}
+
+
+// Navbar collapse (body)
+// ----------------------
+.navbar-collapse {
+  @media (min-width: @grid-float-breakpoint) {
+
+  }
+}
+
+
+// Brand/project name
+// ------------------
+.navbar-brand {
+  // Link states
+  &:hover,
+  &:focus {
+  }
+  @media (min-width: @grid-float-breakpoint) {
+  }
+}
+
+
+// Navbar toggle
+// -------------
+.navbar-toggle {
+  background: @brand-primary;
+  border-radius: @border-radius-base;
+  color: @white;
+  padding: 0;
+  height: @navbar-height;
+  line-height: @navbar-height;
+  width: @navbar-height;
+  margin: 0;
+  margin-left: @navbar-padding-horizontal;
+
+  // Bars
+  .fa-bars {
+  }
+
+  // Hide on breakpoint
+  @media (min-width: @grid-float-breakpoint) {
+    display: none;
+  }
+}
+
+
+// Navbar nav links
+// ----------------
+.navbar-nav {
+  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+
+  > li > a {
+  }
+
+  // T3 Note: Dropdown Menu styles when collapsed
+  // Dropdowns get custom display when collapsed
+  @media (max-width: @screen-xs-max) {
+    .open .dropdown-menu {
+      > li > a,
+      .dropdown-header {
+      }
+      > li > a {
+        // Link states
+        &:hover,
+        &:focus {
+        }
+      }
+    }
+  }
+
+  // T3 Note: Main Styles for breakpoint
+  // Uncollapse the nav
+  @media (min-width: @grid-float-breakpoint) {
+    margin: 0;
+    > li {
+      > a {
+      }
+    }
+  }
+
+  // End
+}
+
+
+// Navbar form
+// ------------
+.navbar-form {
+}
+
+
+// Dropdown in navbars
+// -------------------
+// Menu position and menu carets
+.navbar-nav > li > .dropdown-menu {
+}
+
+
+// Buttons in navbars
+// ------------------
+.navbar-btn {
+}
+
+
+// Text in navbars
+// ---------------
+.navbar-text {
+}
+
+
+
+// Default Navbars (Visual Style only)
+// --------------------------------------------------
+.navbar-default {
+  background-color: @navbar-default-bg;
+  border-color: @navbar-default-border;
+
+  .navbar-brand {
+    color: @navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-brand-hover-color;
+      background-color: @navbar-default-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @navbar-default-color;
+  }
+
+  .navbar-nav {
+    > li > a,
+    > li > span {
+      padding-left: @grid-gutter-width;
+      padding-right: 0;
+      color: @navbar-default-link-color;
+      font-weight: 600;
+
+      // Tablet view
+      @media (max-width: @screen-sm-max) {
+        padding-left: @grid-gutter-width / 2;
+      }
+
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-hover-color;
+        background-color: @navbar-default-link-hover-bg;
+      }
+
+      // Desktop view
+      @media (min-width: @grid-float-breakpoint) {
+        // Button
+        &.btn {
+          padding: (@navbar-padding-vertical - 1px) @t3-global-padding;
+
+          &.btn-primary,
+          &.btn-info,
+          &.btn-success,
+          &.btn-warning,
+          &.btn-danger {
+            color: @white;
+          }
+
+          &.btn-primary {
+            background: @btn-primary-bg!important;
+            border-color: @btn-primary-border!important;
+
+            &:hover,&:focus,&:active {
+              background: darken(@btn-primary-bg,10%)!important;
+              border-color: darken(@btn-primary-border,10%)!important;
+            }
+          }
+
+          &.btn-info {
+            &:hover,&:focus,&:active {
+              background: darken(@btn-info-bg,10%);
+              border-color: darken(@btn-info-border,10%);
+            }
+          }
+
+          &.btn-success {
+            &:hover,&:focus,&:active {
+              background: darken(@btn-success-bg,10%);
+              border-color: darken(@btn-success-border,10%);
+            }
+          }
+
+          &.btn-warning {
+            &:hover,&:focus,&:active {
+              background: darken(@btn-warning-bg,10%);
+              border-color: darken(@btn-warning-border,10%);
+            }
+          }
+
+          &.btn-danger {
+            &:hover,&:focus,&:active {
+              background: darken(@btn-danger-bg,10%);
+              border-color: darken(@btn-danger-border,10%);
+            }
+          }
+        }
+
+        &.btn-link {
+          border: 0;
+          box-shadow: none;
+          color: @gray-light;
+          padding-right: 0;
+          padding-left: 0;
+          margin-right: @t3-global-margin;
+          margin-left: @t3-global-margin;
+
+          // Tablet view
+          @media (max-width: @screen-sm-max) {
+            margin-right: @t3-global-margin / 2;
+            margin-left: @t3-global-margin / 2;
+          }
+
+          &:hover,&:focus,&:active {
+            color: @navbar-default-link-hover-color;
+            border: 0;
+          }
+        }
+
+        // Menu Hr
+        &.menu-hr {
+          position: relative;
+          margin-left: @t3-global-margin * 2;
+
+          // Tablet view
+          @media (max-width: @screen-sm-max) {
+            margin-left: @t3-global-margin;
+          }
+
+          &:before {
+            background: @t3-border-color;
+            content: "";
+            right: 100%;
+            position: absolute;
+            top: 0;
+            height: @navbar-height;
+            margin-right: @t3-global-padding - 1px;
+            width: 1px;
+
+            // Tablet view
+            @media (max-width: @screen-sm-max) {
+              margin-right: @t3-global-margin / 2 - 1px;
+            }
+          }
+        }
+      }
+      
+    }
+
+    // Desktop view
+
+    @media (min-width: @grid-float-breakpoint) {
+      > .open > a,
+      > .active > a,
+      > .open > span,
+      > .active > span {
+        // Button
+        &.btn {
+          &.btn-primary,
+          &.btn-info,
+          &.btn-success,
+          &.btn-warning,
+          &.btn-danger {
+            color: @white;
+          }
+
+          &.btn-primary {
+            &,&:hover,&:focus,&:active {
+              background: darken(@btn-primary-bg,10%)!important;
+              border-color: darken(@btn-primary-border,10%)!important;
+            }
+          }
+
+          &.btn-info {
+            &,&:hover,&:focus,&:active {
+              background: darken(@btn-info-bg,10%);
+              border-color: darken(@btn-info-border,10%);
+            }
+          }
+
+          &.btn-success {
+            &,&:hover,&:focus,&:active {
+              background: darken(@btn-success-bg,10%);
+              border-color: darken(@btn-success-border,10%);
+            }
+          }
+
+          &.btn-warning {
+            &,&:hover,&:focus,&:active {
+              background: darken(@btn-warning-bg,10%);
+              border-color: darken(@btn-warning-border,10%);
+            }
+          }
+
+          &.btn-danger {
+            &,&:hover,&:focus,&:active {
+              background: darken(@btn-danger-bg,10%);
+              border-color: darken(@btn-danger-border,10%);
+            }
+          }
+        }
+
+        &.btn-link {
+          &,&:hover,&:focus,&:active {
+            border: 0;
+            color: @navbar-default-link-hover-color;
+          }
+        }
+      }
+    }
+    
+
+    > li > .nav-header {
+      color: @navbar-default-link-color;
+      display: inline-block;
+      padding-top: @t3-global-padding * 0.75;
+      padding-bottom: @t3-global-padding * 0.75;
+    }
+
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-active-color;
+        background-color: @navbar-default-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @navbar-default-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-default-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-default-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @navbar-default-border;
+  }
+
+  // Dropdown menu items and carets
+  .navbar-nav {
+    // Caret should match text color on hover
+    > .dropdown > a:hover .caret,
+    > .dropdown > a:focus .caret {
+    }
+
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-default-link-active-bg;
+        color: @navbar-default-link-active-color;
+        .caret {
+        }
+      }
+    }
+    > .dropdown > a .caret {
+    }
+
+
+    @media (max-width: @screen-xs-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-hover-color;
+            background-color: @navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-disabled-color;
+            background-color: @navbar-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+  .navbar-link {
+    color: @navbar-default-link-color;
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+
+}
+
+@media (max-width: @grid-float-breakpoint){
+  .t3-header {
+    position: relative;
+
+    .col-xs-8 {
+      position: static;
+    }
+  }
+}
+
+
+// -------------------------------------------------------
+//  T3 MAIN MENU
+// -------------------------------------------------------
+.t3-mainnav {
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+
+  @media (max-width: @screen-xs-max) {
+    background: #fff;
+    display: block;
+    min-height: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: @zindex-navbar;
+    width: 100%;
+  }
+
+  // Navbar
+  // -------
+  .t3-navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  // Collapse Navbar
+  // ---------------
+  .t3-navbar-collapse {
+    border-top: 1px solid @t3-border-color;
+    border-bottom: 1px solid @t3-border-color;
+    padding: 0;
+    max-height: 280px;
+    overflow: auto;
+
+    // Hide the generated navbar on breakpoint
+    @media (min-width: @grid-float-breakpoint) {
+      display: none !important;
+    }
+    
+    .navbar-nav {
+      > li {
+        border-bottom: 1px solid @t3-border-color;
+        text-align: left;
+
+        a {
+          border-radius: 0;
+          border: none;
+          box-shadow: none;
+          background: @navbar-default-bg;
+          padding: @t3-global-padding/3 @t3-global-padding/2;
+          margin: 0;
+
+          &:hover {
+            background: @navbar-default-bg;
+            color: @navbar-default-link-hover-color;
+          }
+
+          &.btn-success,
+          &.btn-default,
+          &.btn-link {
+            background: @navbar-default-bg;
+            border: none;
+            color: @btn-default-color;
+            text-align: left;
+
+            &:hover {
+              background: @navbar-default-bg;
+              color: @navbar-default-link-hover-color;
+            }
+          }
+        }
+
+        &.active {
+          > a {
+            background: @navbar-default-bg;
+            color: @navbar-default-link-hover-color !important;
+          }
+        }
+
+        &.open {
+          .dropdown-menu {
+            margin: 0 !important;
+          }
+        }
+
+        // Drop menu
+        .dropdown-menu {
+          padding: 0 @t3-global-padding/4 *3;
+
+          > li {
+            border: none;
+            
+            a {
+              font-weight: 400;
+              position: relative;
+              padding: @t3-global-padding/4 @t3-global-padding/3;
+            }
+
+            &.active {
+              color: @navbar-default-link-hover-color;
+            }
+          }
+
+          &.level1 > li > a {
+            font-weight: 600;
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+
+        .dropdown-submenu {
+          > a {
+            color: @btn-default-color;
+            border-top: 1px solid @t3-border-color;
+            font-weight: 600;
+
+            &:after {
+              display: none;
+            }
+          }
+
+          > ul {
+            padding: 0 @t3-global-padding/4 *3;
+
+            > li {
+
+              a {
+                font-weight: normal;
+                position: relative;
+                padding: @t3-global-padding/4 @t3-global-padding/3;
+
+                &:before {
+                  content: "-";
+                  display: block;
+                  margin-right: @t3-global-margin/3;
+                  position: absolute;
+                  top: @t3-global-margin/3;;
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    // Navbar nav links
+    // ----------------
+    .navbar-nav {
+      margin: 0;
+
+      //font awesome
+      li > a .fa {
+        margin-right: 5px;
+      }
+
+      > li > a {
+        border-top: 1px solid @navbar-default-border;
+      }
+
+      > li:first-child  > a {
+        border-top: 0;
+      }
+
+      // Dropdown Menu
+      .open .dropdown-menu {
+
+        > li > a,
+        .dropdown-header {
+        }
+
+        > li > a {
+          // Link states
+          &:hover,
+          &:focus {
+          }
+        }
+
+      }
+
+      // Re-Align the caret on right
+      .dropdown > a {
+        .caret {
+          position: absolute;
+          top: 40%;
+          right: @padding-base-horizontal;
+        }
+      }
+    }
+
+  // End Collapse Navbar
+  }
+
+  .navbar-nav {
+    li {
+      a,
+      span {
+        color: @navbar-default-color;
+
+        .caret {
+          border-top-color: @navbar-default-color;
+          border-bottom-color: @navbar-default-color;
+        }
+
+        &:hover {
+          color: @navbar-default-link-active-color;
+
+          .caret {
+            border-top-color: @navbar-default-link-active-color;
+            border-bottom-color: @navbar-default-link-active-color;
+          }
+        }
+      }
+
+      &.active,
+      &.open {
+        a,
+        span {
+          color: @navbar-default-link-active-color;
+
+          .caret {
+            border-top-color: @navbar-default-link-active-color;
+            border-bottom-color: @navbar-default-link-active-color;
+          }
+        }
+      }
+    }
+
+    .dropdown-menu {
+      border-radius: @border-radius-base;
+      padding: @t3-global-padding/2 ;
+
+      li {
+        a {
+          background: @navbar-default-bg;
+          color: @navbar-default-color;
+          padding: @t3-global-padding/3;
+
+          &:hover {
+            background: @navbar-default-bg;
+            color: @navbar-default-link-hover-color;
+
+            &:after {
+              border-left-color: @navbar-default-link-hover-color;
+            }
+          }
+        }
+
+        &.active {
+          > a {
+            background: @navbar-default-bg;
+            color: @navbar-default-link-hover-color;
+
+            &:after {
+              border-left-color: @navbar-default-link-hover-color;
+            }
+          }
+        }
+
+        &.open {
+          > a {
+            background: @navbar-default-bg;
+            color: @navbar-default-link-hover-color;
+
+            &:after {
+              border-left-color: @navbar-default-link-hover-color;
+            }
+
+            &:hover {
+              background: @navbar-default-bg;
+              color: @navbar-default-link-hover-color;
+
+              &:after {
+                border-left-color: @navbar-default-link-hover-color;
+              }
+            }
+          }
+
+          .dropdown-menu {
+            margin-top: @t3-global-padding/2;
+            margin-left: @t3-global-padding/2;
+          }
+        }
+      }
+    }
+  }
+
+// End
+}

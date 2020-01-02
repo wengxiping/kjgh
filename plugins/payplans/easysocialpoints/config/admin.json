@@ -1,0 +1,14 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "points",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_EASYSOCIAL_ASSIGN_PONITS_ON_SUBSCRIPTION_ACTIVE",
+				"tooltip": "COM_PAYPLANS_APP_EASYSOCIAL_ASSIGN_PONITS_ON_SUBSCRIPTION_ACTIVE_DESC",
+				"default": ""
+			}
+		]
+	}
+]

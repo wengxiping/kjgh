@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="1.6" method="upgrade" client="site">
+    <name><![CDATA[Events Booking - zh-CN]]></name>
+    <author><![CDATA[joomdonation.com]]></author>
+    <authorurl>http://www.joomdonation.com</authorurl>
+	<copyright>Copyright (C)2018 joomdonation.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>    
+    <creationDate>27 December 2018</creationDate>
+    <description><![CDATA[zh-CN translation file for Events Booking]]></description>
+	<fileset>		
+		<files folder="frontend" target="language/zh-CN">
+			<filename>zh-CN.com_eventbooking.ini</filename>
+		</files>		
+	</fileset>
+</extension>

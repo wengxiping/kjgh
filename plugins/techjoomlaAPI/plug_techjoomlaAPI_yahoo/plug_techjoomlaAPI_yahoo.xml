@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="techjoomlaAPI" method="upgrade">
+	<name>plg_techjoomlaapi_yahoo</name>
+	<author>Techjoomla</author>
+	<creationDate>9th Jan 2019</creationDate>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<version>3.0.0</version>
+	<isconsumer>true</isconsumer>
+	<description>PLG_TECHJOOMLA_YAHOO_MAIL_API_DESC</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_techjoomlaAPI_plug_techjoomlaAPI_yahoo.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_techjoomlaAPI_plug_techjoomlaAPI_yahoo.ini</language>
+	</languages>
+	<files>
+		<file plugin="plug_techjoomlaAPI_yahoo">plug_techjoomlaAPI_yahoo.php</file>
+		<folder>plug_techjoomlaAPI_yahoo</folder>
+	</files>
+	<config name="params">
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/techjoomlaAPI/plug_techjoomlaAPI_yahoo/plug_techjoomlaAPI_yahoo/element/pathapi">
+				<field name="pathapi_yahoo" type="pathapi" label="PLG_TECHJOOMLA_YAHOO_MAIL_API_LINK_LBL" description="PLG_TECHJOOMLA_YAHOO_MAIL_API_LINK_DESC" />
+				<field name="appKey" type="text" default="" label="PLG_TECHJOOMLA_YAHOO_MAIL_CONSUMER_KEY_LBL" description="PLG_TECHJOOMLA_YAHOO_MAIL_CONSUMER_KEY_DESC" />
+				<field name="appSecret" type="text" default="" label="PLG_TECHJOOMLA_YAHOO_MAIL_CONSUMER_SECRET_KEY_LBL" description="PLG_TECHJOOMLA_YAHOO_MAIL_CONSUMER_SECRET_KEY_DESC" />
+				<field name="no_allowed_invites" type="text" default="10" label="PLG_TECHJOOMLA_YAHOO_MAIL_INVITATION_LIMIT_LBL" description="PLG_TECHJOOMLA_YAHOO_MAIL_INVITATION_LIMIT_DESC" />
+				<field name="log_file_path" type="hidden" default="PLG_TECHJOOMLA_YAHOO_MAIL_LOG_PATH_LBL" label="" description="PLG_TECHJOOMLA_YAHOO_MAIL_LOG_PATH_DESC" />
+				<field name="broadcast_limit" type="text" default="5" label="PLG_TECHJOOMLA_YAHOO_MAIL_BROADCAST_LBL" description="PLG_TECHJOOMLA_YAHOO_MAIL_BROADCAST_DESC" />
+				<field name="throttle_limit" default="" type="hidden" label="PLG_TECHJOOMLA_YAHOO_MAIL_THROTTLE_LIMIT_LBL" description="PLG_TECHJOOMLA_YAHOO_MAIL_THROTTLE_LIMIT_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

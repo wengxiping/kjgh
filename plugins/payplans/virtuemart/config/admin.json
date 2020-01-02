@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "addToShoppersGroupOnActive",
+				"type": "shoppersGroups",
+				"title": "COM_PP_APP_VIRTUEMART_ADD_SUBSCRIPTION_ACTIVE",
+				"tooltip": "COM_PP_APP_VIRTUEMART_ADD_SUBSCRIPTION_ACTIVE_DESC",
+				"default": ""
+			},
+			{
+				"name": "addToShoppersGroupOnHold",
+				"type": "shoppersGroups",
+				"title": "COM_PP_APP_VIRTUEMART_HOLD_SUBSCRIPTION_ACTIVE",
+				"tooltip": "COM_PP_APP_VIRTUEMART_HOLD_SUBSCRIPTION_ACTIVE_DESC",
+				"default": ""
+			},
+			{
+				"name": "addToShoppersGroupOnExpire",
+				"type": "shoppersGroups",
+				"title": "COM_PP_APP_VIRTUEMART_EXPIRE_SUBSCRIPTION_ACTIVE",
+				"tooltip": "COM_PP_APP_VIRTUEMART_EXPIRE_SUBSCRIPTION_ACTIVE_DESC",
+				"default": ""
+			}
+		]
+	}
+]

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>InviteX Package</name>
+	<author>Techjoomla</author>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>22nd Oct 2019</creationDate>
+	<packagename>invitex</packagename>
+	<version>3.0.12</version>
+	<packager>Techjoomla Team</packager>
+	<description />
+	<scriptfile>script.pkg_invitex.php</scriptfile>
+	<files>
+		<file type="component" id="com_invitex">components/com_invitex.zip</file>
+		<file type="plugin" id="invitex" group="actionlog" >plugins/actionlog/invitex.zip</file>
+		<file type="plugin" id="JS-menu" group="community" >plugins/community/JS-menu.zip</file>
+		<file type="plugin" id="userinfo" group="content" >plugins/content/userinfo.zip</file>
+		<file type="plugin" id="invitex" group="privacy" >plugins/privacy/invitex.zip</file>
+		<file type="plugin" id="plug_sys_invitex" group="system" >plugins/system/plug_sys_invitex.zip</file>
+		<file type="plugin" id="plug_invitex_sample_development" group="system" >plugins/system/plug_invitex_sample_development.zip</file>
+		<file type="plugin" id="plug_user_invitex" group="user" >plugins/user/plug_user_invitex.zip</file>
+		<file type="modules" id="mod_invite_anywhere" client="site" >modules/site/mod_invite_anywhere.zip</file>
+		<file type="modules" id="mod_invite_friends" client="site" >modules/site/mod_invite_friends.zip</file>
+		<file type="modules" id="mod_inviters" client="site" >modules/site/mod_inviters.zip</file>
+	</files>
+	<updateservers>
+		<server type="collection" priority="1" name="InviteX Package"><![CDATA[https://techjoomla.com/updates/stream/invitex.xml?format=xml]]></server>
+	</updateservers>
+</extension>

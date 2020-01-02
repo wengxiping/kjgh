@@ -1,0 +1,21 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "integration_key",
+				"type": "text",
+				"title": "Integration Key",
+				"tooltip": "In this section, you will need to paste the Integration Key which is provided to you on Ebanx",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

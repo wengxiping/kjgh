@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="categories">
+        <message><![CDATA[Shows list of categories  in the system.]]></message>
+    </layout>
+    <state>
+        <name>categories</name>
+        <description>categories</description>
+    </state>
+
+
+
+
+</metadata>

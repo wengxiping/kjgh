@@ -1,0 +1,104 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+// -----------------------
+// TEAM STYLE
+// -----------------------
+.acm-teams {
+	// Grid
+	> .row {
+		margin-bottom: -@grid-gutter-width / 2;
+		margin-top: -@grid-gutter-width / 2;
+
+		> div {
+			padding-top: @grid-gutter-width / 2;
+			padding-bottom: @grid-gutter-width / 2;
+		}
+	}
+
+	.teams-item {
+		background: @white;
+		text-align: center;
+		border-radius: @border-radius-base;
+
+		.avatar {
+			img {
+				width: 100%;
+				max-width: 100%;
+				border-top-left-radius: @border-radius-base;
+				border-top-right-radius: @border-radius-base;
+			}
+		}
+	}
+
+	.avatar {
+		img {
+			border-top-left-radius: @border-radius-base;
+			border-top-right-radius: @border-radius-base;
+		}
+	}
+
+	// Info
+	.member-info {
+		padding: @t3-global-padding;
+	}
+
+	.mod-bg-white & {
+		.member-info {
+			border: 1px solid @t3-border-color;
+			border-top: 0;
+		}
+	}
+
+	// Title
+	h4 {
+		margin-top: 0;
+
+		a {
+			color: @headings-color;
+
+			&:hover,&:focus,&:active {
+				color: @brand-primary;
+			}
+		}
+	}
+
+	// Position
+	.position {
+		display: block;
+		color: @brand-meta;
+		font-size: @font-size-h6;
+	}
+
+	// Link
+	.action-link-icon {
+		margin-top: @grid-gutter-width;
+	}
+
+	// Action
+	.teams-action {
+		text-align: center;
+		margin-top: @grid-gutter-width * 2;
+
+		// Mobile view
+		@media (max-width: @screen-xs-max){
+			margin-top: @grid-gutter-width;
+		}
+
+		b {
+			border-bottom: 1px solid @white;
+		}
+
+		a {
+			// Mobile view
+			@media (max-width: @screen-xs-max){
+				padding: @t3-global-padding;
+			}
+		}
+	}
+}

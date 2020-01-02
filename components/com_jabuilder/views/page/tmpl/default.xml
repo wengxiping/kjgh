@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+	
+	<layout title="JABUILDER_PAGE">
+			<message>JABUILDER_CHOOSE_A_SINGLE_PAGE</message>
+	</layout>
+
+		
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_jabuilder/models/fields">
+
+			<field 
+				name="id" 
+				type="pagesmodal"
+				label="Choose your page"
+				required="true"
+				edit="true"
+				clear="false"
+				description="Choose your page"
+			/>
+		</fieldset>
+	</fields>
+	
+</metadata>
+

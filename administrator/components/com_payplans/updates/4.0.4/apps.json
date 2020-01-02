@@ -1,0 +1,27 @@
+[
+	{
+		"table": "#__payplans_app",
+		"index": "idx_published",
+		"query": "ALTER TABLE `#__payplans_app` ADD INDEX `idx_published` (`published`);"
+	},
+	{
+		"table": "#__payplans_app",
+		"index": "idx_ordering",
+		"query": "ALTER TABLE `#__payplans_app` ADD INDEX `idx_ordering` (`ordering`);"
+	},
+	{
+		"table": "#__payplans_app",
+		"index": "idx_publish_order",
+		"query": "ALTER TABLE `#__payplans_app` ADD INDEX `idx_publish_order` (`published`,`ordering`);"
+	},
+	{
+		"table": "#__payplans_app",
+		"index": "idx_type",
+		"query": "ALTER TABLE `#__payplans_app` ADD INDEX `idx_type` (`type`);"
+	},
+	{
+		"table": "#__payplans_app",
+		"index": "idx_publish_type",
+		"query": "ALTER TABLE `#__payplans_app` ADD INDEX `idx_publish_type` (`type`, `published`);"
+	}
+]

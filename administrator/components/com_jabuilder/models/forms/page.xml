@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_menus/models/fields">
+		<field
+			name="id"
+			type="hidden" />
+		
+		<field name="title" type="text" label="JGLOBAL_TITLE"
+			description="JFIELD_TITLE_DESC"
+			class="input-xxlarge input-large-text"
+			size="40"
+			required="true" />
+
+		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+			size="40" />
+
+		<field name="slug" type="hidden" />
+		
+		<field name="state" type="list" label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC" class="chzn-color-state"
+			filter="intval" size="1" default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+
+		</field>
+		
+		<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" size="1" />
+		
+		<field	
+			name="menuid"
+			type="menuitem"
+			label="Menu Item"
+			description="Menu Item"
+			default="" >
+			<option value="">-- Create New --</option>
+		</field>
+		
+		<field
+			name="parent_id"
+			type="menuparent"
+			label="COM_MENUS_ITEM_FIELD_PARENT_LABEL"
+			description="COM_MENUS_ITEM_FIELD_PARENT_DESC"
+			default="1"
+			filter="int"
+			clientid="0"
+			size="1">
+			<option
+				value="1">COM_MENUS_ITEM_ROOT</option>
+		</field>
+		
+		<field
+			name="menutype"
+			type="menu"
+			label="COM_MENUS_ITEM_FIELD_ASSIGNED_LABEL"
+			description="COM_MENUS_ITEM_FIELD_ASSIGNED_DESC"
+			required="true"
+			size="1" 
+			>
+			<option value="">COM_MENUS_SELECT_MENU</option>
+		</field>
+
+		
+		<field
+			name="menuordering"
+			type="menuordering"
+			label="COM_MENUS_ITEM_FIELD_ORDERING_LABEL"
+			description="COM_MENUS_ITEM_FIELD_ORDERING_DESC"
+			filter="int"
+			size="1">
+		</field>
+		
+	</fieldset>
+	
+	<fieldset name="params">
+		
+		<field
+			name="meta_description"
+			type="textarea"
+			label="Meta description"
+			description="Meta description"/>
+				
+		<field 
+			name="meta_keywords"
+			type="textarea"
+			label="Meta keywords"
+			description="Meta keywords"/>
+				
+		<field name="robots"
+			type="list"
+			label="JFIELD_METADATA_ROBOTS_LABEL"
+			description="JFIELD_METADATA_ROBOTS_DESC" >
+			
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+			<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+			<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+			<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+		</field>
+		
+		<field
+			name="template_style_id"
+			type="templatestyle"
+			label="COM_MENUS_ITEM_FIELD_TEMPLATE_LABEL"
+			description="COM_MENUS_ITEM_FIELD_TEMPLATE_DESC"
+			filter="int"
+			>
+			<option value="0">JOPTION_USE_DEFAULT</option>
+		</field>
+		
+		<field	
+			name="feature_image"
+			type="media"
+			label="Feature Image"
+			description="Feature Image"
+			default="" />
+	</fieldset>
+</form>

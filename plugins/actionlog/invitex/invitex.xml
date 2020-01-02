@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.9" type="plugin" group="actionlog" method="upgrade">
+	<name>plg_actionlog_invitex</name>
+	<author>Techjoomla</author>
+	<creationDate>22nd Oct 2019</creationDate>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<version>3.0.12</version>
+	<description>PLG_ACTIONLOG_INVITEX_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="invitex">invitex.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_actionlog_invitex.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_actionlog_invitex.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="logActionForImportingContacts" type="radio" label="PLG_ACTIONLOG_INVITEX_LOG_ACTION_IMPORTING_CONTACTS_LBL" description="PLG_ACTIONLOG_INVITEX_LOG_ACTION_IMPORTING_CONTACTS_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logActionForSendingInvitations" type="radio" label="PLG_ACTIONLOG_INVITEX_LOG_ACTION_SENDING_INVITATIONS_LBL" description="PLG_ACTIONLOG_INVITEX_LOG_ACTION_SENDING_INVITATIONS_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logActionForUnsubscribe" type="radio" label="PLG_ACTIONLOG_INVITEX_LOG_ACTION_UNSUBSCRIBE_LBL" description="PLG_ACTIONLOG_INVITEX_LOG_ACTION_UNSUBSCRIBE_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logActionForDeleteInvitation" type="radio" label="PLG_ACTIONLOG_INVITEX_LOG_ACTION_DELETE_INVITATION_LBL" description="PLG_ACTIONLOG_INVITEX_LOG_ACTION_DELETE_INVITATION_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logActionForSaveInviteTemplateConfig" type="radio" label="PLG_ACTIONLOG_INVITEX_LOG_ACTION_SAVE_TEMPLATE_CONFIG_LBL" description="PLG_ACTIONLOG_INVITEX_LOG_ACTION_SAVE_TEMPLATE_CONFIG_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logActionForUserResubscribe" type="radio" label="PLG_ACTIONLOG_INVITEX_LOG_ACTION_SAVE_USER_RESUBSCRIBE_LBL" description="PLG_ACTIONLOG_INVITEX_LOG_ACTION_SAVE_USER_RESUBSCRIBE_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logActionForManualReminder" type="radio" label="PLG_ACTIONLOG_INVITEX_LOG_ACTION_REMINDER_EMAIL_LBL" description="PLG_ACTIONLOG_INVITEX_LOG_ACTION_REMINDER_EMAIL_DESC" default="1" class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

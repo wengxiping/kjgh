@@ -1,0 +1,139 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+
+// GLOBAL STYLE
+// ---------------------
+.title-lead {
+  background: -webkit-linear-gradient(135deg, @headings-color , @headings-color);
+  background: linear-gradient(135deg, @headings-color , @headings-color);
+	background-clip: text;
+  text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+// Title Intro
+.title-intro,
+.latestnews.list .article-field,
+.latestnews.list .created-by span {
+	color: rgba(0,0,0,0.4);
+}
+
+// Mask Image
+.img-mask {
+  .img-wrap {
+    &:before {
+      display: none;
+    }
+
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    &:hover {
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+// Offcanvas
+div.t3-off-canvas .t3-off-canvas-body .module-title {
+  border-color: rgba(0,0,0,0.4);
+}
+
+// MODULE
+// --------------
+// Head Search
+.head-right .search .form-control {
+  background-image: url('../../@{t3-image-path}/ico/search-gray.png')!important;
+  background-position: 10px center!important;
+  background-repeat: no-repeat!important;
+  color: @text-color;
+}
+
+// Acymailing
+.acymailing_module .acymailing_form .acysubbuttons .button {
+  background: @headings-color;
+
+  &:hover,&:focus,&:active {
+    background: darken(@headings-color,10%);
+  }
+}
+
+
+// ACM STYLE
+.t3-wrapper {
+	// ACM Features
+  .acm-features {
+    &.style-1 {
+      .item-svg .item__svg {
+        fill: @brand-light;
+      }
+
+      .features-action a {
+        color: rgba(0,0,0,0.4);
+        .transition(none);
+
+        &:hover,&:focus,&:active {
+          color: @white;
+        }
+      }
+    }
+
+    &.style-2 {
+      .owl-nav > div {
+        color: rgba(0,0,0,0.4);
+
+        &:hover,&:focus,&:active {
+          color: @white;
+        }
+      }
+    }
+  }
+
+  // ACM HERO
+  .acm-hero .hero-title {
+    text-transform: uppercase;
+  }
+
+  // ACM Video
+  .acm-video .video {
+    span {
+      background: transparent;
+    }
+
+    .img-thumb {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+
+  // ACM Event
+  .acm-events .event-item .event-link a {
+  	color: rgba(0,0,0,0.4);
+
+  	&:hover,&:focus,&:active {
+  		color: @white;
+  	}
+  }
+
+  // ACM Tabs
+  .acm-container-tabs .container-tabs-nav .nav-tabs > li {
+    > a {
+      color: rgba(0,0,0,0.4);
+    }
+
+    &.active {
+      > a {
+        color: @white;
+      }
+    }
+  }
+}

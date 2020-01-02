@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system">
+	<name>System - EasySocial AutoLogin</name>
+	<author>Stack Ideas Sdn Bhd</author>
+	<creationDate>30/06/2017</creationDate>
+	<copyright>Copyright (C) 2010 - 2017 Stack Ideas Sdn Bhd</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://stackideas.com</authorUrl>
+	<version>2.0.0</version>
+	<description><![CDATA[This plugin allows users who are connected to Facebook on the site to be automatically logged in]]></description>
+	<files>
+		<filename plugin="easysocialautologin">easysocialautologin.php</filename>
+	</files>
+	<config>
+	</config>
+</extension>

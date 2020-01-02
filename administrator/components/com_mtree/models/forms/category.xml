@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="metadata" label="" addfieldpath="/administrator/components/com_mtree/elements">
+
+        <field name="cat_approved" type="radio"
+            class="btn-group"
+            default="1"
+            description=""
+            label="COM_MTREE_APPROVED"
+            size="1"
+        >
+            <option value="1">COM_MTREE_APPROVED</option>
+            <option value="0">COM_MTREE_NOT_APPROVED</option>
+        </field>
+
+        <field name="cat_published" type="radio"
+            class="btn-group"
+            default="1"
+            description=""
+            label="COM_MTREE_PUBLISHED"
+            size="1"
+        >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field name="cat_featured" type="radio"
+            class="btn-group"
+            default="0"
+            description=""
+            label="COM_MTREE_FEATURED"
+            size="1"
+        >
+            <option value="1">COM_MTREE_FEATURED</option>
+            <option value="0">COM_MTREE_NOT_FEATURED</option>
+        </field>
+
+        <field name="cat_allow_submission" type="radio"
+            class="btn-group"
+            default="1"
+            description=""
+            label="COM_MTREE_ALLOW_SUBMISSION"
+            size="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field name="cat_show_listings" type="radio"
+            class="btn-group"
+            default="1"
+            description=""
+            label="COM_MTREE_SHOW_LISTINGS"
+            size="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field name="cat_usemainindex" type="radio"
+            class="btn-group"
+            default="0"
+            description=""
+            label="COM_MTREE_USE_MAIN_INDEX_TEMPLATE_PAGE"
+            size="1"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field
+            name="alias"
+            type="text"
+            label="COM_MTREE_ALIAS"
+            description=""
+            class=""
+            size="40" />
+
+        <field
+            name="title"
+            type="text"
+            label="COM_MTREE_CUSTOM_TITLE"
+            description=""
+            class=""
+            size="40" />
+
+        <field
+            name="cat_template"
+            type="mttemplate"
+            label="COM_MTREE_TEMPLATE"
+            description=""
+            class=""
+            size="" />
+
+        <field
+                name="template_all_subcats"
+                type="checkbox" />
+
+        <field
+            name="metadesc"
+            type="textarea"
+            label="COM_MTREE_META_DESCRIPTION"
+            description=""
+            rows="3"
+            cols="40"/>
+
+        <field
+            name="metakey"
+            type="textarea"
+            label="COM_MTREE_META_KEYWORDS"
+            description=""
+            rows="3"
+            cols="40"/>
+    </fieldset>
+</form>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" method="upgrade" type="plugin" group="system">
+	<name>System - InviteX</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>22nd Oct 2019</creationDate>
+	<version>3.0.12</version>
+	<description>This system plugin is for setting cookie and redirection. Also, it lets you send emails without setting up a cron job in cpanel.</description>
+	<files>
+		<filename plugin="plug_sys_invitex">plug_sys_invitex.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plug_sys_invitex.ini</language>
+	</languages>
+	<config name="params">
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="crontime" type="text" default="60" label="CRON_INTERVAL_LBL" description="CRON_INTERVAL_DESC" />
+				<field name="crontime_for_message" type="text" default="60" label="CRON_INTERVAL_FOR_SOCIAL_LBL" description="CRON_INTERVAL_FOR_SOCIAL_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="techjoomlaAPI" method="upgrade">
+	<name>PLG_TECHJOOMLAAPI_PLUG_TECHJOOMLAAPI_SMS_NAME</name>
+	<author>Techjoomla</author>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<creationDate>9th Jan 2019</creationDate>
+	<version>3.0.0</version>
+	<description>PLG_TECHJOOMLAAPI_PLUG_TECHJOOMLAAPI_SMS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="plug_techjoomlaAPI_sms">plug_techjoomlaAPI_sms.php</filename>
+		<folder>plug_techjoomlaAPI_sms</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_techjoomlaAPI_plug_techjoomlaAPI_sms.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_techjoomlaAPI_plug_techjoomlaAPI_sms.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/techjoomlaAPI/plug_techjoomlaAPI_sms/plug_techjoomlaAPI_sms/elements">
+			<fieldset name="basic">
+				<field name="display_name" type="text" default="SMS" label="PLG_TECHJOOMLAAPI_SMS_OPTIONS_DISPLAY_NAME" description="PLG_TECHJOOMLAAPI_SMS_OPTIONS_DESC_DISPLAY_NAME" />
+				<field name="sms_options" type="smsplg" default="" label="PLG_TECHJOOMLAAPI_SMS_OPTIONS_DESC_NAME" description="PLG_TECHJOOMLAAPI_SMS_OPTIONS_DESC" />
+				<field name="throttle_limit" type="text" default="10" label="PLG_TECHJOOMLA_SMS_API_THROTTLE_LIMIT" description="PLG_TECHJOOMLA_SMS_API_THROTTLE_LIMIT_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

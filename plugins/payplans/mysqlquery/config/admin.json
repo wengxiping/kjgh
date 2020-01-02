@@ -1,0 +1,105 @@
+[
+	{
+		"title": "COM_PP_MYSQL_QUERY_DATABASE",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "use_default_db",
+				"type": "dependency",
+				"title": "Database Location",
+				"tooltip": "This option determines if the queries executed should be executed on the current Joomla database or an external database",
+				"default": "1",
+				"options": [
+					{
+						"title": "Current Site Database",
+						"value": "1"
+					},
+					{
+						"title": "Other Databases",
+						"value": "0",
+						"for": "data-db-others"
+					}
+				]
+			},
+			{
+				"name": "db_host",
+				"type": "text",
+				"attributes": "data-db-others",
+				"title": "Host Name",
+				"tooltip": "Enter the host name to your database. If you are connecting to a local database, it should be set to localhost or 127.0.0.1",
+				"default": ""
+			},
+			{
+				"name": "db_name",
+				"type": "text",
+				"attributes": "data-db-others",
+				"title": "Database Name",
+				"tooltip": "Enter the name of your database. It is case sensitive and should be a valid database",
+				"default": ""	
+			},
+			{
+				"name": "db_username",
+				"type": "text",
+				"attributes": "data-db-others",
+				"title": "Username",
+				"tooltip": "Your database username used to connect to the database",
+				"default": ""
+			},
+			{
+				"name": "db_password",
+				"type": "password",
+				"attributes": "data-db-others",
+				"title": "Password",
+				"tooltip": "Your database password used to connect to the database",
+				"default": ""	
+			},
+			{
+				"name": "table_prefix",
+				"type": "text",
+				"attributes": "data-db-others",
+				"title": "Table Prefix",
+				"tooltip": "If your database tables has a custom prefix, you may enter the prefix here.",
+				"default": ""	
+			}
+		]
+	},
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_BEING_ACTIVATED",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "queryOnActive",
+				"type": "textarea",
+				"title": "COM_PP_MYSQL_QUERY_TO_EXECUTE",
+				"tooltip": "COM_PP_MYSQL_QUERY_TO_EXECUTE_DESC",
+				"default": ""
+			}
+		]
+	},
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_BEING_SET_TO_HOLD",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "queryOnHold",
+				"type": "textarea",
+				"title": "COM_PP_MYSQL_QUERY_TO_EXECUTE",
+				"tooltip": "COM_PP_MYSQL_QUERY_TO_EXECUTE_DESC",
+				"default": ""
+			}
+		]
+	},
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_EXPIRED",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "queryOnExpire",
+				"type": "textarea",
+				"title": "COM_PP_MYSQL_QUERY_TO_EXECUTE",
+				"tooltip": "COM_PP_MYSQL_QUERY_TO_EXECUTE_DESC",
+				"default": ""
+			}
+		]
+	}
+]

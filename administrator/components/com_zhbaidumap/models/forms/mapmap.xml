@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_zhbaidumap/models/rules"
+>
+        <fieldset name="mapmain">
+                <field
+                        name="id"
+                        type="hidden"
+                />
+                <field
+                        name="title"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_TITLE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_TITLE_DESC"
+                        size="50"
+                        class="inputbox span10"
+                        required="true"
+                        default=""
+                />
+                <field
+                        name="description"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_DESCRIPTION_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_DESCRIPTION_DESC"
+                        size="90"
+                        class="inputbox span10"
+                        required="false"
+                        default=""
+                />	
+                <field
+                        name="latitude"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_LATITUDE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_LATITUDE_DESC"
+                        size="30"
+                        class="inputbox"
+                        required="true"
+                        default=""
+                />
+                <field
+                        name="longitude"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_LONGITUDE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_LONGITUDE_DESC"
+                        size="30"
+                        class="inputbox"
+                        required="true"
+                        default=""
+                />
+		
+                <field
+                        name="width"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_WIDTH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_WIDTH_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default=""
+                />
+                <field
+                        name="height"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HEIGHT_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HEIGHT_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default=""
+                />
+		    
+        </fieldset>
+	
+        <fieldset name="details">
+
+                <field
+                        name="balloon"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_BALLOON_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_BALLOON_DESC"
+                        size="1"
+                        required="true"
+                        default="1"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_BALLOON_NONE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_BALLOON_DROP</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_BALLOON_BOUNCE</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_BALLOON_SIMPLE</option>
+                </field>
+                <field
+                        name="openballoon"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_OPENBALLOON_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_OPENBALLOON_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="disableautopan"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_DISABLEAUTOPAN_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_DISABLEAUTOPAN_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>		
+                <field
+                        name="mapbounds"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MAPBOUNDS_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MAPBOUNDS_DESC"
+                        size="90"
+                        class="inputbox span5"
+                        required="false"
+                        default=""
+                />
+                <field
+                        name="zoom"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_ZOOM_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_ZOOM_DESC"
+                        size="1"
+                        required="true"
+                        default="14"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">0</option>
+                        <option	value="1">1</option>
+                        <option	value="2">2</option>
+                        <option	value="3">3</option>
+                        <option	value="4">4</option>
+                        <option	value="5">5</option>
+                        <option	value="6">6</option>
+                        <option	value="7">7</option>
+                        <option	value="8">8</option>
+                        <option	value="9">9</option>
+                        <option	value="10">10</option>
+                        <option	value="11">11</option>
+                        <option	value="12">12</option>
+                        <option	value="13">13</option>
+                        <option	value="14">14</option>
+                        <option	value="15">15</option>
+                        <option	value="16">16</option>
+                        <option	value="17">17</option>
+                        <option	value="18">18</option>
+                        <option	value="19">19</option>
+                        <option	value="20">20</option>
+                        <option	value="21">21</option>
+                </field>
+                <field
+                        name="minzoom"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MINZOOM_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MINZOOM_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_ZOOM_MINZOOM</option>
+                        <option	value="1">1</option>
+                        <option	value="2">2</option>
+                        <option	value="3">3</option>
+                        <option	value="4">4</option>
+                        <option	value="5">5</option>
+                        <option	value="6">6</option>
+                        <option	value="7">7</option>
+                        <option	value="8">8</option>
+                        <option	value="9">9</option>
+                        <option	value="10">10</option>
+                        <option	value="11">11</option>
+                        <option	value="12">12</option>
+                        <option	value="13">13</option>
+                        <option	value="14">14</option>
+                        <option	value="15">15</option>
+                        <option	value="16">16</option>
+                        <option	value="17">17</option>
+                        <option	value="18">18</option>
+                        <option	value="19">19</option>
+                        <option	value="20">20</option>
+                        <option	value="21">21</option>
+                </field>
+                <field
+                        name="maxzoom"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MAXZOOM_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MAXZOOM_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_ZOOM_MAXZOOM</option>
+                        <option	value="1">1</option>
+                        <option	value="2">2</option>
+                        <option	value="3">3</option>
+                        <option	value="4">4</option>
+                        <option	value="5">5</option>
+                        <option	value="6">6</option>
+                        <option	value="7">7</option>
+                        <option	value="8">8</option>
+                        <option	value="9">9</option>
+                        <option	value="10">10</option>
+                        <option	value="11">11</option>
+                        <option	value="12">12</option>
+                        <option	value="13">13</option>
+                        <option	value="14">14</option>
+                        <option	value="15">15</option>
+                        <option	value="16">16</option>
+                        <option	value="17">17</option>
+                        <option	value="18">18</option>
+                        <option	value="19">19</option>
+                        <option	value="20">20</option>
+                        <option	value="21">21</option>
+                </field>
+                <field
+                        name="draggable"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_DRAGGABLE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_DRAGGABLE_DESC"
+                        size="30"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="maptype"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPE_DESC"
+                        size="1"
+                        required="true"
+                        default="1"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPE_NORMAL</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPE_SATELLITE</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPE_HYBRID</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPE_PERSPECTIVE</option>
+                </field>
+                <field
+                        name="openstreet"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_OPENSTREET_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_OPENSTREET_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                </field>
+                <field
+                        name="custommaptype"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_CUSTMAPTYPE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_CUSTMAPTYPE_DESC"
+                        size="40"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_CUSTMAPTYPE_NO</option>
+                </field>
+		<field
+			name="catid"
+			type="category"
+			extension="com_zhbaidumap"
+			class="inputbox span5"
+			default=""
+			label="COM_ZHBAIDUMAP_MAP_DETAIL_CATEGORY_LABEL"
+			description="COM_ZHBAIDUMAP_MAP_DETAIL_CATEGORY_DESC"
+			required="false"
+                    >
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+        </fieldset>
+
+
+        <fieldset name="mapmarker">
+		<field
+                        name="markerorder"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge span5"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_TITLE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_ORDERING</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_ORDERING_DESC</option>
+                        <option	value="10">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_USERORDER</option>
+                        <option	value="20">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_GROUP_TITLE</option>
+                        <option	value="21">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_GROUP_TITLE_DESC</option>
+                        <option	value="22">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_GROUP_ORDERING</option>
+                        <option	value="23">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_GROUP_ORDERING_DESC</option>
+                        <option	value="30">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_DATE_CREATE</option>
+                        <option	value="31">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERORDER_DATE_CREATE_DESC</option>
+                </field>	    
+                <field
+                        name="markercluster"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERCLUSTER_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERCLUSTER_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="clusterzoom"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_CLUSTERZOOM_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_CLUSTERZOOM_DESC"
+                        size="1"
+                        required="true"
+                        default="12"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_ZOOM_ALLZOOM</option>
+                        <option	value="1">1</option>
+                        <option	value="2">2</option>
+                        <option	value="3">3</option>
+                        <option	value="4">4</option>
+                        <option	value="5">5</option>
+                        <option	value="6">6</option>
+                        <option	value="7">7</option>
+                        <option	value="8">8</option>
+                        <option	value="9">9</option>
+                        <option	value="10">10</option>
+                        <option	value="11">11</option>
+                        <option	value="12">12</option>
+                        <option	value="13">13</option>
+                        <option	value="14">14</option>
+                        <option	value="15">15</option>
+                        <option	value="16">16</option>
+                        <option	value="17">17</option>
+                        <option	value="18">18</option>
+                        <option	value="19">19</option>
+                        <option	value="20">20</option>
+                        <option	value="21">21</option>
+                </field>
+                <field
+                        name="markerclustergroup"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERCLUSTERGROUP_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERCLUSTERGROUP_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+               <field
+                        name="showcreateinfo"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_LABEL"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge span5"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_NO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_USER</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_DATETIME</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_DATETIMEUSER</option>
+                        <option	value="51">COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_AUSER</option>
+                        <option	value="52">COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_ADATETIME</option>
+                        <option	value="53">COM_ZHBAIDUMAP_MAP_DETAIL_SHOWCREATEINFO_ADATETIMEUSER</option>
+                </field>		
+        </fieldset>
+        <fieldset name="mapmarkerlist">
+                <field
+                        name="markerlistwidth"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_WIDTH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_WIDTH_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="markerlistheight"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_HEIGHT_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_HEIGHT_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="markerlistpos"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_NONE</option>	
+
+                        <!--<option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_LEFT</option>-->
+                        <!--<option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_RIGHT</option>-->
+                        <!--<option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>-->
+                        <!--<option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>-->
+
+                        <!--<option	value="111">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_LEFT</option>-->
+                        <!--<option	value="112">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_RIGHT</option>-->
+                        <!--<option	value="113">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_LIST_MAP</option>-->
+                        <!--<option	value="114">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_MAP_LIST</option>-->
+                        <!--<option	value="121">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_EXTERNAL</option>-->
+                        <!--<option	value="120">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTPOS_PANEL</option>-->
+					
+                </field>
+                <field
+                        name="markerlist"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_SIMPLE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_ADVANCED</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLISTSTYLE_EXTERNAL</option>
+                </field>
+                <field
+                        name="markerlistbgcolor"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BACKGROUND_COLOR_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BACKGROUND_COLOR_DESC"
+                        size="90"
+                        class="inputbox"
+                        required="false"
+                        default=""
+                />
+                <field
+                        name="markerlistaction"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CLICK</option>
+                        <option	value="11">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER_CLICK</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER_ANIMATE</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CLICK_ANIMATE</option>
+                        <option	value="12">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_ACTIONBYCLICK_CENTER_CLICK_ANIMATE</option>
+                </field>
+                <field
+                        name="markerlistcontent"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge span5"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEDESC</option>
+                        <option	value="5">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEDESC2</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLE</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESC</option>
+                        <option	value="6">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESC2</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESCTABLE</option>
+                        <option	value="7">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_ICONTITLEDESCTABLE2</option>
+                        <option	value="11">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGE</option>
+                        <option	value="12">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGEDESC</option>
+                        <option	value="16">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TITLEIMAGEDESC2</option>
+                        <option	value="13">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLE</option>
+                        <option	value="14">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESC</option>
+                        <option	value="17">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESC2</option>
+                        <option	value="15">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESCTABLE</option>
+                        <option	value="18">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_IMAGETITLEDESCTABLE2</option>
+                        <option	value="101">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLE</option>
+                        <option	value="102">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLEDESC</option>
+                        <option	value="103">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_CONTENT_TABLETITLEDESC2</option>
+                </field>
+                <field
+                        name="markerlistbuttontype"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_OPEN</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_ICON</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_TEXT</option>
+                        <option	value="11">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_ICONOPEN</option>
+                        <option	value="12">COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_BUTTON_TEXTOPEN</option>
+                </field>
+                <field
+                        name="markerlistsearch"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_SEARCH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKLIST_SEARCH_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+				
+        </fieldset>
+	
+        <fieldset name="mapmarkergroup">
+                <field
+                        name="markergroupcontrol"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_NONE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_LEFT</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_TOP</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_RIGHT</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_BOTTOM</option>
+                        <option	value="5">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_GROUP_MAP</option>
+                        <option	value="6">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_MAP_GROUP</option>
+                        <option	value="10">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_EXTERNAL</option>
+                        <option	value="120">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_PANEL</option>
+                </field>
+                <field
+                        name="markergrouptype"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPTYPE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPTYPE_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPTYPE_TOGGLE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPTYPE_ONLYONE</option>
+                </field>		
+                <field
+                        name="markergroupctlmarker"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_MARKER_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_MARKER_DESC"
+                        size="80"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="markerlistsync"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROLSYNC_MARKERLIST_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROLSYNC_MARKERLIST_DESC"
+                        size="80"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>		
+                <field
+                        name="markergroupctlpath"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                        <!--<option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_KML</option>-->
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_SHAPE</option>
+                        <!--<option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCONTROL_PATH_KML_SHAPE</option>-->
+                </field>
+                <field
+                        name="markergrouporder"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPORDER_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPORDER_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPORDER_TITLE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPORDER_ORDERING</option>
+                        <option	value="10">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPORDER_USERORDER</option>
+                </field>		
+                <field
+                        name="markergroupwidth"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPWIDTH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPWIDTH_DESC"
+                        size="1"
+                        required="true"
+                        default="20"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">0</option>
+                        <option	value="5">5</option>
+                        <option	value="10">10</option>
+                        <option	value="15">15</option>
+                        <option	value="20">20</option>
+                        <option	value="25">25</option>
+                        <option	value="30">30</option>
+                        <option	value="35">35</option>
+                        <option	value="40">40</option>
+                        <option	value="45">45</option>
+                        <option	value="50">50</option>
+                </field>
+                <field
+                        name="markergroupshowicon"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_DESC"
+                        size="1"
+                        required="true"
+                        default="1"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON</option>
+                </field>
+                <field
+                        name="markergroupshowiconall"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICONALL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICONALL_DESC"
+                        size="1"
+                        required="true"
+                        default="100"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="100">JNO</option>
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_TEXTICON</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSHOWICON_ICON</option>
+                </field>
+                <field
+                        name="markergroupsearch"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSEARCH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSEARCH_DESC"
+                        size="80"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>		
+                <field
+                        name="markergroupcss"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCSS_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCSS_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCSS_SIMPLE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCSS_ADVANCED</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPCSS_EXTERNAL</option>
+                </field>
+                <field
+                        name="markergrouptitle"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPTITLE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPTITLE_DESC"
+                        type="text"
+                        size="80"
+                        class="inputbox span10"
+                        required="false"
+                        default=""
+                />
+                <field
+                        name="markergroupdesc1"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPDESC1_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPDESC1_DESC"
+                        type="text"
+                        size="80"
+                        class="inputbox span10"
+                        required="false"
+                        default=""
+                />
+                <field
+                        name="markergroupsep1"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSEP1_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSEP1_DESC"
+                        size="80"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="markergroupsep2"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSEP2_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPSEP2_DESC"
+                        size="80"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="markergroupdesc2"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPDESC2_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MARKERGROUPDESC2_DESC"
+                        type="text"
+                        size="80"
+                        class="inputbox span10"
+                        required="false"
+                        default=""
+                />
+
+
+        </fieldset>
+
+        <fieldset name="mapadvanced">
+	<field
+                        name="hovermarker"
+			type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HOVERTEXT_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HOVERTEXT_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                <!--	<option	value="1">COM_ZHBAIDUMAP_MAPMARKER_DETAIL_ACTIONBYCLICK_INFO</option>-->
+                <!--	<option	value="2">COM_ZHBAIDUMAP_MAPMARKER_DETAIL_ACTIONBYCLICK_INFOBUBBLE</option> -->
+                </field>
+		<!--<field
+					name="hoverinfobubble"
+					type="list"
+                    size="1"
+					label="COM_ZHBAIDUMAP_MAP_DETAIL_INFOBUBBLESTYLE_LABEL"
+					description="COM_ZHBAIDUMAP_MAP_DETAIL_INFOBUBBLESTYLE_DESC"
+					required="false"
+					class="lst-dropdown-sinlge"
+                />  -->
+				
+		<field
+                        name="panelinfowin"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PANELINFO_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PANELINFO_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_PANELINFO_DEFAULT</option>
+                <!--	<option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_PANELINFO_PANEL</option>-->
+                </field>
+                <field
+                        name="panelwidth"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PANELWIDTH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PANELWIDTH_DESC"
+                        size="90"
+                        class="inputbox"
+                        required="true"
+                        default="300"
+                />				
+                <field
+                        name="panelstate"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PANELSTATE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PANELSTATE_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="useajaxobject"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAXOBJECT_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAXOBJECT_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAX_MOOTOOLS</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAX_JQUERY</option>
+                </field>	    
+		<field
+                        name="ajaxgetplacemark"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_AJAXGETPLACEMARK_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_AJAXGETPLACEMARK_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge span4"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_AJAXGETPLACEMARK_ALL</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_AJAXGETPLACEMARK_ALL2STEP</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_AJAXGETPLACEMARK_MAPBOUNDS</option>
+                </field>				
+                <field
+                        name="ajaxbufferplacemark"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_AJAXBUFFERPLACEMARK_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_AJAXBUFFERPLACEMARK_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="100">100</option>
+                        <option	value="200">200</option>
+                        <option	value="300">300</option>
+                        <option	value="400">400</option>
+                        <option	value="500">500</option>
+                        <option	value="600">600</option>
+                        <option	value="700">700</option>
+                        <option	value="800">800</option>
+                        <option	value="900">900</option>
+                        <option	value="1000">1000</option>
+                        <option	value="1100">1100</option>
+                        <option	value="1200">1200</option>
+                        <option	value="1300">1300</option>
+                        <option	value="1400">1400</option>
+                        <option	value="1500">1500</option>
+                        <option	value="1600">1600</option>
+                        <option	value="1700">1700</option>
+                        <option	value="1800">1800</option>
+                        <option	value="1900">1900</option>
+                        <option	value="2000">2000</option>
+                </field>
+                <field
+                        name="ajaxbufferpath"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_AJAXBUFFERPATH_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_AJAXBUFFERPATH_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="100">100</option>
+                        <option	value="200">200</option>
+                        <option	value="300">300</option>
+                        <option	value="400">400</option>
+                        <option	value="500">500</option>
+                        <option	value="600">600</option>
+                        <option	value="700">700</option>
+                        <option	value="800">800</option>
+                        <option	value="900">900</option>
+                        <option	value="1000">1000</option>
+                        <option	value="1100">1100</option>
+                        <option	value="1200">1200</option>
+                        <option	value="1300">1300</option>
+                        <option	value="1400">1400</option>
+                        <option	value="1500">1500</option>
+                        <option	value="1600">1600</option>
+                        <option	value="1700">1700</option>
+                        <option	value="1800">1800</option>
+                        <option	value="1900">1900</option>
+                        <option	value="2000">2000</option>
+                </field>		
+                <field
+                        name="useajax"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAX_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAX_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAX_MOOTOOLS</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_USEAJAX_JQUERY</option>
+                </field>               
+	    
+	    
+		<field
+                        name="usermarkersfilter"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERFILTER_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERFILTER_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERFILTER_ALL</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERFILTER_YES</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERFILTER_ACL</option>
+                </field>
+                <field
+                        name="usermarkers"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKER_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKER_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKER_NO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKER_ALL</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKER_ALL_NO_LOGIN_INFO</option>
+                </field>
+                <field
+                        name="usermarkersinsert"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERINS_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERINS_DESC"
+                        size="30"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="usermarkersupdate"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERUPD_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERUPD_DESC"
+                        size="30"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="usermarkersdelete"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERDEL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERDEL_DESC"
+                        size="30"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>		
+                <field
+                        name="usermarkerspublished"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERPUBLISHED_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERPUBLISHED_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERPUBLISHED_NO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERPUBLISHED_YES</option>
+                </field>
+                <field
+                        name="usercontactpublished"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACTPUBLISHED_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACTPUBLISHED_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACTPUBLISHED_NO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACTPUBLISHED_YES</option>
+                </field>
+                <field
+                        name="usermarkersicon"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERICON_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERMARKERICON_DESC"
+                        size="40"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="cssclassname"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_CSSCLASSNAME_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_CSSCLASSNAME_DESC"
+                        type="text"
+                        size="40"
+                        class="inputbox span4"
+                        required="false"
+                        default=""
+                />
+                <field 
+                        name="css2load" 
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_ADD_CSS_LABEL" 
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_ADD_CSS_DESC" 
+                        type="textarea" 
+                        rows="4"
+                        cols="50"
+                        size="200"
+                        required="false"
+                        class="inputbox span4"
+                        default=""
+                />
+                <field 
+                        name="js2load" 
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_ADD_JS_LABEL" 
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_ADD_JS_DESC" 
+                        type="textarea" 
+                        rows="4"
+                        cols="50"
+                        size="200"
+                        required="false"
+                        class="inputbox span4"
+                        default=""
+                />	
+                <field
+                        name="placemark_rating"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKRATING_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_PLACEMARKRATING_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">JNO</option>
+                </field>	
+
+                <field
+                        name="override_id"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MAPOVERRIDE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MAPOVERRIDE_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MAPOVERRIDE_DEFAULT</option>
+                </field>							
+        </fieldset>
+
+        <fieldset name="mapgeolocation">
+                <field
+                        name="autoposition"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_AUTOPOSITION_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_AUTOPOSITION_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="geolocationcontrol"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONCONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONCONTROL_DESC"
+                        size="30"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="geolocationbutton"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONBUTTON_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONBUTTON_DESC"
+                        size="1"
+                        required="true"
+                        default="1"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONBUTTON_ICON</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONBUTTON_TEXT</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONBUTTON_ICONTEXT</option>
+                </field>
+        </fieldset>
+		
+        <fieldset name="positions">
+                <field
+                        name="maptypepos"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_POSMAPTYPE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_POSMAPTYPE_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_POS_DEFAULT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+                </field>
+                <field
+                        name="maptypeofsx"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPEOFX_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPEOFX_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="maptypeofsy"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPEOFY_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPEOFY_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="navigationpos"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_POSNAVIGATION_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_POSNAVIGATION_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_POS_DEFAULT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+                </field>
+                <field
+                        name="navigationofsx"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONOFX_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONOFX_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="navigationofsy"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONOFY_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONOFY_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="scalepos"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_POSSCALE_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_POSSCALE_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_POS_DEFAULT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+                </field>
+                <field
+                        name="scaleofsx"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_SCALEOFX_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_SCALEOFX_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="scaleofsy"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_SCALEOFY_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_SCALEOFY_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="geolocationpos"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_POS_GEOLOCATION_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_POS_GEOLOCATION_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_POS_DEFAULT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+                </field>
+                <field
+                        name="geolocationofsx"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONOFX_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONOFX_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="geolocationofsy"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONOFY_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_GEOLOCATIONOFY_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+		
+                <field
+                        name="mapcentercontrolpos"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROLPOS_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROLPOS_DESC"
+                        size="1"
+                        required="true"
+                        default="2"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_POS_DEFAULT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+                </field>
+		
+                <field
+                        name="mapcentercontrolofsx"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROLOFX_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROLOFX_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="mapcentercontrolofsy"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROLOFY_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROLOFY_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+				
+                 <field
+                        name="overlayopacitycontrolpos"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLPOS_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLPOS_DESC"
+                        size="1"
+                        required="true"
+                        default="2"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_POS_DEFAULT</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_LEFT</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_POS_TOP_RIGHT</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_LEFT</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_POS_BOTTOM_RIGHT</option>
+                </field> 		
+		
+                <field
+                        name="overlayopacitycontrolofsx"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLOFX_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLOFX_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+                <field
+                        name="overlayopacitycontrolofsy"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLOFY_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROLOFY_DESC"
+                        size="10"
+                        class="inputbox"
+                        required="true"
+                        default="0"
+                />
+				
+        </fieldset>
+
+
+        <fieldset name="mapdecor">
+                  <field
+                        name="maptypecontrol"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPECONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPECONTROL_DESC"
+                        size="1"
+                        required="true"
+                        default="9"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPECONTROL_NONE</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPECONTROL_HORIZONTAL_BAR</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPECONTROL_DROPDOWN_MENU</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPECONTROL_MAP</option>
+                        <option	value="9">COM_ZHBAIDUMAP_MAP_DETAIL_MAPTYPECONTROL_DEFAULT</option>
+                </field>
+                <field
+                        name="navigationcontrol"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_DESC"
+                        size="1"
+                        required="true"
+                        default="1"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_NO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_LARGE</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_SMALL</option>
+                        <option	value="3">COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_PAN</option>
+                        <option	value="4">COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_ZOOM</option>
+                        <option	value="9">COM_ZHBAIDUMAP_MAP_DETAIL_NAVIGATIONCONTROL_DEFAULT</option>
+                </field>
+                <field
+                        name="scalecontrol"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_SCALECONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_SCALECONTROL_DESC"
+                        size="40"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="overviewmapcontrol"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_DESC"
+                        size="1"
+                        required="true"
+                        default="1"
+                        class="lst-dropdown-sinlge"
+                    >
+                        <option	value="0">COM_ZHBAIDUMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_NO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_YES</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_OVERVIEWMAPCONTROL_OPEN</option>
+                </field>
+                <field
+                        name="doubleclickzoom"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_DOUBLECLICKZOOM_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_DOUBLECLICKZOOM_DESC"
+                        size="40"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="scrollwheelzoom"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_SCROLLWHEELZOOM_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_SCROLLWHEELZOOM_DESC"
+                        size="40"
+                        required="true"
+                        default="1"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="mapcentercontrol"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROL_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge span3"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROL_ICON</option>
+                        <option	value="2">COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROL_ICON_ZOOM</option>
+                        <option	value="11">COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROL_TEXT</option>
+                        <option	value="12">COM_ZHBAIDUMAP_MAP_DETAIL_HOMECONTROL_TEXT_ZOOM</option>
+                </field>
+                <field
+                        name="overlayopacitycontrol"
+                        type="list"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROL_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROL_DESC"
+                        size="1"
+                        required="true"
+                        default="0"
+                        class="lst-dropdown-sinlge span3"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">COM_ZHBAIDUMAP_MAP_DETAIL_OVERLAYOPACITYCONTROL_DEFAULT</option>
+
+                </field>	
+		<field 
+			type="spacer" 
+			name="spacer0" 
+			label=""
+			hr="false" 
+		/>	
+		<field 
+			type="spacer" 
+			name="spacer1" 
+			label=""
+			hr="false" 
+		/>		
+        </fieldset>
+
+
+        <fieldset name="mapdecorheader">
+                <field
+                        name="headersep"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HEADERSEP_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HEADERSEP_DESC"
+                        size="40"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="headerhtml"
+                        type="editor"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_HEADERHTML_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_HEADERHTML_DESC"
+                        rows="30"
+                        size="300"
+                        class="inputbox"
+                        required="false"
+                        default=""
+                        filter="raw"
+                />
+        </fieldset>
+        <fieldset name="mapdecorfooter">
+                <field
+                        name="footersep"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_FOOTERSEP_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_FOOTERSEP_DESC"
+                        size="40"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="footerhtml"
+                        type="editor"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_FOOTERHTML_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_FOOTERHTML_DESC"
+                        rows="30"
+                        size="300"
+                        class="inputbox"
+                        required="false"
+                        default=""
+                        filter="raw"
+                />
+        </fieldset>
+        <fieldset name="mapdecorstyle">
+                <field
+                        name="mapstyles"
+                        type="textarea"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_STYLES_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_STYLES_DESC"
+                        rows="30"
+                        size="300"
+                        class="inputbox span10"
+                        required="false"
+                        default=""
+                        filter="raw"
+                />
+        </fieldset>	
+	    <fieldset name="integration">
+                <field
+                        name="usercontact"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACT_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACT_DESC"
+                        size="40"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+                <field
+                        name="usercontactattributes"
+                        type="text"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACTATTRS_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERCONTACTATTRS_DESC"
+                        size="80"
+                        class="inputbox span10"
+                        required="false"
+                        default=""
+                />
+                <field
+                        name="useruser"
+                        type="radio"
+                        label="COM_ZHBAIDUMAP_MAP_DETAIL_USERUSER_LABEL"
+                        description="COM_ZHBAIDUMAP_MAP_DETAIL_USERUSER_DESC"
+                        size="40"
+                        required="true"
+                        default="0"
+                        class="btn-group"
+                    >
+                        <option	value="0">JNO</option>
+                        <option	value="1">JYES</option>
+                </field>
+		</fieldset>
+		
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+			<field
+				name="show_category"
+				type="list"
+				label="COM_ZHBAIDUMAP_MAP_DETAIL_SHOW_CATEGORY_LABEL"
+				description="COM_ZHBAIDUMAP_MAP_DETAIL_SHOW_CATEGORY_DESC"
+				default=""
+				class="lst-dropdown-sinlge"
+                            >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+
+</form>

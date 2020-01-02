@@ -1,0 +1,35 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchant_email",
+				"type": "email",
+				"title": "Merchant E-Mail",
+				"tooltip": "Please enter the merchant e-mail address used to sign up with PayPal",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			},
+			{
+				"name": "sandbox_merchant_email",
+				"type": "email",
+				"title": "Sandbox Merchant E-Mail",
+				"tooltip": "Please enter the merchant e-mail address used to sign up with PayPal Sandbox",
+				"default": ""
+			},
+			{
+				"name": "faliure_attempt",
+				"type": "toggler",
+				"title": "Re-attempt Failed Recurring Payments",
+				"tooltip": "This option determines if the failed recurring payment should be re-attempt (As paypal will re-attept after 3 days after recurring payment failure)",
+				"default": 1
+			}
+		]
+	}
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="settings">
+		<field type="text" name="authAPILogin" label="COM_JBLANCE_AUTHORIZE_API_LOGIN_ID" description="COM_JBLANCE_AUTHORIZE_API_LOGIN_ID_EXAMPLE" default="" maxLength="100" class="required" />
+		<field type="text" name="authTransKey" label="COM_JBLANCE_AUTHORIZE_TRANSACTION_KEY" description="COM_JBLANCE_AUTHORIZE_TRANSACTION_KEY_EXAMPLE" default="" maxLength="100" class="required" />
+		<field type="text" name="authCurrency" label="COM_JBLANCE_AUTHORIZE_CURRENCY" description="COM_JBLANCE_AUTHORIZE_CURRENCY_EXAMPLE" default="USD" maxLength="3" class="required input-mini" />
+		<field type="radio" name="authTestmode" label="COM_JBLANCE_AUTHORIZE_TEST_MODE" default="0" description="COM_JBLANCE_AUTHORIZE_TEST_MODE_EXAMPLE" class="btn-group btn-group-yesno">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+</form>

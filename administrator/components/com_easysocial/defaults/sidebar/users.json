@@ -1,0 +1,71 @@
+{
+	"title"	: "COM_EASYSOCIAL_MENU_GROUP_USERS",
+	"link"	: "index.php?option=com_easysocial&view=users",
+	"access": "easysocial.access.users",
+	"class"	: "fa fa-user-friends",
+	"view"	: "users",
+	"counter": "users/getPendingUsersCount",
+	"active": "layout",
+	"childs":
+	[
+		{
+			"title" : "COM_EASYSOCIAL_MENU_GROUP_USERS",
+			"url": {
+				"view"  : "users",
+				"layout": ""
+			},
+			"childs": []
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_GROUP_PROFILES",
+			"url": {
+				"view": "profiles",
+				"layout": ""
+			}
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_USERS_VIEW_PENDING",
+			"url": {
+				"view": "users",
+				"layout": "pending"
+			},
+			"counter"	: "users/getPendingUsersCount"
+		},
+		{
+			"title"	: "COM_ES_DOWNLOAD_REQUESTS",
+			"url": {
+				"view": "users",
+				"layout": "downloads"
+			}
+		},
+		{
+			"title": "COM_ES_BANNED",
+			"url": {
+				"view": "users",
+				"layout": "banned"
+			}
+		},
+		{
+			"title": "COM_ES_VERIFICATION_REQUESTS",
+			"url": {
+				"view": "users",
+				"layout": "verifications"
+			},
+			"counter": "users/getVerificationCount"
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_USERS_EXPORT",
+			"url": {
+				"view": "users",
+				"layout": "export"
+			}
+		},
+		{
+			"title" : "COM_ES_MENU_ITEM_USERS_IMPORT",
+			"url": {
+				"view": "users",
+				"layout": "import"
+			}
+		}
+	]
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>ja_conf</name>
+	<version>1.0.7</version>
+	<creationDate>April 18th, 2019</creationDate>
+	<author>JoomlArt.com</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.t3-framework.org</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				
+				<h3><a href="//www.joomlart.com/joomla/templates/ja-conf">Creative Events and Conference Joomla template - JA Conf</a></h3>
+				
+				<h4><a href="//www.joomlart.com/joomla/templates/ja-conf" title="">Home</a> | <a href="//joomlart.com/demo/#ja_conf" title="">Demo</a> | <a href="http://www.joomlart.com/documentation/joomla-templates/ja-conf" title="">Document</a> | <a href="//pm.joomlart.com/browse/JATCCONF" title="">Changelog</a></h4>
+
+				<p>JA Conf, creative and modern Joomla template for Events and Conference website comes with 6 theme colors, includes all required pages for Events and Conference website: Events list page, Event details page, Event booking built with Events Booking, Speaker page, Social page powered by JomSocial … and all Joomla default pages with customized style. </p>
+
+				<span style="color:#FF0000">Note: T3 blank requires T3 plugin to be installed and enabled.</span><p></p>
+				<p>Copyright 2004 - 2019 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>helper.php</filename>
+		<filename>component.php</filename>
+  	<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+  	<filename>offline.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>acm</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_conf.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_conf.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>languageswitcherload</position>
+		<position>container-tabs</position>
+		<position>footer</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>head-right</position>
+		<position>hero</position>
+		<position>js_side_frontpage</position>
+		<position>js_side_frontpage_bottom</position>
+		<position>js_side_frontpage_top</position>
+		<position>masthead</position>
+		<position>off-canvas</position>
+		<position>section</position>
+		<position>debug</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+			<fieldset name="theme_params" label="T3_THEME_LABEL" description="T3_THEME_DESC">
+				<field name="nav-type" type="radio" class="t3onoff" default="0"
+				 label="T3_THEME_NAV_VERTICAL"
+				 description="T3_THEME_NAV_VERTICAL_DESC">
+				 	<option value="0" class="off">JNO</option>
+					<option value="1" class="on">JYES</option>
+				</field>
+
+				<field name="img-mask" type="radio" class="t3onoff" default="0"
+				 label="T3_THEME_ENABLE_MASK_IMG"
+				 description="T3_THEME_ENABLE_MASK_IMG_DESC">
+				 	<option value="0" class="off">JNO</option>
+					<option value="1" class="on">JYES</option>
+				</field>
+
+				 <field name="lg-footer" type="t3media" default=""
+				 label="T3_THEME_LOGO_FOOTER_LABEL"
+				 description="T3_THEME_LOGO_FOOTER_DESC"/>
+			</fieldset>
+
+			<!-- Sample for add or disable template parameters -->
+			<!--fieldset name="menu_params" label="T3_PARAMS_MEGAMENU">
+				<field name="group_disable" type="t3depend" function="@group">
+					<option for="menu_as_bg" value="no">menu_as_bg</option>
+				</field>
+			</fieldset-->
+			
+		</fields>
+	</config>
+
+	<updateservers>
+    	<server type="extension">http://update.joomlart.com/service/tracking/j31/ja_conf.xml</server>
+	</updateservers>
+
+
+</extension>

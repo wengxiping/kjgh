@@ -1,0 +1,84 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// -----------------
+// TESTIMONIAL STYLE
+// -----------------
+.acm-testimonials {
+
+	// TESTIMONIAL STYLE 1
+	// -------------------
+	&.style-1 {
+	  .item {
+	    margin: 0 auto;
+	    text-align: left;
+
+	    // Author information
+	    // ------------------
+	    .author-detail {
+	    	border: 1px solid @gray-lighter;
+	    	border-radius: @border-radius-base;
+	    	padding: @t3-global-padding;
+	    	overflow: hidden;
+	    }
+
+	    .author-info {
+	    	float: left;
+	      	padding-right: @grid-gutter-width;
+
+	      	// Mobile view
+	      	@media (max-width: @screen-xs) {
+	      		float: none;
+	      	}
+	      	
+	    	// Author imate
+			.author-image {
+				border-radius: @border-radius-base;
+				display: inline-block;
+				height: 80px;
+				margin-bottom: @t3-global-margin / 2;
+				overflow: hidden;
+				width: 100px;
+
+				img {
+				  height: 100%;
+				  width: 100%;
+				}
+			}
+
+	      // Author info text
+		    .author-info-text {
+		      font-size: @font-size-small;
+		      letter-spacing: 1px;
+		      text-transform: uppercase;
+		      color: @gray-lighter;
+
+		      span.author-name {
+		        font-weight: @font-weight-bold;
+		      }
+		    }
+
+	    }
+	  }
+
+	  // Indicators
+	  .carousel-indicators {
+	    bottom: auto;
+	    margin-top: @t3-global-margin;
+	    margin-bottom: 0;
+	    position: relative;
+	    z-index: 0;
+
+	    li {
+	      background: @gray-light;
+	      border-color: @gray-light;
+
+	      &.active {
+	        background: @brand-primary;
+	        border-color: @brand-primary;
+	      }
+	    }
+  	}
+	}
+}

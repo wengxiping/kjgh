@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="JA_CUSTOM_SEARCH" option="JA_CUSTOM_SEARCH">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_SEARCH_RESULTS"
+		/>
+		<message>
+			<![CDATA[COM_SEARCH_SEARCH_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request" label="COM_SEARCH_FIELDSET_OPTIONAL_LABEL">
+
+			<field
+				name="searchword"
+				type="text"
+				label="COM_SEARCH_FIELD_LABEL"
+				description="COM_SEARCH_FIELD_DESC"
+			/>
+		</fieldset>
+	</fields>
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+
+			<field
+				name="search_phrases"
+				type="list"
+				label="COM_SEARCH_FIELD_SEARCH_PHRASES_LABEL"
+				description="COM_SEARCH_FIELD_SEARCH_PHRASES_DESC"
+				useglobal="true"
+				class="chzn-color"
+				>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field
+				name="search_areas"
+				type="list"
+				label="COM_SEARCH_FIELD_SEARCH_AREAS_LABEL"
+				description="COM_SEARCH_FIELD_SEARCH_AREAS_DESC"
+				useglobal="true"
+				class="chzn-color"
+				>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field
+				name="show_date"
+				type="list"
+				label="COM_SEARCH_CONFIG_FIELD_CREATED_DATE_LABEL"
+				description="COM_SEARCH_CONFIG_FIELD_CREATED_DATE_DESC"
+				useglobal="true"
+				class="chzn-color"
+				>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="spacer1"
+				type="spacer"
+				label="TPL_SEARCH_SAVED_SEARCH_OPTIONS"
+				class="text"
+			/>
+
+			<!-- Add fields to define saved search. -->
+
+			<field
+				name="title-search"
+				type="text"
+				label="TPL_TITLE_SEARCH"
+				description="TPL_TITLE_SEARCH_DESC"
+				filter="raw"
+				/>
+
+			<field
+				name="desc-search"
+				type="textarea"
+				label="TPL_DESC_SEARCH"
+				description="TPL_DESC_SEARCH_DESC"
+				/>
+
+
+			<field
+				name="bg-search"
+				type="media"
+				label="TPL_BG_SEARCH"
+				description="TPL_BG_SEARCH_DESC"
+				/>
+
+			<field
+				name="set_itemid"
+				type="menuitem"
+				label="TPL_SEARCH_FIELD_SETITEMID_LABEL"
+				description="TPL_SEARCH_FIELD_SETITEMID_DESC"
+				default="0"
+				>
+				<option value="0">TPL_SEARCH_SELECT_MENU_ITEMID</option>
+			</field>
+
+			<field
+				name="ordering"
+				type="list"
+				label="COM_SEARCH_ORDERING_LABEL"
+				description="COM_SEARCH_ORDERING_DESC"
+				default="newest"
+				>
+				<option value="newest">COM_SEARCH_NEWEST_FIRST</option>
+				<option value="oldest">COM_SEARCH_OLDEST_FIRST</option>
+				<option value="popular">COM_SEARCH_MOST_POPULAR</option>
+				<option value="alpha">COM_SEARCH_ALPHABETICAL</option>
+				<option value="category">JCATEGORY</option>
+			</field>
+
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,317 @@
+//** Category
+
+//-----------------------------------------------------------------------------
+// Category page
+//
+.mt-page-category {
+  .mt-category-header h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .mt-page-category-style-1 & {
+    .mt-category-desc {
+      margin:5px 0 10px;
+
+      p {
+        text-align:left;
+        margin:0;
+      }
+    }
+
+
+    .mt-category-image {
+      float:left;
+      border:.5em solid #D8E4E8;
+      margin:0 20px 20px 0;
+
+      img {
+        margin:1px;
+      }
+    }
+  }
+
+  .mt-page-category-style-2 & {
+
+    .mt-category-header-title-desc {
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .mt-category-desc {
+        margin-top: 0.6em;
+        //line-height: 1.4em;
+        //color: #fff;
+        //position: absolute;
+        //bottom: 0;
+      }
+
+    }
+
+    .mt-category-header-card {
+        position: relative;
+        height: 260px;
+        background-size: cover;
+
+        .mt-category-header-title-desc {
+
+          width: 100%;
+          box-sizing: border-box;
+          padding: 20px;
+          color: #fff;
+          position: absolute;
+          bottom: 0;
+          background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+
+          h1 {
+            @include category-name-text-shadow;
+          }
+
+          .mt-category-desc {
+            //margin-top: 0.6em;
+            line-height: 1.4em;
+            //color: #fff;
+            //position: absolute;
+            //bottom: 0;
+          }
+        }
+      }
+
+    .mt-category-header-no-image-card {
+
+    }
+
+    .mt-category-subcats {
+      .mt-category-subcats-item, .mt-category-subcats-item-no-image {
+        border: 1px solid #ccc;
+        height: 55px;
+        border-radius: 2px;
+        position: relative;
+        text-align: center;
+        //padding-top:15px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        background-size: cover;
+
+        a {
+          z-index: 100;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+
+          padding-top: 16px;
+          box-sizing: border-box;
+
+          &:hover {
+            background: #eee;
+          }
+          //padding-top:15px;
+          //text-align: center;
+        }
+        small {
+          //z-index: -1;
+          //position: absolute;
+          //left: 0;
+          //width: 100%;
+          //bottom: 0;
+        }
+      }
+    }
+  }
+
+  .mt-page-category-style-3 & {
+
+    .mt-category-header-title-desc {
+
+      margin-top: $standard_vertical_spacing;
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .mt-category-desc {
+        margin-top: 0.6em;
+        //line-height: 1.4em;
+        //color: #fff;
+        //position: absolute;
+        //bottom: 0;
+      }
+    }
+
+    .mt-category-header-card {
+        position: relative;
+        height: 260px;
+        background-size: cover;
+
+        .mt-category-header-title-desc {
+
+          width: 100%;
+          box-sizing: border-box;
+          padding: 20px;
+          color: #fff;
+          position: absolute;
+          bottom: 0;
+          background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+
+          h1 {
+            @include category-name-text-shadow;
+          }
+
+          .mt-category-desc {
+            //margin-top: 0.6em;
+            line-height: 1.4em;
+            //color: #fff;
+            //position: absolute;
+            //bottom: 0;
+          }
+        }
+      }
+
+    .mt-category-header-no-image-card {
+
+    }
+
+    .mt-category-subcats {
+      .mt-category-subcats-item, .mt-category-subcats-item-no-image {
+        border: 1px solid #ccc;
+        height: 55px;
+        border-radius: 2px;
+        position: relative;
+        text-align: center;
+        //padding-top:15px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        background-size: cover;
+
+        a {
+          z-index: 100;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+
+          padding-top: 16px;
+          box-sizing: border-box;
+
+          &:hover {
+            background: #eee;
+          }
+          //padding-top:15px;
+          //text-align: center;
+        }
+        small {
+          //z-index: -1;
+          //position: absolute;
+          //left: 0;
+          //width: 100%;
+          //bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Container for "Add your listing here" button.
+  .mt-addlisting {
+
+  }
+}
+
+.mt-category-relcats, .mt-category-subcats {
+  width:100%;
+  overflow:hidden;
+  margin:20px 0 0;
+
+  .title {
+    //color:#999;
+    background-color: #F2F2F2;
+    clear: both;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 6px 10px;
+  }
+
+  ul {
+    list-style-type:none;
+    width:100%;
+    float:left;
+    margin:0;
+    padding:0 10px 10px 0;
+  }
+
+  a {
+    text-decoration:none;
+    font-weight:700;
+    /*width:100%;*/
+  }
+}
+
+
+.mt-category-subcats {
+  small {
+    color:#4c4c4c;
+    font-size:0.9em;
+  }
+  .mt-category-subcats-item {
+    margin-top:10px;
+  }
+}
+
+.mt-category-relcats {
+  li {
+    width:100%;
+    margin-top:10px;
+    float:left;
+    padding:0;
+  }
+}
+
+//#cat-header h2.contentheading {
+//  width:70%;
+//  float:left;
+//}
+
+
+//#subcats,#relcats {
+//  width:100%;
+//  overflow:hidden;
+//  margin:20px 0 0;
+//}
+
+//#subcats .title,#relcats .title {
+//  color:#999;
+//}
+
+//#subcats ul,#relcats ul {
+//  list-style-type:none;
+//  width:100%;
+//  float:left;
+//  margin:0;
+//  padding:0 10px 10px 0;
+//}
+
+#subcats li {
+  /*width:30%;
+  margin-top:10px;
+  float:left;
+  background-image:none;
+  display:block;
+  margin-right:15px;
+  padding:4px 4px 4px 0;
+  */}
+
+//#subcats a,#relcats a {
+//  text-decoration:none;
+//  font-weight:700;
+//  /*width:100%;*/
+//}
+//
+//#subcats small {
+//  color:#4c4c4c;
+//  font-size:0.9em;
+//}
+//
+//#relcats li {
+//  width:100%;
+//  margin-top:10px;
+//  float:left;
+//  padding:0;
+//}

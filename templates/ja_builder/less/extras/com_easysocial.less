@@ -1,0 +1,267 @@
+#es.es-frontend {
+  font-family: @font-family-sans-serif;
+  font-size: @font-size-base;
+
+  // Navigation bar
+  .es-navbar {
+    .es-navbar__body {
+      background-color: @indigo-dark;
+      border-radius: 0;
+      border: 0;
+      padding: (@spacing / 3) (@spacing / 2);
+
+      .es-navbar__search {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 0;
+
+        &:before {
+          color: @white;
+          top: 8px;
+        }
+
+        .es-navbar__search-input {
+          background: transparent;
+          border-radius: 0;
+          color: @white;
+          line-height: 32px;
+        }
+
+        .es-navbar__search-filter {
+          color: @white;
+          line-height: 36px;
+        }
+      }
+
+      .o-nav {
+        padding-top: 4px;
+
+        // Link
+        .o-nav__link {
+          background-color: rgba(0,0,0,0.1);
+          height: 32px;
+          line-height: 32px;
+          padding: 0;
+          text-align: center;
+          width: 32px;
+
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .es-navbar__footer {
+      border-radius: 0;
+
+      .es-navbar__footer-link {
+        font-size: @font-size-small;
+      }
+    }
+  }
+
+  // Login form
+  .es-login {
+    .es-login-box {
+      border-radius: 0;
+
+      #loginbox {
+        border-radius: 0;
+
+        .o-form-control {
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+
+      .btn-es-primary {
+        background: @indigo-dark !important;
+        background-image: none !important;
+        border: 0 !important;
+        border-radius: 0;
+        box-shadow: none;
+        color: @white !important;
+
+        &.btn-lg {
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
+
+  .es-stream-list {
+
+    & > li + li {
+      border: 0;
+    }
+
+    .es-stream-meta {
+      background-color: @gray-lighter;
+      border: 1px solid @border-color;
+      border-bottom: 0;
+      padding: 10px 10px 5px;
+
+      .o-avatar {
+        background-color: @white;
+        border: 1px solid @border-color;
+        border-radius: 0;
+        margin-top: 3px;
+        padding: 3px;
+
+        img {
+          border-radius: 0;
+        }
+      }
+    }
+
+    .es-stream-content {
+      border-left: 1px solid @border-color;
+      border-right: 1px solid @border-color;
+      margin-bottom: 0;
+      padding: (@spacing / 4) @spacing / 2;
+    }
+
+    // Preview
+    .es-stream-embed {
+      border: 1px solid @border-color;
+      border-radius: 0;
+      padding: @spacing / 2;
+    }
+
+    .es-stream-embed__title {
+      font-size: @font-size-large;
+    }
+
+    .es-stream-embed__desc:last-child {
+      text-align: right;
+    }
+
+    // Post comments
+    .action-contents-comments {
+      .es-comments-wrap {
+        background-color: @white;
+        border: 1px solid @border-color;
+        padding: @spacing;
+
+        .es-comments {
+          li {
+            border-bottom: 1px solid @border-color;
+            padding: (@spacing / 2) 0;
+
+            &:last-child {
+              border: 0;
+              padding-bottom: 0;
+            }
+
+            .o-avatar {
+              border-radius: 0;
+              border: 1px solid @border-color;
+              margin-top: 3px;
+              margin-right: @spacing / 4;
+              padding: 3px;
+
+              img {
+                border-radius: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  // Drashboard
+  .es-dashboard {
+    .es-sidebar {
+
+    }
+
+    .es-content {
+      .es-snackbar {
+        border-radius: 0;
+        padding: (@spacing / 2);
+      }
+    }
+  }
+
+  .es-stream-embed {
+    background-color: @gray-lightest;
+    border-radius: 0;
+    padding: @spacing / 2;
+
+    .es-stream-embed__context {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .es-stream-embed__broadcasts-title {
+      margin-bottom: @spacing / 2;
+      padding-top: 0;
+    }
+  }
+}
+
+
+// EASYSOCIAL MODULES
+// --------------------------------------------
+
+// Calendar module
+// ---------------
+#es.es-widget-calendar {
+  table {
+    border: 1px solid @border-color !important;
+
+    thead th {
+      border-radius: 0;
+    }
+
+    th.prev,
+    th.switch,
+    th.next {
+      background-color: @indigo-dark;
+      border-color: lighten(@indigo-dark, 10%) !important;
+      color: @white;
+      text-align: center;
+
+      a {
+        color: @white !important;
+      }
+    }
+
+    th, td {
+      border: 1px solid @border-color !important;
+      vertical-align: middle;
+    }
+  }
+}
+
+// Welcome
+// -------
+#ed.m-welcome {
+  .g-list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li.prm {
+      margin-bottom: @spacing / 2;
+
+      label {
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+
+      input.form-control {
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    li.form-inline {
+      label {
+        font-weight: 400;
+      }
+    }
+  }
+}

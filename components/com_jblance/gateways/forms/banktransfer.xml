@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="settings">
+		<field type="text" name="btAccnum" label="COM_JBLANCE_ACCOUNT_NUMBER" description="COM_JBLANCE_ACCOUNT_NUMBER" default="1234567890" maxLength="255" class="required" />
+		<field type="text" name="btBankname" label="COM_JBLANCE_BANK_NAME" description="COM_JBLANCE_BANK_NAME" default="My Bank Name" maxLength="255" class="required" />
+		<field type="text" name="btAccHoldername" label="COM_JBLANCE_ACCOUNT_HOLDER_NAME" description="COM_JBLANCE_ACCOUNT_HOLDER_NAME" default="My Name" maxLength="255" class="required" />
+		<field type="text" name="btIBAN" label="COM_JBLANCE_IBAN" description="COM_JBLANCE_IBAN_EXAMPLE" default="" maxLength="255" class="" />
+		<field type="text" name="btSWIFT" label="COM_JBLANCE_SWIFT" description="COM_JBLANCE_SWIFT_EXAMPLE" default="" maxLength="255" class="" />
+		<field type="text" name="btNotifyEmail" label="COM_JBLANCE_NOTIFICATION_EMAIL" description="COM_JBLANCE_NOTIFICATION_EMAIL_EXAMPLE" default="notify@mysite.com" maxLength="255" class="required" />
+		<field type="text" name="btNotifyFaxno" label="COM_JBLANCE_FAX_NO" description="COM_JBLANCE_FAX_NO_EXAMPLE" default="001 123456789" maxLength="255" class="required" />
+	</fieldset>
+	<fieldset name="withdraw">
+		<field type="text" name="btAccnum" label="COM_JBLANCE_ACCOUNT_NO" description="" default="" maxLength="255" class="required" labelclass="control-label" />
+		<field type="text" name="btBankname" label="COM_JBLANCE_BANK_NAME" description="" default="" maxLength="255" class="required" labelclass="control-label" />
+		<field type="text" name="btAccHoldername" label="COM_JBLANCE_BANK_ACCOUNT_NAME" description="" default="" maxLength="255" class="required" labelclass="control-label" />
+		<field type="text" name="btIBAN" label="COM_JBLANCE_IBAN" description="" default="" maxLength="255" class="" labelclass="control-label" />
+		<field type="text" name="btSWIFT" label="COM_JBLANCE_SWIFT" description="" default="" maxLength="255" class="" labelclass="control-label" />
+	</fieldset>
+</form>

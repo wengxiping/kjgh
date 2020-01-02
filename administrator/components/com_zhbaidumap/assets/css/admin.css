@@ -1,0 +1,5 @@
+#BDMapsID img,
+#BDMapsID svg
+ {
+	max-width:none !important;
+}

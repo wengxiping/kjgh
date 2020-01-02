@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "site_id",
+				"type": "text",
+				"title": "Site ID",
+				"tooltip": "Site ID provided by Paysite-Cash",
+				"default": ""
+			},
+			{
+				"name": "api_key",
+				"type": "text",
+				"title": "API Key",
+				"tooltip": "API Key provided by Paysite-Cash",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

@@ -1,0 +1,170 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Morgan Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2019 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+
+/* MAIN STYLE
+---------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #888888;
+  font-family: 'PTRootUI', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+#errorboxoutline {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+/* OutLine */
+#outline {
+  text-align: center;
+}
+
+
+/*Add image background*/
+#outline:before {
+  background-image: url('../images/bg-404.jpg');
+  background-position: center;
+  background-size: cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#outline:after {
+  background: #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Eror Code */
+.error-code {
+  color: #fff;
+  font-size: 300px;
+  line-height: 1;
+  margin: 0 auto 36px;
+}
+
+/* Message Error */
+.error-message {
+}
+
+/* Message Error */
+.error-message h2 {
+  color: #fff;
+  display: inline-block;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  position: relative;
+}
+
+.error-message h2 span {
+  position: relative;
+  z-index: 3;
+}
+
+
+#errorboxbody p {
+  display: block;
+  margin: 0 0 30px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Button Home */
+.button-home {
+  background: #d93030;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-decoration: none;
+}
+
+.button-home span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin-left: 3px;
+  position: relative;
+  top: 1px;
+}
+
+.button-home:hover,
+.button-home:focus,
+.button-home:active {
+  background: #b92a2a;
+  color: #fff;
+}
+
+@media (max-width: 767px){
+  /* OutLine */
+  #outline {
+  }
+
+  /* Eror Code */
+  .error-code {
+    font-size: 150px;
+    margin-bottom: 20px;
+  }
+
+  /* Message Error */
+  .error-message {
+  }
+
+  /* Message Error */
+  .error-message h2 {
+    font-size: 30px;
+  }
+
+  .button-home {
+    padding: 16px 32px;
+  }
+
+  #errorboxbody p {
+    font-size: 16px;
+  }
+}

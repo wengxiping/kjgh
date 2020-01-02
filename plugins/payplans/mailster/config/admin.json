@@ -1,0 +1,31 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "addToGrouponActive",
+				"type": "custom",
+				"path": "plugins:/payplans/mailster/elements/groups",
+				"title": "Add To List (Active Subscription)",
+				"tooltip": "Add user to the selected mailing group when subscription status is changed to active",
+				"default": ""
+			},
+			{
+				"name": "addToGrouponHold",
+				"type": "custom",
+				"path": "plugins:/payplans/mailster/elements/groups",
+				"title": "Add To List (Subscription on Hold)",
+				"tooltip": "Add user to the selected mailing group when subscription status is changed to on hold",
+				"default": ""
+			},
+			{
+				"name": "addToGrouponExpire",
+				"type": "custom",
+				"path": "plugins:/payplans/mailster/elements/groups",
+				"title": "Add To List (Subscription Expired)",
+				"tooltip": "Add user to the selected mailing group when subscription status is changed to on expired",
+				"default": ""
+			}
+		]
+	}
+]

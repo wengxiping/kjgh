@@ -1,0 +1,116 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.acm-accordion {
+  text-align: left;
+  
+  &.panel-group .panel {
+    border: 0;
+    background: @white;
+    .box-shadow(none);
+    
+    + .panel {
+      margin-top: @grid-gutter-width / 2;
+    }
+  }
+
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border: 1px solid @t3-border-color;
+    border-top: 0;
+    border-radius: 0 0 @border-radius-base @border-radius-base;
+    color: @text-color;
+    padding: @t3-global-padding;
+  }
+
+  .panel-title {
+    position: relative;
+    font-size: @font-size-h5;
+
+    a {
+      background: @brand-secondary; 
+      color: @white;
+      border-radius: @border-radius-base @border-radius-base 0 0;
+      display: block;
+      font-weight: 600;
+      font-size: @font-size-h5;
+      height: 60px;
+      line-height: 60px; 
+      padding-right: 60px;
+      text-indent: @t3-global-padding;
+      .text-overflow();
+
+      &.collapsed {
+        background: @gray-lightest;
+        color: @headings-color;
+        border-radius: @border-radius-base;
+
+        &:hover {
+          color: @brand-primary;
+
+          .fa {
+            background: @brand-primary;
+          }
+        }
+      }
+
+      &:focus,&:hover,&:focus {
+        outline: none;
+        text-decoration: none;
+      }
+    }
+
+    .marker {
+      background: transparent;
+      color: @gray-light;
+      height: 60px;
+      font-size: @font-size-base;
+      line-height: 60px;
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-indent: 0;
+      width: 60px;
+
+      .fa {
+        background: @brand-primary;
+        border-radius: @border-radius-base;
+        color: @white;
+        display: inline-block;
+        font-size: 11px;
+        text-align: center;
+        line-height: @grid-gutter-width + 1;
+        height: @grid-gutter-width;
+        width: @grid-gutter-width;
+      }
+    }
+
+    .marker-close {
+      display: none;
+    }
+
+    .marker-open {
+      display: inline-block;
+    }
+
+    .collapsed {
+      .marker-close {
+        display: inline-block;
+      }
+
+      .marker-open {
+        display: none;
+      }
+    }
+  }
+
+  .panel-heading {
+    padding: 0;
+  }
+}

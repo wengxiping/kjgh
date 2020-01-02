@@ -1,0 +1,32 @@
+[
+	{
+		"name": "COM_PP_NOTIFICATIONS_STATUS_CHANGED",
+		"element": "on_status",
+		"description": "This rule allows the system to send out notification e-mails when a subscription or invoice status is changed on the system. It is useful when you need to inform the user of specific statuses"
+	}, 
+	{
+		"name": "COM_PP_NOTIFICATIONS_PRE_EXPIRY",
+		"element": "on_preexpiry",
+		"description": "This rule allows the system to send out pre expiration e-mails. It is useful when you need to inform the users before hand when their subscription is about to expire"
+	},
+	{
+		"name": "COM_PP_NOTIFICATIONS_POST_EXPIRY",
+		"element": "on_postexpiry",
+		"description": "This rule allows the system to send out post expiration e-mails. It is useful when you need to notify users that their subscription has already expired"
+	},
+	{
+		"name": "COM_PP_NOTIFICATIONS_POST_ACTIVATION",
+		"element": "on_postactivation",
+		"description": "This rule allows the system to send out post activation e-mails. It is useful to inform the users that their subscription is activated and they may access the site to view their subscription"
+	},
+	{
+		"name": "COM_PP_NOTIFICATIONS_CART_ABANDONED",
+		"element": "on_cart_abondonment",
+		"description": "This rule allows the system to send out cart abandoned e-mailed. It is useful to get the users to visit the site again to continue their checkout process"
+	},
+	{
+		"name": "COM_PP_NOTIFICATIONS_ORDER_CANCELLATION",
+		"element": "on_cancellation",
+		"description": "This rule allows the system to send out cancellation e-mails. It is useful to inform the users that their subscription is cancelled"
+	}
+]

@@ -1,0 +1,42 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_PAYFAST_SANDBOX",
+				"tooltip": "COM_PAYPLANS_APP_PAYFAST_SANDBOX_DESC",
+				"default": false
+			},
+			{
+				"name": "proxy_server",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_PAYFAST_PROXY_SERVER",
+				"tooltip": "COM_PAYPLANS_APP_PAYFAST_PROXY_SERVER_DESC",
+				"default": false
+			},
+			{
+				"name": "merchantid",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYFAST_MERCHANT_ID",
+				"tooltip": "COM_PAYPLANS_APP_PAYFAST_MERCHANT_ID_DESC",
+				"default": ""
+			},
+			{
+				"name": "merchantkey",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYFAST_MERCHANT_KEY",
+				"tooltip": "COM_PAYPLANS_APP_PAYFAST_MERCHANT_KEY_DESC",
+				"default": ""
+			},
+			{
+				"name": "passphrase",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYFAST_PASSPHRASE",
+				"tooltip": "COM_PAYPLANS_APP_PAYFAST_PASSPHRASE_DESC",
+				"default": ""
+			}
+		]
+	}
+]

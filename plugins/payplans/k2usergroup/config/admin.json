@@ -1,0 +1,31 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "addToGroupOnActive",
+				"type": "custom",
+				"path": "plugins:/payplans/k2usergroup/elements/usergroups",
+				"title": "COM_PP_APP_K2_ON_SUBS_ACTIVE",
+				"tooltip": "COM_PP_APP_K2_ON_SUBS_ACTIVE_DESC",
+				"default": "10"
+			},
+			{
+				"name": "addToGroupOnHold",
+				"type": "custom",
+				"path": "plugins:/payplans/k2usergroup/elements/usergroups",
+				"title": "COM_PP_APP_K2_ON_SUBS_HOLD",
+				"tooltip": "COM_PP_APP_K2_ON_SUBS_HOLD_DESC",
+				"default": "10"
+			},
+			{
+				"name": "addToGroupOnExpire",
+				"type": "custom",
+				"path": "plugins:/payplans/k2usergroup/elements/usergroups",
+				"title": "COM_PP_APP_K2_ON_SUBS_EXPIRED",
+				"tooltip": "COM_PP_APP_K2_ON_SUBS_EXPIRED_DESC",
+				"default": "10"
+			}
+		]
+	}
+]

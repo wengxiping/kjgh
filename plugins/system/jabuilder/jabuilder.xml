@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>JUB</name>
+	<author>JoomlArt.com</author>
+	<creationDate>Sep 21, 2018</creationDate>
+	<copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomlart.com</authorEmail>
+	<authorUrl>http://www.joomlart.com</authorUrl>
+	<version>1.1.6</version>
+	<description><![CDATA[
+		<div align="left" style="background-color: #dff0d8; border: 1px solid #d6e9c6; border-radius: 2px; color: #3c763d; padding: 20px;">
+				<h3 style="margin: 0 0 20px; font-size: 24px;">JA Universal Plugin</h3>
+				
+				<p>JA Builder is dedicated builder tool for Joomla CMS to build pages, landing pages, layouts based on pre-made content blocks and powerful options to help any user handle all the website development work with ease. Newbies will have fun learning and developers would love it.</p>
+			
+				<p>Access Extensions » Plugin and find the JoomlArt Universal Builder plugin then enable it.</p>
+				
+				<div class="btn-actions">
+				<a href="//www.joomlart.com/documentation/joomla-templates/ja-builder" title="Document" class="primary">Document</a>
+				<a href="https://www.joomlart.com/forums/forum/joomlart-public-forums/ja-site-builder/" title="Forum">Forum</a>
+				<a href="http://demo.builder.joomlart.com/" title="Demo">Demo</a>
+				<a href="https://www.joomlart.com/ja-builder" title="More info">More info...</a>
+				</div>
+				
+				<p style="font-size: 12px; margin-bottom: 0;">Copyright 2004 - 2018 <a href='//www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+				<p>This extension collects anonymous data comprising server and joomla environment. <a href="https://www.joomlart.com/documentation/joomla-templates/ja-builder#collect-data" target="_blank">Details click here</a></p>
+			<style>
+			  .btn-actions {margin: 30px 0;}
+			  .btn-actions a {background: #fff; border: 1px solid #ddd; border-radius: 2px; color: #666; box-shadow: 0 -2px 0 rgba(0,0,0,0.1) inset; font-size: 16px; letter-spacing: 0.5px; padding: 8px 20px 9px; margin: 0 5px 0 0; text-decoration: none; transition: all 0.35s;}
+			  .btn-actions a.primary {background-color: #2e7d32; border-color: #2e7d32; color: #fff;}
+			  .btn-actions a:hover, .btn-actions a:focus {background: #01579b; border-color: #01579b; color: #fff;}
+			  </style>
+		</div>
+		]]></description>	
+	<files>
+		<filename plugin="jabuilder">jabuilder.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>html</folder>
+		<folder>vendor</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_jabuilder.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_jabuilder.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">		
+				<field type="number" name="upload_max_size" default="1" label="JUB_UPLOAD_MAX_SIZE_LABEL" description="JUB_UPLOAD_MAX_SIZE_DESC" filter="number" />
+				<field type="number" name="max_revisions_load" default="100" label="JUB_MAX_REVISIONS_LOAD_LABEL" description="JUB_MAX_REVISIONS_LOAD_DESC" filter="number" />
+				<field type="text" name="receivers" class="input-xxlarge" default="" label="JUB_CONTACT_LABEL" description="JUB_CONTACT_DESC" />
+				<field
+					name="nobootstrap"
+					type="radio"
+					label="JUB_NO_BOOTSTRAP_LABEL"
+					description="JUB_NO_BOOTSTRAP_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>			
+		</fields>
+	</config>
+
+    <updateservers>
+    <server type="extension">http://update.joomlart.com/service/tracking/j31/plg_system_jabuilder.xml</server>
+    </updateservers>	
+</extension>

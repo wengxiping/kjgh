@@ -1,0 +1,38 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchantLogin",
+				"type": "text",
+				"title": "Username",
+				"tooltip": "Enter the username provided to you by Robokassa. The username is used to login to Robokassa",
+				"required": "true",
+				"default": ""
+			},
+			{
+				"name": "merchantPassword1",
+				"type": "text",
+				"title": "Merchant Password 1",
+				"tooltip": "Merchant password 1 of Robokassa shop used for payment initiation",
+				"required": "true",
+				"default": ""
+			},
+			{
+				"name": "merchantPassword2",
+				"type": "text",
+				"title": "Merchant Password 2",
+				"tooltip": "Merchant password 2 of Robokassa shop used for notification validation",
+				"required": "true",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_APP_SANDBOX",
+				"tooltip": "COM_PP_APP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

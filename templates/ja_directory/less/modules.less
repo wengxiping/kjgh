@@ -1,0 +1,745 @@
+/*
+$JA#COPYRIGHT$
+*/
+
+
+// --------------------------------------------------
+// MODULE STYLES
+// --------------------------------------------------
+
+// 
+// GENECRIC MODULE
+// --------------------------------------------------
+.t3-module {
+  background: @t3-module-bg;
+  color: @t3-module-color;
+  margin-bottom: @line-height-computed;
+  
+
+  // Larger margin on Tablet / Desktop
+  @media screen and (min-width: @screen-sm) {
+    margin-bottom: @grid-gutter-width;
+  }
+
+  // Module padding
+  .module-inner {
+    padding: @t3-module-padding;
+  }
+}
+
+.t3-sidebar {
+  .t3-module {
+    padding: @t3-global-padding;
+    border: 1px solid @t3-border-color;
+    border-radius: 2px;
+  }
+
+  .module-search {
+    border: 0;
+    padding: 0;
+
+    #mod-search-searchword {
+      background: @gray-lighter;
+      border-color: transparent;
+      display: block;
+      .box-shadow(none);
+      width: 100%;
+
+      &:focus {
+        border-color: @brand-primary;
+        background: @white;
+        .box-shadow(none);
+        outline: none;
+      }
+    }
+  }
+}
+
+// Module Title
+// ------------
+.module-title {
+  background: @t3-module-title-bg;
+  color: @t3-module-title-color;
+  font-size: @font-size-base + 2;
+  font-weight: bold;
+  margin: 0 0 (@line-height-computed / 2) 0;
+  padding: @t3-module-title-padding;
+
+  // Larger margin on Tablet / Desktop
+  @media screen and (min-width: @screen-sm) {
+    margin-bottom: @line-height-computed;
+  }
+
+}
+
+// Module Content
+// --------------
+.module-ct {
+  background: @t3-module-content-bg;
+  color: @t3-module-content-color;
+  padding: @t3-module-content-padding;
+  .clearfix();
+}
+
+// Module List
+// -----------
+.module-ct,
+.module-ct .custom {
+  > ul,
+  > ol {
+    padding-left: 0;
+    list-style: none;
+    padding: 0;
+
+    li {
+      a {
+        color: @gray-darker;
+        font-weight: 300;
+        padding: @t3-global-padding/2 0 0 0;
+        display: block;
+
+        &:hover,
+        &:focus {
+          color: @brand-primary;
+        }
+      }
+
+      &:first-child {
+        a {
+          padding-top: 0;
+        }
+      }
+
+      &:last-child {
+        a {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  > ul.unstyled,
+  > ol.unstyled {
+    padding-left: 0;
+  }
+
+  > ul.nav,
+  > ol.nav {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+
+
+//
+// JOOMLA! MODULES
+// --------------------------------------------------
+
+// Menu
+// ----
+.module_menu {
+  .nav {
+  }
+  
+  .nav > li {
+  }
+  
+  .nav > li > a,
+  .nav > li > .separator {
+    padding: @padding-base-vertical 5px;
+    display: block;
+  }
+
+  // Hover state
+  .nav > li > a:hover {
+  }
+  
+  // Active state
+  .nav > li.active > a {
+  }
+}
+
+
+// Login Form
+// ----------
+#login-form {
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    .box-shadow(none);
+    border-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: @t3-border-color;
+    font-weight: 300;
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px white inset;
+		}
+
+		&:focus {
+			border-color: @t3-border-color;
+		}
+  }
+
+  .input-group {
+  	width: 100%;
+
+  	.input-group-addon {
+  		background: none;
+  		border-color: @t3-border-color;
+  	}
+  }
+  
+  .btn-primary {
+  	background: @brand-secondary;
+  	border-color: darken(@brand-secondary, 10%);
+  	font-weight: 400;
+  	line-height: 1;
+  	&:hover,
+  	&:focus {
+  		background: darken(@brand-secondary, 10%);
+  	}
+  }
+  
+  ul.unstyled {
+    margin-top: @line-height-computed;
+    padding-left: 20px;
+
+    li {
+    	a {
+    		font-weight: 300;
+    		color: @gray-darker;
+
+    		&:hover,
+    		&:focus {
+    			color: @brand-primary;
+    		}
+    	}
+    }
+  }
+
+  #form-login-username {
+  }
+  
+  #form-login-password {
+  }
+  
+  #form-login-remember {
+    label {
+      font-weight: normal;
+    }
+
+    input[type=checkbox] {
+    	margin-top: 7px;
+    }
+  }
+
+  .login-greeting {
+  	margin-bottom: @t3-global-margin;
+  }
+}
+
+
+// Advertisement
+// -------------
+.bannergroup {
+}
+
+.banneritem {
+  a {
+    font-weight: bold;
+  }
+}
+
+.bannerfooter {
+  border-top: 1px solid @t3-border-color;
+  font-size: @t3-font-size-smaller;
+  padding-top: @t3-global-padding / 2;
+  text-align: right;
+}
+
+
+// Categories
+// ----------
+.categories-module, ul.categories-module,
+.category-module, ul.category-module {
+  margin: 0;
+
+  li {
+    list-style: none;
+    padding: (@line-height-computed / 2) 0;
+    border-top: 1px solid @t3-border-color;
+    // Remove border for first item
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  
+  h4 {
+    font-size: @font-size-base;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+
+// News Feed
+// ----------
+.feed {
+  // Feed Title
+  h4 {
+    font-weight: bold;
+  }
+  // Feed list
+  .newsfeed,
+  ul.newsfeed {
+    border-top: 1px solid @hr-border;
+    li {}
+    .feed-link, 
+    h5.feed-link {
+      font-size: @font-size-base;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+}
+
+
+// Latest Users 
+// ------------
+.latestusers,
+ul.latestusers {
+  margin-left: 0;
+  li {
+    background: @gray-lighter;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: @border-radius-base;
+  }
+}
+
+
+// Stats 
+// -----
+.stats-module {
+  dt, dd {
+    display: inline-block;
+    margin: 0;
+  }
+  dt {
+    font-weight: bold;
+    width: 35%;
+  }
+  dd {
+    width: 60%;
+  }
+}
+
+
+// Popular Tags
+//-------------
+.tagspopular {
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  ul > li {
+    color: @gray;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+  }
+
+  ul > li > a {
+    background: @white;
+    border: 1px solid @t3-border-color;
+    border-left: 3px solid @link-color;
+    color: @gray;
+    display: block;
+    padding: 5px;
+    margin: 3px 0;
+    position: relative;
+    border-radius: 3px;
+
+    // Links states
+    &:hover,
+    &:focus,
+    &:active {
+      background: @link-color;
+      color: @white;
+      text-decoration: none;
+      border-color: @link-color;
+    }
+  }
+}
+
+
+
+
+// Similar tags
+// ------------
+.tagssimilar {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul > li {
+    border-bottom: 1px solid @gray-lighter;
+    padding: 8px 0;
+  }
+
+  ul > li > a {
+    color: @gray;
+    // Link states
+    &:hover,
+    &:focus,
+    &:active {
+      color: @link-hover-color;
+    }
+  }
+}
+
+
+// Breadcrums Module
+// -----------------
+.module-ct > ol.breadcrumb {
+  padding: @padding-base-vertical @padding-base-horizontal;
+  margin-left: 0;
+}
+
+
+// Custom Html
+// ----------------
+
+// Video
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	border: none;
+}
+
+
+// 
+// 3RD MODULE
+// --------------------------------------------------
+
+// Acymailing
+// -------------
+table.acymailing_form {
+  width: 100%;
+
+  td {
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .inputbox {
+    border-radius: 4px 0 0 4px;
+    background: @gray-dark-lv2;
+    border-color: @gray-dark-lv2;
+
+    &:focus {
+      color: @white;
+      .box-shadow(none);
+    }
+  }
+
+  .btn {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .subbutton {
+    .button-variant(@white; @brand-secondary; @brand-secondary);
+    text-transform: uppercase;
+    font-weight: @font-weight-lighter;
+  }
+}
+
+.acymailing_module {
+  .acyterms {
+    display: block !important;
+    margin: 10px 0 !important;
+
+    input[type=checkbox] {
+      margin-top: 7px;
+    }
+  }
+
+  &.acymailing_tableless {
+    .fieldacyhtml {
+      display: inline-block;
+
+      + .controls {
+        display: inline-block;
+
+        label {
+          display: inline-block;
+          margin-left: 10px;
+
+          input[type=radio] {
+            position: relative;
+            margin-left: 0;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // Acymailing popup
+  .acymailing_mootoolsbutton p {
+    text-align: left;
+  }
+
+  a.acymailing_togglemodule {
+    position: static;
+    display: inline-block;
+    .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  }
+
+  .form-group {
+    @media screen and (max-width: @screen-xs-max) {
+      display: inline-block;
+      vertical-align: top;
+
+      .form-control {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+#sbox-window {
+  width:  auto !important;
+  height: auto !important; 
+}
+
+
+// 
+// JOOMLART MODULE
+// --------------------------------------------------
+
+// JA Twitter
+// --------------
+
+// In Sections
+.t3-section {
+  .ja-twitter {
+    background: @brand-secondary;
+    color: @white;
+    .ja-twitter-date {
+      color: @gray-darker !important;
+      margin-top: @t3-global-margin/2;
+      font-size: @font-size-small;
+      margin-left: 10px;
+      font-weight: 300;
+    }
+    .follow-btn {
+    	padding: @grid-gutter-width 0;
+    	position: relative;
+    	z-index: 2;
+
+    	a {
+    		color: @white;
+
+
+    		&:hover,
+    		&:focus {
+    			color: @gray-darker;
+    		}
+    	}
+
+    	.followbutton-none {
+    		display: inline-block;
+    		padding: 10px 20px;
+    		border: 2px solid;
+    		line-height: 1;
+    		font-weight: bold;
+    		font-size: @font-size-small;
+    		.transition(all .1s linear);
+    		margin-top: -10px;
+    		margin-bottom: -10px;
+    	}
+    }
+
+    .tweet-symbol {
+  		position: absolute;
+  		top: 50%;
+  		margin-top: -18px;
+  	}
+  }
+
+  .ja-twitter-tweets {
+  	position: relative;
+  	
+    .container-fixed();
+
+    @media (min-width: @screen-sm-min) {
+      width: @container-sm;
+    }
+    @media (min-width: @screen-md-min) {
+      width: @container-md;
+    }
+    @media (min-width: @screen-lg-min) {
+      width: @container-lg;
+    }
+
+    .ja-twitter-item {
+      border-bottom: 0;
+      margin: 0;
+      padding: @grid-gutter-width 0 @grid-gutter-width @grid-gutter-width*2 !important;
+      font-size: @font-size-base;
+
+      &.no-padding {
+        padding-left: 0 !important;
+      }
+
+      a {
+        color: @gray-darker;
+      }
+
+      
+    }
+
+    
+  }
+}
+
+
+// JA Quick Contact 
+// -------------------
+.ja-quick-contact {
+  ul li {
+    display: inline-block;
+    margin-right: @grid-gutter-width;
+    height: @input-height-base;
+    line-height: @input-height-base !important;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+// Masthead
+// ---------------
+.t3-masthead {
+  color: @white;
+  text-align: center;
+
+  .jamasshead {
+    background-size: cover;
+    padding: @grid-gutter-width * 4 0 @t3-global-padding * 4;
+
+    // Title
+    .jamasshead-title {
+      background-color: rgba(0,0,0,0.16);
+      border: 3px solid @white;
+      border-radius: @border-radius-small;
+      display: inline-block;
+      font-size: 38px;
+      font-weight: @font-weight-bold;
+      padding: @t3-global-padding * 0.75 @grid-gutter-width;
+    }
+
+    // Description
+    .jamasshead-description {
+      font-size: @t3-font-size-bigger;
+    }
+  }
+}
+
+// compatible j4 masthead
+.t3-masthead {
+  color: @white;
+  text-align: center;
+
+  .ja-masthead {
+    background-size: cover;
+    padding: @grid-gutter-width * 4 0 @t3-global-padding * 4;
+
+    &:before {
+      z-index: 1;
+    }
+
+    .ja-masthead-detail {
+      margin: auto;
+    }
+
+    // Title
+    .ja-masthead-title {
+      background-color: rgba(0,0,0,0.16);
+      border: 3px solid @white;
+      border-radius: @border-radius-small;
+      display: inline-block;
+      font-size: 38px;
+      font-weight: @font-weight-bold;
+      padding: @t3-global-padding * 0.75 @grid-gutter-width;
+    }
+
+    // Description
+    .ja-masthead-description {
+      font-size: @t3-font-size-bigger;
+    }
+  }
+}
+// end compatible j4 masthead 
+
+
+// Latest News
+// ----------------
+
+.latestnews {
+	@media screen and (min-width: @screen-md) {
+		margin-left: @t3-global-margin/2;
+	}
+  li {
+    a {
+      span {
+        position: relative;
+
+        &:before {
+          border-top: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+          border-left: 4px solid @gray-light;
+          content: "";
+          position: absolute;
+          left: -10px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+// JA Google Map 
+.ja-map {
+  overflow: hidden;
+
+  // Mobile view
+  @media (max-width: @screen-xs-max) {
+    height: 200px;
+  }
+
+  .map-container {
+    margin: 0;
+  }
+}

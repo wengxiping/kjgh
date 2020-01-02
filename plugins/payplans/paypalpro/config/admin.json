@@ -1,0 +1,49 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchantEmail",
+				"type": "text",
+				"title": "Merchant Email",
+				"tooltip": "Merchant Email of Website Pro Paypal Accoun",
+				"default": ""
+			},
+			{
+				"name": "apiUsername",
+				"type": "text",
+				"title": "API Username",
+				"tooltip": "API Username of Website Pro Paypal Account",
+				"default": ""
+			},
+			{
+				"name": "apiPassword",
+				"type": "password",
+				"title": "API Password",
+				"tooltip": "API Password of Website Pro Paypal Account",
+				"default": ""
+			},
+			{
+				"name": "apiSignature",
+				"type": "text",
+				"title": "API Signature",
+				"tooltip": "API Signature of Website Pro Paypal Account",
+				"default": ""
+			},
+			{
+				"name": "sandboxTesting",
+				"type": "toggler",
+				"title": "Test Mode",
+				"tooltip": "Are you using paypal-pro sandbox testing?",
+				"default": false
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "Cancel Recurring Order",
+				"tooltip": "Setting to Yes will allow user and admin to Cancel the Recurring Order.",
+				"default": false
+			}
+		]
+	}
+]

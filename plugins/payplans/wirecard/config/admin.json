@@ -1,0 +1,31 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "customer_id",
+				"type": "text",
+				"title": "Customer ID",
+				"tooltip": "Enter your Custom ID which was provided to you by Wirecard",
+				"class": "required",
+				"default": ""
+			},
+			{
+				"name": "secret",
+				"type": "text",
+				"title": "Secret Key",
+				"tooltip": "Enter your Secret Key that was provided to you by Wirecard",
+				"class": "required",
+				"default": ""
+			},
+			{
+				"name": "toolkit_password",
+				"type": "text",
+				"title": "Toolkit Password",
+				"tooltip": "Enter the Toolkit Password provided by Wirecard",
+				"class": "required",
+				"default": ""
+			}
+		]
+	}
+]

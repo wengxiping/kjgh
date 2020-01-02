@@ -1,0 +1,52 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "sid",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_2CHECKOUT_SID_NUMBER",
+				"tooltip": "COM_PAYPLANS_APP_2CHECKOUT_SID_NUMBER_DESC",
+				"default": ""
+			},
+			{
+				"name": "secret_word",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_2CHECKOUT_SECRET_WORD",
+				"tooltip": "COM_PAYPLANS_APP_2CHECKOUT_SECRET_WORD_DESC",
+				"default": ""
+			},
+			{
+				"name": "activation",
+				"type": "lists",
+				"title": "COM_PAYPLANS_PAYMENT_APP_2CHECKOUT_ACTIVATE_ON",
+				"tooltip": "COM_PAYPLANS_PAYMENT_APP_2CHECKOUT_ACTIVATE_ON_DESC",
+				"default": "",
+				"options": [
+					{
+						"title": "COM_PAYPLANS_PAYMENT_APP_2CHECKOUT_ORDER_CREATION",
+						"value": "OrderCreation"
+					},
+					{
+						"title": "COM_PAYPLANS_PAYMENT_APP_2CHECKOUT_FRAUD_STATUS",
+						"value": "FraudStatus"
+					}
+				]
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			},
+			{
+				"name": "alternate_url",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_2CHECKOUT_ALTERNATE_URL",
+				"tooltip": "COM_PAYPLANS_APP_2CHECKOUT_ALTERNATE_URL_DESC",
+				"default": false
+			}
+		]
+	}
+]

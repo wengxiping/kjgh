@@ -1,0 +1,1 @@
+(function(b){var a=function(c){(function d(){b("input[data-role=calendar]").datepicker({dateFormat:"yy-mm-dd",firstDay:1}).prev("span").on("click",function(){b(this).datepicker("show")});b("table.table-striped").tablesorter({cssHeader:""})}).call(this)};b(function(){window.JRedirectsGoogleWebmasters=new a()})})(jQuery);

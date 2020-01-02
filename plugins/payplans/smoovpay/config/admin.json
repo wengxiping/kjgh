@@ -1,0 +1,30 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchant_id",
+				"type": "text",
+				"title": "Merchant Username",
+				"tooltip": "Enter your username that is used to login to SmoovPay",
+				"class": "required",
+				"default": ""
+			},
+			{
+				"name": "secret_hash",
+				"type": "text",
+				"title": "Secret Key",
+				"tooltip": "Enter the secret key provided by SmoovPay in this field",
+				"class": "required",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

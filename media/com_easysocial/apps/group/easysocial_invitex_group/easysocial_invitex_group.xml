@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<social type="apps" group="group">
+	<name>Easysocial Invitex APP For Group Invite</name>
+	<element>easysocial_invitex_group</element>
+	<author>Techjoomla</author>
+	<url>techjoomla.com</url>
+	<created>20th July 2018</created>
+	<version>3.0.10</version>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description><![CDATA[APP_EASYSOCIAL_INVITEX_GROUP_DESC]]></description>
+	<installable>true</installable>
+	<core>false</core>
+	<views>
+		<view type="Embed">groups</view>
+	</views>
+	<widget>true</widget>
+	<files>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+		<file>easysocial_invitex_group.php</file>
+		<file>easysocial_invitex_group.xml</file>
+	</files>
+	<languages>
+		<language type="en-GB">en-GB.plg_app_group_easysocial_invitex_group.ini</language>
+		<language type="en-GB">en-GB.plg_app_group_easysocial_invitex_group.sys.ini</language>
+	</languages>
+</social>

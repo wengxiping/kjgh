@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+    <file>js/owl-carousel2/owl.carousel.js</file>
+    <file>js/owl.slider.js</file>
+    <file>js/script.js</file>
+	</scripts>
+
+	<stylesheets>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+        <file>js/owl-carousel2/assets/owl.carousel.css</file>
+        <file>js/owl-carousel2/assets/owl.theme.default.css</file>
+        <!--file>js/owl-carousel/owl.theme.css</file-->
+        <file>//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic</file>
+	</stylesheets>
+
+</assets>

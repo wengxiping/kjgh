@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+		<file>js/owl-carousel/owl.carousel.min.js</file>
+		<file>js/script.js</file>
+		<file>js/html5lightbox.js</file>
+	</scripts>
+	
+	<stylesheets>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>fonts/ionicons/css/ionicons.css</file>
+		<file>fonts/ptrootui/stylesheet.css</file>
+		<file>js/owl-carousel/owl.carousel.min.css</file>
+	</stylesheets>
+	
+</assets>

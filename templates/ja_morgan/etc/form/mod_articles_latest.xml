@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="custom-field" label="Extra fields" description="">
+			<field name="show-link" type="list" default="1" label="TPL_SHOW_LINK_CATEGORY_LABEL" description="TPL_SHOW_LINK_CATEGORY_DESC">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+      <field name="title-category" showon="show-link:1" type="text" default="" label="TPL_TITLE_CATEGORY_LABEL" description="TPL_TITLE_CATEGORY_DESC" />
+
+      <field name="link-category" showon="show-link:1" type="menuitem" default="" label="TPL_LINK_CATEGORY_LABEL" description="TPL_LINK_CATEGORY_DESC"   />
+    </fieldset>
+  </fields>
+</form>

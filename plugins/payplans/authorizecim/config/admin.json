@@ -1,0 +1,56 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "api_login_id",
+				"type": "text",
+				"title": "API Login ID",
+				"tooltip": "In this section, you will need to provide the API login ID that you have obtained from Authorize.Net",
+				"default": ""
+			},
+			{
+				"name": "transaction_key",
+				"type": "text",
+				"title": "Transaction Key",
+				"tooltip": "In this section you will need to enter the transaction key that you have obtained from Authorize.Net",
+				"default": ""
+			},
+			{
+				"name": "faliure_attempt",
+				"type": "text",
+				"title": "Connection Error Failure Attempts",
+				"tooltip": "Connection related failures occur when connection between client and server do not setup properly. These faliures also include payment processing faliures. It is recommended that its value should be greater than 3",
+				"default": false
+			},
+			{
+				"name": "auth_faliure_attempt",
+				"type": "text",
+				"title": "Authorization Related Failure Attempts",
+				"tooltip": "Authorization Failure occurs when user enter fake credit card details or the credit card details are not working properly.",
+				"default": false
+			},
+			{
+				"name": "company_name",
+				"type": "toggler",
+				"title": "Display Company Name",
+				"tooltip": "This option determines if the company name should be displayed in the form",
+				"default": false
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"tooltip": "COM_PP_ALLOW_RECURRING_CANCELLATION_DESC",
+				"default": false
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			}
+		]
+	}
+]

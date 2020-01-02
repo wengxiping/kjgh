@@ -1,0 +1,509 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Quick Contact Module for J3.x
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com
+ * ------------------------------------------------------------------------
+ */
+#ja-form {
+	overflow: hidden;
+	clear: both;
+}
+
+#ja-form .form-info {
+}
+
+ul.form-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.form-list li {
+	background: none !important;
+	padding: 0;
+	clear: both;
+	position: relative;
+	list-style: none;
+}
+
+ul.form-list li label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+ul.form-list li input-text {
+	float: none;
+}
+
+ul.form-list li .input-box {
+	margin-bottom: 15px;
+}
+
+ul.form-list li .input-box input {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: none;
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: 0;
+	padding: 0 10px;
+	width: 100%;
+}
+
+ul.form-list li .input-box textarea {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: none;
+	margin-bottom: 0;
+	padding: 10px;
+	width: 100%;
+	transition: all 0.35s;
+}
+
+ul.form-list li .input-box input:focus,
+ul.form-list li .input-box textarea:focus {
+	border-color: #08c;
+}
+
+ul.form-list li .input-box .small {
+	color: #999;
+	margin-top: 5px;
+}
+
+ul.form-list li.error .input-box input,
+ul.form-list li.error .input-box textarea {
+	border-color: #e65049;
+}
+
+ul.form-list li .jl_error {
+	color: #e65049;
+	font-size: 11px;
+	padding: 0 0 5px 0;
+}
+
+ul.form-list li .jl_error:empty {
+	display: none;
+}
+
+ul.form-list li #contact_email_copy {
+	display: inline-block;
+	line-height: 1;
+	height: auto;
+	margin-top: 0;
+	width: auto;
+}
+
+ul.form-list li #contact_email_copy + label {
+	display: inline-block;
+	font-weight: normal;
+	width: auto;
+}
+
+/* Button submit */
+ul.form-list #ac-submit, #ja_quicks_contact button.g-recaptcha {
+	background-color: #0049a0;
+	border-radius: 3px;
+	border: 1px solid #003c84;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	padding: 10px 15px;
+}
+
+ul.form-list #ac-submit i {
+	margin-right: 5px;
+}
+
+ul.form-list #ac-submit:hover,
+ul.form-list #ac-submit:focus,
+ul.form-list #ac-submit:active,
+#ja_quicks_contact button.g-recaptcha:hover,
+#ja_quicks_contact button.g-recaptcha:focus,
+#ja_quicks_contact button.g-recaptcha:active {
+	background-color: #00408d;
+	text-decoration: none;
+}
+
+.recaptchatable #recaptcha_response_field {
+	min-width: 145px;
+	left: 0;
+}
+
+#ja-form {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+
+/*
+	LIGHT STYLE 2
+---------------------------- */
+#ja-form.style2 {
+	width: 100%;
+}
+
+#ja-form.style2 .form-info {
+	margin-bottom: 15px;
+}
+
+#ja-form.style2	.form-list {
+	overflow: hidden;
+}
+
+#ja-form.style2	#row_name,
+#ja-form.style2	#row_email,
+#ja-form.style2	#row_subject {
+	box-sizing: border-box;
+	clear: none;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 33.3%;
+}
+
+#ja-form.style2	#row_name {
+	padding-left: 0;
+}
+
+#ja-form.style2	#row_subject {
+	padding-right: 0;
+}
+
+
+/*
+ LIGHT STYLE 3
+---------------------------- */
+#ja-form.style3 {
+	width: 100%;
+}
+
+#ja-form.style3 ul.form-list {
+	padding-right: 50%;
+	position: relative;
+}
+
+#ja-form.style3	#row_name,
+#ja-form.style3	#row_email,
+#ja-form.style3	#row_subject {
+	box-sizing: border-box;
+	clear: none;
+	display: block;
+	padding-right: 15px;
+}
+
+#ja-form.style3 #row_text {
+	box-sizing: border-box;
+	clear: none;
+	padding-left: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+
+#ja-form.style3 #row_text textarea {
+	height: 207px;
+}
+
+
+/*
+ LIGHT STYLE 3
+---------------------------- */
+#ja-form.style4 {
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.08);
+	border: 1px solid #e5e5e5;
+	padding: 40px 20px;
+	position: relative;
+	width: 100%;
+}
+
+#ja-form.style4:before,
+#ja-form.style4:after {
+	background: url(../images/letter-pattern.png) repeat-x left top;
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10px;
+	width: 100%;
+}
+
+#ja-form.style4:after {
+	top: auto;
+	bottom: 0;
+}
+
+#ja-form.style4 .form-info {
+	border-bottom: 1px dashed #ddd;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+#ja-form.style4 ul.form-list {
+	padding-right: 50%;
+	position: relative;
+}
+
+#ja-form.style4	#row_name,
+#ja-form.style4	#row_email,
+#ja-form.style4	#row_subject {
+	box-sizing: border-box;
+	clear: none;
+	display: block;
+	padding-right: 15px;
+}
+
+#ja-form.style4 #row_text {
+	box-sizing: border-box;
+	clear: none;
+	padding-left: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+
+#ja-form.style4 ul li .input-box input,
+#ja-form.style4 ul li .input-box textarea {
+	background-color: transparent;
+	border-radius: 0;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#ja-form.style4 ul li .input-box input:focus,
+#ja-form.style4 ul li .input-box textarea:focus {
+	background-color: #fff;
+}
+
+#ja-form.style4 #row_text textarea {
+	height: 207px;
+}
+
+#ja-form.style4 #ac-submit {
+	background: #f2645c;
+	box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+	border-radius: 0;
+	border-color: #f2645c;
+}
+
+#ja-form.style4 #ac-submit:hover,
+#ja-form.style4 #ac-submit:focus,
+#ja-form.style4 #ac-submit:active {
+	background: #c7524c;
+	border-color: #c7524c;
+}
+
+/*
+	ROUNDED STYLE
+---------------------------- */
+#ja-form.rounded {
+	width: 100%;
+}
+
+#ja-form.rounded .form-info {
+	margin-bottom: 30px;
+}
+
+#ja-form.rounded	.form-list {
+	overflow: hidden;
+}
+
+#ja-form.rounded	#row_name,
+#ja-form.rounded	#row_email,
+#ja-form.rounded	#row_subject {
+	box-sizing: border-box;
+	clear: none;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 33.3%;
+}
+
+#ja-form.rounded	#row_name {
+	padding-left: 0;
+}
+
+#ja-form.rounded	#row_subject {
+	padding-right: 0;
+}
+
+#ja-form.rounded ul li .input-box input {
+	border-radius: 19px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#ja-form.rounded ul li .input-box textarea {
+	border-radius: 5px;
+}
+
+#ja-form.rounded #ac-submit {
+	border-radius: 20px;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+/*
+	DARK STYLE 1
+---------------------------- */
+#ja-form.dark-style1 {
+}
+
+#ja-form.dark-style1 input,
+#ja-form.dark-style1 textarea {
+	background-color: rgba(255,255,255,0.03);
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+#ja-form.dark-style1 label {
+	color: #999;
+}
+
+
+/*
+	DARK STYLE 2
+---------------------------- */
+#ja-form.dark-style2 {
+	width: 100%;
+}
+
+#ja-form.dark-style2 .form-info {
+	margin-bottom: 15px;
+}
+
+#ja-form.dark-style2	.form-list {
+	overflow: hidden;
+}
+
+#ja-form.dark-style2	#row_name,
+#ja-form.dark-style2	#row_email,
+#ja-form.dark-style2	#row_subject {
+	box-sizing: border-box;
+	clear: none;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 33.3%;
+}
+
+#ja-form.dark-style2	#row_name {
+	padding-left: 0;
+}
+
+#ja-form.dark-style2	#row_subject {
+	padding-right: 0;
+}
+
+#ja-form.dark-style2 label {
+	color: #999;
+}
+
+#ja-form.dark-style2 input,
+#ja-form.dark-style2 textarea {
+	background-color: rgba(255,255,255,0.03);
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/*
+ LIGHT STYLE 3
+---------------------------- */
+#ja-form.dark-style3 {
+	width: 100%;
+}
+
+#ja-form.dark-style3 ul.form-list {
+	padding-right: 50%;
+	position: relative;
+}
+
+#ja-form.dark-style3	#row_name,
+#ja-form.dark-style3	#row_email,
+#ja-form.dark-style3	#row_subject {
+	box-sizing: border-box;
+	clear: none;
+	display: block;
+	padding-right: 15px;
+}
+
+#ja-form.dark-style3 #row_text {
+	box-sizing: border-box;
+	clear: none;
+	padding-left: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+
+#ja-form.dark-style3 #row_text textarea {
+	height: 207px;
+}
+
+#ja-form.dark-style3 label {
+	color: #999;
+}
+
+#ja-form.dark-style3 input,
+#ja-form.dark-style3 textarea {
+	background-color: rgba(255,255,255,0.03);
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* RESPONSIVE STYLE */
+@media screen and (max-width: 480px) {
+	#ja-form {
+		width: 100%;
+	}
+
+	div#ja-form ul.form-list {
+		padding-right: 0 !important;
+	}
+
+	#ja-form ul.form-list li#row_name,
+	#ja-form ul.form-list li#row_email,
+	#ja-form ul.form-list li#row_subject,
+	#ja-form ul.form-list li#row_text {
+		float: none;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+}
+
+/* Term condition */
+#row_term_condition #term_condition {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	line-height: 1;
+	vertical-align: middle;
+	width: auto;
+}
+
+#row_term_condition .required {
+	color: #c00;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+#row_term_condition label {
+	display: inline-block;
+}

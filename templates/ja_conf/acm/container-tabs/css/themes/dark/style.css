@@ -1,0 +1,93 @@
+.acm-container-tabs {
+  position: relative;
+}
+.acm-container-tabs .section-title {
+  max-width: 320px;
+}
+.acm-container-tabs .section-title .title-lead {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.acm-container-tabs .container-tabs-nav {
+  position: relative;
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs {
+  border: 0;
+  bottom: -12px;
+  position: absolute;
+  right: 0;
+  max-width: 640px;
+}
+@media (max-width: 991px) {
+  .acm-container-tabs .container-tabs-nav .nav-tabs {
+    position: relative;
+    margin-top: 12px;
+  }
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs > li {
+  margin-left: 12px;
+  margin-right: 0;
+  margin-bottom: 12px;
+}
+@media (max-width: 991px) {
+  .acm-container-tabs .container-tabs-nav .nav-tabs > li {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs > li > a {
+  background: #292929;
+  border-radius: 40px;
+  border: 0;
+  color: #ffffff;
+  margin: 0;
+  font-size: 12px;
+  font-family: Chivo, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 12px 24px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs > li > a:hover,
+.acm-container-tabs .container-tabs-nav .nav-tabs > li > a:focus,
+.acm-container-tabs .container-tabs-nav .nav-tabs > li > a:active {
+  background: #242424;
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs > li.active > a {
+  background: #fabe58;
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs > li.active > a:before {
+  border-width: 6px;
+  border-style: solid;
+  border-color: #fabe58 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs > li > a.active {
+  background: #fabe58;
+}
+.acm-container-tabs .container-tabs-nav .nav-tabs > li > a.active:before {
+  border-width: 6px;
+  border-style: solid;
+  border-color: #fabe58 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+}
+.acm-container-tabs .tab-content {
+  margin-top: 64px;
+}
+.acm-container-tabs .tab-pane {
+  display: none;
+}
+.acm-container-tabs .tab-pane .section-inner {
+  padding: 72px 0 0;
+}
+.acm-container-tabs .tab-pane.active {
+  display: block;
+}

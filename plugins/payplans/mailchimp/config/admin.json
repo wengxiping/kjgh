@@ -1,0 +1,49 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "mailchimpApiKey",
+				"type": "text",
+				"title": "API Key",
+				"tooltip": "Please enter the Mailchimp API Key",
+				"default": ""
+			},
+			{
+				"name": "mailchimpMerchantEmail",
+				"type": "text",
+				"title": "Merchant E-mail",
+				"tooltip": "Please enter mailchimp marchant email address",
+				"default": ""
+			},
+			{
+				"name": "mailchimpMail",
+				"type": "toggler",
+				"title": "Send Confirmation E-mail",
+				"tooltip": "If enabled, MailChimp will attempt to send a confirmation email to the user being subscribed based on the double-optin option from the list.",
+				"default": "1"
+			},
+			{
+				"name": "addToListonActive",
+				"type": "mailchimplist",
+				"title": "Add To List (On Active Subscription)",
+				"tooltip": "Add user to the selected mailing list when subscription status is changed to Active",
+				"default": ""
+			},
+			{
+				"name": "addToListonHold",
+				"type": "mailchimplist",
+				"title": "Add To List (On Hold Subscription)",
+				"tooltip": "Add user to the selected mailing list when subscription status is changed to Hold",
+				"default": ""
+			},
+			{
+				"name": "addToListonExpire",
+				"type": "mailchimplist",
+				"title": "Add To List (On Expire Subscription)",
+				"tooltip": "Add user to the selected mailing list when subscription status is changed to Expire",
+				"default": ""
+			}
+		]
+	}
+]

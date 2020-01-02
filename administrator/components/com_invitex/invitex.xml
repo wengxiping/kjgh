@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.2" method="upgrade">
+	<name>InviteX</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>22nd Oct 2019</creationDate>
+	<version>3.0.12</version>
+	<description>COM_INVITEX_INSTALL_MSG</description>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.sql</file>
+		</sql>
+	</install>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<scriptfile>script.invitex.php</scriptfile>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>invitex.php</filename>
+		<filename>helper.php</filename>
+		<filename>config_default.php</filename>
+		<filename>jomsocial_rule.xml</filename>
+		<filename>js_helper.php</filename>
+		<folder>controllers</folder>
+		<folder>sef_ext</folder>
+		<folder>media</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>views_bs2</folder>
+		<folder>gmailAPI</folder>
+		<folder>hotmailAPI</folder>
+		<folder>CB_plug_redirectasregister</folder>
+		<folder>altapoints</folder>
+		<folder>inv_types</folder>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">/en-GB/en-GB.com_invitex.ini</language>
+	</languages>
+	<administration>
+		<menu img="components/com_invitex/assets/images/icons/user_add.png">COM_INVITEX</menu>
+		<submenu>
+			<menu link="option=com_invitex&amp;view=invites" img="components/com_invitex/assets/images/icons/invites.png">COM_INVITE_INVITES</menu>
+			<menu link="option=com_invitex&amp;view=topinviters" img="components/com_invitex/assets/images/icons/users.png">COM_INVITE_TOP_INVITERS</menu>
+			<menu link="option=com_invitex&amp;view=config&amp;layout=templates" img="components/com_invitex/assets/images/icons/process.png">COM_INVITE_TEMPLATE</menu>
+			<menu link="option=com_invitex&amp;view=types" img="components/com_invitex/assets/images/icons/types.png">COM_TYPES</menu>
+			<menu link="option=com_invitex&amp;view=invitation_limit" img="components/com_invitex/assets/images/icons/limit.png">COM_INVITE_LIMIT</menu>
+			<menu link="option=com_invitex&amp;view=unsubscribe_list" img="components/com_invitex/assets/images/icons/unsubscribe.png">COM_UNSUB_USERS</menu>
+			<menu link="option=com_invitex&amp;view=reminder" img="components/com_invitex/assets/images/icons/reminder.png">COM_REMINDER</menu>
+		</submenu>
+		<files folder="admin">
+			<file>access.xml</file>
+			<file>config.xml</file>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>invitex.php</filename>
+			<filename>log.txt</filename>
+			<filename>notify_invite.alert</filename>
+			<filename>invite_accpeted.points</filename>
+			<filename>invite_sent.points</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+			<folder>helpers</folder>
+			<folder>sql</folder>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">/en-GB/en-GB.com_invitex.ini</language>
+			<language tag="en-GB">/en-GB/en-GB.com_invitex.sys.ini</language>
+			<language tag="en-GB">/en-GB/en-GB.com_invitex.menu.ini</language>
+		</languages>
+	</administration>
+	<config>
+		<fields>
+			<fieldset>
+				<field name="invite_methods" default="manual" />
+				<field name="jomsocial_toolbar" default="0" />
+				<field name="invitex_default_message" default="Please check this awesome site!" />
+				<field name="hint_api_settings" default="API_SET" />
+				<field name="invite_apis" default="50" />
+				<field name="inv_look" default="2" />
+				<field name="show_menu" default="1" />
+				<field name="currentBSViews" default="bs2" />
+				<field name="loadBootstrap" default="0" />
+				<field name="use_sys" default="0" />
+				<field name="enb_batch" default="1" />
+				<field name="inviter_percent" default="30" />
+				<field name="guest_invitation" default="0" />
+				<field name="global_value" default="180" />
+				<field name="per_user_invitation_limit" default="40" />
+				<field name="expiry" default="90" />
+				<field name="enb_load_more" default="0" />
+				<field name="store_contact" default="0" />
+				<field name="contacts_at_first_instance" default="20" />
+				<field name="send_auto_remind" default="0" />
+				<field name="rem_after_days" default="10" />
+				<field name="rem_repeat_times" default="1" />
+				<field name="rem_every" default="1" />
+				<field name="allow_domain_validation" default="0" />
+				<field name="include_site_domain" default="0" />
+				<field name="enable_log" default="0" />
+				<field name="reg_direct" default="Joomla" />
+				<field name="estoolbar" default="0" />
+				<field name="override_easysocial_invitemenu" default="0" />
+				<field name="jstoolbar" default="0" />
+				<field name="joined_friend_notification" default="0" />
+				<field name="invite_accepted_notification" default="0" />
+				<field name="pt_option" default="no" />
+				<field name="inviter_point" default="5" />
+				<field name="invitee_point" default="10" />
+				<field name="inviter_point_after_invite" default="5" />
+				<field name="ga_campaign_enable" default="1" />
+				<field name="ga_campaign_name" default="Invitations" />
+				<field name="ga_campaign_source" default="invitex" />
+				<field name="ga_campaign_medium" default="email" />
+				<field name="urlapi" default="0" />
+				<field name="broadcast_activity_stream" default="0" />
+				<field name="invitation_during_reg" default="0" />
+				<field name="landing_page_reg" default="Joomla" />
+				<field name="invite_only" default="0" />
+				<field name="reg_only_invite_email" default="0" />
+				<field name="invite_after_login" default="0" />
+				<field name="select_mothod_for_invite" default="0" />
+				<field name="invitationTermsAndConditions" default="0" />
+				<field name="tNcArticleId" default="0" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

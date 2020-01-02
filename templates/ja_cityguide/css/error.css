@@ -1,0 +1,129 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA City Guide Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* MAIN STYLE
+---------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #757575;
+	font-family: 'Archivo', sans-serif;
+	font-size: 14px;
+	line-height: 1.714286;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* OutLine */
+#outline {
+	margin-top: 7%;
+	text-align: center;
+}
+
+/* Eror Code */
+.error-code {
+	color: #343648;
+	font-size: 400px;
+	font-weight: 700;
+	line-height: normal;
+	position: relative;
+	letter-spacing: -10px;
+}
+
+
+
+/* Message Error */
+.error-message {
+	width: 100%;
+	letter-spacing: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Message Error */
+.error-message h2 {
+  background: #fff;
+	color: #343648;
+  display: inline-block;
+  font-size: 44px;
+  font-family: 'IBM Plex Serif', "Times New Roman", Times, serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 10px;
+  position: relative;
+  z-index: 3;
+}
+
+#errorboxbody p {
+	display: block;
+	margin: 0 0 12px;
+	font-size: 14px;
+}
+
+/* Button Home */
+.button-home {
+	background: #f9676b;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 48px;
+	position: relative;
+	transition: 0.2s;
+	font-weight: 600;
+}
+
+.button-home:hover,
+.button-home:focus,
+.button-home:active {
+	background: #f72c32;
+	color: #fff;
+}
+
+@media (max-width:  767px){
+
+	/* OutLine */
+	#outline {
+		margin-top: 20%;
+	}
+
+	/* Eror Code */
+	.error-code {
+	  font-size: 200px;
+	}
+
+	/* Message Error */
+	.error-message {
+	}
+
+	/* Message Error */
+	.error-message h2 {
+	  font-size: 24px;
+	}
+
+	#errorboxbody p {
+		font-size: 14px;
+	}
+
+	/* Button Home */
+	.button-home {
+		padding: 10px 20px;
+		font-size: 13px;
+	}
+}

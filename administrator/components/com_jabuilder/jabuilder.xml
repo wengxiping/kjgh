@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3" method="upgrade">
+	<name>com_jabuilder</name>
+	<version>1.0.8</version>
+	<creationDate>Sep 21, 2018</creationDate>
+	<author>JoomlArt.com</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.joomlart.com</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<description><![CDATA[
+		<div align="center">
+			<div align="left" style="background-color: #dff0d8; border: 1px solid #d6e9c6; border-radius: 2px; color: #3c763d; padding: 20px;">
+				<h3 style="margin: 0 0 20px; font-size: 24px;">JA Builder Component</h3>
+				
+				<p>JA Builder is dedicated builder tool for Joomla CMS to build pages, landing pages, layouts based on pre-made content blocks and powerful options to help any user handle all the website development work with ease. Newbies will have fun learning and developers would love it.</p>
+			
+				<p>Access Components » JA Builder and you can create new pages, layouts and edit pages, layout on front-end.</p>
+				
+				<div class="btn-actions">
+				<a href="//www.joomlart.com/documentation/joomla-templates/ja-builder" title="Document" class="primary">Document</a>
+				<a href="https://www.joomlart.com/forums/forum/joomlart-public-forums/ja-site-builder/" title="Forum">Forum</a>
+				<a href="http://demo.builder.joomlart.com/" title="Demo">Demo</a>
+				<a href="https://www.joomlart.com/ja-builder" title="More info">More info...</a>
+				</div>
+				
+				<p style="font-size: 12px;">Copyright 2004 - 2018 <a href='//www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+      
+				<p>This extension collects anonymous data comprising server and joomla environment. <a href="https://www.joomlart.com/documentation/joomla-templates/ja-builder#collect-data" target="_blank">Details click here</a></p>
+	  			</div>
+			<style>
+			  .btn-actions {margin: 30px 0;}
+			  .btn-actions a {background: #fff; border: 1px solid #ddd; border-radius: 2px; color: #666; box-shadow: 0 -2px 0 rgba(0,0,0,0.1) inset; font-size: 16px; letter-spacing: 0.5px; padding: 8px 20px 9px; margin: 0 5px 0 0; text-decoration: none; transition: all 0.35s;}
+			  .btn-actions a.primary {background-color: #2e7d32; border-color: #2e7d32; color: #fff;}
+			  .btn-actions a:hover, .btn-actions a:focus {background: #01579b; border-color: #01579b; color: #fff;}
+			  </style>
+		</div>
+		]]></description>
+	
+	
+	<updateservers>
+    <server type="extension">http://update.joomlart.com/service/tracking/j31/com_jabuilder.xml</server>
+    </updateservers>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>	
+
+	<files folder="site">
+		<filename>jabuilder.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>controllers</folder>
+	</files>
+
+	<administration>
+		<menu link='index.php?option=com_jabuilder'>COM_JABUILDER_MENU</menu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>jabuilder.php</filename>
+			<filename>controller.php</filename>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>tables</folder>
+			<folder>helpers</folder>
+			<folder>layouts</folder>
+			<folder>language</folder>
+			<folder>sql</folder>
+		</files>
+		<languages>
+	 		<language tag="en_GB">en-GB/en-GB.com_jabuilder.ini</language>
+	 		<language tag="en_GB">en-GB/en-GB.com_jabuilder.sys.ini</language>
+ 		</languages>
+	</administration>
+</extension>

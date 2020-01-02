@@ -1,0 +1,21 @@
+.ja-module .nav > li,
+.module-menu .nav > li {
+  display: block;
+  padding: 2px 0;
+  margin: 0;
+}
+.categories-module,
+ul.categories-module,
+.category-module,
+ul.category-module,
+ul.mostread {
+  margin: 0;
+}
+.categories-module li:first-child,
+ul.categories-module li:first-child,
+.category-module li:first-child,
+ul.category-module li:first-child,
+ul.mostread li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}

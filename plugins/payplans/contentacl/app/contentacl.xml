@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <name>Content ACL</name>
+    <author>http://www.readybytes.net/</author>
+    <icon>contentACL.png</icon>
+    <description>
+    	By using this app, administrators can choose whether to allow/disallow users to access available content (articles and categories)
+    depending upon the user's subscription status. &lt;br/&gt; &lt;br/&gt;
+    Reference Link: &lt;a href="http://www.jpayplans.com/app-ville/item/content-acl.html" target="_blank" &gt; Content Access Control Level  &lt;/a&gt;
+    </description>
+    <tags>access</tags>
+	<help>
+	If you want to allow only limited set of users to access any Joomla Content then create this app to block the Joomla Content from being accessed by others based on their subscription status.
+	&lt;br/&gt;For eg. you want to allow only those users having active subscription of PlanA to access categoryA and block other users, then select the category and set it to categoryA and attached this app to planA.
+	</help>
+<fields name="app_params">
+	<fieldset name="app_params" addfieldpath="/plugins/payplans/contentacl/contentacl/app/contentacl/elements/">
+	
+		<field type="xispacer" 
+		   default="On Subscription Active"
+			/>
+
+		
+		<field	name="block_j17"
+				type="parammanipulator" 
+				label="COM_PAYPLANS_CONTENTACL_SELECT_CONTENT"
+				description="COM_PAYPLANS_CONTENTACL_SELECT_CONTENT_DESC"
+				default="none">
+				<option value="none">None</option>
+				<option value="joomla_category" params="joomla_category">COM_PAYPLANS_CONTENTACL_CATEGORY</option>
+				<option value="joomla_article" params="joomla_article">COM_PAYPLANS_CONTENTACL_ARTICLE</option>
+		</field>
+		
+
+		<field name="joomla_category" 
+			   type="xijcategory"
+			   label="COM_PAYPLANS_CONTENTACL_CATEGORY_LABEL"
+			   description="COM_PAYPLANS_CONTENTACL_CATEGORY_DESC"
+			   />
+
+
+		<field	name="joomla_article"
+				type="xiarticle"
+				label="COM_PAYPLANS_CONTENTACL_ARTICLE_LABEL"
+				description="COM_PAYPLANS_CONTENTACL_ARTICLE_DESC"
+				/>
+
+	</fieldset>
+	</fields>
+<alias>pp-contentacl</alias>
+<documentation>http://www.readybytes.net/payplans/documentation/item/joomla-article-restrict.html</documentation>
+<version>4.0.15</version>
+</config>

@@ -1,0 +1,37 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "tax_rate_personal",
+				"type": "text",
+				"title": "COM_PP_EUVAT_PARAM_TAX_RATE_PERSONAL",
+				"tooltip": "COM_PP_EUVAT_PARAM_TAX_RATE_PERSONAL_DESC",
+				"default": ""
+			},
+			{
+				"name": "tax_rate_business",
+				"type": "text",
+				"title": "COM_PP_EUVAT_PARAM_TAX_RATE_BUSINESS",
+				"tooltip": "COM_PP_EUVAT_PARAM_TAX_RATE_BUSINESS_DESC",
+				"default": ""
+			},
+			{
+				"name": "tax_check_vatno",
+				"type": "toggler",
+				"title": "COM_PP_EUVAT_PARAM_TAX_CHECK_VATNO",
+				"tooltip": "COM_PP_EUVAT_PARAM_TAX_CHECK_VATNO_DESC",
+				"default": true
+			},
+			{
+				"name": "tax_country",
+				"type": "country",
+				"allowAll" : true,
+				"multiple" : true,
+				"title": "COM_PP_EUVAT_PARAM_TAX_RATE_COUNTRY",
+				"tooltip": "COM_PP_EUVAT_PARAM_TAX_RATE_COUNTRY_DESC",
+				"default": []
+			}
+		]
+	}
+]

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>Payplans - Analytics</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Tools (Woopra, Mixpanel, Intercom) used for analytics of payplans data</description>
+	<files>
+		<folder>app</folder>
+		<folder>plugins</folder>
+		<filename plugin="analytics">analytics.php</filename>
+		<filename>analytics.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="eventToTrack" type="list" default="sub.activate" label="COM_PAYPLANS_APP_ANALYTICS_SELECT_EVENT" description="" multiple="true">
+					<option value="COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_CREATION_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_CREATION</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_UPGRADE_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_UPGRADE</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_ACTIVATION_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_ACTIVATION</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_EXPIRATION_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_EXPIRATION</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_HOLD_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_HOLD</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_RENEWAL_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_SUBSCRIPTION_RENEWAL</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_INVOICE_PAID_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_INVOICE_PAID</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_INVOICE_REFUND_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_INVOICE_REFUND</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_INVOICE_CHECKOUT_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_INVOICE_CHECKOUT</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_DISCOUNT_CONSUMED_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_DISCOUNT_CONSUMED</option>
+					<option value="COM_PAYPLANS_APP_ANALYTICS_PAYMENT_GATEWAY_USED_EVENTNAME">COM_PAYPLANS_APP_ANALYTICS_PAYMENT_GATEWAY_USED</option>
+				</field>
+
+				<field name="real_domain_filter" type="text" label="COM_PAYPLANS_APP_ANALYTICS_DOMAINS" description="COM_PAYPLANS_APP_ANALYTICS_DOMAINS_DESC" />
+
+				<field type="spacer" name="intercom_spacer" label="COM_PAYPLANS_APP_ANALYTICS_INTERCOM_CONFIGURATION" />
+					<field name="intercom_is_enabled" type="radio" default="0" class="radio btn-group"  label="COM_PAYPLANS_APP_ANALYTICS_ENABLE_INTERCOM" description="COM_PAYPLANS_APP_ANALYTICS_ENABLE_INTERCOM_DESC">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+					<field name="intercom_app_id" description="COM_PAYPLANS_APP_ANALYTICS_INTERCOM_APP_ID_DESC" type="text" rows="5" cols="40" default="" label='COM_PAYPLANS_APP_ANALYTICS_INTERCOM_APP_ID'/>
+					<field name="intercom_app_key" type="text" description="COM_PAYPLANS_APP_ANALYTICS_INTERCOM_APP_KEY" rows="5" cols="40" default="" label='COM_PAYPLANS_APP_ANALYTICS_INTERCOM_APP_KEY' />
+
+				<field type="spacer" name="mixpanel_spacer" label="COM_PAYPLANS_APP_ANALYTICS_MIXPANEL_CONFIGURATION" />
+
+				<field name="mixpanel_is_enabled" type="radio" default="0" label="COM_PAYPLANS_APP_ANALYTICS_ENABLE_MIXPANEL" class="radio btn-group" description="COM_PAYPLANS_APP_ANALYTICS_ENABLE_MIXPANEL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="mixpanel_token" type="text" rows="5" cols="40" default="" label='COM_PAYPLANS_APP_ANALYTICS_MIXPANEL_TOKEN'/>
+
+				<field type="spacer" name="woopra_spacer" label="COM_PAYPLANS_APP_ANALYTICS_WOOPRA_CONFIGURATION" />
+
+				<field name="woopra_is_enabled" type="radio" default="0" class=" radio btn-group"  label="COM_PAYPLANS_APP_ANALYTICS_ENABLE_WOOPRA" description="COM_PAYPLANS_APP_ANALYTICS_ENABLE_WOOPRA_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

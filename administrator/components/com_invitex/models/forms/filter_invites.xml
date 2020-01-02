@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field name="search" type="text" class="form-control input-large" label="COM_INVITEX_FILTER_SEARCH_DESC_INVITES" description="COM_INVITEX_FILTER_SEARCH_DESC_INVITES" hint="COM_INVITEX_FILTER_SEARCH_DESC_INVITES" />
+		<field name="inviter" type="inviters" label="SELECT_USER" description="SELECT_USER" onchange="this.form.submit();">
+			<option value="0">SELECT_USER</option>
+		</field>
+		<field name="provider_email" type="providers" label="SELECT_PROVIDER" description="SELECT_PROVIDER" onchange="this.form.submit();">
+			<option value="-1">SELECT_PROVIDER</option>
+		</field>
+		<field name="accepted_status" type="list" label="COM_INVITEX_FILTER_PUBLISHED" description="COM_INVITEX_FILTER_PUBLISHED_DESC" onchange="this.form.submit();">
+			<option value="0">COM_INVITEX_SELECT_ACC</option>
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="2">COM_INVITEX_NO</option>
+		</field>
+		<field name="sent_status" type="list" label="COM_INVITEX_FILTER_PUBLISHED" description="COM_INVITEX_FILTER_PUBLISHED_DESC" onchange="this.form.submit();">
+			<option value="0">COM_INVITEX_SELECT_SENT</option>
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="2">COM_INVITEX_NO</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field name="limit" type="limitbox" class="input-mini" default="25" label="COM_INVITEX_LIST_LIMIT" description="COM_INVITEX_LIST_LIMIT_DESC" onchange="this.form.submit();" />
+	</fields>
+</form>

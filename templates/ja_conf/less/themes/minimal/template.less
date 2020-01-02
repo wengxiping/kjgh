@@ -1,0 +1,237 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// GLOBAL STYLE
+// ---------------------
+.title-lead {
+  background: @black;
+  background-clip: text;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog-featured.speaker-blog .article-field,
+.blog.speaker-blog .article-field,
+.title-intro,
+.latestnews.list .article-field {
+  color: rgba(0,0,0,0.4);
+}
+
+.more-link {
+  a {
+    font-weight: 400;
+  }
+}
+
+.profile-edit #helpsite-refresh,
+.pagenav li > a {
+  color: rgba(0,0,0,0.4);
+
+  &:hover,&:focus,&:active {
+    color: @white;
+  }
+}
+
+// Text color
+.fields-container .field-entry .field-value {
+  color: @black;
+}
+
+// Border color
+.fields-container .date-field .field-value span {
+  border-color: @inverse-color;
+}
+
+// Background Color
+.item-page .fields-container .date-field {
+  background: @brand-light;
+}
+
+// Input Border Color
+.registration .input-append,
+.profile-edit .input-append,
+.profile .input-append,
+.registration .input-prepend,
+.profile-edit .input-prepend,
+.profile .input-prepend {
+  .add-on,
+  .btn {
+    border: 1px solid @input-border;
+  }
+}
+
+// Mask Image
+.img-mask {
+  .img-wrap {
+    &:before {
+      display: none;
+    }
+
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    &:hover {
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+// Menu
+.navbar-default .navbar-nav {
+  font-family: @headings-font-family-intro;
+}
+
+// Label
+#searchForm legend {
+  color: @gray-dark;
+}
+
+// MODULE
+// --------------------
+
+// Acymailing
+.acymailing_module .acymailing_form .acysubbuttons .button {
+  background: @headings-color;
+
+  &:hover,&:focus,&:active {
+    background: darken(@headings-color,10%);
+  }
+}
+
+.acymailing_module .acymailing_form input.inputbox {
+  background: rgba(255,255,255,0.4)!important;
+  border: 0!important;
+  color: rgba(255,255,255,0.6);
+}
+
+// Head Search
+.head-right .search .form-control {
+  background-image: url('../../@{t3-image-path}/ico/search-gray.png')!important;
+  background-position: 10px center!important;
+  background-repeat: no-repeat!important;
+  color: @text-color;
+}
+
+// ACM STYLE FOR THEME
+// --------------------
+.t3-wrapper {
+  // ACM Features
+  .acm-features {
+    &.style-1 {
+      .item-svg .item__svg {
+        fill: @gray-lighter;
+      }
+
+      .features-action a {
+        color: rgba(0,0,0,0.4);
+        .transition(none);
+
+        &:hover,&:focus,&:active {
+          color: @white;
+        }
+      }
+    }
+
+    &.style-2 {
+      .owl-nav > div {
+        color: rgba(0,0,0,0.4);
+
+        &:hover,&:focus,&:active {
+          color: @white;
+        }
+      }
+    }
+  }
+
+  // ACM Hero
+  .acm-hero .hero-title {
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  // ACM Video
+  .acm-video .video {
+    span {
+      background: transparent;
+    }
+
+    .img-thumb {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+
+  // ACM Event
+  .acm-events .event-item .event-link a {
+    color: rgba(0,0,0,0.4);
+
+    &:hover,&:focus,&:active {
+      color: @white;
+    }
+  }
+
+  // ACM Tabs
+  .acm-container-tabs .container-tabs-nav .nav-tabs > li {
+    > a {
+      color: rgba(0,0,0,0.4);
+    }
+
+    &.active {
+      > a {
+        color: @white;
+      }
+    }
+  }
+}
+
+// Offcanvas
+div.t3-off-canvas .t3-off-canvas-body .module-title {
+  border-color: rgba(0,0,0,0.4);
+}
+
+// EVENT BOOKING
+html.com_eventbooking {
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"],
+  .inputbox {
+    background: @white;
+    border: 1px solid @input-border;
+    color: @text-color;
+
+    &:focus {
+      border-color: @input-border-focus;
+    }
+  }
+}
+div#eb-category-page-columns .event-date-wrap span {
+  border-color: rgba(0,0,0,0.4);
+}
+
+div#eb-event-page .eb-description #eb-event-properties-heading,
+html.com_eventbooking .table-striped > tbody > tr:nth-of-type(2n+1) td,
+html.com_eventbooking .table-striped > tbody > tr:nth-of-type(2n+1) th {
+  color: rgba(0,0,0,0.8);
+}

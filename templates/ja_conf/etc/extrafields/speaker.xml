@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields_1" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+	    <field name="position" type="text" label="TPL_POSITION" description="TPL_POSITION_DESC"/>
+    </fieldset>
+</fields>
+</form>

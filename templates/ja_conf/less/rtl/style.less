@@ -1,0 +1,318 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// RTL STYLES
+// ------------------------------------------------------
+html {
+	// Offcanvas
+	.off-canvas-left.t3-off-canvas {
+		width: 0;
+	}
+
+	.off-canvas-open {
+		.off-canvas-left.t3-off-canvas {
+			width: @t3-off-canvas-width;
+		}
+	}
+
+	.languageswitcherload {
+		ul {
+			float: left;
+		}
+	}
+
+	// Addthis
+	.addthis_default_style .addthis_separator,
+	.addthis_default_style .at4-icon,
+	.addthis_default_style .at300b,
+	.addthis_default_style .at300bo,
+	.addthis_default_style .at300bs,
+	.addthis_default_style .at300m {
+		float: right;
+	}
+
+	// Icon RTL
+	.fas {
+		&.fa-arrow-right::before {
+			content: "\f060";
+		}
+
+		&.fa-arrow-left::before {
+			content: "\f061";
+		}
+	}
+
+	.glyphicon-chevron-left::before {
+		content: "\e080";
+	}
+
+	.glyphicon-chevron-right::before {
+		content: "\e079";
+	}
+
+
+	// Carousel RTL
+	.owl-stage-outer {
+		direction: ltr;
+
+		.owl-stage {
+			direction: rtl;
+		}
+	}
+
+	// ACM RTL
+	.acm-video .video .img-thumb,
+	.acm-hero > .container,
+	.ekko-lightbox .modal-dialog,
+	.acm-features.style-1 .item-svg {
+		left: 50%;
+		right: auto;
+	}
+}
+
+// JomSocial RTL
+.joms-js-form--login {
+	.joms-input--append {
+		> span {
+			border-left: 0 !important;
+			border-right: 1px solid @input-border !important;
+		}
+	}
+}
+
+.jom-action_login {
+	.joms-checkbox {
+		span {
+			padding-right: @t3-global-padding/1.5;
+		}
+	}
+}
+
+.joms-comment {
+	.joms-comment__item {
+		.joms-comment__body {
+			padding-right: 12px;
+		}
+	}
+}
+
+.joms-module {
+	.joms-popover__content {
+		padding-right: 12px;
+		ul {
+			float: right;
+			li {
+				margin-right: 0;
+				margin-left: 12px;
+			}
+		}
+	}
+}
+
+.joms-form__group.has-privacy {
+	.joms-select--wrapper {
+		padding-right: 30px;
+	}
+}
+
+.joms-page {
+	.joms-select--wrapper {
+		.joms-select {
+			padding-right: 30px;
+		}
+	}
+}
+
+.joms-right {
+	float: left;
+}
+
+.joms-list__search {
+	.joms-list__utilities {
+		text-align: left;
+	}
+}
+
+.joms-subnav--desktop {
+	ul {
+		li:first-child {
+			float: right;
+		}
+		li.joms-right:first-child {
+			float: left;
+		}
+	}
+}
+
+.joms-list--friend .joms-list__item {
+	.joms-list__actions {
+		.joms-list__button--dropdown {
+			float: left;
+		}
+	}
+}
+
+.joms-list__options {
+	> a {
+		right: inherit;
+		left: 14.83282px;
+	}
+	.joms-dropdown {
+		right: inherit;
+		left: 0;
+	}
+}
+
+.joms-form--search {
+	span:last-child {
+		float: left;
+	}
+	.joms-list--inline {
+		float: right;
+	}
+}
+
+.joms-arrow--top-left:before,
+.joms-arrow--top-left:after {
+	right: 16px;
+	left: 0;
+}
+
+.joms-toolbar--desktop {
+	ul {
+		li > a {
+			text-align: right;
+		}
+	}
+}
+
+.joms-chat__header {
+	.joms-focus__button--options--desktop {
+		right: inherit;
+		left: 14px;
+		> a {
+			right: auto;
+			left: 0;
+		}
+	}
+}
+
+.joms-chat__messages-wrapper {
+	.joms-icon--add {
+		right: 650px;
+	}
+}
+
+.joms-js--inbox-reply {
+	.joms-icon--add + .joms-icon--add {
+		right: 625px !important;
+	}
+}
+
+.joms-list--friend {
+	.joms-list__button--dropdown {
+		right: inherit;
+		left: 8px;
+	}
+}
+
+.joms-ribbon__wrapper {
+	left: inherit;
+	right: 0;
+	.joms-ribbon {
+		transform: rotate(45deg);
+		left: 28px;
+	}
+}
+
+.joms-comment__actions {
+	text-align: right;
+	padding: 8px 0 4px 14px;
+	a {
+		margin-right: 0 !important;
+		margin-left: 6px;
+	}
+}
+
+.joms-postbox-tab {
+	text-align: left;
+}
+
+.joms-comment__reply {
+	svg.joms-icon.joms-icon--add {
+		@media (max-width: @screen-sm-max) {
+			right: 35px !important;
+		}
+	}
+	.joms-button--comment {
+		line-height: 31px;
+	}
+}
+
+.joms-activity-filter__options {
+	right: inherit;
+	left: 12px;
+}
+
+@media (max-width: @screen-sm-max) {
+	.joms-menu {
+		li a {
+			margin-right: 20px;
+		}
+	}
+}
+
+// Event Booking
+#eb-invite-friend-page {
+	.form-group {
+		label {
+			float: right;
+		}
+	}
+}
+
+#basic-information-page {
+	.form-group {
+		.col-sm-9 {
+			div {
+				float: right !important;
+			}
+		}
+	}
+}
+
+.com_users.view-registration {
+	.popover {
+		left: auto !important;
+		right: 500px;
+	}
+}
+
+.com_users.view-profile {
+	.popover {
+		left: auto !important;
+		right: 350px;
+	}
+}
+
+#eb-individual-registration-page,
+#eb-form-number-group-members,
+#eb-form-group-members {
+	.form-group {
+		.control-label {
+			text-align: right !important;
+		}
+		.col-sm-9 {
+			text-align: left !important;
+		}
+	}
+}
+
+//Language Switcher
+.mod-languages {
+	li {
+		float: right;
+	}
+}
+

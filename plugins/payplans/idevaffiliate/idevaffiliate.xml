@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>PayPlans - iDev Affiliates</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<icon>idev.png</icon>
+	<tags>integration</tags>
+	<description>
+	<![CDATA[
+		iDev Affiliate integrations with PayPlans
+	]]>
+	</description>
+	<files>
+		<folder>app</folder>
+		<filename plugin="idevaffiliate">idevaffiliate.php</filename>
+		<filename>idevaffiliate.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="url" type="text" label="Enter iDev Affiliate Installation Url" default="" required="true" description="Url of site where idev installed. For example :- https://www.examplesite.com/idevaffiliates/"/>
+		
+				<field name="track_refund" default="0" type="radio" class="btn-group" label="Track Refund :" description="Select Yes, If you want to Track Refund">
+					<option value="1">COM_PAYPLANS_YES</option>
+					<option value="0">COM_PAYPLANS_NO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

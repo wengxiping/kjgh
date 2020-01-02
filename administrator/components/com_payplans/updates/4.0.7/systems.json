@@ -1,0 +1,22 @@
+[
+	{
+		"table": "#__payplans_transaction",
+		"index": "idx_payments",
+		"query": "ALTER TABLE `#__payplans_transaction` ADD INDEX `idx_payments` (`payment_id`, `transaction_id`);"
+	},
+	{
+		"table": "#__payplans_modifier",
+		"index": "idx_invoices",
+		"query": "ALTER TABLE `#__payplans_modifier` ADD INDEX `idx_invoices` (`invoice_id`, `modifier_id`);"
+	},
+	{
+		"table": "#__payplans_log",
+		"index": "idx_class_object",
+		"query": "ALTER TABLE `#__payplans_log` ADD INDEX `idx_class_object` (`class`, `object_id`);"
+	},
+	{
+		"table": "#__payplans_subscription",
+		"index": "idx_user_subs",
+		"query": "ALTER TABLE `#__payplans_subscription` ADD INDEX `idx_user_subs` (`user_id`, `subscription_id`);"
+	}
+]

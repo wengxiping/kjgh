@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PAYPLANS_PLAN_DEFAULT_LAYOUT_TITLE" option="com_payplans_plan_view_default_option">
+		<message><![CDATA[COM_PAYPLANS_PLAN_DEFAULT_LAYOUT_MESSAGE]]></message>
+	</layout>
+	
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_payplans/models/fields" label="Basic Parameters">
+			<field name="plan_id" type="plans" default="0" label="Plan" multiple="0" allowempty="1" description="If you set both Plan and Group in Parameters then higher priority will be given to the Plan" />
+			<field name="group_id" type="groups" default="0" label="Group" multiple="0" description="If you set both Plan and Group in Parameters then higher priority will be given to the Plan" />
+		</fieldset>
+	</fields>
+</metadata>

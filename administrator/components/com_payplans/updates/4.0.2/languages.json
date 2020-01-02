@@ -1,0 +1,7 @@
+[
+	{
+		"table": "#__payplans_languages",
+		"alter": "progress",
+		"query": "ALTER TABLE `#__payplans_languages` CHANGE `progress` `progress` FLOAT NOT NULL;"
+	}
+]

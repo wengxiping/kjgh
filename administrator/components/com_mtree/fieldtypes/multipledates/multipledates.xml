@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+    <name>multipledates</name>
+    <caption>Multi Date</caption>
+    <author>Lee Cher Yeong</author>
+    <creationDate>October 2015</creationDate>
+    <copyright>(C) 2015-present Mosets Consulting. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>mtree@mosets.com</authorEmail>
+    <authorUrl>www.mosets.com</authorUrl>
+    <version>1.0.3</version>
+    <description>Show multiple dates.</description>
+    <useElements>0</useElements>
+    <useSize>1</useSize>
+    <taggable>0</taggable>
+    <fileset>
+        <files folder="." target="administrator/components/com_mtree/fieldtypes/multipledates">
+            <filename>multipledates.php</filename>
+            <filename>multipledates.xml</filename>
+        </files>
+    </fileset>
+    <config>
+        <fields>
+            <fieldset name="basic">
+                <field name="searchStartMonthOffset" type="list" default="0" label="Search's Start Month" description="Your user will be able to search your dates based on month. Mosets Tree will offer a list of months for searching and this parameter allows you to specify which month the list will start with. By default, it will start with the current month.">
+                    <option value="-48">4 years ago</option>
+                    <option value="-36">3 years ago</option>
+                    <option value="-24">2 years ago</option>
+                    <option value="-21">1 year 9 months ago</option>
+                    <option value="-18">1 year 6 months ago</option>
+                    <option value="-15">1 year 3 months ago</option>
+                    <option value="-12">1 year ago</option>
+                    <option value="-11">11 months ago</option>
+                    <option value="-10">10 months ago</option>
+                    <option value="-9">9 months ago</option>
+                    <option value="-8">8 months ago</option>
+                    <option value="-7">7 months ago</option>
+                    <option value="-6">6 months ago</option>
+                    <option value="-5">5 months ago</option>
+                    <option value="-4">4 months ago</option>
+                    <option value="-3">3 months ago</option>
+                    <option value="-2">2 months ago</option>
+                    <option value="-1">1 month ago</option>
+                    <option value="0">Current month</option>
+                    <option value="1">Next month</option>
+                </field>
+                <field name="searchTotalMonths" type="list" default="36" label="Total Searchable Months" description="Select the total searchable months available to your users.">
+                    <option value="2">2 months</option>
+                    <option value="3">3 months</option>
+                    <option value="4">4 months</option>
+                    <option value="5">5 months</option>
+                    <option value="6">6 months</option>
+                    <option value="7">7 months</option>
+                    <option value="8">8 months</option>
+                    <option value="9">9 months</option>
+                    <option value="10">10 months</option>
+                    <option value="11">11 months</option>
+                    <option value="11">11 months</option>
+                    <option value="12">1 year</option>
+                    <option value="15">1 year 3 months</option>
+                    <option value="18">1 year 6 months</option>
+                    <option value="21">1 year 9 months</option>
+                    <option value="24">2 years</option>
+                    <option value="36">3 years</option>
+                    <option value="48">4 years</option>
+                    <option value="60">5 years</option>
+                    <option value="120">10 years</option>
+                </field>
+                <field name="dateFormat" type="list" default="%e %B %Y" label="Date Format" >
+                    <option value="%Y-%m-%d">2007-06-01</option>
+                    <option value="%e.%m.%Y">1.06.2007</option>
+                    <option value="%e %B %Y">1 June 2007</option>
+                    <option value="%B %e, %Y">June 1, 2007</option>
+                    <option value="%e/%m/%Y">1/06/2007</option>
+                    <option value="%m/%e/%Y">06/1/2007</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension">http://update.mosets.com/mtree/fieldtypes/multipledates.xml</server>
+    </updateservers>
+</extension>

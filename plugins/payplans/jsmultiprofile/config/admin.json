@@ -1,0 +1,38 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "jsmultiprofileOnActive",
+				"type": "custom",
+				"title": "COM_PP_APP_LABEL_ON_ACTIVE",
+				"tooltip": "COM_PP_APP_ON_ACTIVE_DESC",
+				"default": "",
+				"path": "plugins:/payplans/jsmultiprofile/elements/profiles"
+			},
+			{
+				"name": "jsmultiprofileOnHold",
+				"type": "custom",
+				"title": "COM_PP_APP_LABEL_ON_HOLD",
+				"tooltip": "COM_PP_APP_ON_HOLD_DESC",
+				"default": "",
+				"path": "plugins:/payplans/jsmultiprofile/elements/profiles"
+			},
+			{
+				"name": "jsmultiprofileOnExpire",
+				"type": "custom",
+				"title": "COM_PP_APP_LABEL_ON_EXPIRE",
+				"tooltip": "COM_PP_APP_ON_EXPIRE_DESC",
+				"default": "",
+				"path": "plugins:/payplans/jsmultiprofile/elements/profiles"
+			},
+			{
+				"name": "block_ptype_change",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JSPROFILETYPE_BLOCK_PTYPE_CHANGE_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JSPROFILETYPE_BLOCK_PTYPE_CHANGE_DESC",
+				"default": true
+			}
+		]
+	}
+]

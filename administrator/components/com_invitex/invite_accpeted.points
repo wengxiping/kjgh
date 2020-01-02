@@ -1,0 +1,20 @@
+[
+    {
+        "title"         : "COM_INVITEX_POINTS_INVITE_SENT_TO_ACCEPT_TITLE",
+        "alias"         : "Invite_sent_to_accept",
+        "description"   : "COM_INVITEX_POINTS_INVITE_SENT_TO_ACCEPT_DESC",
+        "command"       : "Invite_sent_to_accept",
+        "extension"     : "com_invitex",
+        "state"         : true,
+        "points"        : 5
+    },
+    {
+        "title"         : "COM_INVITEX_POINTS_INVITE_ACCEPTED_TITLE",
+        "alias"         : "Invite_accpted",
+        "description"   : "COM_INVITEX_POINTS_INVITE_ACCEPTED_DESC",
+        "command"       : "Invite_accpted",
+        "extension"     : "com_invitex",
+        "state"         : true,
+        "points"        : 2
+    }
+]

@@ -1,0 +1,26 @@
+{
+	"title" : "COM_ES_MENU_GROUP_CUSTOMFIELDS",
+	"link" : "index.php?option=com_easysocial&view=workflows",
+	"access" : "easysocial.access.workflows",
+	"class" : "fa fa-address-card",
+	"view" : "workflows",
+	"active" : "layout",
+	"childs":
+	[
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_APPS_FIELDS",
+			"url": {
+				"view": "workflows",
+				"layout": "fields"
+			},
+			"childs": []
+		},
+		{
+			"title"	: "COM_ES_MENU_WORKFLOWS",
+			"url": {
+				"view": "workflows",
+				"layout": ""
+			}
+		}
+	]
+}

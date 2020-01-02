@@ -1,0 +1,17 @@
+[
+	{
+		"table": "#__payplans_advancedpricing",
+		"column": "units_min",
+		"query": "ALTER TABLE `#__payplans_advancedpricing` ADD COLUMN `units_min` int(11) AFTER `title`"
+	},
+	{
+		"table": "#__payplans_advancedpricing",
+		"column": "units_max",
+		"query": "ALTER TABLE `#__payplans_advancedpricing` ADD COLUMN `units_max` int(11) AFTER `title`"
+	},
+	{
+		"table": "#__payplans_advancedpricing",
+		"column": "units_title",
+		"query": "ALTER TABLE `#__payplans_advancedpricing` ADD COLUMN `units_title` varchar(255) AFTER `title`"
+	}
+]

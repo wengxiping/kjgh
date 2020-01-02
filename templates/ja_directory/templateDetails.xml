@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>ja_directory</name>
+	<version>1.0.9</version>
+	<creationDate>May 21th,2019</creationDate>
+	<author>JoomlArt.com</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.t3-framework.org</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				<h3><a href="http://t3-framework.org/">Responsive Joomla template for Directory - JA Directory</a></h3>
+				<h4><a href="http://ja-directory.demo.joomlart.com/" title="">Demo</a> | <a href="http://www.joomlart.com/documentation/joomla-templates/ja-directory" title="">Document</a> | <a href="http://pm.joomlart.com/browse/JADIRECTOR" title="">Changelog</a></h4>
+				<p>JA Directory is a responsive Joomla 3 template, a wonderful solution for a Directory website. It is built with the new T3 Framework and supports the great K2 component. The search and filter component works in tandem with mapping in JA Directory to bring you our highlight feature.This is thanks to our JA Google Map plugin and JA K2 filter components being seamlessly integrated. The quick filter with directory types helps your users quickly and easily target their searches. Thanks to the excellent T3 framework, the template is powered with manynew web technologies: Bootstrap 3, Font awesome 4, LESS, etc. It supports all Joomla pages with individually customized styles to fit the template design and to help you build you fully functionality Directory Site. </p>
+				<p>The directory Joomla template supports RTL at core.</p>
+				<span style="color:#FF0000">Note: T3 blank requires T3 plugin to be installed and enabled.</span><p></p>
+				<p>Copyright 2004 - 2019 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>helper.php</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	    <filename>error.php</filename>
+	    <filename>offline.php</filename>
+		<folder>acm</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_directory.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_directory.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>languageswitcherload</position>
+		<position>head-search</position>
+		<position>mainnav</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>mast-col</position>
+		<position>footer</position>
+		<position>home-0</position>
+		<position>home-1</position>
+		<position>home-2</position>
+		<position>home-3</position>
+		<position>home-4</position>
+		<position>home-5</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>footer-9</position>
+		<position>footer-10</position>
+		<position>debug</position>
+		<position>masthead</position>
+		<position>section-1</position>
+		<position>section-2</position>
+		<position>slideshow</position>
+		<position>subnav</position>
+		<position>newmenu</position>
+		<position>new-hand</position>
+		<position>login-register</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<!-- Sample for add or disable template parameters -->
+			<!--fieldset name="menu_params" label="T3_PARAMS_MEGAMENU">
+				<field name="group_disable" type="t3depend" function="@group">
+					<option for="menu_as_bg" value="no">menu_as_bg</option>
+				</field>
+			</fieldset-->
+
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension">http://update.joomlart.com/service/tracking/j31/ja_directory.xml</server>
+	</updateservers>
+
+</extension>

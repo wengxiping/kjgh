@@ -1,0 +1,18 @@
+/* fix when work with T3 Framework */
+/*
+#t3-content.t3-content,
+.t3-mainbody > .container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+*/
+#t3-content.t3-content,
+.main-content .main-container,
+.main-content .main-container1 {
+	padding: 0;
+}
+
+#t3-mainbody.t3-mainbody .container {
+	background: none;
+}

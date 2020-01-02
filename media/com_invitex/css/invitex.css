@@ -1,0 +1,1398 @@
+/**
+ * @version    SVN: <svn_id>
+ * @package    InviteX
+ * @author     Techjoomla <extensions@techjoomla.com>
+ * @copyright  Copyright (c) 2009-2016 TechJoomla. All rights reserved.
+ * @license    GNU General Public License version 2 or later.
+ */
+
+.invitex-wrapper .inv_steps_parent li.current a{
+color:#FFFFFF !important;
+}
+
+.invitex-wrapper .inv_other_mmethods_li:hover{
+ background-color: #dddee4 !important;
+ cursor:pointer;
+}
+
+.invitex_title
+{
+	display:inline-block;
+	padding-right:5px !important;
+	margin-left:5px !important;
+}
+.invitex_title h4, .invitex_title .invitex_skip{
+	display:inline-block;
+}
+ .invitex_title div.invitex_skip
+{
+	float: right;
+	margin: 12px 0;
+}
+.invitex-wrapper .namecardForm td
+{
+padding:5px;
+}
+.invitex-wrapper .inv-tabs{
+	width :auto !important;
+	list-style:none;
+	background:transparent;
+/*
+	float: none !important;
+*/
+	cursor:pointer !important;
+}
+
+
+div.invitex_left{
+float:left;
+}
+div.invitex_right{
+float:right;
+}
+div.invitex_right a{
+text-decoration: none;
+font-size:14px;
+}
+div.invitex_right a:hover{
+background-color: #EEEEEE;
+text-decoration: none !important;
+}
+ul.selections {
+	background-color: #FFFFFF;
+	border-color: #888888 #AAAAAA #B6B6B6;
+	border-style: solid;
+	border-width: 1px;
+	list-style-type: none !important;
+	width: auto;
+		height:auto;
+	padding: 1px 1px 1px 1px !important;
+		cursor:text;
+		margin-left:0px !important;
+}
+
+.invitex-wrapper .inv_tabbable ul.selections input.fields {
+	background: none repeat scroll 0 0 transparent !important;
+	border: medium none !important;
+	min-height: 18px;
+	height:auto;
+	margin: 0;
+	outline: medium none;
+	padding-bottom: 3px;
+}
+.selections .li_edit{
+	background-color:	#F2DEDE;
+}
+
+.selections .selection{
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 1px #E4EDF2;
+	color: #2B3840;
+	font-size: 90%;
+	margin: 2px !important;
+}
+
+.inner_div .invitex_api_ul
+{
+margin-left:15px !important;
+margin-right:15px !important;
+}
+
+
+.inner_div .invitex_api_ul .alert-error {
+	background-image: none;
+	border-radius: 4px 4px 4px 4px;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  color: #B94A48;
+	margin-bottom: 18px;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	text-align: center;
+	width:90%;
+	list-style-type:none;
+}
+.inv_send_message_wrap
+{
+padding: 0 0 0 15px;
+}
+.inv_js_friendSearchWrap input[type="text"] {
+	border: medium none;
+	outline: medium none;
+	padding: 5px;
+	width: 90%;
+}
+.inv_js_friendSearchWrap {
+ padding: 10px;
+}
+.inv_js_invitation-avatar {
+	float: left;
+	height: 40px;
+	width: 40px;
+}
+.inv_js_invitation_name
+{
+overflow: hidden;
+padding-bottom: 3px;
+}
+.inv_js_invitation_detail
+{
+margin-left: 50px;
+}
+.inv_js_invitation_wrap
+{
+border: 1px solid #DDDDDD;
+padding: 5px;
+}
+#inv_js_invitation_list li
+{
+list-style-type: none !important;
+float:left;
+padding: 5px !important;
+margin:3px !important;
+}
+
+.inv_js_invitation-check input, .inv_js_invitation-check label {
+	display: inline-block !important;
+	float: none !important;
+}
+
+#invjsfriendSearchWrap {
+	padding: 10px;
+}
+#inv_js_InvitationTabContainer
+{
+height: auto;
+margin:0;
+}
+
+.inv_limit_text{
+color:#5b74a8;
+font-weight:bold;
+margin-bottom: 10px;
+}
+
+
+.uiStepSelected .inv_step_content
+{
+color:#FFFFFF;
+}
+.uiallStepSelected .inv_step_content
+{
+color:#FFFFFF;
+}
+.ajax-loading{
+background: url("../images/ajax-loading.gif") no-repeat scroll 0 0 transparent;
+height: 16px;
+margin: 5px;
+padding: 0 5px;
+width: 16px;
+float: left;
+}
+input#load_more
+{
+float:left;
+}
+.supported_domains {
+	width: 420px;
+	height: 220px;
+	overflow: auto;
+	display: block;
+	position: relative;
+	z-index: 30;
+}
+.invalid_email_message
+{
+color: #808080;
+}
+.invalid_email_message a{
+text-decoration: none;
+}
+.supported_domains ul li {
+		background: transparent url(../images/valid_domain_li.gif) 0 7px no-repeat;
+		padding: 2px 0 0 11px;
+		margin: 0 0 0 6px;
+		color: #666;
+		font-weight: normal;
+}
+.invitex_domain_description{
+		padding-bottom: 11px;
+		margin-bottom: 9px;
+		border-bottom: 1px solid #CCC;
+}
+
+
+.selections li {
+  background-image: none !important;
+	float: left;
+	line-height: 1em !important;
+}
+/*input.fields{
+	border: medium none;
+	font-size: 13px;
+	height: 18px;
+	outline: medium none;
+	padding-top: 3px;
+	width: auto;
+}*/
+
+.fields:focus{
+	border: medium none !important;
+}
+/*.invitex_content .selections .selection{
+   background-color: #ACC3EC;
+	border-color: #C0D9E9 #ACC3EC #ACC3EC;
+	border-radius: 2px 2px 2px 2px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 1px #E4EDF2;
+	color: #2B3840;
+	font-size: 80%;
+	margin: 3px 3px 1px 2px !important;
+	text-shadow: 0 1px 1px #FFFFFF;
+}*/
+
+
+
+
+.ui-autocomplete
+{
+	overflow-y: scroll;
+	height: 200px;
+		background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 2px 12px #222222;
+	color: #000000;
+	font-size: 14px;
+	list-style-type: none;
+	margin: 2px 0 0;
+	padding: 0;
+	position: absolute;
+	z-index: 2;
+
+}
+
+.selections .selection .close {
+		color: #5491BE;
+	cursor: pointer;
+	float: right;
+	font-size: 85%;
+	font-weight: bold;
+	padding: 0 1px 0 5px;
+	text-shadow: 0 1px 1px #FFFFFF;
+}
+
+
+.uiStepList .invitex_step_heading{
+font-size: 100% !important;
+}
+tr,td{
+border:0px !important;
+}
+.invitex_apis_contact td{
+border-bottom: 1px solid #EEE !important;
+}
+.invitex_apis_contact td.picture
+{
+width:50px !important;
+padding-right: 10px;
+}
+
+td.label{
+color: rgb(102, 102, 102);
+font-weight: 700;
+padding-right: 10px !important;
+text-align: right;
+padding-bottom: 6px;
+padding-top: 6px;
+width: 120px;
+}
+td.contact_label{
+color: rgb(102, 102, 102);
+font-weight: 700;
+padding-right: 10px !important;
+text-align: right;
+padding-bottom: 6px;
+padding-top: 6px;
+width: 90px;
+}
+td.mail{
+color: rgb(102, 102, 102) !important;
+font-weight: 700 !important;
+padding-left: 10px !important;
+padding-bottom: 6px !important;
+padding-top: 6px !important;
+padding-right: 10px;
+}
+.uiStepList ol {
+background: url(../images/steps-middle.png);
+height: 51px;
+list-style: none;
+margin: 0;
+padding: 0;
+padding: 0 0 0 0 !important;
+}
+.ix_oltab
+{
+background: url(../images/steps-slmiddle.png)!important;
+}
+
+.uiStepList ol li
+{
+line-height: normal !important;
+}
+
+.uiStep {
+display: inline;
+list-style-type: none;
+}
+.uiStep .part {
+	background: url(../images/steps.png) repeat scroll 0 0 transparent;
+	float: left;
+	height: 51px;
+}
+.uiStep .point {
+background-position: -30px 0;
+width: 21px;
+}
+.uiStep .middle {
+background: url(../images/steps-middle.png);
+}
+.uiStep .inv_step_content {
+margin: 11px 10px 0 10px;
+}
+
+
+.uiStepSelected .middle {
+background: url(../images/steps-slmiddle.png);
+}
+
+.uiStepSelected .back {
+background-position: -21px 0;
+}
+.uiStepSelected .point {
+background-position: 0 0;
+background: url(../images/steps.png)!important;
+}
+
+.uiallStepSelected .point {
+background-position: 0 0;
+background: url(../images/steps-slpoint.png)!important;
+}
+
+.uiStepFirst .back {
+width: 3px;
+}
+.uiallStepSelected .back {
+background-position: -21px 0;
+}
+
+.uiallStepSelected .middle {
+background: url(../images/steps-slmiddle.png);
+}
+
+.invitex_ul
+{
+  padding: 0 0 0 0px !important;
+  list-style-type:none;
+  margin: 0px !important;
+}
+
+.first_div{
+/*padding: 0 0 0 10px;*/
+cursor:pointer;
+}
+.invitex_footer{
+background-color: #F2F2F2;
+border-bottom: medium none;
+border-top: 1px solid #E2E2E2;
+line-height: normal !important;
+}
+.invitex_footer a
+{
+	text-decoration: none;
+}
+.invitex_ul .invitex_li
+{
+		border-color:#D8DFEA;
+		/*padding-left:10px;*/
+		/*padding-right:10px;*/
+		border-style:solid;
+		border-width:1px 0 0;
+		background:none;
+		margin-bottom: 0;
+		min-height: 50px;
+		background:#EDEFF4;
+		padding: 5px !important;
+}
+
+ul.invitex_api_ul li.invitex_li{
+border: 1px solid rgba(0, 0, 0, 0.05);
+border-radius: 4px 4px 4px 4px;
+
+padding: 5px !important;
+background:#FFFFFF;
+margin:0 5px 5px 0 !important;
+margin-bottom:15px !important;
+}
+
+
+.invitex_ul .invitex_active_li{
+background:#FFFFFF;
+padding: 5px !important;
+min-height: 50px;
+}
+.invitex_ul .invitex_li :hover{
+background:#EDEFF4;
+}
+.invitex_ul .invitex_li .inner_div
+{
+background:#EDEFF4;
+padding:10px;
+}
+.invitex_ul .invitex_active_li .inner_div
+{
+background:#FFFFFF;
+padding:10px;
+}
+
+.invitex_image
+{
+		height:64px;
+		width:64px;
+		float:left;
+		padding-right:10px;
+		vertical-align: middle;
+}
+.invitex_fb_image
+{
+		max-height:48px;
+		max-width:48px;
+		float:left;
+		padding-right:10px;
+		vertical-align: middle;
+}
+.invitex_user_image
+{
+		height:64px;
+		width:64px;
+		float:left;
+		padding-right:10px;
+
+}
+
+.invitex_anchor
+{
+	float:right;
+  padding-right:10px;
+}
+.invitex_table
+{
+border-collapse:separate;
+}
+
+.clear{
+	clear:both;
+}
+
+div.box-container-t{
+	padding:0 10px;
+	position:relative;
+}
+
+div.box-tl {
+	background:transparent url(../images/module_rounded_tl.png) no-repeat scroll 0 0;
+	height:10px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:10px;
+}
+
+div.box-tr {
+	background:transparent url(../images/module_rounded_tr.png) no-repeat scroll 0 0;
+	height:10px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:10px;
+}
+
+div.box-t {
+	background:#FFFFFF none repeat scroll 0 0;
+	border-top:1px solid #DCDCDC;
+	height:9px;
+}
+
+/* rounded mid start here */
+
+div.content_cover {
+	/*background:#F0F0F0 url(../images/module_rounded_bg.png) repeat-x scroll 0 0;*/
+	border:2px solid #9f9f9f;
+	overflow:hidden;
+	padding:10px;
+	background:#DBDBDB;
+}
+/*for rounded border corner
+#whitebox_tr {
+background:transparent url(../images/mw_content_t_r.png) no-repeat scroll 100% 0;
+height:10px;
+overflow:hidden;*/
+
+div.content_cover div.header {
+	font-size:150%;
+	letter-spacing:-1px;
+	margin:0 0 5px;
+	font-weight:bold;
+}
+
+/* rounded bottom start here */
+
+div.box-container-b{
+	padding:0 10px;
+	position:relative;
+}
+
+div.box-container-b div.box-b {
+	background:#F0F0F0 none repeat scroll 0 0;
+	border-bottom:1px solid #DCDCDC;
+	height:9px;
+}
+
+div.box-container-b div.box-bl {
+	background:transparent url(../images/module_rounded_bl.png) no-repeat scroll 0 0;
+	height:10px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:10px;
+}
+
+div.box-container-b div.box-br {
+	background:transparent url(../images/module_rounded_br.png) no-repeat scroll 0 0;
+	height:10px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:10px;
+}
+
+div.inner_left img{
+	padding:3px;
+	border:solid 1px #DCDCDC;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+.fs
+{
+border:0 solid #9F9F9F !important;
+margin-top:5px !important;
+}
+td.sectiontableheader {
+  background: #efefef;
+  color: #333;
+  font-weight: bold;
+  padding: 4px;
+  border-right: 1px solid #fff;
+}
+
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+  padding: 4px;
+}
+
+td.sectiontableentry0,
+td.sectiontableentry1,
+td.sectiontableentry2 {
+  padding: 3px;
+}
+
+
+div.box-tl {
+	background:transparent url(../images/module_rounded_tl.png) no-repeat scroll 0 0;
+	height:10px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:10px;
+}
+
+div.box-tr {
+	background:transparent url(../images/module_rounded_tr.png) no-repeat scroll 0 0;
+	height:10px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:10px;
+}
+
+div.box-t {
+	background:#FFFFFF none repeat scroll 0 0;
+	border-top:1px solid #DCDCDC;
+	height:9px;
+}
+
+/* rounded mid start here */
+
+div.content_cover {
+	/*background:#F0F0F0 url(../images/module_rounded_bg.png) repeat-x scroll 0 0;*/
+	border:2px solid #9f9f9f;
+	overflow:hidden;
+	padding:10px;
+	background:#DBDBDB;
+}
+/*for rounded border corner
+#whitebox_tr {
+background:transparent url(../images/mw_content_t_r.png) no-repeat scroll 100% 0;
+height:10px;
+overflow:hidden;*/
+
+div.content_cover div.header {
+	font-size:150%;
+	letter-spacing:-1px;
+	margin:0 0 5px;
+	font-weight:bold;
+}
+
+/* rounded bottom start here */
+
+div.box-container-b{
+	padding:0 10px;
+	position:relative;
+}
+
+div.box-container-b div.box-b {
+	background:#F0F0F0 none repeat scroll 0 0;
+	border-bottom:1px solid #DCDCDC;
+	height:9px;
+}
+
+div.box-container-b div.box-bl {
+	background:transparent url(../images/module_rounded_bl.png) no-repeat scroll 0 0;
+	height:10px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:10px;
+}
+
+div.box-container-b div.box-br {
+	background:transparent url(../images/module_rounded_br.png) no-repeat scroll 0 0;
+	height:10px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:10px;
+}
+
+div.inner_left img{
+	padding:3px;
+	border:solid 1px #DCDCDC;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+.fs
+{
+border:0 solid #9F9F9F !important;
+margin-top:5px !important;
+}
+td.sectiontableheader {
+  background: #efefef;
+  color: #333;
+  font-weight: bold;
+  padding: 4px;
+  border-right: 1px solid #fff;
+}
+
+tr.sectiontableentry0 td,
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+  padding: 4px;
+}
+
+td.sectiontableentry0,
+td.sectiontableentry1,
+td.sectiontableentry2 {
+  padding: 3px;
+}
+
+.uiStepList ol,.uiStepList ul,.invitex_ul
+{
+margin-bottom: 0px !important;
+}
+
+.invitex-margin-left-5px
+{
+	margin-left: 5px ;
+}
+
+.invitex_center {
+	margin-left: 200px !important;
+	margin-right: auto !important;
+		text-decoration: none !important;
+}
+.invitex-wrapper .inv-tabs  li  a {
+	padding: 18px !important;
+}
+.invitex_content
+{
+	padding: 0 10px 0 20px;
+}
+.invitex_skip{
+float:right;
+}
+
+.invitex-wrapper .alert-limit{
+text-align: center;!important;
+}
+
+.invitex-wrapper .inv-tabs{
+	border-right:none !important;
+	margin-top: 0px !important;
+}
+
+.invitex-wrapper .inv-tabs  li {
+	padding:0 !important;
+	border-right:1px solid #DDDDDD;
+	list-style-type:none !important;
+	background:none;
+}
+
+
+.invitex-wrapper .inv-tabs  li.active{
+	border-color: #DDDDDD #DDDDDD #DDDDDD #DDDDDD;
+  border-style: solid;
+  border-width: 1px;
+	 background-color: #EEEEEE !important;
+}
+.invitex-wrapper .inv-tabs  li.active a{
+ background-color: #EEEEEE !important;
+}
+.invitex-wrapper .inv-tabs .nav  li.active a:hover{
+ background-color: #EEEEEE !important;
+}
+.invitex-wrapper .inv-tabs .nav-tabs  li a:hover{
+ background-color: #EEEEEE !important;
+ color: #555555 !important;
+ border-color: #DDDDDD #DDDDDD #DDDDDD #DDDDDD;
+  border-style: solid;
+  border-width: 1px;
+}
+.invitex-wrapper .inv-tabs ul.nav-tabs {
+ border-bottom: none !important;
+ margin-top:0px !important;
+}
+
+.invitex-wrapper .inv-tabs  li a{
+ border: none !important;
+}
+.invitex-wrapper .nav-pills .proceed a{
+	color: #555555 !important;
+}
+
+.invitex-wrapper  .inv_tabbable .well{
+padding: 10px !important;
+}
+.invitex-wrapper .inv_tabbable div.separator
+{
+height: 10px;
+}
+
+.invitex-wrapper .form-horizontal .controls {
+margin-top: 0 !important;
+position: relative !important;
+width:auto;
+}
+
+.invitex-wrapper textarea
+{
+		width:95% !important;
+		padding: 2px !important;
+}
+
+
+.invitex-wrapper .inputbox{
+height: auto !important;
+width:auto !important;
+}
+
+.invitex-wrapper .nav-pills  li , .invitex-wrapper .invitex_footer .nav-pills  li {
+list-style-type:none;
+width: 33%;
+text-align: center;
+padding: 0px 0px 0px 0px !important;
+margin:0;
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.invitex-wrapper .nav-pills  li.proceed a {
+background-color: #F5F5F5 !important;
+color: #FFFFFF;
+cursor:default !important;
+}
+
+
+
+.invitex-wrapper .nav-pills > li > a.proceed:hover {
+text-decoration: none;
+background-color: #F5F5F5 !important;
+}
+.invitex-wrapper .nav-pills > li.active:hover {
+text-decoration:
+background-color: #F5F5F5 !important;
+}
+
+.invitex-wrapper .table th, .table td {
+	text-align: center;
+}
+
+.invitex-wrapper input[type="text"]{
+margin-bottom: 5px !important;
+}
+.invitex-wrapper .pagenav {
+overflow:visible !important; /* hack for pagination*/
+}
+.invitex-wrapper .inv_tabbable ul
+{ padding: 5px !important;}
+.invitex-wrapper .invitex_step_heading
+{ text-align: center !important;
+font-weight: bold !important;
+}
+
+.invitex-wrapper .nav-pills li.active a:hover {
+	background-color: #0088CC !important;
+}
+.invitex-wrapper  .inv_tabbable .form-horizontal .form-actions {
+	padding-left: 35% !important;
+}
+
+.invitex-wrapper .table-bordered th, .invitex-wrapper .table-bordered td {
+	border-left: 1px solid #DDDDDD !important;
+}
+.invitex-wrapper .center {
+   text-align:center  !important;
+}
+
+
+.invitex-wrapper .inv_tabbable {
+	margin-top: 20px;
+}
+.invitex-wrapper .element-invisible {
+	display: none;
+}
+.invitex-wrapper select {
+	width: auto !important;
+}
+
+.new_circle {
+height: 35px;
+}
+
+
+.invitex-wrapper .invitex_li
+{
+	margin-left:0px !important;
+	margin-bottom:0px !important;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+	padding-left:0px !important;
+}
+
+
+
+.invitex-wrapper .inv_steps_parent .inv-steps-ol {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol li:first-child {
+	border-radius: 4px 0 0 4px;
+	padding-left: 12px;
+
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol li {
+	background: none repeat scroll 0 0 #DDDEE4;
+	display: inline-block;
+	line-height: 18px;
+	list-style: none outside none;
+	margin: 0 !important;
+	padding: 12px 17px 10px 30px !important;
+	position: relative;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol li:first-child:before {
+	border: medium none;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol li:before {
+	border-bottom: 20px inset rgba(0, 0, 0, 0);
+	border-left: 20px solid #FFFFFF;
+	border-top: 20px inset rgba(0, 0, 0, 0);
+	content: "";
+	height: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol li:after {
+	border-bottom: 20px inset rgba(0, 0, 0, 0);
+	border-left: 20px solid #DDDEE4;
+	border-top: 20px inset rgba(0, 0, 0, 0);
+	content: "";
+	height: 0;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	width: 0;
+	z-index: 2;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol .complete {
+	background: none repeat scroll 0 0 #F3F4F5;
+	color: #006400;
+	cursor: pointer;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol .complete:after {
+	border-left-color: #F3F4F5;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol .active {
+	background: none repeat scroll 0 0 #F3F4F5;
+	color: #3A87AD;
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol .active:after {
+	border-left-color: #F3F4F5;
+}
+.invitex-wrapper .inv_steps_parent {
+}
+.invitex-wrapper .inv_steps_parent .inv-steps-ol .badge {
+	background-color: #3A87AD;
+	background-image: none;
+	height: auto;
+	position: static;
+	width: auto;
+}
+.btn-next .btn-prev {
+	background-color: #2B96E2 !important;
+	background-image: linear-gradient(to bottom, #32AAFF, #006BB7) !important;
+	background-repeat: repeat-x !important;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.5) !important;
+	color: #FFFFFF !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35) !important;
+}
+@media (max-width: 480px) {
+.invitex-wrapper .inv_steps_parent .inv-steps-ol li {
+	padding: 12px 0 10px 25px !important;
+}
+}
+
+.form_connect_btn_class{
+padding-top: 12px !important;
+}
+
+.inv_select_invite_img{
+width:50px  !important;
+height:50px  !important;
+cursor:pointer !important;
+}
+
+
+.inv_selected_method_active{
+border:5px solid #CCCCCC !important;
+border-radius:50% !important;
+cursor:pointer !important;
+width:50px !important;
+height:50px !important;
+}
+.invitex-wrapper .com_invitex_add_button{
+position:relative;
+float:right;
+}
+
+.invitex-wrapper .message_box_sms{
+width: 100%;
+}
+.inv_tabbable .personal_message_content{
+	padding: 10px 0px 5px 0px;
+
+}
+.com_invitex_repeating_block {
+	margin-left:0px !important;
+	padding-top:10px;
+	margin-bottom:5px;
+	padding:20px 0px 0px 5px;
+}
+
+.com_invitex_remove_button {
+margin-top:10px;
+}
+
+.invitex-wrapper .invitex_select_users_toinvite_body {
+max-height: 400px;
+overflow: auto;
+border:1px solid #ccc;
+/*border-top:0px;*/ /*^manoj*/
+}
+
+.invitex-wrapper .invitex_select_users_toinvite_header{
+border:1px solid #ccc;
+}
+.tokenfield
+{
+border-color: #66AFE9;
+outline: 0;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+height:auto !important;
+}
+
+.thumbnails.icon_ul
+{
+padding-top: 5px
+
+
+}
+
+.thumbnails .invitex_li{
+min-width:50px !important;
+
+}
+
+.invitex_black_n_white .top_div_icon{
+	text-align:center;
+		margin-left:4%;
+
+}
+
+.invitex_email_token .tokenfield .token-input, .invitex_email_token .tokenfield .token{
+	height: 30px !important;
+	margin: 2px 3px 2px 0 !important;
+	width: auto !important;
+
+	padding:0px 2px 0px 2px !important;
+}
+
+.invitex_email_token .tokenfield .token{
+border-color: #468847;
+color:#468847;
+background-color: #FFF;
+
+}
+.invitex_email_token .tokenfield .invalid{
+border:1px solid #D9534F !important;
+color:#D9534F;
+background-color: #FFF;
+
+}
+.invitex_email_token{
+width:95% !important;
+}
+.com_invitex_add_button{
+
+padding-bottom:-5%;
+}
+
+.invitex-wrapper .sms_user_phno_code{padding:5px;}
+.invitex_token_text{
+width:100% !important;
+}
+
+ .sel_country_code{
+	max-width:160px !important;
+}
+
+.inv_padding{
+padding-top:21px!important;
+}
+
+.twitter-typeahead .tt-hint {
+  border: 0;
+  padding: 0;
+}
+
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+	 -moz-border-radius: 6px;
+		  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	 -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+		  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+	 -moz-background-clip: padding;
+		  background-clip: padding-box;
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+  color: #fff;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.invitex_email_token_input{
+min-width:250px !important;
+}
+
+.invite_url_show{
+padding: 5px 5px 5px 5px;
+width:250px;
+cursor:pointer  !important;
+background-color: #F5F5F5;
+border: 1px solid #E3E3E3;
+
+}
+
+.invitex_footer{
+padding: 10px 5px 5px 5px;
+margin: 0 0 5px;
+list-style: none;
+background-color: #F5F5F5;
+text-align:center;
+border-radius: 4px;
+}
+
+.personal_message{
+margin-top:5px !important;
+width:99%;
+height:50px;
+padding:2px 2px 2px 2px !important
+
+}
+.invitex_black_n_white{
+margin-left:10px !important;
+}
+
+.page-header .invitex_title{
+padding-left:7px !important;
+margin-left:5px !important;
+
+}
+
+.invitex_fb_image{
+width:25px;
+height:25px;
+
+}
+
+.personal_message_label{
+margin-top:5px !important;
+width:99%;
+padding:5px 2px 2px 2px !important;
+font-weight:bold;
+
+}
+
+.personal_message_text{
+margin-top:5px !important;
+padding:2px 2px 2px 2px !important;
+
+}
+
+
+.easysocial_inv_msg{
+padding-left:5px !important;
+}
+
+.inv_friend_li_all{
+padding-left:35px;
+}
+
+/* Added in invitex 3.0*/
+
+.wordsbreak{
+word-break: break-all;
+}
+
+.invitextopborder{
+	border-top-style: ridge;
+	border-top-color: #D8DFEA;
+	border-top-width: 1px;
+}
+
+.after_unsub
+{
+	display:none;
+}
+
+.inv_pm_friend_list_margin
+{
+	margin-right: 5px !important;
+}
+
+.invitex_manual_email_token_margin
+{
+	margin-left: 2px !important;
+}
+
+#contact_list_header
+{
+	margin: 3px !important;
+}
+
+.invitex_info
+{
+	margin:0px !important;
+	padding: 15px 25px;
+}
+
+.invitex_select_users_toinvite_footer
+{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	border: 1px solid #ccc;
+}
+
+.invitex_contacts_headder_button, .invitex_contacts_headder_search
+{
+	margin: 15px 20px !important;
+}
+
+.invitex_registered_friend_message
+{
+	margin-top:35px !important;
+}
+
+.invitex-margin-right-15
+{
+	margin-right:15px;
+}
+
+.inv_pm_friend_list_margin
+{
+	margin:0px !important;
+	padding: 15px 15px;
+}
+
+#quick_mod_guestinviter_name
+{
+	height: 30px !important;
+	margin: 2px 3px 2px 0 !important;
+	padding: 0px 2px 0px 2px !important;
+}
+
+#mod_email_invite_btn
+{
+	margin-top: 15px;
+}
+
+.invitex_word_break
+{
+	word-break:break-word;
+}
+
+.invitex_email_box .tokenfield .token-input
+{
+	height: 30px !important;
+	margin: 2px 3px 2px 0 !important;
+	padding:0px 2px 0px 2px !important;
+}
+
+.invitex_email_box .tokenfield .token
+{
+	border-color: #468847;
+	color:#468847;
+	background-color: #FFF;
+}
+
+.invitex_email_box .tokenfield .invalid
+{
+	border:1px solid #D9534F !important;
+	color:#d9534f;
+	background-color: #FFF;
+}
+
+.invitex_email_box .tokenfield .token-input, .invitex_email_box .tokenfield .token{
+	height: 30px !important;
+	margin: 2px 3px 2px 0 !important;
+	width: auto !important;
+
+	padding:0px 2px 0px 2px !important;
+}
+
+.invitex_captcha
+{
+	padding-left: 0px;
+}
+
+.invitex-form-actions
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.invitex_max_width_120
+{
+	max-width:120px !important;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+}
+
+.invitex-wrapper .inv-tabs li a {
+display:block !important;
+}
+
+.invitex-wrapper .inv-tabs
+{
+	margin-left: 5px ;
+}
+
+.invitex-wrapper .btn-group
+{
+ 	font-size: inherit !important;
+}

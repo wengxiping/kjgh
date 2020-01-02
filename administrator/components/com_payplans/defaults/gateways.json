@@ -1,0 +1,186 @@
+[{
+	"name": "2checkout",
+	"element": "2checkout",
+	"description": "2Checkout provides online payment processing services that helps you accept credit cards, PayPal and debit cards.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/2checkout"
+}, {
+	"name": "Alipay",
+	"element": "alipay",
+	"description": "Alipay is China's leading third party mobile and online payment solution.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/alipay"
+}, {
+	"name": "Authorize.Net",
+	"element": "authorize",
+	"description": "Authorize.Net helps accepting credit card and electronic payments quickly and affordably. Tailored to all sorts of business models.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/authorizenet"
+}, {
+	"name": "Authorize.Net CIM",
+	"element": "authorizecim",
+	"description": "Authorize.Net Customer Information Manager (CIM) allows you to store customers' sensitive payment information on their secured servers, simplifying your compliance with the Payment Card Industry Data Security Standard (PCI DSS) as well as handles all payment process for returns.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/authorizecim"
+}, {
+	"name": "Bitpay",
+	"element": "bitpay",
+	"description": "BitPay is an automated payment processing system for Bitcoin currency. It enables online merchants to accept Bitcoin & Bitcoin Cash, as a form of payment, just as easily they accept payments from credit cards, debit cards, or PayPal.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/bitpay"
+}, {
+	"name": "Braintree by PayPal",
+	"element": "braintree",
+	"description": "Braintree is a PayPal service that helps businesses of all sizes to accept payments and process payments, while enjoying Braintree’s innovative technology and white-glove support backed by one of the world’s most trusted and established fintech brands.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/braintree"
+}, {
+	"name": "ComPay",
+	"element": "compay",
+	"description": "ComPay is an easy and secure online money transfer from your own bank's digital banking channel.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/compay"
+}, {
+	"name": "EBANX",
+	"element": "ebanx",
+	"description": "EBANX offers complete payment solution for the markets in Latin America.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/ebanx"
+}, {
+	"name": "ePay",
+	"element": "epay",
+	"description": "ePay is one of the largest payment service providers in the Nordic region.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/epay"
+}, {
+	"name": "FastSpring",
+	"element": "fastspring",
+	"description": "FastSpring provides a global digital commerce, subscription billing and management platform.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/fastspring"
+}, {
+	"name": "Mercury Processing Services",
+	"element": "monetaweb",
+	"description": "Mercury Processing Services International is a provider of innovative payment solutions.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/monetaweb"
+}, {
+	"name": "Nets A/S",
+	"element": "nets",
+	"description": "Nets A/S is a Nordic-based payment service provider, specialized in powering digital payments. They connect banks, businesses and consumers via an international network facilitating digital payments.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/nets"
+}, {
+	"name": "Offline Payment",
+	"element": "offlinepay",
+	"description": "It allows you to collect payment via offline mode such as cash & cheque or demand draft.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/offlinepayment"
+}, {
+	"name": "Ingenico",
+	"element": "ogone",
+	"description": "Ingenico ePayments offers EU marketplace operators a secure platform that provides flexibility and conformity to PSD2, as well as control over critical functionality such as commission and payout management.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/ogone"
+},  {
+	"name": "Paysite-Cash",
+	"element": "paysitecash",
+	"description": "Paysite-cash, authorised institution bringing you secure internet card and payment solutions for e-commerce sites.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/paysitecash"
+},  {
+	"name": "Pagseguro",
+	"element": "pagseguro",
+	"description": "Pagseguro is a Brazilian payment gateway largely used in Brazil. It allows to shop securely without disclosing your credit card information. You can choose between 13 payment methods, including credit cards and Brazilian banks. Pagseguro accepts credit cards and bank transfers quickly and easily.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/pagseguro"
+}, {
+	"name": "PayFast",
+	"element": "payfast",
+	"description": "PayFast is the go-to eCommerce & online payment gateway in South Africa.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/payfast"
+}, {
+	"name": "Payflow",
+	"element": "payflow",
+	"description": "Payflow Gateway is PayPal's secure and open payment gateway. It's a fully customizable gateway, everything from language and layout to PCI compliance.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/payflow"
+}, {
+	"name": "PayGate",
+	"element": "paygate",
+	"description": "PayGate offers leading payment services to enterprise companies worldwide, to enjoy a secure online transaction experience.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/paygate"
+}, {
+	"name": "PayPal",
+	"element": "paypal",
+	"description": "PayPal is a worldwide online payment system that supports online money transfers, and serves as an electronic alternative to traditional paper methods like checks and money orders.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/paypal"
+}, {
+	"name": "PayPal Payments Advance",
+	"element": "paypaladvance",
+	"description": "This all-in-one solution offers an embedded checkout that keeps customers on the merchant's site and an Internet merchant account from PayPal.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/paypaladvance"
+}, {
+	"name": "Website PayPal Pro",
+	"element": "paypalpro",
+	"description": "Website Payments Pro accepts credit cards, debit cards, and PayPal payments directly on their website. (Available only in the UK)",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/paypalwebsitepaymentpro"
+}, {
+	"name": "PayUMoney",
+	"element": "payumoney",
+	"description": "PayUMoney is an affordable online payment gateway provider in India. They enable small businesses to integrate online payment gateway services without any setup cost.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/payumoney"
+},  {
+	"name": "PayuPl",
+	"element": "payupl",
+	"description": "PayuPl provide simple and safe solutions to the largest enterprises in Poland",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/payupl"
+}, {
+	"name": "PayUnity",
+	"element": "payunity",
+	"description": "PayUnity is a payment service provider for online payments which belongs to SIX Payment Services (Austria) Ltd.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/payunity"
+}, {
+	"name": "PayU Turkey",
+	"element": "payuturkey",
+	"description": "PayU Turkey provides simple and safe solutions to large enterprises in Turkey and all over the world.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/payuturkey"
+}, {
+	"name": "Pay with Points",
+	"element": "paywithpoints",
+	"description": "Pay With Point payment integration with PayPlans allows users to pay using AltaUser/EasySocial/Jomsocial Karma points.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/paywithpoints"
+}, {
+	"name": "Pin Payments",
+	"element": "pin",
+	"description": "Pin Payments provides your business with a platform for accepting payments online.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/pin"
+}, {
+	"name": "PayZen",
+	"element": "payzen",
+	"description": "PayZen accepts payment on your website with the most innovative and affordable platform.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/payzen"
+}, {
+	"name": "QuickPay",
+	"element": "quickpay",
+	"description": "QuickPay provides one of the most simplest payment services, accepts all common payment methods including credit cards, wire transfers and invoices.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/quickpay"
+}, {
+	"name": "Remita",
+	"element": "remita",
+	"description": "Remita is an e-Payments and e-Collections solution on a single multi-bank platform.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/remita"
+}, {
+	"name": "Robokassa",
+	"element": "robokassa",
+	"description": "Robokassa is an universal solution to the problem of accepting payments from your customers.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/robokassa"
+}, {
+	"name": "Skrill",
+	"element": "skrill",
+	"description": "Skrill has been making digital payments simple, secure and quick since 2001. Previously known as MoneyBookers",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/skrill"
+}, {
+	"name": "Saferpay",
+	"element": "saferpay",
+	"description": "Saferpay is the comprehensive e-payment solution from SIX Payment Services for easier and more secure payment in your online shop.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/saferpay"
+}, {
+	"name": "SmoovPay",
+	"element": "smoovpay",
+	"description": "SmoovPay is an online payment processor to help merchants accept credit card payment easily, fast, & securely across desktop, laptop and mobile devices.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/smoovpay"
+}, {
+	"name": "Stripe",
+	"element": "stripe",
+	"description": "Stripe is an online payment processing for internet businesses. It has a suite of payment APIs that powers commerce for online businesses of all sizes.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/stripe"
+}, {
+	"name": "Wirecard",
+	"element": "wirecard",
+	"description": "Wirecard is Europe's leading specialist for payment processing and issuing services. It has a perfect payment page that supports all popular payment methods.",
+	"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/wirecard"
+}]

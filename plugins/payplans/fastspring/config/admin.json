@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "storefront_url",
+				"type": "text",
+				"title": "Storefront URL",
+				"tooltip": "Please enter the store front url that is set on Fastspring",
+				"default": false
+			},
+			{
+				"name": "access_key",
+				"type": "text",
+				"title": "Access Key",
+				"tooltip": "Please enter the access key from Fastspring",
+				"default": ""
+			},
+			{
+				"name": "plan_product_mapping",
+				"type": "planAlias",
+				"title": "Plan Mapping",
+				"tooltip": "You will need to map the plans on the site with the alias of products that you created on Fastspring",
+				"default": ""
+			}
+		]
+	}
+]

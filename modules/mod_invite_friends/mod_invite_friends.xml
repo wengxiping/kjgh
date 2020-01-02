@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" type="module" client ="site" method="upgrade">
+	<name>mod_invite_friends</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>5th Nov 2018</creationDate>
+	<version>3.0.10</version>
+	<description>MOD_INVITE_FRIENDS_DESCRIPTION</description>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.mod_invite_friends.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_invite_friends.ini</language>
+	</languages>
+	<files>
+		<filename>mod_invite_friends.xml</filename>
+		<filename module="mod_invite_friends">mod_invite_friends.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="mod_title" type="text" default="MOD_INVITE_FRIENDS_TITLE" label="MOD_INVITE_FRIENDS_TITLE_LBL" description="MOD_INVITE_FRIENDS_TITLE_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

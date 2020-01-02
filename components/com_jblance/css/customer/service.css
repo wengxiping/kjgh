@@ -1,0 +1,1652 @@
+#t3-content {
+    padding: 0;
+    margin: 0;
+}
+
+/* .jb-bs {
+    padding: 20px;
+} */
+
+/* 我的服务列表开始 */
+
+
+@media (min-width: 1200px) {
+    .myserviceBox {
+        width: 1200px;
+        background-color: #ffffff;
+        padding: 20px 30px;
+    }
+
+    .jbl_h3title {
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    .jbl_h3title .pull-right {
+        background-color: #FF6010;
+        width: 128px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .jbl_h3title .pull-left {
+        height: 24px;
+        opacity: 1;
+        font-size: 18px;
+        font-family: MicrosoftYaHei;
+        color: rgba(51, 51, 51, 1);
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .jbl_h3title .pull-right .btn {
+        padding: 0px;
+        border: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .jbl_h3title .pull-right .btn span {
+        padding: 0px;
+        border-radius: 1px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #FF6010;
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 34px;
+    }
+
+    .myserviceBox .row-fluid {
+        padding: 10px 0;
+        display: flex;
+        position: relative;
+        border-top: 1px solid #eee;
+    }
+
+    .row-fluid:hover {
+        background-color: #F9F9F9;
+    }
+
+    .row-fluid .span2 {
+        width: 146px;
+        padding: 0 !important;
+        float: none;
+    }
+
+    .span2 .img-polaroid {
+        padding: 0;
+        width: 100%;
+        border: none;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .row-fluid .span6 {
+        width: auto;
+        float: none;
+    }
+
+    .row-fluid .span6 .span6-title {
+        padding: 0 !important;
+        background-color: transparent !important;
+    }
+
+    .span6 .span6-title span:first-child {
+        height: 19px;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        color: rgba(51, 51, 51, 1);
+        line-height: 19px;
+        margin-right: 6px;
+    }
+
+    .span6 .span6-title span:last-child {
+        border-radius: 0;
+        font-size: 12px;
+        font-family: MicrosoftYaHei;
+        color: rgba(255, 255, 255, 1);
+        line-height: 14px;
+        font-weight: normal;
+        padding: 2px;
+    }
+
+    .label {
+        background-color: #FF8F1F;
+    }
+
+    .span6 .span6-tags {
+        background-color: rgba(0, 181, 120, 0.1);
+        display: inline-block;
+        min-height: 0;
+        width: auto;
+        height: 18px;
+        font-size: 12px;
+        font-family: MicrosoftYaHei;
+        color: rgba(0, 181, 120, 1);
+        line-height: 18px;
+        padding: 0 2px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .font20 {
+        font-size: 18px;
+        font-family: MicrosoftYaHei;
+        color: rgba(255, 96, 16, 1);
+    }
+
+    .myserviceBox .row-fluid .span4 {
+        width: auto;
+        float: none;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-group {
+        background-color: transparent;
+    }
+
+    .span4 .btn-group .btn:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-right: 1px solid #999999;
+    }
+
+    .btn-group .btn:last-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .btn-group .btn {
+        font-size: 14px;
+        height: 12px;
+        line-height: 12px;
+        border: none;
+        font-weight: 400;
+        color: #999999;
+        text-align: center;
+        text-shadow: 0 0px 0px rgba(255, 255, 255, 0.75);
+        background-color: transparent;
+        padding: 0 14px;
+        background-image: linear-gradient(to bottom, transparent, transparent);
+        box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0.2), 0 0px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-group .glyphicon-search {
+        font-weight: normal;
+        font-size: 12px;
+    }
+}
+
+.myserviceBox .pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myserviceBox .pagination .pull-right span {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    border: 1px solid #EEEEEE;
+    line-height: 34px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.myserviceBox .pagination .pull-right .previous, .myserviceBox .pagination .pull-right .next {
+    width: 64px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 1px;
+}
+
+.myserviceBox .pagination .pull-right .disable {
+    color: rgba(153, 153, 153, 1);
+    cursor: not-allowed;
+
+}
+
+.myserviceBox .pagination .pull-right .selectedNumber {
+    background-color: #FF6010;
+    border: 1px solid #FF6010;
+    color: #ffffff;
+}
+
+.serviceListTotal {
+    height: 16px;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51, 51, 51, 1);
+    line-height: 16px;
+}
+
+.serviceListTotal span {
+    color: #FF6010;
+}
+
+.myserviceBox .pagination:before, .myserviceBox .pagination:after {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.xp-pagination {
+    margin: 0 !important;
+    /* padding: 0 !important; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px !important;
+}
+
+.xp-pagination .pull-right .pagination {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.xp-pagination .pagination li > a {
+    border: 1px solid #EEEEEE;
+    padding: 4px 11px;
+    margin-right: 10px;
+    border-radius: 1px !important;
+}
+
+.xp-pagination .pagination li > a:hover {
+    background: #FF6010;
+    color: #FFFFFF !important;
+}
+
+.xp-pagination .pagination li.active a {
+    background: #FF6010 !important;
+    border: 1px solid #FF6010;
+    color: #FFFFFF !important;
+}
+
+.xp-pagination .pagination li.disabled a {
+    color: rgba(153, 153, 153, 1);
+    cursor: not-allowed;
+    background: #FFFFFF;
+    border: none;
+    color: #999999 !important;
+}
+
+.xp-pagination .pagination li:first-child {
+    display: none;
+}
+
+.xp-pagination .pagination li:last-child {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .myserviceBox .pagination {
+        float: none
+    }
+}
+
+/* 我的服务列表结束 */
+
+/* 我的添加服务开始 */
+
+.myserviceBox .title {
+    border-bottom: 1px solid #eee;
+}
+
+.myserviceBox legend {
+    height: auto;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 96, 16, 1);
+    line-height: 21px;
+    border: none;
+    padding: 15px 0;
+    margin: 0;
+}
+
+legend + .control-group {
+    margin-top: 0;
+}
+
+.myserviceBox .control-group {
+    display: flex;
+    /* align-items: center; */
+    height: auto;
+    /* margin-left: 20px; */
+}
+
+.myserviceBox .control-group span {
+    display: inline-block;
+    width: 136px;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153, 153, 153, 1);
+    margin-right: 38px;
+    text-align: right;
+    /* margin-top: 10px; */
+}
+
+.myserviceBox .control-group span i {
+    color: #FF0000;
+    font-style: normal
+}
+
+.myserviceBox .control-group div input {
+    width: 530px;
+    height: 36px;
+    border-radius: 2px;
+    border: 1px solid rgba(226, 226, 226);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.075);
+}
+
+.myserviceBox .chzn-container-multi .chzn-choices {
+    border: 1px solid rgba(226, 226, 226);
+    background-color: #fff;
+    background-image: linear-gradient(transparent 1%, transparent 15%);
+    height: 36px;
+}
+
+.myserviceBox .chzn-container-multi .chzn-choices {
+    z-index: 100;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.myserviceBox .chzn-container-multi .chzn-choices li.search-field input[type="text"] {
+    height: 30px;
+    /* width: 460px !important; */
+}
+
+.chzn-choices .search-choice span {
+    display: inline;
+    margin-right: 6px;
+}
+
+.myserviceBox .control-group .addCategory {
+    color: rgba(255, 96, 16);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.myserviceBox .control-group .addCategory .glyphicon-plus {
+    font-size: 12px;
+}
+
+.controlsCategory {
+    position: relative;
+}
+
+.myserviceBox .controlsPrice {
+    display: flex;
+}
+
+.input-prepend {
+    display: flex;
+    width: 160px !important;
+}
+
+.myserviceBox .controlsPrice .control-group div input {
+    width: 100%;
+    border: none;
+}
+
+.myserviceBox .controlsPrice .control-group .unit {
+    display: inline-block;
+    font-style: normal;
+    width: 56px;
+    height: 38px;
+    line-height: 38px;
+    color: rgb(153, 153, 153);
+}
+
+.myserviceBox .controlsPrice .control-group .controls {
+    border: 1px solid rgb(226, 226, 226);
+    display: flex;
+    align-items: center;
+    width: 217px;
+}
+
+.myserviceBox .controlsPrice .currency {
+    display: inline-block;
+    width: 63px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid rgb(226, 226, 226);
+    line-height: 40px;
+    text-align: center;
+    margin: 0 16px;
+    color: rgba(170, 170, 170, 1);
+}
+
+.uploadImage {
+    width: 530px;
+    height: 38px;
+    background-color: rgba(255, 96, 16, 0.1);
+    position: relative;
+    border: 1px solid rgb(226, 226, 226);
+    color: rgba(255, 96, 16, 1.00);
+}
+
+.control-group .uploadImage .addCategory {
+    text-align: center;
+    width: 100%;
+}
+
+.span7 .start {
+    display: none;
+}
+
+.span7 .cancel {
+    display: none;
+}
+
+.uploadImageBox {
+    position: relative;
+}
+
+.uploadImageBox .span7 span {
+    width: 530px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#service-image {
+    display: none;
+}
+
+#service-image-actions {
+    border: none;
+    position: absolute;
+    left: 174px;
+    top: 0;
+}
+
+.uploadImgDes {
+    height: 14px;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 96, 16, 1);
+    line-height: 14px;
+    margin-left: 193px;
+    transform: translateY(-4px);
+    /* margin-bottom: 10px; */
+}
+
+#service-image-actions {
+    border: none;
+    padding: 0;
+}
+
+#service-image-actions .span7 {
+    width: 530px;
+    padding: 0;
+    opacity: 0;
+    height: 38px;
+}
+
+@media (min-width: 1200px) {
+    .myserviceBox .row-fluid:hover {
+        background-color: transparent !important;
+    }
+
+    .myserviceBox .well-small .row-fluid:hover {
+        background-color: #ffffff !important;
+    }
+
+    div.table-striped .file-row::before, div.table-striped .file-row::after {
+        display: none;
+    }
+}
+
+.table-striped {
+    width: 530px;
+    margin-left: 174px;
+}
+
+div.table-striped .file-row {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: rgba(249, 249, 249, 1.00);
+    margin-bottom: 10px;
+    padding-right: 6px;
+}
+
+div.table-striped .file-row > div {
+    border: none;
+    padding: 0;
+}
+
+div.table-striped .file-row > div:first-child {
+    width: 72px;
+    margin-right: 10px;
+    /* height: 37px; */
+}
+
+div.table-striped .file-row > div:first-child img {
+    width: 100%;
+    /* max-height: 100%; */
+}
+
+div.table-striped .file-row div:nth-child(2) {
+    width: 120px;
+    line-height: 14px;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153, 153, 153, 1);
+}
+
+div.table-striped .file-row div:nth-child(3) {
+    width: 170px;
+    display: flex;
+    margin: 0 10px;
+}
+
+div.table-striped .file-row div:nth-child(4) {
+    display: flex;
+    width: 130px;
+    justify-content: flex-end;
+}
+
+div.table-striped .file-row div:nth-child(3) p {
+    display: flex;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+div.table-striped .file-row div:nth-child(3) p strong {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+div.table-striped .file-row .progress {
+    width: 90px;
+    margin-bottom: 0;
+    background-color: rgba(235, 235, 235, 1.00);
+    height: 10px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.uploadImageBox .jbf-icon-upload {
+    display: none;
+}
+
+.uploadImageBox .jbf-icon-upload, .uploadImageBox .jbf-icon-minus-circle, .uploadImageBox .jbf-icon-trash {
+    display: none;
+}
+
+.uploadImageBox .btn {
+    width: 56px;
+    height: 24px;
+    margin-left: 8px;
+    padding: 0;
+    border-radius: 0;
+}
+
+.uploadImageBox .btn span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.uploadImageBox .btn-danger {
+    color: rgba(255, 0, 20, 1.00);
+    background-color: rgba(255, 235, 235);
+    background-image: linear-gradient(to bottom, transparent, transparent);
+    border: 1px solid rgba(255, 235, 235);
+}
+
+.uploadImageBox .btn-danger:hover {
+    border: 1px solid rgba(255, 235, 235);
+}
+
+#service-image-actions .span5 {
+    width: 0;
+
+}
+
+#service-image-actions:before, #service-image-actions:after {
+    display: none;
+}
+
+.form-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border-top: none;
+}
+
+.form-actions .btn {
+    width: 160px;
+    border-radius: 2px;
+    color: rgba(153, 153, 153);
+    border: 1px solid rgba(238, 238, 238);
+    background-color: transparent;
+    font-weight: normal;
+    /* background-color: transparent; */
+    background-image: linear-gradient(to bottom, transparent, transparent);
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+}
+
+.form-actions .btn-primary {
+    margin-left: 10px;
+    background-color: rgb(255, 96, 16);
+    color: #fff;
+    border: 1px solid rgb(255, 96, 16);
+}
+
+.controls textarea {
+    height: 75px !important;
+}
+
+.well-small {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.well-small .row-fluid {
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.well-small .row-fluid .span6 {
+    height: 38px;
+    padding: 0 !important;
+}
+
+.well-small .row-fluid .span6:first-child {
+    width: 293px;
+    margin-right: 20px;
+}
+
+.well-small .row-fluid .span6 .validate-numeric {
+    height: 38px;
+    width: 130px
+}
+
+.well-small .row-fluid .span6 .extra-description {
+    height: 38px;
+}
+
+.well-small .row-fluid .span6 .add-on {
+    height: 38px !important;
+    line-height: 30px;
+}
+
+/* 我的添加服务结束 */
+/* 服务商列表开始 */
+@media (min-width: 1200px) {
+    .row-fluid {
+        padding: 0;
+        border: none;
+    }
+    .row-fluid:hover {
+        background-color: transparent;
+    }
+    .row-fluid .span3 {
+        width: 20%;
+    }
+    .col-md-9 {
+        width: 100%;
+    }
+
+}
+.thumbnails{
+    width: 100%;
+}
+.thumbnails .thumbfix {
+    border: none;
+    margin: 0;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 296px;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 0;
+}
+.thumbnails .thumbfix:nth-child(5n+1) {
+    border-left: 1px solid #fff;
+}
+
+.thumbnails .thumbnail {
+    border: none;
+    box-shadow: 0 0 0 rgba(0,0,0,0.055);
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 10px 16px;
+    height: 100%;
+}
+.thumbnails .thumbnail:hover {
+    background-color: #f9f9f9;
+}
+
+.title_container {
+    line-height: 1px;
+}
+.title_container a {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: rgb(13,13,13) !important;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.thumbnails .thumbnail:hover .title_container a {
+    color: rgb(255,96,16)  !important;
+}
+.row-fluid [class*="span"]:first-child {
+    padding: 0 !important;
+}
+.jbf-image {
+    margin: 8px 0;
+    width: 75%;
+    height: 100px;
+}
+.item-info {
+    display: flex;
+    color: rgb(255,96,16);
+    font-size: 12px;
+    justify-content: space-between;
+    margin-top: 4px;
+    height: 17px;
+}
+.item-info div:first-child {
+    border: 1px solid rgb(255,96,16);
+    padding: 0 4px ;
+    line-height: 16px;
+}
+.item-info div:last-child {
+    padding: 0 4px;
+    font-weight: bold;
+}
+.category {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.category span {
+    background-color: #e7f1ff;
+    color: #1677ff;
+    padding: 0 2px;
+}
+.author {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+}
+.author i {
+    color: #ffb83b;
+}
+.thumbnail .caption {
+    padding: 0;
+    color: #555;
+    margin-top: 4px;
+    font-size: 12px;
+}
+.thumbnail .caption .price {
+    width: 96%;
+    text-align: right;
+    margin-top: 4px;
+    color: #fff;
+}
+.thumbnail .caption .price span {
+    background-color: rgb(255,96,16);
+    padding: 2px 4px;
+    font-weight: normal;
+}
+.img-polaroid {
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 0 rgba(0,0,0,0.1);
+}
+
+/* 服务商列表结束 */
+
+
+/* 服务商投标页面开始 */
+@media (min-width: 1200px) {
+    .bidTitle {
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        color: rgba(153, 153, 153, 1);
+        line-height: 40px;
+    }
+
+    .bidTitle span {
+        color: rgb(255, 96, 16);
+    }
+
+    .bidBox {
+        background-color: #fff;
+        padding: 0 40px;
+    }
+
+    .bidBox-title {
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+        align-items: center;
+        border-bottom: 1px solid rgba(238, 238, 238, 1.00);
+    }
+
+    .bidBox-title span:first-child {
+        font-size: 18px;
+        font-family: MicrosoftYaHei;
+        color: rgba(51, 51, 51, 1);
+
+    }
+
+    .bidBox-title span:last-child {
+        width: 151px;
+        height: 26px;
+        border-radius: 13px 13px 13px 13px;
+        border: 1px solid rgb(255, 96, 16);
+        text-align: center;
+        color: rgb(255, 96, 16);
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .jbl_h3title {
+        font-size: 18px;
+        color: rgb(255, 96, 16);
+    }
+
+    .bidBox .jbl_h3title {
+        margin: 18px 0;
+    }
+
+    .bidBox .control-group {
+        padding-left: 10px;
+    }
+
+    .bidBox .control-group .control-label {
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        color: rgba(102, 102, 102, 1);
+        font-weight: normal;
+        padding: 0;
+    }
+
+    .bidBox .control-label i {
+        font-style: normal;
+        color: rgba(255, 0, 0, 1.00);
+    }
+
+    .help-inline {
+        margin-left: 14px;
+        font-size: 12px;
+        font-family: MicrosoftYaHei;
+        color: rgba(255, 143, 31, 1);
+        line-height: 12px;
+    }
+
+    .bidBox .control-group .controls .input-append {
+        display: flex;
+        justify-content: space-between;
+        width: 260px !important;
+        height: 36px;
+        border: 1px solid #eee;
+        padding-right: 6px;
+        border-radius: 2px !important;
+    }
+
+    .controls .input-append .validate-numeric {
+        border: none;
+        height: 34px;
+        box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.075);
+    }
+
+    .bidBox .controls .input-append .add-on {
+        border: none;
+        height: 100%;
+        background-color: #fff;
+        line-height: 24px;
+    }
+
+    .bidBox .input-xlarge {
+        width: 530px;
+    }
+
+    .form-horizontal .bidBox .checkbox {
+        min-height: 26px;
+        padding-top: 0;
+    }
+
+    .form-horizontal .control-group {
+        margin-bottom: 10px;
+    }
+
+    .bidBox .form-actions {
+        margin-top: 120px;
+    }
+
+    .form-actions .cancel {
+        color: rgba(153, 153, 153, 1.00) !important;
+        background-color: rgba(249, 249, 249, 1.00);
+        border: 1px solid #EEEEEE;
+    }
+
+    .form-actions .btn {
+        height: 36px;
+        line-height: 1px;
+        font-weight: normal;
+    }
+
+    .form-horizontal .form-actions {
+        padding-left: 0;
+    }
+}
+
+/* 服务商投标页面结束 */
+/* 需求详情页面开始 */
+@media (min-width: 1200px) {
+    .projectDetailsBox {
+        background-color: #fff;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .projectDetailsBox .control-group .control-label {
+        width: 120px;
+        padding-top: 0;
+        color: rgba(102, 102, 102, 1.00);
+        font-size: 16px;
+        font-family: MicrosoftYaHei;
+        font-weight: normal;
+    }
+
+    .projectDetailsBox .control-group .controls {
+        margin-left: 160px;
+        font-size: 16px;
+        font-family: MicrosoftYaHei;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    .projectDetailsBox .control-group .controls span {
+        font-size: 16px;
+        font-family: MicrosoftYaHei;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    .projectDetails {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+/* 需求详情页面结束 */
+
+
+/* 需求详情页面开始 */
+@media (min-width: 1200px) {
+    .projectDetailsBox {
+        background-color: #fff;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .projectDetailsBox .control-group .control-label {
+        width: 120px;
+        padding-top: 0;
+        color: rgba(102, 102, 102, 1.00);
+        font-size: 16px;
+        font-family: MicrosoftYaHei;
+        font-weight: normal;
+    }
+
+    .projectDetailsBox .control-group .controls {
+        margin-left: 160px;
+        font-size: 16px;
+        font-family: MicrosoftYaHei;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    .projectDetailsBox .control-group .controls span {
+        font-size: 16px;
+        font-family: MicrosoftYaHei;
+        color: rgba(51, 51, 51, 1);
+    }
+
+    .projectDetails {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+
+    }
+
+    .projectDetails .span6 {
+        float: left;
+
+    }
+
+    .projectDetailsBox .jb-chat-panel {
+        overflow-y: hidden;
+
+    }
+
+    .progressLabel {
+        color: rgba(102, 102, 102, 1.00);
+        font-size: 16px;
+        font-family: MicrosoftYaHei;
+        width: 120px;
+        display: inline-block;
+        text-align: right;
+        float: left;
+    }
+
+    .projectDetailsBox .progressbox {
+        flex-wrap: wrap;
+        width: 600px;
+        margin-top: 30px;
+    }
+
+    .projectDetailsBox .progressbox .span8 {
+        width: 100%;
+        /* height: ; */
+    }
+
+    .projectDetailsBox .progressbox .span4 {
+        width: 100%;
+    }
+
+    .projectDetailsBox .progressbox .span4 .control-group {
+        margin: 0;
+        display: flex;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        color: rgba(153, 153, 153, 1);
+        margin-left: 146px;
+        width: 500px;
+        justify-content: space-between;
+        padding: 6px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .projectDetailsBox .progressbox .span4 .control-group .controls {
+        margin-left: 0;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    .projectDetailsBox .slider-horizontal {
+        width: 500px !important;
+    }
+
+    .updateProgress {
+        margin-bottom: 30px;
+    }
+
+    .updateProgress button {
+        margin-left: 160px;
+        font-size: 14px;
+        border: none;
+        color: #fff;
+        background-color: rgba(255, 143, 31, 1);
+        width: 108px;
+        height: 30px;
+        margin-top: 16px;
+    }
+
+    .projectDetailsBox {
+        margin-bottom: 10px;
+    }
+
+    .projectDetailsBox .well {
+        padding: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.05);
+        background-color: #fff;
+        border: none;
+        width: 500px;
+    }
+
+    .projectDetailsBox .well .pull-left {
+        width: 100%;
+        text-align: right;
+    }
+
+    .projectDetailsBox .well .pull-left button {
+        background-image: linear-gradient(to bottom, #fff, #fff);
+        border: none;
+        color: rgba(153, 153, 153, 1);
+        text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+        box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 rgba(0, 0, 0, 0.05);
+        padding: 0;
+        font-weight: normal;
+    }
+
+    #file-attached-uploadmessage {
+        background-color: rgba(249, 249, 249, 1.00);
+        color: rgba(153, 153, 153, 1.00);
+        font-size: 12px;
+    }
+
+    #btnsend {
+        width: 108px;
+        height: 30px;
+        color: #fff;
+        background-image: linear-gradient(to bottom, rgba(255, 96, 16, 1.00), rgba(255, 96, 16, 1.00));
+        font-weight: normal;
+        border: none;
+        line-height: 1px;
+    }
+
+    /* 轮播图 */
+    .carouselProject {
+        width: 26%;
+        height: 160px;
+        float: right;
+    }
+
+    .carouselProject #carousel-example-generic {
+        height: 180px;
+    }
+
+    .carouselProject #carousel-example-generic .carousel-indicators, .carouselProject #carousel-example-generic .item img {
+        width: 300px;
+        height: 180px;
+    }
+
+}
+
+/* 需求详情页面结束 */
+/* 需求详情页面开始 */
+.project {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    /*height: 250px;*/
+}
+
+.project .jbf-image.big {
+    height: 220px;
+    width: 100%;
+}
+
+.project .pull-left {
+    margin-right: 15px;
+    width: 26%;
+}
+
+.project .pull-left .span12 {
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.project .pull-right {
+    width: 74%;display: flex;justify-content: space-between;align-items: flex-start;flex-direction: column;
+}
+.project .pull-right .pr-top{width: 100%;}
+.project .pull-right .pr-bottom{width: 100%;}
+
+.project_h3title_new {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153, 153, 153, 1);
+    /*height: 30px;*/
+}
+
+.project_h3title_new .title-h3 {
+    width: 550px;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51, 51, 51, 1);
+    font-weight: bold;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;            /*设置p元素最大4行，父元素需填写宽度才明显*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    /*因为代码环境的关系-webkit-box-orient被过滤掉了 autoprefixer 这个关键字可以免除被过滤的动作*/
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.project_h3title_new #report-this {
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153, 153, 153, 1);
+}
+
+.project_h3title_new img {
+    width: 16px;
+}
+
+.project_status {
+    display: flex;
+    margin-top: 10px;
+}
+
+.project_status .project-label {
+    background: linear-gradient(to left, #FF9925 20%, #FF6010 80%);
+    transform: skewX(-15deg);
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.project_status .project-label span {
+    opacity: 1;
+    font-size: 10px;
+    font-family: MicrosoftYaHei;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    line-height: 14px;
+    letter-spacing: 0px;
+}
+
+.project_status p {
+    min-width: 50px;
+    min-height: 20px;
+    padding: 0 4px;
+    background-color: rgba(255, 143, 31, 1);
+    transform: skewX(-15deg);
+    margin-right: 5px;
+}
+
+.project_status .boldfont {
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 255, 255, 1);
+    font-weight: normal;
+}
+
+.project_status .font12 {
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(102, 102, 102, 1.00);
+}
+
+.project_content {
+    width: 100%;
+}
+
+.project_content .span6 {
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+}
+
+.project_content .span6 .well {
+    margin-bottom: 16px;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.project_content .margin-b5 {
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51, 51, 51, 1);
+    text-align: left;
+}
+
+.project_content .skybluefont {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 96, 16, 1) !important;
+}
+
+.project_content .jb-aligncenter {
+    text-align: left;
+}
+
+.applyBox .btn-info {
+    padding: 0;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff !important;
+    font-weight: normal;
+    border: none;
+    width: 300px;
+    height: 46px;
+    background-image: linear-gradient(to bottom, rgba(255, 96, 16, 1.00), rgba(255, 96, 16, 1.00));
+    background-color: rgba(255, 96, 16, 1.00);
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.2), 0 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.applyBox .btn-info:hover {
+    border-color: rgba(255, 96, 16, 1.00);
+}
+
+.applyBox .page-actions {
+    width: 26px;
+    height: 26px;
+    margin-left: 40px;
+    display: inline-block;
+    text-align: left;
+}
+
+.applyBox .addthis_default_style {
+    margin-top: -20px;
+    position: relative;
+}
+
+.applyBox .addthis_default_style img {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+}
+
+.applyBox .addthis_pill_style {
+    z-index: 100;
+    position: absolute;
+    opacity: 0;
+    padding-bottom: 4px;
+    height: 30px;
+}
+
+.tweet_iframe_widget {
+    width: auto !important;
+    height: auto !important;
+    display: none;
+}
+
+.well-small {
+    margin-bottom: 0;
+}
+
+.project-des .media {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.project-des .media > .pull-left {
+    padding: 0;
+    margin: 0;
+    float: none !important;
+}
+
+.media .btn {
+    width: 100%;
+    background-color: rgb(255, 238, 222);
+    color: rgb(255, 143, 31) !important;
+    font-weight: normal;
+    border-radius: 2px;
+    height: 26px;
+    border: none;
+    margin: 20px 0;
+    line-height: 7px;
+    background-image: linear-gradient(to bottom, rgb(255, 238, 222), rgb(255, 238, 222));
+}
+
+.media .rating_bar {
+    width: 65px;
+}
+
+.project-des .media .media-body {
+    width: 100%;
+    float: none !important;
+    display: flex;
+    justify-content: center;
+}
+
+.project-des .media .media-body a {
+    font-size: 12px;
+    color: rgba(51, 51, 51, 1.00) !important;
+}
+
+.project-des .media .media-body strong {
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 1.00);
+}
+
+.project-des .media-heading {
+    margin: 0;
+}
+
+.project-des .small {
+    display: block;
+    color: rgba(153, 153, 153, 1.00);
+    font-size: 12px;
+}
+
+.project-des .media .img-polaroid {
+    border-radius: 50%;
+    padding: 1px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-des .span8 {
+    width: 75.8%;
+}
+
+.project-des .span4 {
+    width: 23%;
+    margin-left: 1.2%;
+}
+
+.project-des .span8 h4 {
+    font-weight: 700;
+}
+
+.project-des .span8 .category-wrapper {
+    margin-bottom: 26px;
+    width: 100%;
+}
+
+.project-des .span8 .category-wrapper span {
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+.project-des .label-info {
+    background-color: rgb(231, 241, 255) !important;
+    color: rgba(22, 119, 255, 1.00);
+    font-weight: normal;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+    padding: 4px 6px;
+    border: 2px;
+}
+
+.location img {
+    display: none;
+}
+
+.project-des .publicClarificationBoard {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.project-des .jbl_h3title {
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1.00);
+    border-bottom: 1px solid #eee;
+    height: 32px;
+
+}
+
+.publicClarificationBoard .span12 {
+    color: #888;
+}
+
+.publicClarificationBoard .span12 li a {
+    font-weight: 700;
+}
+
+.publicClarificationBoard .well {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.05);
+    text-align: right;
+}
+
+.publicClarificationBoard .well #message {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.publicClarificationBoard .btn-primary {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 238, 222);
+    color: rgb(255, 143, 31) !important;
+    background-image: linear-gradient(to bottom, rgb(255, 238, 222), rgb(255, 238, 222));
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.bidStatus {
+    padding: 0 4px;
+    height: 16px;
+    background-color: rgba(255, 143, 31, 1.00);
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+}
+
+.project-applyBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.project-applyBox .tb-action {
+    width: 300px;
+    height: 46px;
+    text-align: center;
+    background: #FF6010;
+}
+
+.project-applyBox .tb-action a {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    color: #FFFFFF !important;
+    line-height: 46px;font-size: 16px!important;
+}
+.project-applyBox .tb-action a:hover{
+    background: #ff5109;
+}
+.project-applyBox .xp-action {
+    height: 46px !important;
+    overflow: hidden;
+    width: 60px !important;
+    margin: 0 !important;
+    position: relative;
+    z-index: 11;
+    text-align: center!important;
+    cursor: pointer;
+}
+.project-applyBox .xp-action .xp-share-btn{
+ display: flex;justify-content: center;
+    align-items: center;flex-direction: column;position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 60px;
+    height: 46px;
+}
+.project-applyBox .xp-action .xp-share-btn .share-img{
+    width: 24px;height: 24px;position: relative;
+}
+.project-applyBox .xp-action .xp-share-btn .share-img>img{
+    width: 24px;height: 24px;
+
+}
+.project-applyBox .xp-action .xp-share-btn .txt{
+    height: 14px;
+    opacity: 1;
+    font-size: 10px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51,51,51,1);
+    line-height: 14px;
+    letter-spacing: 0px;
+}
+#social-bookmark{
+    position: absolute;top: 0;left: 0; z-index: 111;width: 60px;
+    height: 46px;
+}
+.addthis_toolbox.addthis_default_style{
+    position: absolute;top: 0;left: 0; z-index: 8;
+    width: 60px;height: 46px;
+
+}
+.addthis_toolbox.addthis_default_style .addthis_counter.addthis_pill_style{
+    position: absolute;top:0;left: 0;width: 60px;height: 46px;z-index: 0;
+}
+.atc_s{
+    position: absolute;top:0;left: 0;width: 60px;height: 46px!important;background: none!important;
+    font-size: 0!important;
+}
+.addthis_toolbox.addthis_default_style .addthis_counter.addthis_pill_style .addthis_button_expanded{
+  display: none!important;
+}
+/* 需求详情页面结束 */
+.addthis_counter.addthis_pill_style{
+  /*visibility: hidden!important;*/
+}
+/**
+  进度更新页面
+ */
+.project-button-upload{
+    width: 48px;
+    height: 16px;
+    opacity: 1;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153,153,153,1);
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+#div_p_percent .slider.slider-horizontal .slider-track{
+    width: 100%;height: 20px;margin: 0!important;top:0!important;transform: skewX(-15deg);box-shadow: none!important;background: #EEEEEE!important;
+}
+#div_p_percent .slider.slider-horizontal .slider-track>.slider-selection{
+    background:linear-gradient(to left,#FF8F1F,#FFC242);box-shadow: none!important;
+}
+#div_p_percent .slider.slider-horizontal .slider-track>.slider-handle.round{
+  display: none;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Invitex Namecard">
+		<message><![CDATA[Namecard view]]></message>
+		<options var="task">
+			<default name="Invitex Namecard" msg="Invitex Namecard" />
+		</options>
+	</view>
+</metadata>

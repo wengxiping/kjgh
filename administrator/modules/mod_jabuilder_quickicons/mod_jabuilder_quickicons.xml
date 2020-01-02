@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	client="administrator"
+	method="upgrade"
+	version="2.5"
+>
+	<name>JA Builder Quick Icons</name>
+	<author>JoomlArt</author>
+	<creationDate>June 21, 2018</creationDate>
+	<copyright>Copyright © 2005 - 2018 JoomlArt.com. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.2</version>
+	
+	<updateservers>
+    <server type="extension">http://update.joomlart.com/service/tracking/j31/mod_jabuilder_quickicons.xml</server>
+    </updateservers>
+	
+	<files>
+		<filename module="mod_jabuilder_quickicons">mod_jabuilder_quickicons.php</filename>
+		<filename>mod_jabuilder_quickicons.xml</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_jabuilder_quickicons.ini</language>
+		<language tag="en-GB">en-GB.mod_jabuilder_quickicons.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx"	type="text"	label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"	description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	<scriptfile>script.php</scriptfile>
+</extension>

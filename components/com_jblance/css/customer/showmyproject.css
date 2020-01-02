@@ -1,0 +1,153 @@
+.clear{clear: both;}
+.xp-pagination{
+  margin: 0!important;padding: 0!important;display: flex;justify-content: space-between;align-items: center;
+}
+.xp-pagination .pull-right .pagination{
+  margin: 0!important;padding: 0!important;
+}
+.xp-pagination .pagination li>a{ border: 1px solid #EEEEEE;padding: 4px 11px;margin-right: 10px;border-radius: 1px!important;   }
+.xp-pagination .pagination li>a:hover{background: #FF6010;color:#FFFFFF!important;}
+.xp-pagination .pagination li.active a{ background: #FF6010!important;border:1px solid #FF6010;color:#FFFFFF!important;}
+.xp-pagination .pagination li.disabled a{ color: rgba(153,153,153,1);
+  cursor: not-allowed;background:#FFFFFF;border:none;color: #999999!important;}
+
+.xp-pagination .pagination li:first-child{display: none;}
+.xp-pagination .pagination li:last-child{display: none;}
+.title-container {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 15px
+}
+
+.jbl_h3title {
+  margin: 0;
+  border: 0
+}
+
+#t3-content {
+  background-color: #fff !important
+}
+
+.btn-primary {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF6010), to(#FF6010));
+  background-color: rgba(255, 96, 16, 1);
+  border: 0;
+  font-size: 14px !important;
+  font-family: MicrosoftYaHei !important;
+  color: rgba(255, 255, 255, 1) !important;
+  line-height: 19px;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 96, 16, 1) !important;
+}
+
+.open-need-residue-div {
+  border: 1px solid rgba(255, 96, 16, 1);
+  border-radius: 13px;
+  color: rgba(255, 96, 16, 1);
+  width: 151px;
+  height: 26px;
+  margin-left: 5px;
+}
+
+.open-need-residue-p {
+  padding-left: 15px;
+  font-size: 12px;
+  font-family: MicrosoftYaHei;
+  color: rgba(255, 96, 16, 1);
+}
+
+.need-container {
+  height: 160px;
+  background-color: #FBFBFB
+}
+.need-content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+
+.need-content-top p {
+  font-size: 12px;
+  font-family: MicrosoftYaHei;
+  color: rgba(153, 153, 153, 1);
+  line-height: 16px;
+}
+
+.need-content-title {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: rgba(51, 51, 51, 1);
+  line-height: 20px;
+}
+
+.action-bar {
+  margin-top: 21px;
+}
+
+.need-edit-btn,
+.need-del-btn {
+  font-size: 14px !important;
+  font-family: MicrosoftYaHei !important;
+  color: rgba(153, 153, 153, 1) !important;
+  line-height: 19px;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to bottom, transparent, transparent);
+  background-color: #FBFBFB;
+  border-style: none !important
+}
+
+
+.need-del-btn:hover {
+  background-color: #FBFBFB;
+}
+
+.need-food-page-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.need-edit-btn:hover {
+  background-color: #FBFBFB !important;
+}
+
+.vertical-line {
+  color: #E2E2E2;
+}
+
+.need-food-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.need-food-p {
+  margin-left: 5px;
+}
+
+.need-food-page-up {
+  width: 64px;
+  height: 34px;
+  border-radius: 1px 1px 1px 1px;
+  border: 0
+}
+
+.need-food-page-down {
+  width: 64px;
+  height: 34px;
+  border-radius: 1px 1px 1px 1px;
+  border: 0
+}
+
+.need-food-page-number {
+  margin: 10px;
+  line-height: 35px;
+  text-align: center;
+  width: 34px;
+  height: 34px;
+  background-color: #FF6010;
+  color: rgba(255, 255, 255, 1);
+}

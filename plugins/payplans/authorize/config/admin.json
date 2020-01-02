@@ -1,0 +1,63 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "api_login_id",
+				"type": "text",
+				"title": "API Login ID",
+				"tooltip": "In this section, you will need to provide the API login ID that you have obtained from Authorize.Net",
+				"default": ""
+			},
+			{
+				"name": "transaction_key",
+				"type": "text",
+				"title": "Transaction Key",
+				"tooltip": "In this section you will need to enter the transaction key that you have obtained from Authorize.Net",
+				"default": ""
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"tooltip": "COM_PP_ALLOW_RECURRING_CANCELLATION_DESC",
+				"default": false
+			},
+			{
+				"name": "company_name",
+				"type": "toggler",
+				"title": "Display Company Name",
+				"tooltip": "This option determines if the company name should be displayed in the form",
+				"default": false
+			},
+			{
+				"name": "customer_id",
+				"type": "toggler",
+				"title": "Display Customer ID",
+				"tooltip": "This option determines if the Customer ID should be visible in the form",
+				"default": false
+			},
+			{
+				"name": "phone_number",
+				"type": "toggler",
+				"title": "Display Telephone Number",
+				"tooltip": "This option determines if the telephone number should be displayed in the form",
+				"default": false
+			},
+			{
+				"name": "fax_number",
+				"type": "toggler",
+				"title": "Display Fax Number",
+				"tooltip": "This option determines if the fax number should be displayed in the form",
+				"default": false
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			}
+		]
+	}
+]

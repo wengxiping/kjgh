@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="eventbooking" method="upgrade">
+    <name>Events Booking - Ticket Types</name>
+    <author>Tuan Pham Ngoc</author>
+    <creationDate>July 2016</creationDate>
+    <author>Tuan Pham Ngoc</author>
+    <authorEmail>tuanpn@joomdonation.com</authorEmail>
+    <authorUrl>http://www.joomdonation.com</authorUrl>
+    <copyright>Copyright (C) 2010 - 2019 Ossolution Team</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>3.10.4</version>
+    <description>This plugin allows you to add different ticket types for your events</description>
+    <files>
+        <filename plugin="tickettypes">tickettypes.php</filename>
+        <folder>form</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="show_on_frontend"
+                        type="radio"
+                        label="Show on frontend"
+                        description="If set to Yes, this plugin will be available on frontend event submission form"
+                        class="btn-group btn-group-yesno"
+                        default="0"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="enable_weight"
+                        type="radio"
+                        label="Enable Weight"
+                        class="btn-group btn-group-yesno"
+                        default="0"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,396 @@
+.com_dtregister a:hover,
+.com_dtregister a:focus {
+  text-decoration: none;
+}
+.com_dtregister .dth-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid #cccccc;
+  white-space: nowrap;
+  padding: 5px 15px;
+  font-size: 14px;
+  line-height: 1.71428571;
+  border-radius: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.com_dtregister .dth-btn:focus,
+.com_dtregister .dth-btn:active:focus,
+.com_dtregister .dth-btn.active:focus,
+.com_dtregister .dth-btn.focus,
+.com_dtregister .dth-btn:active.focus,
+.com_dtregister .dth-btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.com_dtregister .dth-btn:hover,
+.com_dtregister .dth-btn:focus,
+.com_dtregister .dth-btn.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.com_dtregister .dth-btn:active,
+.com_dtregister .dth-btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.com_dtregister .dth-btn.disabled,
+.com_dtregister .dth-btn[disabled],
+fieldset[disabled] .com_dtregister .dth-btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.com_dtregister .dth-btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.com_dtregister .dth-btn-default:hover,
+.com_dtregister .dth-btn-default:focus,
+.com_dtregister .dth-btn-default.focus,
+.com_dtregister .dth-btn-default:active,
+.com_dtregister .dth-btn-default.active,
+.open > .dropdown-toggle.com_dtregister .dth-btn-default {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.com_dtregister .dth-btn-default:active,
+.com_dtregister .dth-btn-default.active,
+.open > .dropdown-toggle.com_dtregister .dth-btn-default {
+  background-image: none;
+}
+.com_dtregister .dth-btn-default.disabled,
+.com_dtregister .dth-btn-default[disabled],
+fieldset[disabled] .com_dtregister .dth-btn-default,
+.com_dtregister .dth-btn-default.disabled:hover,
+.com_dtregister .dth-btn-default[disabled]:hover,
+fieldset[disabled] .com_dtregister .dth-btn-default:hover,
+.com_dtregister .dth-btn-default.disabled:focus,
+.com_dtregister .dth-btn-default[disabled]:focus,
+fieldset[disabled] .com_dtregister .dth-btn-default:focus,
+.com_dtregister .dth-btn-default.disabled.focus,
+.com_dtregister .dth-btn-default[disabled].focus,
+fieldset[disabled] .com_dtregister .dth-btn-default.focus,
+.com_dtregister .dth-btn-default.disabled:active,
+.com_dtregister .dth-btn-default[disabled]:active,
+fieldset[disabled] .com_dtregister .dth-btn-default:active,
+.com_dtregister .dth-btn-default.disabled.active,
+.com_dtregister .dth-btn-default[disabled].active,
+fieldset[disabled] .com_dtregister .dth-btn-default.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.com_dtregister .dth-btn-default .badge {
+  color: #ffffff;
+  background-color: #333333;
+}
+.com_dtregister .dth-btn-primary {
+  color: #ffffff;
+  background-color: #ff9a48;
+  border-color: #ff9a48;
+}
+.com_dtregister .dth-btn-primary:hover,
+.com_dtregister .dth-btn-primary:focus,
+.com_dtregister .dth-btn-primary.focus,
+.com_dtregister .dth-btn-primary:active,
+.com_dtregister .dth-btn-primary.active,
+.open > .dropdown-toggle.com_dtregister .dth-btn-primary {
+  color: #ffffff;
+  background-color: #ff7e15;
+  border-color: #ff780b;
+}
+.com_dtregister .dth-btn-primary:active,
+.com_dtregister .dth-btn-primary.active,
+.open > .dropdown-toggle.com_dtregister .dth-btn-primary {
+  background-image: none;
+}
+.com_dtregister .dth-btn-primary.disabled,
+.com_dtregister .dth-btn-primary[disabled],
+fieldset[disabled] .com_dtregister .dth-btn-primary,
+.com_dtregister .dth-btn-primary.disabled:hover,
+.com_dtregister .dth-btn-primary[disabled]:hover,
+fieldset[disabled] .com_dtregister .dth-btn-primary:hover,
+.com_dtregister .dth-btn-primary.disabled:focus,
+.com_dtregister .dth-btn-primary[disabled]:focus,
+fieldset[disabled] .com_dtregister .dth-btn-primary:focus,
+.com_dtregister .dth-btn-primary.disabled.focus,
+.com_dtregister .dth-btn-primary[disabled].focus,
+fieldset[disabled] .com_dtregister .dth-btn-primary.focus,
+.com_dtregister .dth-btn-primary.disabled:active,
+.com_dtregister .dth-btn-primary[disabled]:active,
+fieldset[disabled] .com_dtregister .dth-btn-primary:active,
+.com_dtregister .dth-btn-primary.disabled.active,
+.com_dtregister .dth-btn-primary[disabled].active,
+fieldset[disabled] .com_dtregister .dth-btn-primary.active {
+  background-color: #ff9a48;
+  border-color: #ff9a48;
+}
+.com_dtregister .dth-btn-primary .badge {
+  color: #ff9a48;
+  background-color: #ffffff;
+}
+.com_dtregister .dth-btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.com_dtregister .dth-btn-danger:hover,
+.com_dtregister .dth-btn-danger:focus,
+.com_dtregister .dth-btn-danger.focus,
+.com_dtregister .dth-btn-danger:active,
+.com_dtregister .dth-btn-danger.active,
+.open > .dropdown-toggle.com_dtregister .dth-btn-danger {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #c12e2a;
+}
+.com_dtregister .dth-btn-danger:active,
+.com_dtregister .dth-btn-danger.active,
+.open > .dropdown-toggle.com_dtregister .dth-btn-danger {
+  background-image: none;
+}
+.com_dtregister .dth-btn-danger.disabled,
+.com_dtregister .dth-btn-danger[disabled],
+fieldset[disabled] .com_dtregister .dth-btn-danger,
+.com_dtregister .dth-btn-danger.disabled:hover,
+.com_dtregister .dth-btn-danger[disabled]:hover,
+fieldset[disabled] .com_dtregister .dth-btn-danger:hover,
+.com_dtregister .dth-btn-danger.disabled:focus,
+.com_dtregister .dth-btn-danger[disabled]:focus,
+fieldset[disabled] .com_dtregister .dth-btn-danger:focus,
+.com_dtregister .dth-btn-danger.disabled.focus,
+.com_dtregister .dth-btn-danger[disabled].focus,
+fieldset[disabled] .com_dtregister .dth-btn-danger.focus,
+.com_dtregister .dth-btn-danger.disabled:active,
+.com_dtregister .dth-btn-danger[disabled]:active,
+fieldset[disabled] .com_dtregister .dth-btn-danger:active,
+.com_dtregister .dth-btn-danger.disabled.active,
+.com_dtregister .dth-btn-danger[disabled].active,
+fieldset[disabled] .com_dtregister .dth-btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.com_dtregister .dth-btn-danger .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+.com_dtregister #toolbar {
+  margin: 0;
+}
+.com_dtregister [class^="icon-"]:before,
+.com_dtregister [class*="icon-"]:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-family: FontAwesome;
+}
+.com_dtregister .icon-new:before {
+  content: "\f055";
+}
+.com_dtregister .icon-publish:before {
+  content: "\f00c";
+}
+.com_dtregister .icon-unpublish:before {
+  content: "\f00d";
+  font-size: 16px;
+}
+.com_dtregister .btn .icon-publish,
+.com_dtregister .btn .icon-unpublish {
+  display: inline-block;
+  margin-right: 0;
+  vertical-align: middle;
+}
+.com_dtregister .com_dtregister select,
+.com_dtregister.dtregister-wrap select,
+.com_dtregister .com_dtregister textarea,
+.com_dtregister.dtregister-wrap textarea,
+.com_dtregister .com_dtregister input[type="text"],
+.com_dtregister.dtregister-wrap input[type="text"],
+.com_dtregister .com_dtregister input[type="password"],
+.com_dtregister.dtregister-wrap input[type="password"],
+.com_dtregister .com_dtregister input[type="datetime"],
+.com_dtregister.dtregister-wrap input[type="datetime"],
+.com_dtregister .com_dtregister input[type="datetime-local"],
+.com_dtregister.dtregister-wrap input[type="datetime-local"],
+.com_dtregister .com_dtregister input[type="date"],
+.com_dtregister.dtregister-wrap input[type="date"],
+.com_dtregister .com_dtregister input[type="month"],
+.com_dtregister.dtregister-wrap input[type="month"],
+.com_dtregister .com_dtregister input[type="time"],
+.com_dtregister.dtregister-wrap input[type="time"],
+.com_dtregister .com_dtregister input[type="week"],
+.com_dtregister.dtregister-wrap input[type="week"],
+.com_dtregister .com_dtregister input[type="number"],
+.com_dtregister.dtregister-wrap input[type="number"],
+.com_dtregister .com_dtregister input[type="email"],
+.com_dtregister.dtregister-wrap input[type="email"],
+.com_dtregister .com_dtregister input[type="url"],
+.com_dtregister.dtregister-wrap input[type="url"],
+.com_dtregister .com_dtregister input[type="search"],
+.com_dtregister.dtregister-wrap input[type="search"],
+.com_dtregister .com_dtregister input[type="tel"],
+.com_dtregister.dtregister-wrap input[type="tel"],
+.com_dtregister .com_dtregister input[type="color"],
+.com_dtregister.dtregister-wrap input[type="color"],
+.com_dtregister .com_dtregister .inputbox,
+.com_dtregister.dtregister-wrap .inputbox {
+  border-radius: 5px;
+}
+.com_dtregister .com_dtregister .event-filters,
+.com_dtregister.dtregister-wrap .event-filters {
+  margin: 6px 0;
+}
+.com_dtregister .com_dtregister .event-filters input,
+.com_dtregister.dtregister-wrap .event-filters input,
+.com_dtregister .com_dtregister .event-filters select,
+.com_dtregister.dtregister-wrap .event-filters select {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.com_dtregister #adminForm:before,
+.com_dtregister #adminForm:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.com_dtregister #adminForm .pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.com_dtregister #adminForm .pagination #limit {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 12px;
+}
+.com_dtregister .event-title > a,
+.com_dtregister .dt_event_title > a {
+  color: #333333;
+}
+.com_dtregister .event-title > a:hover,
+.com_dtregister .dt_event_title > a:hover,
+.com_dtregister .event-title > a:focus,
+.com_dtregister .dt_event_title > a:focus,
+.com_dtregister .event-title > a:active,
+.com_dtregister .dt_event_title > a:active {
+  color: #fa7000;
+  text-decoration: none;
+}
+.com_dtregister .com_dtregister {
+  background: #ffffff;
+  padding: 24px;
+}
+.com_dtregister .event-title {
+  margin-top: 12px;
+}
+.com_dtregister .event-filters {
+  background: transparent;
+  padding: 0;
+}
+.com_dtregister .eventlists .event-time,
+.com_dtregister .eventlists .event-meta,
+.com_dtregister .eventlists footer.event-footer {
+  color: #555555;
+}
+.com_dtregister .eventlists .event-time .start-date:before {
+  content: "\f274";
+  display: inline-block;
+  font-family: "FontAwesome";
+  margin-right: 4px;
+}
+.com_dtregister .eventlists .event-time time:before {
+  content: "\f017";
+  display: inline-block;
+  font-family: "FontAwesome";
+}
+.com_dtregister .eventlists .event-meta:before {
+  content: "\f041";
+  display: inline-block;
+  font-family: "FontAwesome";
+  margin-right: 4px;
+}
+.com_dtregister .eventlists .event-meta a {
+  margin-right: 6px;
+}
+.com_dtregister .eventlists .event-price {
+  background-color: #f7f7f7;
+  border: 1px dashed #e0e0e0;
+  color: #555555;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  padding: 5px 10px;
+}
+.com_dtregister .tab-wrapper .tab-nav-wrapper > ul {
+  margin: 0;
+}
+div.dt_groupwarning {
+  margin-top: 48px;
+}
+.dt_event_title {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+}
+#dt_search .form-vertical .form-group {
+  margin-bottom: 0;
+}
+#dt_search .form-vertical .form-group input {
+  margin-bottom: 0;
+}
+#dt_search .form-vertical .form-group input[type="text"] {
+  border-radius: 5px;
+  width: 100%;
+}
+#dt_search .form-vertical .form-group input.dth-btn {
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .com_dtregister .eventlists footer.event-footer {
+    margin-left: 170px;
+  }
+}
+@media (max-width: 991px) {
+  .com_dtregister .eventlists .event-time {
+    padding-right: 96px;
+  }
+  .com_dtregister .dt_member_box {
+    overflow: auto;
+  }
+  .com_dtregister .dt_member_box dl {
+    display: table;
+  }
+  .com_dtregister .dt_member_box dl dt,
+  .com_dtregister .dt_member_box dl dd {
+    display: table-cell;
+  }
+  .com_dtregister .dt_member_box dl dt.dtlabel,
+  .com_dtregister .dt_member_box dl dd.dtlabel {
+    min-width: 60px;
+  }
+  .com_dtregister .dtregister-frmcart {
+    display: block;
+    overflow: auto;
+  }
+}
+@media (max-width: 480px) {
+  .com_dtregister .com_dtregister .dth-btn,
+  .com_dtregister.dtregister-wrap .dth-btn {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}

@@ -1,0 +1,14 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "ga_id",
+				"type": "text",
+				"title": "Google Analytics ID (UA-XXXXX-X)",
+				"tooltip": "Enter your Google Analytics ID in this section. Please ensure to enable e-commerce tracking in your google analytics account.",
+				"default": ""
+			}
+		]
+	}
+]

@@ -1,0 +1,35 @@
+.acm-events .event-item {
+  border-top: 1px solid #f2f2f2;
+  padding: 32px 0;
+}
+.acm-events .event-item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.acm-events .event-item .event-time {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.acm-events .event-item .event-link a {
+  display: inline-block;
+  border-radius: 50%;
+  background: #eeeeee;
+  color: #151515;
+  line-height: 32px;
+  font-size: 8px;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+}
+.acm-events .event-item .event-link a:hover,
+.acm-events .event-item .event-link a:focus,
+.acm-events .event-item .event-link a:active {
+  background: linear-gradient(135deg, #4353ff, #4353ff);
+}
+.acm-events .event-item .event-link a .fa,
+.acm-events .event-item .event-link a .fab,
+.acm-events .event-item .event-link a .fal,
+.acm-events .event-item .event-link a .far,
+.acm-events .event-item .event-link a .fas {
+  line-height: 32px;
+}

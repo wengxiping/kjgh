@@ -1,0 +1,219 @@
+.clear{clear: both;}
+.xp-pagination{
+  margin: 0!important;padding: 0!important;display: flex;justify-content: space-between;align-items: center;
+}
+.xp-pagination .pull-right .pagination{
+  margin: 0!important;padding: 0!important;
+}
+.xp-pagination .pagination li>a{ border: 1px solid #EEEEEE;padding: 4px 11px;margin-right: 10px;border-radius: 1px!important;   }
+.xp-pagination .pagination li>a:hover{background: #FF6010;color:#FFFFFF!important;}
+.xp-pagination .pagination li.active a{ background: #FF6010!important;border:1px solid #FF6010;color:#FFFFFF!important;}
+.xp-pagination .pagination li.disabled a{ color: rgba(153,153,153,1);
+  cursor: not-allowed;background:#FFFFFF;border:none;color: #999999!important;}
+
+.xp-pagination .pagination li:first-child{display: none;}
+.xp-pagination .pagination li:last-child{display: none;}
+#t3-content {
+  background-color: #FFFFFF;
+  padding: 0 20px;
+}
+
+.select-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.select-user-p {
+  font-size: 18px;
+  font-family: 微软雅黑;
+  color: rgba(51, 51, 51, 1);
+  line-height: 56px;
+  letter-spacing: 0px;
+}
+.select-user-p p{
+  padding: 0!important;margin: 0!important;
+}
+.select-user-momey {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: rgba(102, 102, 102, 1);
+  line-height: 19px;
+}
+
+.partition-line {
+  width: 1160px;
+  height: 1px;
+  background-color: #EEE !important;
+  margin-bottom: 10px
+}
+
+.select-user-detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.select-user-detail-top p {
+  margin-bottom: 5px;
+}
+
+.desc-title {
+  font-size: 14px;
+  font-family: 微软雅黑;
+  color: rgba(51, 51, 51, 1);
+  line-height: 20px;
+  margin: 5px 0 8px -6px;
+}
+
+.span6 {
+  margin-left: 10px !important;
+  height: 80px !important;
+}
+
+.select-user-container {
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.img-show-container {
+  display: block;
+  width: 76px !important;
+  height: 76px !important;
+  margin-top: 20px;
+  position: relative;
+}
+.img-show-container .choose-img{
+  width: 76px;height: 76px;position: absolute;top:0;left:0;
+}
+
+.img-polaroid {
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  width: 76px !important;
+  height: 76px !important;
+  border-style: none
+}
+
+.need-total-momey {
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  color: rgba(255, 96, 16, 1);
+  line-height: 24px;
+}
+
+.need-accept-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.need-accept-container .submit-commit-btn{
+ display: flex;justify-content: flex-start;align-items: center;
+}
+.need-accept-container .submit-commit-btn div:first-child{
+  width: 108px;
+  height: 30px;
+  opacity: 1;
+  border-radius: 1px 1px 1px 1px;
+  background:#FFFFFF;
+  border: 1px solid #EEEEEE;
+  margin-right: 10px;
+}
+.need-accept-container .submit-commit-btn div:last-child{
+  width: 108px;
+  height: 30px;
+  opacity: 1;
+  border-radius: 1px 1px 1px 1px;
+  background:#FF6010;
+}
+.need-accept-container .submit-commit-btn .xp-btn{
+  background:none;outline: none;box-shadow: none;
+}
+.need-accept-container .submit-commit-btn .xp-btn a{
+  background:none;outline: none;box-shadow: none;border:none;font-size: 14px!important;font-family: 微软雅黑!important;
+  text-shadow: none;font-weight: normal;
+  width: 100%;height: 100%;padding: 0;margin: 0;line-height: 30px;
+}
+.need-accept-container .submit-commit-btn .xp-btn:first-child a{
+  color:#999999!important;
+}
+.need-accept-container .submit-commit-btn .xp-btn:last-child a{
+  color:#FFFFFF!important;
+}
+.select-ta {
+  width: 108px;
+  height: 30px;
+  background-color: #FF6010;
+  border: none;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.need-food-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.need-food-p {
+  margin-left: 5px;
+}
+
+.need-food-page-up {
+  width: 64px;
+  height: 34px;
+  border-radius: 1px 1px 1px 1px;
+  border: 0
+}
+
+.need-food-page-down {
+  width: 64px;
+  height: 34px;
+  border-radius: 1px 1px 1px 1px;
+  border: 0
+}
+
+.need-food-page-number {
+  margin: 10px;
+  line-height: 35px;
+  text-align: center;
+  width: 34px;
+  height: 34px;
+  background-color: #FF6010;
+  color: rgba(255, 255, 255, 1);
+}
+
+.need-food-page-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.action-bar{
+  display: flex;justify-content: flex-end;align-items: center;
+}
+.progress-button{width: 108px; background-color: #FF6010;}
+.progress-button a{
+  background:none;outline: none;box-shadow: none;border:none;font-size: 14px!important;font-family: 微软雅黑!important;
+  text-shadow: none;font-weight: normal;color:#FFFFFF!important;
+}
+.progress-button a:hover{
+  background: none;
+}
+.bar{
+  height: 14px!important;
+}
+.progress{height: 14px!important;}
+.progress-success{position: relative;border-radius: 0!important;transform: skewX(-10deg);background: #e2dbd2
+}
+.progress-success.progress-striped .bar{
+  background: linear-gradient(to right,#FFC242 10%,#FF8F1F 90%);
+  text-shadow: none;box-shadow: none;
+}
+.progress-success .progress-title{position: absolute;top:-2px;}

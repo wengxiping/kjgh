@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Parallax</title>
+	<sampledata></sampledata>
+	<fields name="parallax">
+	   <fieldset name="basic" label="PARALLAX_BASIC_LABEL" description="PARALLAX_BASIC_DESC" multiple="0">
+				<field name="bg-source" type="list" default="" label="PARALLAX_SOURCE_BACKGROUND_LABEL" description="PARALLAX_SOURCE_BACKGROUND_DESC">
+					<option value="0">Image</option>
+					<option value="1">Youtube</option>
+				</field>
+
+	      <field name="bg-image" type="media" default="" label="PARALLAX_IMG_LABEL" description="PARALLAX_IMG_DESC" />
+
+	      <field name="link-video" type="text" default="" label="PARALLAX_LINK_YOUTUBE_LABEL" description="PARALLAX_LINK_YOUTUBE_DESC" />
+
+	      <field name="bg-mask" type="list" default="" label="PARALLAX_MASK_LABEL" description="PARALLAX_MASK_DESC">
+	      	<option value="0">JNO</option>
+	      	<option value="1">JYES</option>
+	      </field>
+	  </fieldset>
+  </fields>
+</form>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="params">
+    <fieldset name="custom-field" label="JA Extra Fields" description="">
+      <field name="category_color" type="color" default="" label="TPL_CATEGORY_COLOR_LABEL" description="TPL_CATEGORY_COLOR_DESC" filter="RAW" />
+      <field name="category_icon" type="media" default="" label="TPL_CATEGORY_ICON_LABEL" description="TPL_CATEGORY_ICON_DESC" />
+      <field name="category_marker" type="media" default="" label="TPL_CATEGORY_MARKER_LABEL" description="TPL_CATEGORY_MARKER_DESC" />
+    </fieldset>
+  </fields>
+</form>

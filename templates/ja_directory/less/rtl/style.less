@@ -1,0 +1,163 @@
+// RTL STYLES
+// ------------------------------------------------------
+
+// Article Images
+// --------------
+.article-intro img[align="left"],
+.article-content img[align="left"],
+.article-intro .img_caption.left,
+.article-content .img_caption.left,
+.article-intro .pull-left.item-image,
+.article-content .pull-left.item-image {
+	margin: 0 0 @t3-global-margin;
+}
+
+article img[align=left],
+.img_caption.left,
+.pull-left.item-image {
+	margin: 0;
+	
+  @media (max-width: @screen-sm) {
+    margin: 0 @grid-gutter-width @t3-global-margin 0;
+  }
+}
+
+article img[align=right],
+.img_caption.right,
+.pull-right.item-image {
+	margin: 0;
+
+  @media (max-width: @screen-sm) {
+    margin: 0 0 @t3-global-margin @grid-gutter-width;
+  }
+}
+
+.item-image.article-image-full {
+	margin: 0;
+}
+
+.languageswitcherload {
+  ul {
+    float: left;
+  }
+}
+
+// SUBNAV
+nav.t3-subnav {
+	direction: ltr;
+
+	.owl-item > div {
+		position: relative;
+	}
+
+	ul.menu .owl-controls .owl-nav div.owl-prev, 
+	#menu-carousel .owl-controls .owl-nav div.owl-prev {
+		margin-left: 0;
+		margin-right: @t3-global-margin / 4;
+	}
+}
+
+.t3-subnav ul.menu > li > a,
+.t3-subnav #menu-carousel > li > a,
+.t3-subnav ul.menu .owl-item a:before,
+.t3-subnav #menu-carousel .owl-item a {
+	direction: rtl;
+}
+
+// ACM SLIDESHOW
+.t3-slideshow {
+	.acm-slideshow {
+		direction: ltr;
+		overflow: hidden;
+	}
+}
+
+div.acm-slideshow .owl-carousel .owl-controls .owl-nav div.owl-prev:before {
+	content: "\f105";
+}
+
+div.acm-slideshow .owl-carousel .owl-controls .owl-nav div.owl-next:before {
+	content: "\f104";
+}
+
+.t3-section .search-now .chzn-container-single .chzn-single div b,
+.t3-sidebar .search-now .chzn-container-single .chzn-single div b {
+	background-position: 0 14px;
+}
+
+// ACM TEAM 
+figure.team-detail figcaption::before {
+	background-size: 100% 100%!important;
+}
+
+figure.team-detail .social-links {
+	left: auto;
+	right: 0;
+}
+
+// ACM TESTIMONIALS
+.acm-testimonials a.carousel-control.left {
+	margin-left: 0;
+}
+
+.acm-testimonials a.carousel-control.right {
+	margin-left: 30px;
+}
+
+// ACM CLIENS
+.uber-cliens {
+	.owl-carousel .owl-stage-outer {
+		direction: ltr;
+	}
+	
+	.client-item {
+		margin-left: 0 !important;
+		margin-right: 40px;
+	}
+}
+
+// OFFCANVAS
+.off-canvas-left.t3-off-canvas#t3-off-canvas {
+  @media screen and (max-width: @screen-sm-max) {
+    transform: translate3d(0%, 0, 0);
+    -moz-transform: translate3d(0%, 0, 0);
+    -webkit-transform: translate3d(0%, 0, 0);
+  }
+}
+
+.off-canvas-left.t3-off-canvas {
+  display: none;
+}
+.off-canvas-left .off-canvas-left.t3-off-canvas {
+  display: block;
+}
+
+.com_config {
+	.radio.btn-group input[type="radio"] + label {
+		margin-right: 0;
+	}
+
+	#jform_params_form_mode {
+		label {
+			float: none;
+			margin-right: 0;
+			padding: 0;
+		}
+
+		input {
+			position: relative;
+			margin: 0 @t3-global-margin / 4;
+		}
+	}
+
+	.t3onoff label {
+		float: none;
+		margin: 0;
+		width: 100%!important;
+	}
+}
+
+ul.extrafields li:first-child div.ordering {
+	float: left;
+	margin-top: -35px!important;
+}

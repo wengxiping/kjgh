@@ -1,0 +1,21 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "pos_id",
+				"type": "text",
+				"title": "POS ID (pos_id)",
+				"tooltip": "In this section, you would need to enter the Point of sale id assigned by PayU",
+				"default": ""
+			},
+			{
+				"name": "secret_key",
+				"type": "text",
+				"title": "Secret Key (MD5)",
+				"tooltip": "In this section, you would need to enter the Secret Key assigned by PayU",
+				"default": ""
+			}
+		]
+	}
+]

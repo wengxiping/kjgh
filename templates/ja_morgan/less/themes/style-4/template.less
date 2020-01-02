@@ -1,0 +1,164 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+// Header
+.t3-header {
+	background: transparent;
+
+	.container-inner {
+		max-width: 1230px;
+		margin: 0 auto;
+	}
+
+	&.has-hero {
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		margin-bottom: -@navbar-height - 1px;
+		position: relative;
+		z-index: 1;
+
+		// Logo
+		.logo {
+			padding-right: @grid-gutter-width / 2;
+			height: @navbar-height;
+			line-height: @navbar-height;
+
+			// Mobile view
+			@media (max-width: @screen-sm-max){
+				height: @grid-gutter-width * 2;
+				line-height: @grid-gutter-width *2;
+			}
+
+			a {
+				color: @white;
+			}
+		}
+
+		// Head Right
+		.headright {
+			display: flex;
+			height: @navbar-height;
+
+			// Mobile view
+			@media (max-width: @screen-sm-max){
+				height: @grid-gutter-width * 2;
+			}
+		}
+
+		// Navbar
+		.navbar-default .navbar-nav {
+			> li {
+				> a,
+				> span {
+					color: @white;
+					margin-left: 0;
+					padding-left: 18px;
+					padding-right: 18px;
+					position: relative;
+
+					// Mobile view
+					@media (max-width: @screen-sm-max){
+						color: @text-color;
+						padding-left: 0;
+						padding-right: 0;
+					}
+
+					&:before {
+						background: @white;
+						bottom: -1px;
+						content: "";
+						position: absolute;
+						left: 0;
+						height: 1px;
+						width: 0;
+						.transition(400ms all);
+					}
+
+					&:hover {
+						&:before {
+							width: 100%;
+						}
+					}
+				}
+
+				&.active,
+				&.open {
+					> a,
+					> span {
+						// Mobile view
+						@media (max-width: @screen-sm-max){
+							color: @brand-primary;
+						}
+
+						&:before {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.head-search  {
+			margin-left: 6px;
+
+			// Mobile view
+			@media (max-width: @screen-sm-max){
+				border-left: 1px solid rgba(255,255,255,0.1);
+				display: flex;
+				height: @grid-gutter-width * 2;
+				width: @grid-gutter-width * 2;
+			}
+			
+			.form-search {
+				.search-query {
+					background-image: url('../../@{t3-image-path}/ico/search-inverse.png');
+					background-color: transparent;
+					border: none;
+
+					&:focus {
+						background-color: @white;
+						background-image: url('../../@{t3-image-path}/ico/search.png');
+					}
+				}
+			}
+		}
+
+		.navbar-navigation {
+
+			button {
+				// Mobile view
+				@media (max-width: @screen-sm-max){
+					border-left: 1px solid rgba(255,255,255,0.1);
+					width: @grid-gutter-width * 2;
+					height: @grid-gutter-width * 2;
+				}
+			}
+
+			.navbar-toggle {
+				// Mobile view
+				@media (max-width: @screen-sm-max){
+					background: transparent;
+					margin: 0 -@grid-gutter-width / 2 0 0;
+					color: @white;
+				}
+			}
+
+			.off-canvas-toggle {
+				background: transparent;
+				margin-left: @grid-gutter-width / 3;
+
+				// Mobile view
+				@media (max-width: @screen-sm-max){
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+// Footer
+.t3-footnav {
+	p {
+		color: @text-color;
+	}
+}

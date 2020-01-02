@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>PayPlans - Gifts</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>
+	<![CDATA[
+	1. Before using Gift app, make sure that Pro-discount is enabled. Else it will not work. <br>
+	2. Gift App is applicable for Fixed Plans only.<br><br>
+	3. Do enable your email settings, else you will not be able to get the codes.<br><br>
+	]]>
+	</description>
+
+	<files>
+		<folder>tmpl</folder>
+		<filename plugin="gift">gift.php</filename>
+		<filename>gift.xml</filename>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_payplans/models/fields">
+			<fieldset name="basic">
+				<field name="giftLimit" type="text" label="COM_PP_GIFT_LIMIT_PER_SUBSCRIPTION" description="COM_PP_GIFT_LIMIT_PER_SUBSCRIPTION_DESC" default="0" />
+
+				<field name="sendMailTOAdmin" type="radio" label="COM_PP_GIFT_NOTIFY_ADMINS" description="COM_PP_GIFT_NOTIFY_ADMINS_DESC" class="btn-group" default="0">
+						<option value="1">COM_PAYPLANS_YES</option>
+						<option value="0">COM_PAYPLANS_NO</option>
+				</field>
+
+				<field name="applyPlan" type="plans" label="COM_PP_GIFT_PLAN_ASSOCIATIONS" description="COM_PP_GIFT_PLAN_ASSOCIATIONS_DESC" default="" multiple="true" />
+
+				<field 	name="applicability" 
+						type="list" 
+						label="COM_PAYPLANS_PLANADDONS_APPLICABILITY" 
+						description="Choose which condition is used for gift purchase" default="PERCENT_OF_SUBTOTAL_NON_TAXABLE">
+						<option value="PERCENT_OF_SUBTOTAL_NON_TAXABLE">COM_PAYPLANS_PLANADDONS_APPLICABILITY_NEITHER_TAX_NOR_DISCOUNT</option>
+						<option value="PERCENT_OF_SUBTOTAL_DISCOUNTABLE">COM_PAYPLANS_PLANADDONS_APPLICABILITY_BOTH_TAX_AND_DISCOUNT</option>
+						<option value="PERCENT_OF_SUBTOTAL_TAXABLE">COM_PAYPLANS_PLANADDONS_APPLICABILITY_ONLY_TAX_NOT_DISCOUNT</option>
+				</field>
+		
+				<field 	name="prefix" 
+						type="text" 
+						label="COM_PP_GIFT_COUPON_PREFIX" 
+						description="COM_PP_GIFT_COUPON_PREFIX_DESC" 
+						default="GIFT_" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

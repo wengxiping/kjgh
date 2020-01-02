@@ -1,0 +1,217 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA City Guide Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #757575;
+	font-family: 'Archivo', sans-serif;
+	font-size: 14px;
+	line-height: 1.714286;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/* BODY 
+---------------------*/
+#frame {
+	margin-top: 8%;
+	text-align: left;
+}
+
+/* Container Offline */
+.offline-container {
+	border: 1px solid #eaeaea;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	border-radius: 4px;
+	margin: 0 auto;
+	padding: 48px;
+	width: 380px;
+}
+
+/* Title Offline */
+#offline-title {
+}
+
+#offline-title h1 {
+	color: #343648;
+	font-size: 36px;
+	font-weight: 600;
+	font-family: 'IBM Plex Serif', "Times New Roman", Times, serif;
+	margin: 0 0 20px;
+	position: relative;
+}
+
+/* Description offline */
+.des-offline {
+	margin-bottom: 24px;
+	position: relative;
+}
+
+.des-offline br {
+	display: none;
+}
+
+#offline-img {
+	margin: 0 0 24px 0;
+}
+
+#offline-img img {
+	max-width: 100%;
+}
+
+/* Form Offline */
+.form-offline {
+	margin: 0 auto 30px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.control-label {
+	display: block;
+}
+
+.control-input {
+	background: none;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	color: #666;
+	height: 40px;
+	padding: 0 10px;
+	width: 100%;
+}
+
+.control-input:active,
+.control-input:focus {
+	border-color: #eee;
+}
+
+/* Remember */
+#form-login-remember {
+	margin-bottom: 24px;
+}
+
+#form-login-remember label {
+	font-size: 14px;
+	color: #666;
+}
+
+#form-login-remember .inputbox {
+	margin: 5px 3px 0 0;
+	vertical-align: top;
+}
+
+/* Button */
+
+.button {
+	background: #f9676b;
+	border-radius: 4px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 12px 30px;
+	position: relative;
+	transition: 0.2s;
+	width: 100%;
+}
+
+.button:hover, 
+.button:active, 
+.button:focus {
+	background: #f72c32;
+	color: #fff;
+}
+
+/* Message Error */
+#system-message .error,
+#system-message .alert {
+	background: #f2dede;
+	color: #b94a48;
+	margin: auto;
+	padding: 20px;
+	width: 700px;
+	margin-bottom: 20px;
+}
+
+.error.message ul {
+	padding: 0;
+	list-style: none;
+}
+
+.alert {
+	position: relative;
+}
+
+.alert h4 {
+	font-size: 18px;
+	margin: 0;
+}
+
+.alert p {
+	margin: 5px 0 0 0;
+}
+
+.close {
+	right: 15px;
+	top: 15px;
+	position: absolute;
+	cursor: pointer;
+	height: 16px;
+	text-align: center;
+	width: 16px;
+	line-height: 16px;
+	font-size: 20px;
+}
+
+
+@media (max-width:  360px){
+	#frame {
+		padding: 0 20px;
+		margin-top: 10%;
+	}
+	.offline-container {
+		width: 100%;
+		border: none;
+		padding: 0;
+	}
+
+	.form-offline {
+		width: 100%;
+	}
+
+	.form-group {
+		width: 100%;
+	}
+
+	/* Message Error */
+	#system-message .error,
+	#system-message .alert {
+		width: 100%;
+	}
+}

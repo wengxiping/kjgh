@@ -1,0 +1,62 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// -------------------------------
+// GALLERY STYLE
+// -------------------------------
+.acm-gallery {
+  overflow: hidden;
+
+	.item {
+    padding: 0;
+  }
+
+  // Type Slideshow
+  .owl-carousel {
+    padding: 0;
+
+    .item {
+      width: 100%;
+    }
+  }
+
+  .owl-controls {
+    margin: 0;
+
+    .owl-buttons {
+      > div {
+        background: @gray-darker;
+        border-radius: 0;
+        position: absolute;
+        font-size: @font-size-h3;
+        top: 50%;
+        left: @grid-gutter-width;
+        margin: 0;
+        margin-top: -@grid-gutter-width;
+        padding: 0;
+        line-height: @grid-gutter-width * 2;
+        height: @grid-gutter-width * 2;
+        width: @grid-gutter-width * 2;
+
+        &.owl-next {
+          right: @grid-gutter-width;
+          left: auto;
+        }
+      }
+    }
+  }
+
+  .item-inner {
+    margin: -1px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "id",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_MONETAWEB_ID",
+				"tooltip": "COM_PAYPLANS_APP_MONETAWEB_ID_DESC",
+				"default": ""
+			},
+			{
+				"name": "password",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_MONETAWEB_PASSWORD",
+				"tooltip": "COM_PAYPLANS_APP_ONETAWEB_PASSWORD_DESC",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_MONETAWEB_SANDBOX",
+				"tooltip": "COM_PAYPLANS_APP_MONETAWEB_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

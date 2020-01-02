@@ -1,0 +1,12 @@
+[
+	{
+		"table": "#__payplans_app",
+		"column": "group",
+		"query": "ALTER TABLE `#__payplans_app` ADD COLUMN `group` varchar(255) NOT NULL DEFAULT '' AFTER `app_id`"
+	},
+	{
+		"table": "#__payplans_app",
+		"column": "folder",
+		"query": "ALTER TABLE `#__payplans_app` ADD COLUMN `folder` varchar(255) NOT NULL DEFAULT '' AFTER `type`"
+	}
+]

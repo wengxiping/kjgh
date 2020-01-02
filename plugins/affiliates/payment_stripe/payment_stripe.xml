@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="affiliates" method="upgrade">
+    <name>Affiliate Tracker - Payment - Stripe</name>
+    <version>1.0.2</version>
+    <creationDate>September 2018</creationDate>
+    <author>JoomlaThat!</author>
+    <authorEmail>support@joomlathat.com</authorEmail>
+    <authorUrl>http://www.joomlathat.com</authorUrl>
+    <copyright>2013 - 2015 joomlathat.com</copyright>
+    <license>GNU General Public License v2</license>
+    <description>Stripe payment plugin for Affiliate Tracker</description>
+    <files>
+        <filename plugin="payment_stripe">payment_stripe.php</filename>
+        <folder>payment_stripe</folder>
+        <folder>stripe</folder>
+        <filename>config.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <!--language tag="en-GB">languages/en-GB.plg_affiliates_payment_stripe.ini</language-->
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="currency" type="text" class="input-mini" size="10" default="USD" label="Stripe Currency" description="Stripe Currency"/>
+                <field name="description" type="textarea"  default="" label="Description text" description="Description text"/>
+
+                <field name="title" type="text" default="Stripe" label="Tab title" description="Tab title"/>
+                <field name="description" type="textarea"  default="Click on the button to pay with Stripe" label="Description text" description="Description text"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

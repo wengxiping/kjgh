@@ -1,0 +1,8 @@
+{
+	"title"	: "COM_EASYSOCIAL_MENU_GROUP_EMOTICONS",
+	"link"	: "index.php?option=com_easysocial&view=emoticons",
+	"class"	: "far fa-grin-squint",
+	"access": "easysocial.access.emoticons",
+	"view"	: "emoticons",
+	"active": "layout"
+}

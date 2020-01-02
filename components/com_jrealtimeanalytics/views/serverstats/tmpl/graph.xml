@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JREALTIMEANALYTICS_SERVERSTATS_VIEW_DEFAULT_TITLE">
+		<message><![CDATA[COM_JREALTIMEANALYTICS_SERVERSTATS_VIEW_DEFAULT_MSG]]></message>
+	</layout>
+	<state>
+		<name>COM_JREALTIMEANALYTICS_SERVERSTATS_VIEW_DEFAULT_TITLE</name>
+	</state>
+
+	<!-- Add parameters for data source filters -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_JREALTIMEANALYTICS_REPORT" addfieldpath="/administrator/components/com_jrealtimeanalytics/framework/html">
+			<field name="details_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_DETAILS_ONOFF" description="COM_JREALTIME_DETAILS_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+			<field name="geolocation_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_GEOLOCATION_ONOFF" description="COM_JREALTIME_GEOLOCATION_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="os_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_OS_ONOFF" description="COM_JREALTIME_OS_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="browser_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_BROWSER_ONOFF" description="COM_JREALTIME_BROWSER_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+			<field name="device_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_DEVICE_ONOFF" description="COM_JREALTIME_DEVICE_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+			<field name="landing_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_LANDING_ONOFF" description="COM_JREALTIME_LANDING_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="leaveoff_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_LEAVEOFF_ONOFF" description="COM_JREALTIME_LEAVEOFF_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="visitsbypage_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_VISITSBYPAGE_ONOFF" description="COM_JREALTIME_VISITSBYPAGE_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="visitsbyuser_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_VISITSBYUSER_ONOFF" description="COM_JREALTIME_VISITSBYUSER_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="visitsbyip_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_VISITSBYIP_ONOFF" description="COM_JREALTIME_VISITSBYIP_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="referral_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_REFERRAL_ONOFF" description="COM_JREALTIME_REFERRAL_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		<field name="searchkeys_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_SEARCHKEYS_ONOFF" description="COM_JREALTIME_SEARCHKEYS_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		
+	   		<field name="show_date_filters" class="btn-group" type="radio" default="1" label="COM_JREALTIME_SHOW_DATE_FILTERS" description="COM_JREALTIME_SHOW_DATE_FILTERS_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		
+	   		<field name="exporter_groups" class="btn-group" type="aclgroupsmultiselect" multiple="multiple" default="" label="COM_JREALTIME_EXPORTER_GROUPS" description="COM_JREALTIME_EXPORTER_GROUPS_DESC"></field>
+		</fieldset>
+	</fields>
+</metadata>

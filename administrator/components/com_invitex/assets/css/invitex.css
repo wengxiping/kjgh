@@ -1,0 +1,134 @@
+/**
+ * @package InviteX
+ * @copyright Copyright (C) 2009 -2010 Techjoomla, Tekdi Web Solutions . All rights reserved.
+ * @license GNU GPLv2 <http://www.gnu.org/licenses/old-licenses/gpl-2.0.html>
+ * @link     http://www.techjoomla.com
+ */
+
+/* Header */
+.icon-48-inviteX {
+background-image:url(../images/user_add.png)!important;
+}
+.icon-32-update {
+background-image:url(../images/update.png)!important;
+}
+div.current {
+/*background-color:#EFEFEF !important;*/
+border:2px solid #CCCCCC !important;
+}
+
+
+.top_inv_tool {
+border: 1px solid #CCCCCC;
+border-radius: 10px 10px 10px 10px;
+color:#033;
+font-weight:bold;
+margin-top: 10px;
+}
+
+.top_inv_tool .page_title
+{
+text-align:center;
+padding:10px;
+}
+/********* Joomla 3.0 *******/
+div.invitex_left{
+float:left;
+}
+div.invitex_right{
+float:right;
+}
+
+.invInnerFilter{
+margin-right:2px;
+display:inline-block;
+}
+div.invitex_right .innerdiv, div.invitex_left .innerdiv{
+float:left;
+margin-right:2px;
+}
+.input-append input{
+width: 150px;
+}
+
+
+/*start hack in bootstrap*/
+.techjoomla-bootstrap .invitex_settings .form-horizontal .control-label {
+margin-top: 0 !important;
+word-wrap : break-word;
+width:400px !important;
+}
+
+/*custom elements style*/
+.invitex_header_div_outer{
+clear:both;float:left;background-color:#CCC;width:100%;
+}
+.invitex_header_div_inner{
+padding: 5px 5px;font-weight:bold;color:black;
+}
+
+.inv_pie_chart .col-lg-4,.inv_pie_chart .panel-body{
+padding-left:5px !important;
+padding-right:5px !important;
+}
+/*- Hack for component options form starts*/
+/*For J3x*/
+#component-form .control-label {width: 250px !important;}
+/*For J2.5.x*/
+#component-form div.current label, div.current span.faux-label {min-width: 250px !important;}
+#component-form div.current fieldset.radio label {min-width: 45px !important;}
+/* - Hack for component options form ends*/
+
+.invHeaderOuterDiv{clear:both;float:left;background-color:#ADD8E6;width:100%;}
+.invHeaderInnerDiv{padding:5px 5px;font-weight:bold;color:black;}
+.inv-elements-legend-hint{clear:both; float:left; color:#000 !important; opacity: 0.65; font-size: 1 em !important;}
+.inv-elements-legend{display: block; width: 100%; padding: 0; margin-bottom: 18px; font-size: 19.5px; line-height: 36px; color: #333; border: 0; border-bottom: 1px solid #e5e5e5;}
+.inv-elements-gateways-link{clear:none; float:left;}
+
+.newVersionNotice{font-size:1.5em;}
+
+.text_template{width:90%!important}
+.inv_txtarea{width:500px !important;}
+
+/* Included in 3.0*/
+.icon-48-stat {
+background-image:url(../images/stat.png);
+}
+
+.icon-48-users {
+background-image:url(../images/users.png);
+}
+
+.icon-48-process {
+background-image:url(../images/process.png);
+}
+
+.icon-48-types {
+background-image:url(../images/types.png);
+}
+
+.icon-48-limit {
+background-image:url(../images/limit.png);
+}
+
+.icon-48-unsubscribe {
+background-image:url(../images/unsubscribe.png);
+}
+
+.icon-48-reminder {
+background-image:url(../images/reminder.png);
+}
+
+.icon-48-dashboard {
+background-image:url(../images/dashboard.png);
+}
+
+.invitex_latest_version_number{
+font-size:18px;
+}
+
+.invitex-max-width-160
+{
+	max-width:160px;
+}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field name="search" type="text" class="form-control input-large" label="COM_INVITEX_URL_INVITEE_SEARCH_BY_INVITER" description="COM_INVITEX_URL_INVITEE_SEARCH_BY_INVITER_DESC" hint="COM_INVITEX_URL_INVITEE_SEARCH_BY_INVITER" />
+		<field name="urlinviter" type="urlinviters" label="SELECT_USER" description="SELECT_USER" onchange="this.form.submit();">
+			<option value="0">SELECT_USER</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field name="limit" type="limitbox" class="input-mini" default="25" label="COM_INVITEX_LIST_LIMIT" description="COM_INVITEX_LIST_LIMIT_DESC" onchange="this.form.submit();" />
+	</fields>
+</form>

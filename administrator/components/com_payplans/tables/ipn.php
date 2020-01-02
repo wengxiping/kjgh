@@ -1,0 +1,62 @@
+<?php
+/**
+* @package		PayPlans
+* @copyright	Copyright (C) 2010 - 2018 Stack Ideas Sdn Bhd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* PayPlans is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+defined('_JEXEC') or die('Unauthorized Access');
+
+PP::import('admin:/tables/table');
+
+class PayplansTableIPN extends PayplansTable
+{
+	public $id = null;
+	public $payment_id = null;
+	public $json = null;
+	public $raw = null;
+	public $php = null;
+	public $query = null;
+	public $ip = null;
+	public $created = null;
+
+	public function __construct(&$db)
+	{
+		parent::__construct('#__payplans_ipn', 'id', $db);
+	}
+
+	/**
+	 * Retrieves the title of the payment provider
+	 *
+	 * @since	4.0.0
+	 * @access	public
+	 */
+	public function getProviderTitle()
+	{
+		$payment = PP::payment($this->payment_id);
+		$app = $payment->getApp();
+
+		if (!$app) {
+			return false;
+		}
+		
+		return $app->getTitle();
+	}
+
+	/**
+	 * Retrieves the payment object
+	 *
+	 * @since	4.0.0
+	 * @access	public
+	 */
+	public function getPayment()
+	{
+		$payment = PP::payment($this->payment_id);
+
+		return $payment;
+	}
+}

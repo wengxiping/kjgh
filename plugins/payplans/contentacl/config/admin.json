@@ -1,0 +1,40 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "block_j17",
+				"type": "dependency",
+				"title": "COM_PP_CONTENTACL_SELECT_TYPE",
+				"tooltip": "COM_PP_CONTENTACL_SELECT_TYPE_DESC",
+				"default": "joomla_article",
+				"options": [
+					{
+						"title": "COM_PP_JOOMLA_ARTICLE",
+						"value": "joomla_article"
+					},
+					{
+						"title": "COM_PP_JOOMLA_CATEGORY",
+						"value": "joomla_category"
+					}
+				]
+			},
+			{
+				"name": "joomla_category",
+				"type": "joomlaCategory",
+				"title": "COM_PP_CONTENTACL_SELECT_JOOMLA_CATEGORY",
+				"tooltip": "COM_PP_CONTENTACL_SELECT_JOOMLA_CATEGORY_DESC",
+				"attributes": "data-joomla_category",
+				"default": ""
+			},
+			{
+				"name": "joomla_article",
+				"type": "joomlaArticle",
+				"title": "COM_PP_CONTENTACL_SELECT_JOOMLA_ARTICLE",
+				"tooltip": "COM_PP_CONTENTACL_SELECT_JOOMLA_ARTICLE_DESC",
+				"attributes": "data-joomla_article",
+				"default": ""
+			}
+		]
+	}
+]

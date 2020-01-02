@@ -1,0 +1,36 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "shop_id",
+				"type": "text",
+				"title": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_SHOP_ID",
+				"tooltip": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_SHOP_ID_DESC",
+				"default": ""
+			},
+			{
+				"name": "certificate",
+				"type": "text",
+				"title": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_CERTIFICATE",
+				"tooltip": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_CERTIFICATE_DESC",
+				"default": ""
+			},
+			{
+				"name": "currency_code",
+				"type": "text",
+				"title": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_CURRECNY_CODE",
+				"tooltip": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_CURRECNY_CODE_DESC",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_TEST_MODE",
+				"tooltip": "COM_PAYPLANS_PAYMENT_APP_PAYZEN_TEST_MODE_DESC",
+				"dependents": ["alternate_url"],
+				"default": false
+			}
+		]
+	}
+]

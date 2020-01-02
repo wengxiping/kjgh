@@ -1,0 +1,20 @@
+[
+	{
+		"name": "REST Calls",
+		"element": "httpquery",
+		"description": "Sends out REST requests to specific url to get certain variables from the URL on the basis of the subscription status of the plan subscribed by the user",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/2checkout"
+	},
+	{
+		"name": "MySQL Query",
+		"element": "mysqlquery",
+		"description": "The administrator can specify a mySQL query that should be carried out on the basis of subscription status of the plan subscribed by user",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/2checkout"
+	},
+	{
+		"name": "Automated Plan Assignment",
+		"element": "assignplan",
+		"description": "Assign additional plans to user when they subscribe to a particular plan. Plan assignments can be done automatically dependent on the user's subscription status",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/payment-gateways\/2checkout"
+	}
+]

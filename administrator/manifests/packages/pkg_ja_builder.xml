@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3" method="upgrade">
+		<name>JA Builder Template Package</name>
+		<packagename>ja_builder</packagename>
+		<version>1.1.6</version>
+		<url>https://www.joomlart.com</url>
+		<creationDate>Sep 21, 2018</creationDate>
+		<copyright>(C) 2004 - 2018. All rights reserved.</copyright>
+		<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+		<authorEmail>admin@joomlart.com</authorEmail>
+		<authorUrl>https://www.joomlart.com</authorUrl>
+		<author>JoomlArt.com</author>
+		<packager>JA Builder Template</packager>
+		<packagerurl>https://www.joomlart.com</packagerurl>
+		<description>	
+	<![CDATA[
+		<div align="left" style="background-color: #dff0d8; border: 1px solid #d6e9c6; border-radius: 2px; color: #3c763d; padding: 20px;">
+			
+				<h3 style="margin: 0 0 20px; font-size: 24px;">JA Builder package installation is sucessful</h3>
+				
+				<p>The installation package includes: <strong>JA Builder</strong> template, <strong>JA Builder</strong> component and <strong>JA Builder</strong> plugin.</p>
+				
+				<h4>Quick instructions:</h4>
+				<ol style="line-height: 1.6;">
+					<li>Enable <strong>JA Builder</strong> plugin</li>
+					<li>Set <strong>JA Builder</strong> template as default template style</li>
+					<li>Access Components &#8594; <strong>JA Builder</strong> and create new page then edit the page</li>
+					<li>To edit any page in front-end, open the page, login as admin then hit <strong>Edit Page</strong> button.</li>
+				</ol>
+				
+				<div class="btn-actions">
+				<a href="//www.joomlart.com/documentation/joomla-templates/ja-builder" title="Document" class="primary">Document</a>
+				<a href="https://www.joomlart.com/forums/forum/joomlart-public-forums/ja-site-builder/" title="Forum">Forum</a>
+				<a href="http://demo.builder.joomlart.com/" title="Demo">Demo</a>
+				<a href="https://www.joomlart.com/ja-builder" title="More info">More info...</a>
+				</div>
+				
+				<p style="font-size: 12px;">Copyright 2004 - 2018 <a href='//www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			
+		<p>This extension collects anonymous data comprising server and joomla environment. <a href="https://www.joomlart.com/documentation/joomla-templates/ja-builder#collect-data" target="_blank">Details click here</a></p>
+		
+			<style>
+			.btn-actions {margin: 30px 0;}
+			.btn-actions a {background: #fff; border: 1px solid #ddd; border-radius: 2px; color: #666; box-shadow: 0 -2px 0 rgba(0,0,0,0.1) inset; font-size: 16px; letter-spacing: 0.5px; padding: 8px 20px 9px; margin: 0 5px 0 0; text-decoration: none; transition: all 0.35s;}
+			.btn-actions a.primary {background-color: #2e7d32; border-color: #2e7d32; color: #fff;}
+			.btn-actions a:hover, .btn-actions a:focus {background: #01579b; border-color: #01579b; color: #fff;}
+			</style>
+		</div>
+		]]>
+	</description>
+	
+	<updateservers>
+		<server type="extension">http://update.joomlart.com/service/tracking/j31/ja_builder_pkg.xml</server>
+	</updateservers>
+	
+		<files>
+			<file type="plugin" id="jabuilder" group="system">plg_system_jabuilder</file>
+			<file type="template" id="ja_builder" client="site">tpl_ja_builder</file>
+			<file type="component" id="com_jabuilder" >com_jabuilder</file>
+			<file type="module" id="mod_jabuilder_quickicons" client="administrator">mod_jabuilder_quickicons</file>
+			<file type="module" id="mod_jabuilder_admin_menu" client="administrator">mod_jabuilder_admin_menu</file>
+		</files>
+		<scriptfile>pkg_ja_builder.script.php</scriptfile>
+</extension>

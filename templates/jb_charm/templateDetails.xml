@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>jb_charm</name>
+	<author>JoomBri Team</author>
+	<creationDate>December, 2016</creationDate>
+	<copyright>Copyright (C) 2012 - 2016 BriTech Solutions. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0.0</version>
+	<description>Templae for JoomBri Deals based on YOOtheme's Warp theme framework.</description>
+	<files>
+		<filename>checksums</filename>
+		<filename>apple_touch_icon.png</filename>
+		<filename>CHANGELOG.md</filename>
+		<filename>component.php</filename>
+		<filename>config.php</filename>
+		<filename>config.xml</filename>
+		<filename>config.default.json</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>raw.php</filename>
+		<filename>warp.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>layouts</folder>
+		<folder>less</folder>
+		<folder>warp</folder>
+	</files>
+    <positions>
+        <position settings="">search</position>
+        <position settings="">logo</position>
+        <position settings="">logo-small</position>
+        <position settings="">menu</position>
+        <position settings="">toolbar-l</position>
+        <position settings="">toolbar-r</position>
+        <position settings="">headerbar</position>
+        <position settings="">breadcrumbs</position>
+        <position>top-hero</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>block-footer</position>
+        <position>main-top</position>
+        <position>main-bottom</position>
+        <position>sidebar-a</position>
+        <position>sidebar-b</position>
+        <position settings="">footer</position>
+        <position settings="">offcanvas</position>
+        <position settings="">debug</position>
+    </positions>
+	<config>
+		<fields name="params" addfieldpath="/templates/jb_charm/warp/systems/joomla/config/elements">
+			<fieldset name="options">
+		    	<field name="config" type="config" label="Config" description="" default="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

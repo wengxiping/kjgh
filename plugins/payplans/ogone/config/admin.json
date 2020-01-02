@@ -1,0 +1,42 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "psp_id",
+				"type": "text",
+				"title": "PSP ID",
+				"tooltip": "Enter your PSP ID provided by Ingenico in your account",
+				"default": ""
+			},
+			{
+				"name": "sha_pass_phrase",
+				"type": "text",
+				"title": "SHA-IN Pass Phrase",
+				"tooltip": "Enter the SHA-IN Pass Phrase which you have obtained from Ingenico",
+				"default": ""
+			},
+			{
+				"name": "sha_out_pass_phrase",
+				"type": "text",
+				"title": "SHA-OUT Pass Phrase",
+				"tooltip": "Enter the SHA-OUT Pass Phrase which you have obtained from Ingenico",
+				"default": ""
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"tooltip": "COM_PP_ALLOW_RECURRING_CANCELLATION_DESC",
+				"default": false
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			}
+		]
+	}
+]

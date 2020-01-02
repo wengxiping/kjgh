@@ -1,0 +1,14 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "AllowedModules",
+				"type": "modules",
+				"title": "Allowed Modules",
+				"tooltip": "The modules you will select will be visible to user after subscribing attached plan.<br /> <br /> The modules which are not selected will be visible to user as their default behavior.",
+				"default": ""
+			}
+		]
+	}
+]

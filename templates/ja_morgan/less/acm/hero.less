@@ -1,0 +1,216 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.acm-hero {
+	&.style-1 {
+	  .hero-item {
+			position: relative;
+
+			&.normal {
+				padding: @t3-global-padding * 5 0;
+
+				// Mobile view
+				@media (max-width: @screen-xs-max){
+					padding: @t3-global-padding * 3 @grid-gutter-width/ 3;
+				}
+			}
+
+			&.large {
+				padding: @t3-global-padding * 8 0  @grid-gutter-width*6 0;
+
+				// Mobile view
+				@media (max-width: @screen-xs-max){
+					padding: @t3-global-padding * 4 0  @t3-global-padding*3 0;
+				}
+			}
+
+			&.extra-large {
+				padding: @t3-global-padding * 14 0;
+
+				// Mobile view
+				@media (max-width: @screen-sm-max){
+					padding: @t3-global-padding * 6 0 @t3-global-padding * 3 0;
+				}
+			}
+
+			.ft-bg,
+			.ft-bg-xs {
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			.group-item {
+    		position: relative;
+    	}
+
+	    .wrap-content {
+        .sub-heading {
+        	span {
+        		color: @white;
+        	}
+        }
+
+        h1 {
+          color: @white;
+          font-weight: 700;
+          margin-bottom: @grid-gutter-width;
+          margin-top: 0;
+
+        		// Mobile view
+					@media (max-width: @screen-sm-max) {
+						font-size: 28px;
+					}
+        }
+
+        p {
+          color: @white;
+          margin-bottom: @grid-gutter-width * 2;
+          opacity: 0.8;
+
+          // Mobile view
+          @media (max-width: @screen-xs-max) {
+          	margin-bottom: @grid-gutter-width;
+          }
+        }
+	    }
+    }
+
+	    // Arrow button
+	    .icon-bottom {
+			border-bottom: 35px solid @white;
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;
+			bottom: 0;
+			color: @gray-dark;
+			display: flex;
+			justify-content: center;
+			height: 0;
+			left: 50%;
+			position: absolute;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+	    	width: 0;
+
+	    	// IE
+	    	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			  flex-direction: column;
+			  align-items: center;
+			}
+
+	    	span {
+	    		margin-top: @grid-gutter-width / 2;
+	    	}
+
+	    	&:hover {
+	    		span {
+	    			color: @brand-primary;
+	    		}
+	    	}
+	    }
+
+	    .img-icon {
+			a {
+				display: inline-block;
+				color: @white;
+				background: transparent;
+				border-radius: 50%;
+				border: 2px solid @white;
+				text-align: center;
+			}
+	    }
+
+	    &.align-left {
+	    	.wrap-content {
+	        max-width: 560px;
+
+	        	// Mobile view
+				@media (max-width: @screen-sm-max){
+					order: 2;
+				}
+		    }
+
+	    	.group-item {
+
+	    		// Mobile view
+				@media (max-width: @screen-sm-max){
+					display: flex;
+					flex-direction: column;
+				}
+
+	    		.img-icon {
+	    			font-size: @font-size-h2;
+	    			position: absolute;
+	    			right: @grid-gutter-width * 3;
+	    			top: 50%;
+	    			transform: translateY(-50%);
+	    			-webkit-transform: translateY(-50%);
+
+	    			// Mobile view
+					@media (max-width: @screen-sm-max){
+						font-size: @font-size-h3;
+		    			position: static;
+		    			right: auto;
+		    			left: 0;
+		    			top: 0;
+		    			order: 1;
+		    			transform: translateY(-30px);
+		    			-webkit-transform: translateY(-30px);
+					}
+
+					a {
+						height: @grid-gutter-width * 6;
+						width: @grid-gutter-width * 6;
+	    				line-height: 176px;
+
+	    				// Mobile view
+						@media (max-width: @screen-sm-max){
+							height: @grid-gutter-width * 3;
+			    			line-height: 86px;
+			    			width: @grid-gutter-width * 3;
+						}
+					}
+	    		}
+	    	}
+	    }
+
+	    &.align-center {
+	    	text-align: center;
+
+	    	.wrap-content {
+	    		margin: 0 auto;
+	    		max-width: 760px;
+
+				.lead {
+					padding: 0 @grid-gutter-width * 3;
+
+					// Mobile view
+					@media (max-width: @screen-xs-max) {
+						padding: 0;
+					}
+				}
+	    	}
+
+	    	.img-icon {
+	    		display: inline-block;
+    			font-size: @grid-gutter-width / 2;
+
+    			a {
+    				height: @grid-gutter-width * 2;
+	    			width: @grid-gutter-width * 2;
+	    			line-height: 56px;
+    			}
+    		}
+	    }
+	}
+}
