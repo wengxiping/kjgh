@@ -1,0 +1,131 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// ----------------------------------------
+// HERO STYLE
+// ----------------------------------------
+
+.acm-hero {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+
+  > .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+  }
+
+  // View Normal
+  &.normal {
+    > .container {
+      padding: @grid-gutter-width 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      -webkit-transform: translate(0);
+      width: 100%;
+    }
+  }
+
+  .hero-content-wrap {
+    background-position: center center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding: @grid-gutter-width * 2 0;
+
+    // Mobile view
+    @media (max-width: @screen-sm-max) {
+      background-size: 100% auto;
+      padding: (@grid-gutter-width + @navbar-height) 0;
+    }
+  }
+
+  // Mask
+  .mask {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // Icon Mouse
+  .hero-icon {
+    bottom: @grid-gutter-width;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  // Hero Image
+  .hero-img {
+    margin-bottom: @grid-gutter-width / 2;
+  }
+
+  // Title Intro
+  .title-intro {
+    margin-bottom: @t3-global-margin / 2;
+  }
+
+  // Title
+  .hero-title {
+    color: @headings-color;
+    font-size: 120px;
+    font-family: @headings-font-family-lead;
+    line-height: 1.0666;
+
+    // Mobile view
+    @media (max-width: @screen-xs-max) {
+      font-size: @font-size-h1 * 1.5;
+    }
+  }
+
+  // Actions
+  .hero-btn-actions {
+    margin-top: @grid-gutter-width / 2;
+  }
+
+  // Vertical Line
+  .vertical-lines {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+
+    .container-wrap {
+      height: 100%;
+    }
+  }
+}
+
+// IE Style
+.ie10,.ie11 {
+  .acm-hero {
+
+  > .container {
+    padding: @grid-gutter-width 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+        -webkit-transform: translate(0);
+      width: 100%;
+  }
+}
+}

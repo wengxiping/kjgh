@@ -1,0 +1,15 @@
+.badge-important {
+  background-color: #FF6010
+}
+
+.table-striped>thead>tr>th {
+  text-align: center;
+}
+
+.table-striped>tbody>tr>td {
+  text-align: center;
+}
+
+.table td.text-right {
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+[
+	{
+		"table": "#__payplans_subscription",
+		"column": "lock",
+		"query": "ALTER TABLE `#__payplans_subscription` ADD COLUMN `lock` tinyint(1) default 0"
+	},
+	{
+		"table": "#__payplans_subscription",
+		"index": "idx_expired_subs",
+		"query": "ALTER TABLE `#__payplans_subscription` ADD INDEX `idx_expired_subs` (`expiration_date`, `status`, `lock`)"
+	}
+]

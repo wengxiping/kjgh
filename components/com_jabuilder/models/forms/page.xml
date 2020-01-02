@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden" />
+		
+		<field name="title" type="text" label="JGLOBAL_TITLE"
+			description="JFIELD_TITLE_DESC"
+			class="input-xxlarge input-large-text"
+			size="40"
+			required="true" />
+
+		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+			size="40" />
+		
+		<field name="content" type="editor" label="CONTENT_LABEL"
+			description="CONTENT_DESC" />
+		
+		<field name="state" type="list" label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC" class="chzn-color-state"
+			filter="intval" size="1" default="1" >
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+
+		</field>
+		
+		<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" size="1" />
+		
+		<field	
+			name="feature_img"
+			type="media"
+			label="Feature Image"
+			description="Feature Image"
+			default="" />
+		
+	</fieldset>
+	
+	<fieldset name="params">
+		
+		<field 
+			name="meta_keywords"
+			type="textarea"
+			label="Meta keywords"
+			description="Meta keywords"/>
+		
+		<field
+			name="meta_description"
+			type="textarea"
+			label="Meta description"
+			description="Meta description"/>
+		
+		<field name="robots"
+			type="list"
+			label="JFIELD_METADATA_ROBOTS_LABEL"
+			description="JFIELD_METADATA_ROBOTS_DESC" >
+			
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+			<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+			<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+			<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+		</field>
+		
+	</fieldset>
+</form>

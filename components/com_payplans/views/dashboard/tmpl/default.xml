@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PAYPLANS_DASHBOARD_VIEW_DEFAULT_TITLE" option="com_payplans_dashboard_view_default_option">
+		<message><![CDATA[COM_PAYPLANS_DASHBOARD_DEFAULT_LAYOUT_MESSAGE]]></message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/components/com_payplans/elements" label="Basic Parameters">
+			<field label="COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK" name="task" type="list">
+				<option value="frontview" >COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK_OPTION_DEFAULT</option>
+				<option value="noaccess" >COM_PAYPLANS_DASHOBOARD_DEFAULT_LAYOUT_TASK_OPTION_NOACCESS</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

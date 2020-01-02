@@ -1,0 +1,35 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "addToListonActive",
+				"type": "acymailingLists",
+				"title": "COM_PP_APP_ACYMAILING_ADD_SUBSCRIPTION_ACTIVE",
+				"tooltip": "COM_PP_APP_ACYMAILING_ADD_SUBSCRIPTION_ACTIVE_DESC",
+				"default": ""
+			},
+			{
+				"name": "addToListonHold",
+				"type": "acymailingLists",
+				"title": "COM_PP_APP_ACYMAILING_ADD_SUBSCRIPTION_HOLD",
+				"tooltip": "COM_PP_APP_ACYMAILING_ADD_SUBSCRIPTION_HOLD_DESC",
+				"default": ""
+			},
+			{
+				"name": "addToListonExpire",
+				"type": "acymailingLists",
+				"title": "COM_PP_APP_ACYMAILING_ADD_SUBSCRIPTION_EXPIRE",
+				"tooltip": "COM_PP_APP_ACYMAILING_ADD_SUBSCRIPTION_EXPIRE_DESC",
+				"default": ""
+			},
+			{
+				"name": "removeFromDefault",
+				"type": "acymailingLists",
+				"title": "COM_PP_APP_ACYMAILING_REMOVE_FROM_GROUP_ON_ACTIVE",
+				"tooltip": "COM_PP_APP_ACYMAILING_REMOVE_FROM_GROUP_ON_ACTIVE_DESC",
+				"default": ""
+			}
+		]
+	}
+]

@@ -1,0 +1,1077 @@
+@import "settings";
+
+// Mixins
+
+@mixin focus-field-with-elipsis-and-nowrap {
+  .mt-ls-fields.mt-ls-field-focus {
+    height: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@mixin main-attr-field-with-elipsis-and-nowrap {
+  .mt-ls-field-main-attr {
+    .mt-ls-field {
+
+      max-width: 10rem;
+
+      .output {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .output, .caption {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        float: none;
+      }
+    }
+  }
+}
+
+@mixin mt-ls-field-corewebsite-with-elipsis-and-nowrap {
+  .mt-ls-field.mfieldtype_corewebsite {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+}
+
+//** Listing Summary
+
+.mt-listings-list {
+  .mt-ls-style-9 & {
+    border:1px solid $style_9_listings_list_color_border;
+    border-radius: 0.3rem;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Style each listing summary thumbnail to make sure their width spans 100%
+//
+.summary-view-image {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+
+  .mt-ls-style-5 & {
+
+
+    .image-left {
+      background-color: #eeeeee;
+      border-color: #eeeeee;
+      border-radius: 3px;
+    }
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25), transparent 0 0 0, transparent 0 0 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.25), transparent 0 0 0, transparent 0 0 0;
+  }
+
+  .flex-direction-nav {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      //overflow: visible;
+      opacity: 1;
+      width: 60px;
+      height: 100%;
+      padding: 1em;
+      text-decoration: none;
+      &:before {
+        font-size: 60px;
+        color: #fff;
+        //text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5)
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+        height: auto;
+        opacity: 1;
+      }
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+
+    .flex-next {
+      right: 0;
+    }
+  }
+}
+
+
+//-----------------------------------------------------------------------------
+// Specify a 0 left padding to the right hand side details container from
+// thumbnail. This overrides bootstrap default padding.
+//
+.summary-view-details {
+  //padding:0 0 0 0.75em;
+
+  &.span7 {
+    padding-left: 0;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// The main container for each listing in summary view.
+//
+.listing-summary {
+  //margin-bottom:2.5em;
+  margin-bottom:40px;
+
+  .mt-ls-style-1 & {
+
+    @include focus-field-with-elipsis-and-nowrap;
+
+    @include main-attr-field-with-elipsis-and-nowrap;
+
+  }
+
+  .mt-ls-style-2 &, .mt-ls-style-8 & {
+
+    @include focus-field-with-elipsis-and-nowrap;
+
+    @include main-attr-field-with-elipsis-and-nowrap;
+
+    margin-bottom:20px;
+
+    &.mt-ls-no-image {
+      .mt-ls-header {
+        border-bottom: 0;
+      }
+    }
+
+    .mt-ls-header {
+      border-bottom: 1px solid $color_border_ls_field;
+    }
+
+    .mt-ls-field.category {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+
+    .mt-ls-fields.mt-ls-field-focus {
+      height: 1.25rem;
+      border-top: 0;
+    }
+
+    .mt-ls-fields.address {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .mt-ls-style-3 & {
+    border: 1px solid $color_border_container_big;
+    margin-bottom: 20px;
+
+    .summary-view-details.mt-ls-no-image {
+      //border: 0;
+    }
+  }
+
+  .mt-ls-style-4 & {
+    border-bottom: 1px solid $color_border_container_big;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    .mt-ls-fields-misc {
+      .mt-ls-field {
+        display: flex;
+        .caption {
+          //flex-shrink: 0;
+          flex-grow: 1;
+        }
+        .output {
+          float: none;
+          flex-grow: 0;
+          padding-left: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .mt-ls-style-5 & {
+
+    @include focus-field-with-elipsis-and-nowrap;
+
+    @include main-attr-field-with-elipsis-and-nowrap;
+
+    .summary-view-details.mt-ls-no-image {
+      //border-top: 0;
+    }
+
+    .mt-ls-header {
+      border-bottom: 1px solid $color_border_ls_field;
+      margin-bottom: $standard_vertical_spacing;
+    }
+
+    .mt-ls-fields.mt-ls-field-focus {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+  }
+
+  .mt-ls-style-6 & {
+
+    @include focus-field-with-elipsis-and-nowrap;
+
+    @include main-attr-field-with-elipsis-and-nowrap;
+
+    .mt-ls-header {
+      border-bottom: 1px solid $color_border_ls_field;
+      margin-bottom: $standard_vertical_spacing;
+    }
+
+    .mt-ls-fields.mt-ls-field-focus {
+      //height: 1.25rem;
+      border-top: 0;
+      padding-top: 0;
+    }
+
+  }
+
+  .mt-ls-style-7 & {
+
+    @include focus-field-with-elipsis-and-nowrap;
+
+    @include main-attr-field-with-elipsis-and-nowrap;
+
+    @include mt-ls-field-corewebsite-with-elipsis-and-nowrap;
+
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25), transparent 0 0 0, transparent 0 0 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.25), transparent 0 0 0, transparent 0 0 0;
+
+    .slides {
+      background: #eeeeee;
+    }
+
+    .mt-ls-header {
+      border-bottom: 1px solid $color_border_ls_field;
+      margin-bottom: $standard_vertical_spacing;
+    }
+
+    .mt-ls-fields.mt-ls-field-focus {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .summary-view-details {
+      &.mt-ls-no-image {
+        //border: 0;
+      }
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+
+  }
+
+  .mt-ls-style-8 & {
+
+    @include focus-field-with-elipsis-and-nowrap;
+
+    @include main-attr-field-with-elipsis-and-nowrap;
+
+    @include mt-ls-field-corewebsite-with-elipsis-and-nowrap;
+
+    // Only show a thicker border bottom when no image is shown.
+    > .mt-ls-header {
+      border-bottom: 3px solid #ccc;
+    }
+
+    .summary-view-image {
+      position: relative;
+
+      &:hover {
+        opacity: 0.85;
+        transition: all .2s ease-in-out;
+      }
+
+      .mt-ls-header {
+        box-sizing: border-box;
+        padding-top:0;
+        padding-bottom: $style_8_ls_padding/2;
+        position: absolute;
+        width:100%;
+        bottom: 0;
+        background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+        z-index: 2;
+
+        h3 {
+          margin-bottom: 5px;
+          a {
+            display: block;
+            color: #fff;
+            //position: absolute;
+            //bottom: 0;
+          }
+        }
+        .mt-ls-fields.address, .mt-ls-fields.address a {
+          color: #ccc;
+        }
+        .mt-ls-fields.address a {
+          //text-decoration: underline;
+        }
+
+        .mt-ls-fields {
+          padding: 0;
+        }
+      }
+
+      .mt-listing-name-sup {
+        position: absolute;
+        right: 0;
+        top: 10px;
+
+        sup {
+          display: table;
+          margin: 0 0 0 auto;
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+
+          &.new,&.featured,&.popular {
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      .slides {
+        background: #eee;
+      }
+
+    }
+    .summary-view-details.mt-ls-no-image {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+
+  }
+
+  .mt-ls-style-9 & {
+    $style_9_font_size: 0.8rem;
+    $style_9_details_margin_right: 0.25rem;
+    $style_9_text_color: #9e9ea6;
+
+    @mixin fields-separator {
+      content: "·";
+      display: inline;
+      margin-left: $style_9_details_margin_right;
+    }
+
+    border-bottom: 1px solid $style_9_listings_list_color_border;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    //padding-bottom: 20px;
+    //margin-bottom: 20px;
+
+    .summary-view-image {
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+
+      img.image-left {
+        width: 2rem;
+        height: 2rem;
+        //width: 2.5rem;
+        //height: 2.5rem;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+    }
+
+    .mt-ls-header {
+      h3 {
+        font-size: $style_9_font_size;
+        margin: 0 $style_9_details_margin_right 0 0;
+        white-space: nowrap;
+        //overflow: hidden;
+
+      }
+    }
+
+    .mt-ls-fields-misc {
+      display: flex;
+    }
+
+    .mt-ls-fields {
+      margin: 0;
+      display: inline-block;
+
+      //.mt-ls-fields {
+        margin-left: $style_9_details_margin_right;
+      //}
+
+      .mt-ls-field {
+        color: darken($style_9_text_color, 20%);
+
+        .output {
+          width: auto;
+          float: none;
+          white-space: nowrap;
+
+          &.output:after {
+            @include fields-separator;
+            //content: "·";
+            //display: inline;
+            //margin-left: $style_9_details_margin_right;
+          }
+
+          ul {
+            display: inline-block;
+          }
+        }
+      }
+
+      &.address:after {
+        @include fields-separator;
+      }
+    }
+
+    .mt-ls-field-focus {
+        padding-top: 0;
+        padding-bottom: 10px;
+        border-top: 0;
+        font-size: 1.2em;
+
+    }
+
+    .mt-ls-field {
+      &.mfieldtype_coredesc {
+        flex: 1;
+        color: $style_9_text_color;
+        font-size: $style_9_font_size;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0;
+        margin-right: 1rem;
+        margin-left: $style_9_details_margin_right;
+
+        //&:before {
+        //  content: "·";
+        //  display: inline;
+        //  margin-right: $style_9_details_margin_right;
+        //}
+
+      }
+      &.reviews{
+        margin-left: $style_9_details_margin_right;
+        &:after {
+          @include fields-separator;
+        }
+      }
+    }
+
+    > a.mt-ls-mainlink {
+      position: relative;
+      //box-sizing
+      display:flex;
+      //flex-wrap: nowrap;
+      //border-top:1px solid #fff;
+      //border-bottom:1px solid #edf8fd;
+      align-items: center;
+      padding: 0.75rem;
+
+      &:hover {
+        background-color: #edf8fd;
+        text-decoration: none;
+        //border-top:1px solid red;
+        //border-bottom:1px solid red;
+      }
+
+      &:before {
+        color: #9e9ea6;
+        position: absolute;
+        right: calc(1rem - 6px);
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        content: '\f105';
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+
+      }
+    }
+
+    .mt-listing-name-sup {
+      margin-left: 0.1rem;
+
+      sup.new:before, sup.popular:before, sup.featured:before {
+        border: none;
+      }
+
+      sup {
+        font-size: $style_9_font_size;
+        font-weight: normal;
+        top: 0;
+        padding: 0.1rem 0.3rem;
+        margin: 0;
+        text-transform: none;
+
+        //background-color: transparent;
+        letter-spacing: normal;
+        line-height: 1rem;
+        height: auto;
+      }
+    }
+
+
+    //&:before {
+    //  //position: absolute;
+    //  //border-top: 1px solid #E8E8E8;
+    //  border-top: 1px solid red;
+    //  content: '';
+    //  top: 0;
+    //  left: 1rem;
+    //  right: 1rem;
+    //
+    //}
+
+    .reviews {
+      color: darken($style_9_text_color, 20%);
+      padding-left: 0;
+    }
+
+  }
+
+  // Styles for Listing Name in summary view
+  .mt-ls-header {
+    h3 {
+      font-size:2em;
+      margin:0 0 $margin_bottom_field 0;
+      line-height: 1.3em;
+    }
+
+    .mt-ls-style-1 &, .mt-ls-style-6 & {
+      padding-left: 0.6rem;
+    }
+
+    .mt-ls-style-2 &, .mt-ls-style-8 & {
+      padding-top: $style_2_ls_padding;
+      padding-left: $style_2_ls_padding;
+      padding-right: $style_2_ls_padding;
+    }
+
+    .mt-ls-style-3 & {
+      h3 {
+        font-size: 1.6em;
+        margin-bottom: $style_3_margin_bottom_field;
+      }
+    }
+
+    .mt-ls-style-4 & {
+      h3 {
+        font-size: 1.6em;
+      }
+    }
+
+    .mt-ls-style-5 &, .mt-ls-style-7 & {
+      h3 {
+        font-size: 1.6em;
+        padding-top: $standard_vertical_spacing;
+      }
+    }
+  }
+
+  .mt-ls-spacing {
+    height: $standard_vertical_spacing;
+  }
+
+  p {
+    /*margin-bottom:10px;*/
+    //padding-right:20px;
+    margin:0;
+  }
+
+  .rating-review {
+    //display: block;
+    //width: 100%;
+    //overflow: hidden;
+    //margin-bottom: 10px;
+  }
+
+  .reviews {
+    padding-left:1em;
+  }
+
+  .star {
+    margin:0 0 0 2px;
+  }
+
+  .category .output a {
+    text-decoration:none;
+    font-weight:700;
+    color:#090;
+  }
+
+  &:hover img {
+    //-moz-transform: scale(1.1);
+    //-webkit-transform: scale(1.1);
+    //transform: scale(1.1);
+  }
+
+  img {
+
+    //-webkit-transition: all .4s ease-in-out;
+    //-moz-transition: all .4s ease-in-out;
+    //-ms-transition: all .4s ease-in-out;
+    //-o-transition: all .4s ease-in-out;
+    //transition: all .4s ease-in-out;
+
+    &.image-left {
+      // From https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+      //
+      // The width and height properties include the content, the padding and
+      // border, but not the margin. This is the box model used by Internet
+      // Explorer when the document is in Quirks mode. Note that padding and
+      // border will be inside of the box e.g.  .box {width: 350px; border: 10px
+      // solid black;} leads to a box rendered in the browser of width: 350px.
+      // The content box can't be negative and is floored to 0, making it
+      // impossible to use border-box to make the element disappear.
+      box-sizing: border-box;
+      background-color:#e5e5e5;
+      border:1px solid #e5e5e5;
+      padding:5px;
+
+      .mt-ls-style-2 &, .mt-ls-style-8 & {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+
+        border: 0;
+        padding: 0;
+
+        a:hover img.image-left {
+          border:0;
+          background-color:inherit;
+        }
+
+      }
+
+      .mt-ls-style-3 & {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+      }
+
+      .mt-ls-style-5 &, .mt-ls-style-7 & {
+        //background-color: transparent;
+        //padding: 0;
+        //border: 0;
+        border-color: #fff;
+      }
+
+    }
+  }
+
+  a:hover img.image-left {
+    //border:1px solid #fff;
+    background-color:#E6F0F2;
+  }
+
+  &.row-fluid {
+
+    // If this is a single column listing summary, override bootstrap's
+    // margin-left value.
+    &.span12 {
+      margin-left: 0;
+    }
+
+    // Setup a position relative to allow "Featured", "Popular" and "New" tag
+    // to appear on top of listing thumbnail.
+    .mt-ls-style-2 &, .mt-ls-style-5 &, .mt-ls-style-7 & {
+      position: relative;
+
+      // .mt-ls-has-image indicates that the listing summary has image or a
+      // filler image. Opposite of .mt-ls-has-image is .mt-ls-no-image
+      .mt-ls-has-image {
+        .mt-listing-name-sup {
+          position: absolute;
+          right: 0;
+          top: 10px;
+          z-index: 2;
+
+          sup {
+            display: table;
+            margin: 0 0 0 auto;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+
+            &.new,&.featured,&.popular {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      //sup.new, sup.featured, sup.popular {
+      //sup {
+      //  position: absolute;
+      //  right: 0;
+      //
+      //  &.featured {
+      //    top: 10px;
+      //  }
+      //
+      //  &.new {
+      //    top: 40px;
+      //  }
+      //
+      //  &.popular {
+      //    top: 70px;
+      //  }
+      //}
+    }
+  }
+
+  .summary-view-details {
+
+    &.mt-ls-has-image {
+      .mt-ls-style-1 &, .mt-ls-style-4 &, .mt-ls-style-6 & {
+        padding-top: 0.5rem;
+      }
+    }
+
+    &.mt-ls-no-image {
+      //border-top:1px solid #ccc;
+      //border-top-right-radius: 8px;
+      //border-top-left-radius: 8px;
+    }
+
+    .mt-ls-style-2 &, .mt-ls-style-8 & {
+      border-left:1px solid #ccc;
+      border-right:1px solid #ccc;
+      border-bottom:1px solid #ccc;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+
+      &.mt-ls-no-image {
+        border:1px solid #ccc;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+
+    .mt-ls-style-3 & {
+      margin-left: 1.5%;
+      //padding-top: 5px;
+      padding-top: $standard_vertical_spacing;
+      padding-bottom: $standard_vertical_spacing;
+      &.mt-ls-no-image {
+        padding-left: $standard_spacing;
+      }
+    }
+
+    .mt-ls-style-5 &, .mt-ls-style-7 & {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+  }
+
+  .actions {
+
+    .mt-ls-style-2 &, .mt-ls-style-8 & {
+      margin-top: 0;
+      padding: $margin_bottom_field $style_2_ls_padding 5px $style_2_ls_padding;
+      border-top: 1px solid $color_border_ls_field;
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Styles for listing summary's 'Focus' row. This row is given visual
+// prominence through bold font and border bottom.
+//
+.mt-ls-field-focus {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-top: 1px solid $color_border_ls_field;
+  border-bottom: 1px solid $color_border_ls_field;
+  padding: $margin_bottom_field 0 $margin_bottom_field 0.5rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  .mt-ls-style-3 & {
+    border: 0;
+    padding-bottom: 0;
+    font-size: 1.6em;
+    padding-left: 0;
+
+    &.mt-ls-fields {
+      margin-bottom: $style_3_margin_bottom_field *3;
+    }
+  }
+
+  .mt-ls-style-4 & {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+    border-top: 0;
+    font-size: 1.2em;
+  }
+
+  .mt-ls-style-7 & {
+    padding-left: 0;
+  }
+
+}
+//-----------------------------------------------------------------------------
+// General container for rows in summary view.
+//
+.mt-ls-fields {
+  margin: 0 0 $margin_bottom_field 0;
+
+  .mt-ls-style-2 &, .mt-ls-style-8 & {
+    padding-left: $style_2_ls_padding;
+    padding-right: $style_2_ls_padding;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+
+  .mt-ls-style-3 & {
+
+    margin-bottom: $style_3_margin_bottom_field;
+
+    .mt-ls-field.mfieldtype_corerating {
+      top: 2px;
+      position: relative;
+    }
+  }
+
+  .reviews {
+    padding-left: 0;
+  }
+
+  &.row-fluid {
+    min-height: 0;
+
+    .mt-ls-style-2 &, .mt-ls-style-8 & {
+      //border-bottom: 1px solid #ccc;
+      box-sizing: border-box;
+      border-top: 1px solid $color_border_ls_field;
+      padding-top: $margin_bottom_field;
+
+      .mt-ls-field.mfieldtype_corerating {
+        top: 2px;
+        position: relative;
+      }
+
+    }
+
+    [class*="span"] {
+      min-height: 0;
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Container for field.
+//
+.mt-ls-field {
+  display: inline-block;
+
+  .caption {
+    font-size: 1em;
+    color: #777;
+  }
+
+  // Make sure these fields stays with 1em font-size and have the consistent
+  // 10px bottom margin.
+  &.mfieldtype_coredesc, &.category {
+    font-size: 1em;
+    margin-bottom: $margin_bottom_field;
+    float: none;
+
+    .mt-ls-style-2 &, .mt-ls-style-8 & {
+      padding-left: $style_2_ls_padding;
+      padding-right: $style_2_ls_padding;
+    }
+  }
+
+}
+
+//-----------------------------------------------------------------------------
+// Styles for listing summary's 'Main Attributes' row. By default this row shows
+// the field for Beds and Baths.
+//
+.mt-ls-field-main-attr {
+
+  .mt-ls-field {
+
+      //border: 1px solid red;
+      display: inline-flex;
+      flex-direction: column;
+      text-align: center;
+
+    //&:first-child {
+      padding-right: 1rem;
+    padding-left: 1rem;
+    //  padding-right: 1em;
+    //padding-left: 1em;
+    //}
+
+    &:not(:first-child) {
+      border-left: 1px solid $color_border_ls_field;
+      //margin-left: 1em;
+      //padding-left: 1em;
+      //padding-right: 1em;
+
+    }
+    .output, .caption {
+      display: inline;
+    }
+    .output {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      font-weight:bold;
+    }
+    .caption {
+      //margin-left: 0.4em;
+    }
+
+    .mt-ls-style-2 &, .mt-ls-style-8 & {
+      padding-top: $margin_bottom_field;
+      padding-bottom: $margin_bottom_field;
+    }
+
+  }
+
+  .mt-ls-style-2 &, .mt-ls-style-8 & {
+    border-bottom: 1px solid $color_border_ls_field;
+
+    &.mt-ls-fields {
+      padding-bottom: 0;
+      //margin-bottom: $margin_bottom_field;
+
+      .mt-ls-field:first-child {
+      padding-left: 0;
+
+      }
+
+      .mt-ls-field {
+        border-left: 0;
+        border-right: 1px solid $color_border_ls_field;
+        padding-right: 1rem;
+
+        .caption {
+          margin-left: 0;
+          display: block;
+        }
+
+        .output {
+          display: block;
+          width: 100%;
+          float: none;
+          text-align: center;
+
+        }
+      }
+
+    }
+  }
+
+  .mt-ls-style-1 & {
+    .caption {
+      margin-left: 0;
+      display: block;
+    }
+
+    .output {
+      display: block;
+      width: 100%;
+      float: none;
+      text-align: center;
+
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+// This is needed to make it possible to add a right aligned div inside Focus
+// row in the same line without spliiling over the next.
+//
+.mt-ls-fields.mt-ls-field-focus .mt-ls-field {
+  //display: inline-block;
+}
+
+//-----------------------------------------------------------------------------
+// Container for showing all other miscellaneous custom fields that do not have
+// dedicated placement. Currently no styling needed.
+//
+.mt-ls-fields-misc {
+
+}
+
+//-----------------------------------------------------------------------------
+// Reposition the rating stars vertically so that it appears centered
+// vertically.
+//
+.rating-review .rating-stars {
+  //position: relative;
+  //top: 4px;
+
+  //overflow: hidden;
+  //display: inline-block;
+
+}
+
+.listing-summary {
+
+  .address {
+    text-align:left;
+    //margin: 0 0 10px 0;
+
+    .mt-ls-style-1 &, .mt-ls-style-6 & {
+      padding-left: 0.7rem;
+    }
+  }
+
+  .mt-ls-field.mfieldtype_coredesc, .mt-ls-fields {
+    .mt-ls-style-1 &, .mt-ls-style-6 & {
+      padding-left: 0.7rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+.listing-summary p.website a:link,.listing-summary p.website a:visited,.listing-summary p.website a:hover {
+  white-space:nowrap;
+}
+
+.listing-summary .actions {
+}
+
+.listing-summary {
+  .reviews {
+    font-size: 12px;
+    margin: 0;
+    clear: none;
+  }
+}
+//.listing-summary .mt-ls-header {
+//  overflow:hidden;
+//  //border-bottom:1px solid #ccc;
+//  //margin-bottom:10px;
+//}
+

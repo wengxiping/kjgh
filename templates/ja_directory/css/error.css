@@ -1,0 +1,115 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Jason Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+
+/* MAIN STYLE
+---------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #26292d;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 1.625;
+	margin: 0;
+}
+
+/* OutLine */
+#outline {
+	margin-top: 9%;
+	text-align: center;
+}
+
+/* Eror Code */
+.error-code {
+	color: #fff;
+	font-size: 200px;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -10px;
+}
+
+.error-code span {
+    position: relative;
+    text-shadow: 25px 5px 35px #222;
+    z-index: 2;
+}
+
+.error-code span.first {
+    z-index: 3;
+}
+
+.error-code span.last {
+    z-index: 1;
+}
+
+/* Message Error */
+.error-message {
+}
+
+/* Message Error */
+.error-message h2 {
+	color: #ddd;
+	font-size: 40px;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+}
+
+#errorboxbody p {
+	color: #999;
+	display: block;
+	margin: 0 0 30px;
+}
+
+/* Button Home */
+.button-home {
+	background: #fe6945;
+	border: 1px solid #fe6945;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 13px 50px;
+}
+
+.button-home:hover,
+.button-home:focus,
+.button-home:active {
+	background: #fe4012;
+	border-color: #fe3808;
+}
+
+@media (max-width:  360px){
+
+	/* OutLine */
+	#outline {
+		margin-top: 20%;
+	}
+
+	/* Eror Code */
+	.error-code {
+	  font-size: 150px;
+	}
+
+	/* Message Error */
+	.error-message {
+	}
+
+	/* Message Error */
+	.error-message h2 {
+	  font-size: 24px;
+	}
+}

@@ -1,0 +1,242 @@
+.com_dtregister .dth-btn {
+  border-radius: 50px;
+  border: 0;
+}
+.com_dtregister .dth-btn-primary {
+  background: linear-gradient(135deg, #fd7d56, #fc2372);
+  border: 0;
+  color: #ffffff;
+  font-weight: 700;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+.com_dtregister .dth-btn-primary:hover,
+.com_dtregister .dth-btn-primary:focus,
+.com_dtregister .dth-btn-primary:active {
+  background: linear-gradient(135deg, #fd7147, #fc1468);
+  color: #ffffff;
+}
+.com_dtregister .btn-toolbar,
+.com_dtregister .btn-toolbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.com_dtregister .event-filters.btn-toolbar #event-search {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 7px 24px;
+}
+.com_dtregister .event-filters.btn-toolbar .dth-btn-primary {
+  height: 40px;
+}
+.com_dtregister .event-filters.btn-toolbar select {
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 40px;
+}
+.com_dtregister .eventlist-row + .eventlist-row,
+.com_dtregister .eventlist-row + .eventlist-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.com_dtregister .eventlist-row .event-price {
+  font-weight: 600;
+  border-radius: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.com_dtregister .eventlist-row .event-footer {
+  color: #9095ab;
+}
+.com_dtregister .eventlist-row .event-time {
+  padding-left: 120px;
+}
+.com_dtregister .dt_groupwarning {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.com_dtregister .dtregister-detail table {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9095ab;
+}
+.com_dtregister .dtregister-detail table > tbody > tr:nth-of-type(2n+1) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.com_dtregister .dtregister-detail table th,
+.com_dtregister .dtregister-detail table td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.com_dtregister .dtregister-detail .dt-event-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.com_dtregister .dtregister-detail .event-sponsors .event-sponsor {
+  width: 33.3%;
+}
+.com_dtregister .dtregister-detail .event-sponsors .event-sponsor .event-sponsor-logo {
+  max-width: none;
+}
+.com_dtregister .btn-groups #back,
+.com_dtregister .btn-groups #cancel {
+  margin-bottom: 10px;
+}
+.com_dtregister div.cHead div.ftitle {
+  color: #ffffff;
+}
+.com_dtregister .cal-categories {
+  border-top-color: rgba(255, 255, 255, 0.05);
+}
+.com_dtregister div.ctoolbar #txtdatetimeshow {
+  color: #ffffff;
+}
+.com_dtregister div.ctoolbar div.fbutton {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.com_dtregister div.ctoolbar div.fbutton:hover,
+.com_dtregister div.ctoolbar div.fbutton:focus,
+.com_dtregister div.ctoolbar div.fbutton:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.com_dtregister div.ctoolbar div.fbutton.fcurrent {
+  background-color: transparent;
+}
+.com_dtregister #dvCalMain {
+  background: transparent;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain #gridcontainer {
+  background-color: transparent;
+}
+.com_dtregister #dvCalMain #gridcontainer .mv-daynames-table {
+  background-color: transparent;
+}
+.com_dtregister #dvCalMain #gridcontainer .mv-daynames-table th {
+  background-color: #090b35;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+.com_dtregister #dvCalMain #gridcontainer .st-dtitle {
+  border-color: rgba(255, 255, 255, 0.05);
+  border-right: 0;
+  color: #9095ab;
+}
+.com_dtregister #dvCalMain #gridcontainer .st-bg {
+  border-right: 1px solid rgba(255, 255, 255, 0.01);
+}
+.com_dtregister #dvCalMain #gridcontainer .st-bg-table .st-bg {
+  border-top: 0;
+}
+.com_dtregister #dvCalMain #gridcontainer .wk-top {
+  background-color: #0b0d3e;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain #gridcontainer .wk-top .wk-dayname {
+  color: #ffffff;
+}
+.com_dtregister #dvCalMain #gridcontainer .wk-top .wk-allday {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain #gridcontainer .wk-top .wk-allday .st-c {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain #gridcontainer .scolltimeevent {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain #gridcontainer .scolltimeevent .tg-times {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+.com_dtregister #dvCalMain #gridcontainer .scolltimeevent .tg-time {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain #gridcontainer .scolltimeevent .tg-col {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain #gridcontainer .scolltimeevent .tg-timedevents {
+  background-color: #0b0d3e;
+}
+.com_dtregister #dvCalMain #gridcontainer .scolltimeevent table td {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+.com_dtregister #dvCalMain .mv-event-container {
+  background-color: #0b0d3e;
+}
+.com_dtregister div.dt_user_box {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.com_dtregister #dt_calendar table th,
+.com_dtregister #dt_calendar table td {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #9095ab;
+}
+.com_dtregister div.toolbar,
+.com_dtregister div #toolbar {
+  flex-wrap: wrap;
+}
+.com_dtregister div.toolbar .btn,
+.com_dtregister div #toolbar .btn {
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+.com_dtregister [class^="icon-"]::before,
+.com_dtregister [class*=" icon-"]::before {
+  font-family: FontAwesome;
+  font-size: 16px;
+}
+.com_dtregister .icon-new::before {
+  content: "\f055";
+}
+.com_dtregister .table-striped > tbody > tr td,
+.com_dtregister .table-striped > tbody > tr th {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.com_dtregister .table-striped > tbody > tr td .btn,
+.com_dtregister .table-striped > tbody > tr th .btn {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+}
+.com_dtregister .table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: transparent;
+}
+.com_dtregister table.adminlist {
+  background-color: transparent;
+}
+.com_dtregister table.adminlist th,
+.com_dtregister table#invoiceList th {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  vertical-align: middle;
+}
+.com_dtregister table.adminlist td,
+.com_dtregister table#invoiceList td {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.com_dtregister .module #dt_search .form-group {
+  margin-bottom: 0;
+}
+.com_dtregister .module #dt_search .inputbox {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  height: 40px;
+  padding: 7px 24px;
+}

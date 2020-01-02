@@ -1,0 +1,83 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.acm-cta {
+
+	.acm-cta-image {
+		padding-left: 0;
+		padding-right: 0;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.acm-cta-buttons {
+		margin-top: @t3-global-margin;
+
+		.pull-right {
+			margin-left: @t3-global-margin / 4;
+		}
+
+		.btn-icon-left {
+			.pull-left {
+				float: right!important;
+			}
+
+			.pull-right {
+				float: left!important;
+				margin-right: @t3-global-margin / 4;
+				margin-left: 0;
+
+				.fa {
+					line-height: @line-height-base;
+				}
+			}
+		}
+	}
+
+	.acm-cta-intro {
+		// Desktop view
+		@media (max-width: @screen-xs-max) {
+			padding-top: @t3-global-padding;
+			padding-bottom: @t3-global-padding;
+		}
+
+		@media (min-width: @screen-sm-min) {
+			padding: @grid-gutter-width * 2 0 @grid-gutter-width * 2 @grid-gutter-width * 2;
+			width: @container-sm;
+		}
+		@media (min-width: @screen-md-min) {
+			width: @container-md/2;
+		}
+		@media (min-width: @screen-lg-min) {
+			width: @container-lg/2;
+		}
+
+		.section-title,
+		h3 {
+			text-align: left;
+			margin-top: 0;
+			margin-bottom: @t3-global-margin;
+		}
+	}
+
+	.section-primary {
+		.acm-cta-intro {
+			.section-title,
+			h3 {
+				color: @white;
+			}
+		}
+	}
+}
+
+// Import Style Less
+// --------------------------
+@import "style-1.less"; // Import file style-1.less

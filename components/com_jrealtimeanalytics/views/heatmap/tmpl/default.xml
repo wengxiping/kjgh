@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JREALTIMEANALYTICS_HEATMAP_VIEW_DEFAULT_TITLE">
+		<message><![CDATA[COM_JREALTIMEANALYTICS_HEATMAP_VIEW_DEFAULT_MSG]]></message>
+	</layout>
+	<state>
+		<name>COM_JREALTIMEANALYTICS_HEATMAP_VIEW_DEFAULT_TITLE</name>
+	</state>
+	
+	<!-- Add parameters for data source filters -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_JREALTIMEANALYTICS_REPORT" addfieldpath="/administrator/components/com_jrealtimeanalytics/framework/html">
+	   		<field name="show_date_filters" class="btn-group" type="radio" default="1" label="COM_JREALTIME_SHOW_DATE_FILTERS" description="COM_JREALTIME_SHOW_DATE_FILTERS_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+	   		</field>
+	   		
+	   		<field name="exporter_groups" class="btn-group" type="aclgroupsmultiselect" multiple="multiple" default="" label="COM_JREALTIME_EXPORTER_GROUPS" description="COM_JREALTIME_EXPORTER_GROUPS_DESC"></field>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+    <name>vimeo</name>
+    <caption>Vimeo</caption>
+    <author>Lee Cher Yeong</author>
+    <creationDate>September 2015</creationDate>
+    <copyright>(C) 2015-present Mosets Consulting. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>mtree@mosets.com</authorEmail>
+    <authorUrl>www.mosets.com</authorUrl>
+    <version>3.6.6</version>
+    <description>Show an embedded Vimeo video player.</description>
+    <useElements>0</useElements>
+    <useSize>1</useSize>
+    <taggable>0</taggable>
+    <fileset>
+        <files folder="." target="administrator/components/com_mtree/fieldtypes/vimeo">
+            <filename>vimeo.php</filename>
+            <filename>vimeo.xml</filename>
+            <filename>index.html</filename>
+        </files>
+    </fileset>
+    <config>
+        <fields>
+            <fieldset name="basic">
+                <field name="checkboxLabel" type="text" default="Contains video" label="Search's checkbox label" />
+
+                <field name="vimeoWidth" type="text" default="560" label="Video player's width." description="Leave empty for default." />
+                <field name="vimeoHeight" type="text" default="315" label="Video player's height." description="Leave empty for default." />
+                <field name="vimeoParameters" type="text" default="portrait=0&amp;color=333" label="Parameters" description="Enter additional Vimeo parameters, separated by '&amp;', without quotes. This allows you to control how Vimeo is presented to your visitors. For more information ,go to: https://developer.vimeo.com/player/embedding" />
+                <field name="vimeoInputDescription" type="text" default="Enter the full URL of the Vimeo video page.&lt;br /&gt;eg: &lt;b&gt;https://vimeo.com/22714098&lt;/b&gt;" label="Vimeo's Input description" />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension">http://update.mosets.com/mtree/fieldtypes/vimeo.xml</server>
+    </updateservers>
+</extension>

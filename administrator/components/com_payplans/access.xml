@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_payplans">
+	<section name="component">
+		<action name="core.manage" title="COM_PP_JACL_ACCESS_ADMIN" description="COM_PP_JACL_ACCESS_ADMIN_DESC" />
+		<action name="core.admin" title="COM_PP_JACL_ACCESS_ACL" description="COM_PP_JACL_ACCESS_ACL_DESC" />
+		<action name="payplans.config" title="COM_PP_JACL_ACCESS_SETTINGS" description="COM_PP_JACL_ACCESS_SETTINGS_DESC" />
+		<action name="payplans.orders" title="COM_PP_JACL_ACCESS_ORDERS" description="COM_PP_JACL_ACCESS_ORDERS_DESC" />
+		<action name="payplans.statistics" title="COM_PP_JACL_ACCESS_STATISTICS" description="COM_PP_JACL_ACCESS_STATISTICS_DESC" />
+		<action name="payplans.plans" title="COM_PP_JACL_ACCESS_PLANS" description="COM_PP_JACL_ACCESS_PLANS_DESC" />
+		<action name="payplans.discounts" title="COM_PP_JACL_ACCESS_DISCOUNTS" description="COM_PP_JACL_ACCESS_DISCOUNTS_DESC" />
+		<action name="payplans.gateways" title="COM_PP_JACL_ACCESS_PAYMENT_METHODS" description="COM_PP_JACL_ACCESS_PAYMENT_METHODS_DESC" />
+		<action name="payplans.apps" title="COM_PP_JACL_ACCESS_APPS" description="COM_PP_JACL_ACCESS_APPS_DESC" />
+		<action name="payplans.users" title="COM_PP_JACL_ACCESS_USERS" description="COM_PP_JACL_ACCESS_USERS_DESC" />
+		<action name="payplans.notifications" title="COM_PP_JACL_ACCESS_NOTIFICATIONS" description="COM_PP_JACL_ACCESS_NOTIFICATIONS_DESC" />
+		<action name="payplans.referrals" title="COM_PP_JACL_ACCESS_REFERRALS" description="COM_PP_JACL_ACCESS_REFERRALS_DESC" />
+		<action name="payplans.languages" title="COM_PP_JACL_ACCESS_LANGUAGES" description="COM_PP_JACL_ACCESS_LANGUAGES_DESC" />
+		<action name="payplans.automation" title="COM_PP_JACL_ACCESS_AUTOMATION" description="COM_PP_JACL_ACCESS_AUTOMATION_DESC" />
+		<action name="payplans.logs" title="COM_PP_JACL_ACCESS_LOGS" description="COM_PP_JACL_ACCESS_LOGS_DESC" />
+		<action name="payplans.reports" title="COM_PP_JACL_ACCESS_REPORTS" description="COM_PP_JACL_ACCESS_REPORTS_DESC" />
+	</section>
+</access>

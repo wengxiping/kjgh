@@ -1,0 +1,93 @@
+#content input, #mtForm input, #content textarea, #mtForm textarea {
+    width: inherit;
+}
+.pane-sliders fieldset.panelform {
+	padding:0;
+	margin:0;
+}
+.pane-sliders fieldset.panelform table.paramlist{
+	width:100%;
+}
+ul.linkcats a {text-decoration:underline;margin-right:3px;}
+table.paramlist tr {
+}
+table.paramlist td {
+	background-color:#F6F6F6;
+	border-bottom:1px solid #E9E9E9;
+	padding:5px 3px;
+}
+.paramlist_value label {
+    clear: none;
+    float: left;
+    min-width: 0 !important;
+}
+ul.adminformlist ul#linkcats {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+#mc_active_pathway {
+	background-color: #F9F9F9; color: #c0c0c0;
+}
+ul.adminformlist li > span {
+	display:block;
+}
+ul.adminformlist li span.mtinput label {
+	margin:0 5px;
+}
+ul.adminformlist li span.mtinput label img {
+}
+ul.adminformlist li span.mtcaption > label {
+	clear: left;
+	display: block;
+	float: left;
+	min-width: 135px;
+	margin: 5px 0;
+	padding:0;
+}
+ul.adminformlist li label span {
+	margin-left:0;
+	padding:0;
+	display:inline;
+}
+ul.adminformlist li span.mtinput label img {
+	float:none;
+}
+ul.adminformlist li span input {
+	float:none;
+}
+ul.adminformlist li span input[type=file] {
+	display:block;
+}
+ul.adminformlist li span input[type="checkbox"], ul.adminformlist li span input[type="radio"] {
+	margin:0;
+	float:left;
+}
+.validation-advice {
+	background-color:#FFEBE8;
+	border-bottom:1px solid #EB8266;
+	margin:5px 0 0 0px;
+	padding:3px 4px;
+}
+label.invalid {
+	color:red;
+	font-weight:bold;
+}
+input.invalid {
+	border:1px solid #EB8266;
+}
+
+.task-editlink form .controls ul, .task-editlisting form .controls ul {
+	margin:0;
+	padding:0;
+	list-style-type:none
+}
+.controls ul li {
+    list-style: none;
+}
+#mapContainer img {
+    max-width: none;
+}
+#mtForm .prefix, #mtForm .suffix {
+    display: block;
+}

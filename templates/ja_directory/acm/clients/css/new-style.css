@@ -1,0 +1,59 @@
+.xp-section-container{
+    width: 1200px;margin: auto;background: #FFFFFF;
+}
+.xp-section-container .section-title{
+    display: flex;justify-content: flex-start;align-items: center;padding: 16px 0 6px 0!important;margin: 0!important;
+}
+.xp-section-container .section-title .txt{
+    height: 21px;
+    opacity: 1;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 700;
+    color: rgba(51,51,51,1);
+    line-height: 21px;
+    letter-spacing: 0px;
+
+}
+.xp-row{
+    display: flex;justify-content: flex-start;align-items: center;padding: 0 16px!important;margin-bottom: 1px!important;
+}
+.xp-row .new-client-img{
+    width: 145px;height: 104px;border-left:1px solid #EEEEEE;border-bottom: 1px solid #EEEEEE;
+}
+.xp-row .new-client-img:nth-child(8n-7){
+    border-left:none!important;
+}
+.xp-row .new-client-img>.new-client-img-c{
+    opacity: 0.3;
+}
+.xp-row .new-client-img:hover .new-client-img-c{
+   opacity: 1!important;
+}
+
+.new-clientbg{
+    background: #FFFFFF;
+    padding-top: 47px;
+    padding-bottom: 100px;
+}
+.new-clientbg .section-title{
+   padding-top: 0!important;
+
+}
+.new-clientbg .section-title>img{
+  display: none;
+}
+.new-clientbg .section-title>.txt{
+  text-align: center;margin: auto;
+    height: 35px;
+    opacity: 1;
+    font-size: 26px!important;
+    font-family: MicrosoftYaHei;
+    color: rgba(51,51,51,1) !important;
+    line-height: 35px;
+    letter-spacing: 0px;
+}
+.new-clientbg #uber-cliens-241,#uber-cliens-245{
+    padding-top: 80px;
+}
+

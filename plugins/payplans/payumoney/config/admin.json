@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchant_key",
+				"type": "text",
+				"title": "Merchant Key",
+				"tooltip": "In this section, you would need to enter the Merchant Key which was provided to you by PayU",
+				"default": ""
+			},
+			{
+				"name": "salt",
+				"type": "text",
+				"title": "Secret Salt",
+				"tooltip": "In this section, you would need to enter the Secret Salt which was provided to you by PayU",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

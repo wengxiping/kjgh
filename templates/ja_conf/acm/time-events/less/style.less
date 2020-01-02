@@ -1,0 +1,56 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+@import "style-2.less";
+@import "style-3.less";
+
+
+// -------------------------------
+// EVENTS STYLE
+// -------------------------------
+
+.acm-events {
+	.event-item {
+    border-top: 1px solid @t3-border-color;
+    padding: @grid-gutter-width / 2 0;
+
+    // Event Title
+    h3 {
+      margin-top: 0;
+      margin-bottom: @t3-global-margin/3;
+    }
+
+    // Event TiIme
+    .event-time {
+      font-size: @font-size-h6;
+      text-transform: uppercase;
+    }
+
+    // Event Link
+    .event-link {
+      a {
+        display: inline-block;
+        border-radius: 50%;
+        background: @brand-light;
+        color: @inverse-color;
+        line-height: @grid-gutter-width / 2;
+        font-size: 8px;
+        text-align: center;
+        height: @grid-gutter-width / 2;
+        width: @grid-gutter-width / 2;
+
+        &:hover,&:focus,&:active {
+          background: linear-gradient(135deg, @brand-primary, @brand-secondary);
+        }
+
+        .fa, .fab, .fal, .far, .fas {
+          line-height: @grid-gutter-width / 2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[
+	{
+		"index": 1,
+		"title": "Installation Method",
+		"desc": "Associate licence for this installation",
+		"template": "source"
+	},
+	{
+		"index": 2,
+		"title": "Installation",
+		"desc": "Setting up necessary dependencies for EasySocial",
+		"template": "installing"
+	},
+	{
+		"index": 3,
+		"title": "Maintenance",
+		"desc": "Executing any necessary maintenance tasks for EasySocial",
+		"template": "maintenance"
+	}
+]

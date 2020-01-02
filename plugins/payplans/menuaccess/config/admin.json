@@ -1,0 +1,14 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "allowedMenus",
+				"type": "menulist",
+				"title": "COM_PAYPLANS_APP_MENU_ACCESS_ALLOWED_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_MENU_ACCESS_ALLOWED_DESC",
+				"default": 0
+			}
+		]
+	}
+]

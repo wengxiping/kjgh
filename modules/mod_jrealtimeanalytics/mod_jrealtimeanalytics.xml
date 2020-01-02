@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>JRealtime Analytics Module</name>
+	<author>Joomla! Extensions Store</author>
+	<creationDate>September 2019</creationDate>
+	<copyright>Copyright (C) 2015 - Joomla! Extensions Store. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@storejextensions.org</authorEmail>
+	<authorUrl>http://storejextensions.org</authorUrl>
+	<version>3.4.6</version>
+	<description>JRealtimeAnalytics Stats Module</description>
+	<files>
+		<filename module="mod_jrealtimeanalytics">mod_jrealtimeanalytics.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_jrealtimeanalytics.xml</filename>
+	</files>
+</extension>

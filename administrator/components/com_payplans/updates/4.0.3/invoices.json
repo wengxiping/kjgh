@@ -1,0 +1,12 @@
+[
+	{
+		"table": "#__payplans_invoice",
+		"index": "idx_status",
+		"query": "ALTER TABLE `#__payplans_invoice` ADD INDEX `idx_status` (`status`);"
+	},
+	{
+		"table": "#__payplans_subscription",
+		"index": "idx_order_id",
+		"query": "ALTER TABLE `#__payplans_subscription` ADD INDEX `idx_order_id` (`order_id`);"
+	}
+]

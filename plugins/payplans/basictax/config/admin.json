@@ -1,0 +1,23 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "tax_rate",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_BASICTAX_TAX_RATE",
+				"tooltip": "COM_PAYPLANS_APP_BASICTAX_TAX_RATE_DESC",
+				"default": ""
+			},
+			{
+				"name": "tax_country",
+				"type": "country",
+				"multiple": true,
+				"allowAll": true,
+				"title": "COM_PAYPLANS_APP_BASICTAX_TAX_RATE_COUNTRY",
+				"tooltip": "COM_PAYPLANS_APP_BASICTAX_TAX_RATE_COUNTRY_DESC",
+				"default": []
+			}
+		]
+	}
+]

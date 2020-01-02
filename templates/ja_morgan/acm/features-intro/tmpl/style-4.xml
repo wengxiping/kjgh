@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Features Intro Style 2</title>
+	<sampledata></sampledata>
+	<fields name="features-intro">
+		<fieldset name="basic" label="FEATURES_BASIC_LABEL" description="FEATURES_BASIC_DESC">
+			<field name="ft-desc" type="textarea" default="" label="FEATURES_DESCRIPTION_LABEL" description="FEATURES_DESCRIPTION_DESC" rows="10" cols="20" />
+		</fieldset>
+			
+		<fieldset name="section-features" label="FEATURES_SECTION_LABEL" description="FEATURES_SECTION_DESC" multiple="1">
+				<field name="content-align" type="list" default="left" label="FEATURES_CONTENT_ALIGN" description="FEATURES_CONTENT_ALIGN_DESC">
+					<option value="left">Align Left</option>
+					<option value="right">Align Right</option>
+				</field>
+				<field name="content-bg" type="list" default="bg-lv-1" label="FEATURES_BACKGROUND_CONTENT" description="FEATURES_BACKGROUND_CONTENT_DESC">
+					<option value="bg-lv-1">Background Style 1</option>
+					<option value="bg-lv-2">Background Style 2</option>
+					<option value="bg-lv-3">Background Style 3</option>
+					<option value="bg-lv-4">Background Style 4</option>
+				</field>
+				<field name="img-intro" type="media" default="" label="FEATURES_IMAGE_LABEL" description="FEATURES_IMAGE_DESC" required="1" />
+				<field name="font-icon" type="text" default="" label="FEATURES_FONT_ICON_LABEL" description="FEATURES_FONT_ICON_DESC" />
+				<field name="img-icon" type="media" default="" label="FEATURES_IMAGE_ICON_LABEL" description="FEATURES_IMAGE_ICON_DESC"/>
+				<field name="title" type="text" default="" size="40" label="FEATURES_TITLE_LABEL" description="FEATURES_TITLE_DESC" required="1" />
+				<field name="description" type="textarea" default="" label="FEATURES_DESCRIPTION_LABEL" description="FEATURES_DESCRIPTION_DESC" rows="5" cols="40" />
+				<field name="ft-link-title" type="text" default="" size="40" label="FEATURES_LINK_TITLE_LABEL" description="FEATURES_LINK_TITLE_DESC" />
+				<field name="ft-link" type="text" default="" size="40" label="FEATURES_LINK_LABEL" description="FEATURES_LINK_DESC" />
+		</fieldset>
+		
+  </fields>
+</form>

@@ -1,0 +1,127 @@
+#t3-content {
+  background-color: #FFFFFF
+}
+
+.jbl_h3title {
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  color: rgba(51, 51, 51, 1);
+  line-height: 24px;
+}
+
+.select-reason-p {
+  margin: 0;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  color: rgba(255, 96, 16, 1);
+  line-height: 24px;
+}
+
+.select-checkbox {
+  margin: 0 5px 0 0 !important;
+}
+
+input[type="checkbox"] {
+  margin: 1px 5px 0 !important;
+  margin-top: 1px \9;
+  *margin-top: 0;
+  line-height: normal;
+}
+
+.radio {
+  padding: 0;
+}
+
+.left-label-title {
+  font-size: 14px !important;
+  font-family: MicrosoftYaHei !important;
+  color: rgba(102, 102, 102, 1) !important;
+}
+
+.controls>.span4 {
+  width: 500px;
+  height: 36px;
+}
+
+.validate-numeric,
+.input-prepend,
+.user-name-input {
+  width: 206px !important;
+  height: 36px !important;
+}
+
+.account-balance {
+  margin-left: 180px;
+  margin-bottom: 0;
+}
+
+.account-balance>span {
+  font-size: 12px;
+  font-family: MicrosoftYaHei;
+  color: rgba(255, 143, 31, 1);
+  line-height: 16px;
+}
+
+.form-actions {
+  width: 700px;
+  background-color: transparent;
+  border-style: none;
+  text-align: right
+}
+
+.cancel-btn {
+  background-color: #EEEEEE;
+  border-style: none;
+  width: 160px;
+  height: 36px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: rgba(153, 153, 153, 1);
+  line-height: 19px;
+}
+
+.btn-primary {
+  width: 160px !important;
+  height: 36px !important;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
+  background-color: #FF6010;
+  background-image: linear-gradient(to bottom, #FF6010, #FF6010);
+  border-style: none
+}
+
+.btn-primary:hover {
+  background-color: #FF6010;
+}
+
+.input-prepend {
+  position: relative;
+}
+
+.money-unit {
+  position: absolute;
+  left: 370px;
+  bottom: 261px;
+  z-index: 9999;
+  font-size: 12px;
+  font-family: MicrosoftYaHei;
+  color: rgba(255, 96, 16, 1);
+}
+
+.xp-checkbox-label{
+  display: flex;justify-content: flex-start;align-items: center;cursor: pointer;
+}
+.xp-checkbox-label .default-img{
+  width: 14px;height: 14px;background:url("../../images/register/agree-default.png");
+  background-size:cover;
+}
+.xp-checkbox-label .select-img{
+  width: 14px;height: 14px;background:url("../../images/register/agree-selected.png");
+  background-size:cover;
+}
+.xp-checkbox-label .txt{margin-left: -18px;}
+.xp-checkbox-label>input{
+  visibility: hidden;
+}

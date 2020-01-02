@@ -1,0 +1,556 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+
+// --------------------------------------------------
+// MODULE STYLES
+// --------------------------------------------------
+
+// 
+// GENECRIC MODULE
+// --------------------------------------------------
+.t3-module {
+  background: @t3-module-bg;
+  color: @t3-module-color;
+  margin-bottom: @line-height-computed;
+
+  // Larger margin on Tablet / Desktop
+  @media screen and (min-width: @screen-sm) {
+    margin-bottom: @line-height-computed * 2;
+  }
+
+  // Module padding
+  .module-inner {
+    padding: @t3-module-padding;
+  }
+}
+
+// Module Title
+// ------------
+.module-title {
+  background: @t3-module-title-bg;
+  color: @t3-module-title-color;
+  font-size: @font-size-large;
+  margin: 0 0 (@line-height-computed / 2) 0;
+  padding: @t3-module-title-padding;
+
+  // Larger margin on Tablet / Desktop
+  @media screen and (min-width: @screen-sm) {
+    margin-bottom: @line-height-computed;
+  }
+
+}
+
+// Module Content
+// --------------
+.module-ct {
+  background: @t3-module-content-bg;
+  color: @t3-module-content-color;
+  padding: @t3-module-content-padding;
+  .clearfix();
+}
+
+// Module List
+// -----------
+.module-ct,
+.module-ct .custom {
+  > ul,
+  > ol {
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  
+  > ul.unstyled,
+  > ol.unstyled {
+    padding-left: 0;
+  }
+
+  > ul.nav,
+  > ol.nav {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+
+
+//
+// JOOMLA! MODULES
+// --------------------------------------------------
+
+// Menu
+// ----
+.module_menu {
+  .nav {
+  }
+  
+  .nav > li {
+  }
+  
+  .nav > li > a,
+  .nav > li > .separator {
+    padding: @padding-base-vertical 5px;
+    display: block;
+  }
+
+  // Hover state
+  .nav > li > a:hover {
+  }
+  
+  // Active state
+  .nav > li.active > a {
+  }
+}
+
+
+// Login Form
+// ----------
+#login-form {
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+  }
+  
+  .btn-primary {
+  }
+  
+  ul.unstyled {
+    margin-top: @line-height-computed;
+    padding-left: 20px;
+  }
+
+  #form-login-username {
+  }
+  
+  #form-login-password {
+  }
+  
+  #form-login-remember {
+    label {
+      font-weight: normal;
+    }
+  }
+
+}
+
+
+// Advertisement
+// -------------
+.bannergroup {
+}
+
+.banneritem {
+  a {
+    font-weight: bold;
+  }
+}
+
+.bannerfooter {
+  border-top: 1px solid @t3-border-color;
+  font-size: @t3-font-size-smaller;
+  padding-top: @t3-global-padding / 2;
+  text-align: right;
+}
+
+
+// Categories
+// ----------
+.categories-module, ul.categories-module,
+.category-module, ul.category-module {
+  margin: 0;
+
+  li {
+    list-style: none;
+    padding: (@line-height-computed / 2) 0;
+    border-top: 1px solid @t3-border-color;
+    // Remove border for first item
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  
+  h4 {
+    font-size: @font-size-base;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+// Latest Article
+.avatar-image {
+  border: 1px solid @t3-border-color;
+  border-radius: 50%;
+  padding: @t3-global-padding / 4;
+  height: @grid-gutter-width;
+  width: @grid-gutter-width;
+
+  img {
+    border-radius: 50%;
+  }
+}
+.latestnews.list {
+  .col-left {
+    // Desktop view
+    @media (min-width: @screen-md-min) {
+      padding-right: @grid-gutter-width * 2;
+    }
+
+    // Tablet view
+    @media (max-width: @screen-xs-max) {
+      margin-bottom: @grid-gutter-width;
+    }
+  }
+
+  .col-right {
+    // Desktop view
+    @media (min-width: @screen-md-min) {
+      padding-left: @grid-gutter-width * 2;
+    }
+
+    // Section title 
+    .section-title {
+      padding-right: @grid-gutter-width;
+    }
+  }
+
+  // Section Title
+  .section-title {
+    margin-bottom: @grid-gutter-width * 2;
+    margin-top: @t3-global-margin / 2;
+
+    // Mobile/tablet view
+    @media (max-width: @screen-sm-max) {
+      margin-bottom: @grid-gutter-width / 2;
+    }
+  }
+
+  // Article Item
+  .article-item {
+    + .article-item {
+      margin-top: @grid-gutter-width * 2;
+
+      // Mobile/tablet view
+      @media (max-width: @screen-sm-max) {
+        margin-top: @grid-gutter-width;
+      }
+    }
+
+    // No Avatar
+    &.no-avatar {
+      .article-detail {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .article-detail {
+    padding-right: @grid-gutter-width + @t3-global-padding;
+    position: relative;
+    margin-top: @grid-gutter-width / 2;
+  }
+
+  // Title
+  h3 {
+    margin-top: 0;
+    margin-bottom: @t3-global-margin / 4;
+
+    a {
+      color: @headings-color;
+
+      &:hover,&:focus,&:active {
+        color: @brand-primary;
+      }
+    }
+  }
+
+  // Title Intro
+  .title-intro {
+    margin-bottom: @t3-global-margin;
+  }
+
+  // Created Buy
+  .created-by {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: @font-size-h6;
+
+    span {
+      color: @inverse-color;
+      font-weight: 700;
+    }
+  }
+
+  // Avatar Image
+  .avatar-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  // Article field
+  .article-field {
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 0;
+    font-family: @headings-font-family-intro;
+    font-size: @font-size-h6;
+    text-transform: uppercase;
+  }
+
+  // Descriptions
+  .intro {
+    margin-top: @grid-gutter-width / 2;
+  }
+
+  // Mod Actions
+  .mod-action {
+    margin-top: @grid-gutter-width * 2;
+
+    // Mobile view
+    @media (max-width: @screen-xs-max) {
+      margin-top: @grid-gutter-width;
+    }
+  }
+}
+
+
+// News Feed
+// ----------
+.feed {
+  // Feed Title
+  h4 {
+    font-weight: bold;
+  }
+  // Feed list
+  .newsfeed,
+  ul.newsfeed {
+    border-top: 1px solid @hr-border;
+    li {}
+    .feed-link, 
+    h5.feed-link {
+      font-size: @font-size-base;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+}
+
+
+// Latest Users 
+// ------------
+.latestusers,
+ul.latestusers {
+  margin-left: 0;
+  li {
+    background: @gray-lighter;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: @border-radius-base;
+  }
+}
+
+
+// Stats 
+// -----
+.stats-module {
+  dt, dd {
+    display: inline-block;
+    margin: 0;
+  }
+  dt {
+    font-weight: bold;
+    width: 35%;
+  }
+  dd {
+    width: 60%;
+  }
+}
+
+
+// Popular Tags
+//-------------
+.tagspopular {
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  ul > li {
+    color: @gray;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+  }
+
+  ul > li > a {
+    background: @gray-lighter;
+    border-radius: 3px;
+    color: @gray;
+    display: block;
+    padding: 2px 5px;
+    // Links states
+    &:hover,
+    &:focus,
+    &:active {
+      background: @link-hover-color;
+      color: @inverse-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// AcyMailing
+.acymailing_module {
+  .acymailing_introtext {
+    color: @white;
+    font-size: @font-size-h3;
+    text-align: center;
+    margin-bottom: @grid-gutter-width / 2!important;
+  }
+
+  .acymailing_form {
+    width: 65%;
+
+    // Mobile view
+    @media (max-width: @screen-xs-max) {
+      width: 100%;
+
+      td {
+        display: block;
+      }
+    }
+
+    // Input
+    input {
+      height: @grid-gutter-width;
+
+      &.inputbox {
+        background: rgba(255,255,255,0.4);
+        border-radius: 30px 0 0 30px;
+        box-shadow: none;
+        border: 0;
+        color: @input-color;
+        padding-left: @grid-gutter-width / 2;
+
+        // Mobile view
+        @media (max-width: @screen-xs-max) {
+          border-radius: 30px;
+          padding-left: @t3-global-padding;
+        }
+
+        &:focus {
+          box-shadow: none;
+          background: rgba(255,255,255,0.45);
+        }
+      }
+    }
+
+    // Button
+    .acysubbuttons {
+      width: @grid-gutter-width * 3;
+
+      // Mobile view
+      @media (max-width: @screen-xs-max) {
+        width: auto;
+      }
+
+      .button {
+        background: @body-bg;
+        border: 0;
+        border-radius: 0 30px 30px 0;
+        width: 100%;
+
+        // Mobile view
+        @media (max-width: @screen-xs-max) {
+          border-radius: 30px;
+        }
+
+        &:hover,&:focus,&:active {
+          background: darken(@body-bg,10%);
+        }
+      }
+    }
+  }
+
+  // TYPE SLIDE
+  .acymailing_mootoolsbutton {
+    .acymailing_togglemodule {
+      background: @body-bg;
+      border-radius: 30px;
+      color: @white;
+      display: inline-block;
+      padding: @grid-gutter-width / 4 @grid-gutter-width;
+      text-transform: uppercase;
+      font-size: @font-size-h6;
+    }
+
+    > div {
+      background: transparent;
+      box-shadow: none;
+
+      .acymailing_module_form {
+        margin-top: @grid-gutter-width!important;
+      }
+
+      td {
+        border: 0;
+      }
+    }
+  }
+}
+
+// Acymailing Popup
+.com_acymailing {
+  body {
+    background: linear-gradient(135deg, @brand-primary, @brand-secondary);
+  }
+}
+
+div#closepop {
+  &:before {
+    content: "\f00d";
+    font-family: FontAwesome;
+    font-size: 9px;
+    text-align: center;
+    display: block;
+    line-height: 16px;
+  }
+}
+// Similar tags
+// ------------
+.tagssimilar {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul > li {
+    border-bottom: 1px solid @gray-lighter;
+    padding: 8px 0;
+  }
+
+  ul > li > a {
+    color: @gray;
+    // Link states
+    &:hover,
+    &:focus,
+    &:active {
+      color: @link-hover-color;
+    }
+  }
+}
+
+
+// Breadcrums Module
+// -----------------
+.module-ct > ol.breadcrumb {
+  padding: @padding-base-vertical @padding-base-horizontal;
+  margin-left: 0;
+}
+

@@ -1,0 +1,157 @@
+@media only screen  and (max-width: 767px){
+  .body-content{display: none;}
+  .body-content2{display: none;}
+   .body-content2>div{height: 0;}
+.s-hs-menu-container{display: none}
+
+ #t3-mainbody{padding: 0!important;;margin: 0!important;background: #FFFFFF;}
+ #t3-mainbody>.row{
+   margin: 0!important;
+  }
+  #t3-mainbody>.row #eb-individual-registration-page{
+
+  }
+  #t3-mainbody>.row #eb-individual-registration-page>div>.eb-page-heading{
+   margin: 0!important;text-align: center;font-size: 1.6em;height: 3rem;display: flex;justify-content: center;align-items: center;;
+  }
+  #t3-mainbody>.row #eb-individual-registration-page>.eb-message{
+    display: flex;justify-content: flex-start;align-items: center;padding: 0 5%;
+  }
+  #t3-mainbody>.row #eb-individual-registration-page>#adminForm{
+    padding: 0 5%;
+  }
+
+  #t3-mainbody>.row>#t3-content{
+    padding: 0!important;;margin: 0!important;
+  }
+  #adminForm{margin: 0!important;}
+
+  #adminForm>.control-group>.controls{
+    padding: 0!important;margin: 0!important;
+  }
+  #adminForm>.control-group>.controls>input{
+    padding: 0!important;margin: 0!important;text-indent: 0.5rem;
+  }
+  #adminForm>.control-group>.controls>input:focus{
+    border: 1px solid #CCCCCC!important;
+  }
+  #adminForm>.control-group>.controls>textarea{
+    padding: 0!important;margin: 0!important;text-indent: 0.5rem;
+  }
+  #adminForm>.control-group>.controls>div{
+    display: none!important;
+  }
+  #adminForm>.form-actions{
+    background:none;border:none;height: 6rem;padding: 0!important;margin: 0!important;display: flex;justify-content: space-between;align-items: center;
+  }
+  #adminForm>.form-actions>input{
+    width: 30%;height: 1.6rem;border: none;box-shadow: none;outline: none;
+  }
+  #adminForm>.form-actions>input:nth-child(1){
+       color: #FFFFFF;
+  }
+  #adminForm>.form-actions>input:nth-child(2){
+       background: #E44249;
+       color: #FFFFFF;
+  }
+  .xp-container .row{padding: 0!important;margin: 0!important;}
+  .xp-container .row>div:nth-child(1){display: none;}
+  .xp-container .row>div:nth-child(2){
+    padding: 0!important;margin: 0!important;
+    width: 100%;
+  }
+  .xp-container .row>div:nth-child(2)>div{
+    padding: 0!important;margin: 0!important;height: 3rem;background: #FFFFFF!important;
+  }
+  .xp-container .row>div:nth-child(2)>div p{
+    margin: 0!important;padding: 0!important;
+  }
+  .xp-container .row>div:nth-child(3){display: none;}
+}
+@media only screen and (min-width: 766px) {
+  /*当前屏幕分辨率大于766px的*/
+  .t3-content {
+    background-color: #FFFFFF;
+    padding: 0px 290px
+  }
+
+  .eb-page-heading {
+    text-align: center;
+    font-size: 26px;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 96, 16, 1);
+    line-height: 35px;
+  }
+
+  .eb-message>p {
+    width: 425px;
+    margin-left: 123px;
+    margin-bottom: 20px;
+  }
+
+  .eb-message>p>strong {
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153, 153, 153, 1);
+    line-height: 18px;
+  }
+
+  .form-actions {
+    background-color: #FFFFFF !important;
+    border-style: none !important
+  }
+
+  .cancel-btn {
+    width: 160px !important;
+    height: 36px !important;
+    width: 28px;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(153, 153, 153, 1);
+    line-height: 19px;
+    margin-right: 5px;
+    border: 1px solid #cccccc;
+    background-color: #F9F9F9
+  }
+
+  .confirm-btn {
+    width: 160px !important;
+    height: 36px !important;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(255, 255, 255, 1);
+    line-height: 19px;
+    background-color: #FF6010;
+    border-style: none
+  }
+
+  .star {
+    color: red !important
+  }
+
+  #comment-lbl,
+  #email-lbl,
+  #phone-lbl,
+  #organization-lbl,
+  #first_name-lbl {
+    text-align: right;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51, 51, 51, 1);
+    line-height: 19px;
+    letter-spacing: 0px;
+  }
+
+  #email,
+  #phone,
+  #organization,
+  #first_name {
+    width: 342px;
+    height: 30px;
+  }
+
+  #comment {
+    width: 342px;
+    height: 75px;
+  }
+}

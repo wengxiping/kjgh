@@ -1,0 +1,68 @@
+.row {
+  background-color: #FFFFFF
+}
+
+#t3-content {
+  padding-top: 50px;
+  z-index: 999;
+}
+
+.t3-sidebar .t3-module {
+  border-style: none !important
+}
+
+td {
+  background-color: #FFFFFF !important
+}
+
+.clear {
+  clear: both;
+}
+
+.xp-pagination {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.xp-pagination .pull-right .pagination {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.xp-pagination .pagination li>a {
+  border: 1px solid #EEEEEE;
+  padding: 4px 11px;
+  margin-right: 10px;
+  border-radius: 1px !important;
+}
+
+.xp-pagination .pagination li>a:hover {
+  background: #FF6010;
+  color: #FFFFFF !important;
+}
+
+.xp-pagination .pagination li.active a {
+  background: #FF6010 !important;
+  border: 1px solid #FF6010;
+  color: #FFFFFF !important;
+}
+
+.xp-pagination .pagination li.disabled a {
+  color: rgba(153, 153, 153, 1);
+  cursor: not-allowed;
+  background: #FFFFFF;
+  border: none;
+  color: #999999 !important;
+}
+
+.xp-pagination .pagination li:first-child {
+  display: none;
+}
+
+.xp-pagination .pagination li:last-child {
+  display: none;
+}
+

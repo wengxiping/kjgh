@@ -1,0 +1,21 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "addPoints",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_AUP_ASSIGN_POINTS",
+				"tooltip": "COM_PAYPLANS_APP_AUP_ASSIGN_POINTS_DESC",
+				"default": ""
+			},
+			{
+				"name": "removePointsOnRefund",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_AUP_REMOVE_POINTS_ON_REFUND",
+				"tooltip": "COM_PAYPLANS_APP_AUP_REMOVE_POINTS_ON_REFUND_DESC",
+				"default": false
+			}
+		]
+	}
+]

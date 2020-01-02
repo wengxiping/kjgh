@@ -1,0 +1,40 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "add_entry_in",
+				"type": "dependency",
+				"title": "Apply Restrictions On",
+				"tooltip": "This determines restrictions rule to be applied on selected category or all categories",
+				"default": "any_category",
+				"options": [
+					{
+						"title": "All Categories",
+						"value": "any_category"
+					},
+					{
+						"title": "Specific Categories",
+						"value": "restrict_specific",
+						"for": "data-restrict-specific"
+					}
+				]
+			},
+			{
+				"name": "add_entry_in_category",
+				"type": "easyblogCategories",
+				"attributes": "data-restrict-specific",
+				"title": "Select Categories",
+				"tooltip": "Set the restrictions based on the selected categories",
+				"default": ""
+			},
+			{
+				"name": "no_of_submisssion",
+				"type": "text",
+				"title": "Total Posts",
+				"tooltip": "Set the total number of posts that the user is allowed to post",
+				"default": ""
+			}
+		]
+	}
+]

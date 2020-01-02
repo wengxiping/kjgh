@@ -1,0 +1,63 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// Statics
+// ------------------------------------
+.acm-statics {
+  // Style 1
+  &.style-1 {
+    text-align: center;
+
+    .row {
+      margin: 0;
+
+      .col {
+        padding: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      margin: 0;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .number {
+      margin: 0;
+      color: @white;
+
+      @media (max-width: @screen-md-max){
+        font-size: @font-size-h2;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    h5 {
+      margin: @grid-gutter-width / 3 0 0 0;
+      color: @white;
+    }
+
+    .statics-item {
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: @grid-gutter-width* 6 0;
+
+      // Desktop
+      @media (max-width: @screen-md-max){
+        padding: @t3-global-padding * 4 0;
+      }
+    }
+  }
+}

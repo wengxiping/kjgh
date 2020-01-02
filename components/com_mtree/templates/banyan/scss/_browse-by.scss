@@ -1,0 +1,43 @@
+//** Browse By
+
+//-----------------------------------------------------------------------------
+// Main Browse By page that list all taggable fields.
+//
+.mt-page-browse-by {
+
+  .mt-browse-by-tag-fields {
+
+    list-style: disc outside;
+    margin: 0 0 0 1rem;
+
+    // Individual tag field.
+    .mt-browse-by-tag-field {
+
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Browse By page that list all tags/values from a taggable field.
+//
+.mt-page-browse-by-tags {
+
+  .mt-browse-by-tags {
+
+    list-style: disc outside;
+    margin: 0 0 0 1rem;
+
+    // Individual tag.
+    .mt-browse-by-tag {
+
+    }
+
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Browse By page that list all listings from a tag.
+//
+.mt-page-browse-by-results {
+
+}

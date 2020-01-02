@@ -1,0 +1,52 @@
+
+// General //
+
+$standard_spacing:                 10px;
+$standard_vertical_spacing:        10px;
+
+// Colors //
+
+$color_field_caption:            #777;
+
+// Listing Summary //
+
+$margin_bottom_field:           $standard_vertical_spacing;
+$color_border_ls_field:         #ccc;
+
+// Listing Details //
+
+$margin_top_container_big:      3em;
+$bg_color_container_big:        #F5F5F5; //#efefef;
+$color_border_container_big:     #CCCCCC;
+
+// Inner Box Padding //
+$padding_left_listings_inner_box:         $standard_vertical_spacing;
+$padding_horizontal_listings_inner_box:   $standard_vertical_spacing;
+$padding_vertical_listings_inner_box:     6px;
+
+//-----------------------------------------------------------------------------
+// Summary View Style #2
+//-----------------------------------------------------------------------------
+
+$style_2_ls_padding: 18px;
+$style_8_ls_padding: 18px;
+
+//-----------------------------------------------------------------------------
+// Summary View Style #3
+//-----------------------------------------------------------------------------
+
+$style_3_margin_bottom_field: 4px;
+
+//-----------------------------------------------------------------------------
+// Summary View Style #9
+//-----------------------------------------------------------------------------
+
+$style_9_listings_list_color_border: #E8E8E8;
+
+
+@mixin category-name-text-shadow {
+
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+
+}

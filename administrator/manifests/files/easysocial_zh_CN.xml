@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="2.5">
+    <name>EasySocial Chinese (S)</name>
+    <version>97</version>
+    <creationDate>2019-11-01</creationDate>
+    <author>Joomla! Translate</author>
+    <authorEmail>info@joomlatranslate.com</authorEmail>
+    <authorUrl>https://joomlatranslate.com</authorUrl>
+    <copyright>2019 - Joomla! Translate. All rights reserved!</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    
+	
+	
+    <fileset>
+		<files folder="backend" target="administrator/language/zh-CN">
+			<filename>zh-CN.com_easysocial.ini</filename>
+			<filename>zh-CN.com_easysocial.sys.ini</filename>
+		</files>
+		<files folder="frontend" target="language/zh-CN">
+			<filename>zh-CN.mod_easysocial_registration_requester.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_calendar.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_albums.ini</filename>
+			<filename>zh-CN.mod_easysocial_albums.sys      .ini</filename>
+			<filename>zh-CN.mod_easysocial_calendar.ini</filename>
+			<filename>zh-CN.mod_easysocial_dating_search.ini</filename>
+			<filename>zh-CN.mod_easysocial_dating_search.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_dropdown_menu.ini</filename>
+			<filename>zh-CN.mod_easysocial_dropdown_menu.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_easyblog_posts.ini</filename>
+			<filename>zh-CN.mod_easysocial_easyblog_posts.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_event_menu.ini</filename>
+			<filename>zh-CN.mod_easysocial_event_menu.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_events.ini</filename>
+			<filename>zh-CN.mod_easysocial_events_categories.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_events_categories.ini</filename>
+			<filename>zh-CN.mod_easysocial_events.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_followers.ini</filename>
+			<filename>zh-CN.mod_easysocial_followers.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_friends.ini</filename>
+			<filename>zh-CN.mod_easysocial_friends.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_group_menu.ini</filename>
+			<filename>zh-CN.mod_easysocial_group_menu.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_groups.ini</filename>
+			<filename>zh-CN.mod_easysocial_groups_categories.ini</filename>
+			<filename>zh-CN.mod_easysocial_groups_categories.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_groups.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_leaderboard.ini</filename>
+			<filename>zh-CN.mod_easysocial_leaderboard.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_logbox.ini</filename>
+			<filename>zh-CN.mod_easysocial_logbox.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_login.ini</filename>
+			<filename>zh-CN.mod_easysocial_login.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_menu.ini</filename>
+			<filename>zh-CN.mod_easysocial_menu.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_notifications.ini</filename>
+			<filename>zh-CN.mod_easysocial_notifications.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_oauth.ini</filename>
+			<filename>zh-CN.mod_easysocial_oauth.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_photos.ini</filename>
+			<filename>zh-CN.mod_easysocial_photos.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_profile_completeness.ini</filename>
+			<filename>zh-CN.mod_easysocial_profile_completeness.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_profile_statistic.ini</filename>
+			<filename>zh-CN.mod_easysocial_profile_statistic.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_quickpost.ini</filename>
+			<filename>zh-CN.mod_easysocial_quickpost.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_recentpolls.ini</filename>
+			<filename>zh-CN.mod_easysocial_recentpolls.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_register.ini</filename>
+			<filename>zh-CN.mod_easysocial_register.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_registration_requester.ini</filename>
+			<filename>zh-CN.mod_easysocial_search.ini</filename>
+			<filename>zh-CN.mod_easysocial_search.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_stream.ini</filename>
+			<filename>zh-CN.mod_easysocial_stream.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_toolbar.ini</filename>
+			<filename>zh-CN.mod_easysocial_toolbar.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_users.ini</filename>
+			<filename>zh-CN.mod_easysocial_users.sys.ini</filename>
+			<filename>zh-CN.mod_easysocial_videos.ini</filename>
+			<filename>zh-CN.mod_easysocial_videos.sys.ini</filename>
+			<filename>zh-CN.com_easysocial.ini</filename>
+		</files>
+	</fileset>
+	
+</extension>

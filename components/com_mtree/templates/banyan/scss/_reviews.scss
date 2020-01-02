@@ -1,0 +1,150 @@
+//** Reviews
+
+//-----------------------------------------------------------------------------
+// Main container for reviews.
+//
+.reviews {
+
+  .pages-counter {
+    float:left;
+    width:100%;
+    text-align:center;
+    font-weight:700;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Individual review container.
+//
+.review {
+  overflow:hidden;
+  border-bottom:1px solid #ededed;
+  padding:1em 0 2em;
+
+  // Review head is the left hand side column that contains the reviewer
+  // profile, which includes, profile picture, name and review date.
+  .review-head {
+    color:#444;
+  }
+
+  // Review title that appears beside the review rating.
+  .review-title {
+    margin-bottom:1em;
+    font-weight:bold;
+
+    a {
+      font-weight:700;
+      color:#000;
+    }
+
+  }
+
+  // This is the main column that contains the main review text, review rating
+  // and review title.
+  .review-text {
+    min-height: 86px;
+    margin-bottom: 1em;
+
+    // Thumbnail of the reviewed listing. This only appears when viewing a
+    // user's reviews.
+    .thumbnail {
+      float:right;
+      margin-left:15px;
+      margin-bottom:10px;
+    }
+  }
+
+  .review-info {
+    margin-left:5px;
+  }
+
+  p.review-date {
+    padding-top:0;
+  }
+
+  .review-rating {
+    display:inline;
+    padding-right:.5em;
+    position:relative;
+    top:2px;
+  }
+
+  .review-rating img {
+    position: relative;
+    vertical-align: top;
+    top:-2px;
+  }
+
+  .review-owner {
+    margin-left:3px;
+    font-weight:700;
+  }
+
+  .found-helpful {
+    float:left;
+    width:100%;
+    padding-left:5px;
+    font-size:.8em;
+  }
+
+  .ask-helpful {
+    color: #999;
+  }
+
+  .ask-helpful2 {
+    float:left;
+    margin-right:4px;
+    font-style:italic;
+  }
+
+  .review-reply-report-permalink {
+    text-align:right;
+  }
+
+  .review-reply,.review-report,.review-permalink {
+    display:inline;
+    text-align:right;
+    margin-top:10px;
+  }
+
+  .review-reply,.review-report {
+    margin-right:10px;
+    border-right:2px solid #EDEDED;
+  }
+
+  .review-reply a:link,.review-reply a:visited,
+  .review-report a:link,.review-report a:visited,
+  .review-permalink a:link,.review-permalink a:visited {
+    text-decoration:none;
+    margin-right:10px;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Owner's Reply container.
+//
+.owners-reply {
+  margin-top:1em;
+  background-color:#F5F5F5;
+  padding:1em;
+
+  span {
+    font-weight:700;
+    background-color:#666;
+    text-align:center;
+    color:#FFF;
+    padding:1px 8px;
+  }
+
+  p {
+    color:#111;
+  }
+}
+
+
+
+
+
+
+
+

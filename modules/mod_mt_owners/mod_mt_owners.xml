@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_mt_owners</name>
+	<author>Mosets Consulting</author>
+	<creationDate>July 2016</creationDate>
+	<copyright>(C) 2016-present Mosets Consulting. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>3.9.0</version>
+	<description>MOD_MT_OWNERS_XML_DESC</description>
+	<files>
+		<filename module="mod_mt_owners">mod_mt_owners.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mt_owners.ini</language>
+		<language tag="en-GB">en-GB.mod_mt_owners.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_mtree/elements">
+				<field name="type" type="list" default="1" label="MOD_MT_OWNERS_FIELD_TYPE_LABEL" description="MOD_MT_OWNERS_FIELD_TYPE_DESC">
+					<option value="1">MOD_MT_OWNERS_VALUE_MOST_LISTINGS</option>
+					<option value="2">MOD_MT_OWNERS_VALUE_MOST_REVIEWS</option>
+				</field>
+				<field name="count" type="text" default="5" label="MOD_MT_OWNERS_FIELD_COUNT_LABEL" description="MOD_MT_OWNERS_FIELD_COUNT_DESC" />
+				<field name="show_from_cat_id" type="text" default="0" label="MOD_MT_OWNERS_FIELD_SHOWOWNERFROMTHISCAT_LABEL" description="MOD_MT_OWNERS_FIELD_SHOWOWNERFROMTHISCAT_DESC" />
+				<field name="show_name" type="radio" default="1" label="MOD_MT_OWNERS_FIELD_SHOWNAME_LABEL" description="MOD_MT_OWNERS_FIELD_SHOWNAME_DESC" class="radio btn-group">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_rel_data" type="radio" default="1" label="MOD_MT_OWNERS_FIELD_SHOWRELATEDDATA_LABEL" description="MOD_MT_OWNERS_FIELD_SHOWRELATEDDATA_DESC" class="radio btn-group">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_images" type="radio" default="1" label="MOD_MT_OWNERS_FIELD_SHOWIMAGES_LABEL" description="MOD_MT_OWNERS_FIELD_SHOWIMAGES_DESC" class="radio btn-group">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="image_size" type="list" default="50px" label="MOD_MT_OWNERS_FIELD_IMAGESIZE_LABEL" description="MOD_MT_OWNERS_FIELD_IMAGESIZE_DESC">
+					<option value="auto">auto</option>
+					<option value="50px">50px</option>
+					<option value="60px">60px</option>
+					<option value="70px">70px</option>
+					<option value="80px">80px</option>
+					<option value="90px">90px</option>
+					<option value="100px">100px</option>
+					<option value="110px">110px</option>
+					<option value="120px">120px</option>
+					<option value="130px">130px</option>
+					<option value="140px">140px</option>
+					<option value="150px">150px</option>
+					<option value="160px">160px</option>
+					<option value="170px">170px</option>
+					<option value="180px">180px</option>
+					<option value="190px">190px</option>
+					<option value="200px">200px</option>
+				</field>
+				<field name="show_more" type="radio" default="1" label="MOD_MT_OWNERS_FIELD_DISPLAYSHOWMORE_LABEL" class="radio btn-group">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="caption_showmore" type="text" default="Show more..." label="MOD_MT_OWNERS_FIELD_SHOWMORETEXT_LABEL" />
+
+			</fieldset>
+			<fieldset name="assignment">
+				<field
+					name="module_assignment"
+					type="mtmoduleassignment"
+					label="COM_MODULES_MODULE_ASSIGN" />
+				<field
+					name="categories_assignment"
+					type="categoriesassignment"
+					label="MOD_MT_OWNERS_FIELD_CATEGORIES_ASSIGNMENT_LABEL"
+					description="MOD_MT_OWNERS_FIELD_CATEGORIES_ASSIGNMENT_DESC" />
+				<field
+					name="pages_assignment"
+					type="mtpagesassignment"
+					label="MOD_MT_OWNERS_FIELD_PAGES_ASSIGNMENT_LABEL"
+					description="MOD_MT_OWNERS_FIELD_PAGES_ASSIGNMENT_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+			<fieldset name="layout_option_tiles">
+				<field name="tiles_flow" type="radio" default="vertical" label="MOD_MT_OWNERS_FIELD_TILESFLOW_LABEL" description="MOD_MT_OWNERS_FIELD_TILESFLOW_DESC" class="radio btn-group">
+					<option value="vertical">MOD_MT_OWNERS_VALUE_VERTICAL</option>
+					<option value="horizontal">MOD_MT_OWNERS_VALUE_HORIZONTAL</option>
+				</field>
+				<field name="name_and_data_alignment" type="radio" default="left" label="MOD_MT_OWNERS_FIELD_NAMEANDDATAALIGNMENT_LABEL" description="MOD_MT_OWNERS_FIELD_NAMEANDDATAALIGNMENT_DESC" class="radio btn-group">
+					<option value="left">MOD_MT_OWNERS_VALUE_LEFT_ALIGN</option>
+					<option value="center">MOD_MT_OWNERS_VALUE_CENTER_ALIGN</option>
+					<option value="right">MOD_MT_OWNERS_VALUE_RIGHT_ALIGN</option>
+				</field>
+
+				<field name="tile_width" type="text" default="" label="MOD_MT_OWNERS_FIELD_TILEWIDTH_LABEL" description="MOD_MT_OWNERS_FIELD_TILEWIDTH_DESC" />
+
+			</fieldset>
+			<fieldset name="layout_option_dropdown">
+				<field name="dropdown_width" type="text" default="200" label="MOD_MT_OWNERS_FIELD_DROPDOWN_WIDTH_LABEL" description="MOD_MT_OWNERS_FIELD_DROPDOWN_WIDTH_LABEL" />
+				<field name="dropdown_select_text" type="text" default="" label="MOD_MT_OWNERS_FIELD_DROPDOWN_SELECT_TEXT_LABEL" description="MOD_MT_OWNERS_FIELD_DROPDOWN_SELECT_TEXT_DESC" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

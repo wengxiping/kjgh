@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>PayPlans - K2 Category Access Control</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>Stack Ideas Sdn Bhd</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://stackideas.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2018 Stack Ideas Sdn Bhd</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PayPlans integration with K2 Category</description>
+	<files>
+		<folder>app</folder>
+		<folder>config</folder>
+		<folder>tmpl</folder>
+		<filename plugin="k2category">k2category.php</filename>
+		<filename>k2category.xml</filename>
+	</files>
+</extension>

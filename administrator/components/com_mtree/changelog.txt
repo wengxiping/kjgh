@@ -1,0 +1,860 @@
+/***
+* Mosets Tree CHANGELOG
+*
+* @package Mosets Tree 3.10
+* @copyright (C) 2012-2019 Mosets Consulting
+* @url http://www.mosets.com/
+* @author Lee Cher Yeong <mtree@mosets.com>
+*/
+
+Legend:
+
+# -> Bug Fix
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+version 3.10.9 - 15 July 2019 ------------------------------------------------------------------------
++ Add additional support for map providers: OpenStreetMap, Mapbox and HERE.
+# Fix minor erros in Banyan's CSS.
+# Add responsive CSS to some Banyan's Index template page.
+# Fix issue with using double quotes in input fields.
+# Fix pagination in 'Browse By' pages.
+# Remove sharing to Google Plus.
++ Postcode now accepts Elements.
+
+version 3.10.8 - 13 February 2019 ------------------------------------------------------------------------
+# Fix incorrect CSS syntax typo in page_subCatIndex* and page_index* template files.
++ Include user's name property in reviews output.
+# Fix fields not being updated when changing top level categories in front-end.
+# Fix missing RSS core field captions.
+# Only display 'reviewCount' when there is at least one review.
+# Fix bug related to tag with ampersand (&) that causes linkstag links not working.
+! Remove updateservers from Mosets Tree and Profile Picture plugin's manifest file.
+# Fix PHP 7.3 warning on 'continue' usage inside 'switch' statement without a numeric argument.
+
+version 3.10.7 - 5 December 2018 ------------------------------------------------------------------------
+# Fix incorrect bug when copying listing with core field date, telephone and year.
+# Fix bug with using Styled Google Maps.
+# Fix bug causing 'Reset' filter not working on IE11.
+# Fix PHP warning in tellDateTime function.
++ Support core field columns in back-end search results.
+
+version 3.10.6 - 13 September 2018 ------------------------------------------------------------------------
++ New config to choose between username and user ID for owner slug in SEF URL.
++ When using " Link ID & Alias Hybrid slug type", we can just specify the link ID to load a listing.
+# Fix error when enabling GA tracking in Vanity URL field.
+# Fix bug causing template to fail when running under Windows server.
+# Fix bug where breadcrumbs are not showing for category.
+
+version 3.10.5 - 25 July 2018 ------------------------------------------------------------------------
+# Fix issue lo loading controller with uppercase letter(s).
+# Fix search redirect issue where ampersand is replaced with &amp;.
+
+version 3.10.4 - 27 June 2018 ------------------------------------------------------------------------
+# Fix error when viewing a non-existent owner page. Now returns 404.
+# Fix issue with verifying subscription's Access Key.
+# Fix issue with listings not showing in cluster map.
+# Fix bug where listings are not found when browsed by tags.
+
+version 3.10.3 - 14 May 2018 ------------------------------------------------------------------------
+# Fix bug where field with multiple input values aren't retaining value when running under PHP 7.1+.
+# Fix PHP 7.2's count() warnings.
+# Banyan: Ellipsis in index view's category now links to the category page.
+# Fix buy where 'Browse By' does not work when SEF URL is not enabled.
+
+version 3.10.2 - 18 April 2018 ------------------------------------------------------------------------
+# Fix bug with kinabalu listing summary thumbnail.
+# Fix bug with listings pagination display.
+# Website field is not showing in details view.
+# Fix login redirect bug not redirecting to the origin URL.
++ COM_MTREE_CLUSTER_MAP_LISTING_READ_MORE
+
+version 3.10.1 - 2 April 2018 ------------------------------------------------------------------------
+# Fix repeating Website field when it's set as main attribute or focus field.
+# Fix missing language string for Share with Whatsapp config.
+# Fix missing argument for SEARCH_PLACEHOLDER language string in sub_search.
++ COM_MTREE_RATE_THIS_LISTING, COM_MTREE_ADD_YOUR_LISTING_HERE is now overridable in top level categories.
+# Fix bug causing 'Browse By' not to work.
+
+version 3.10.0 - 29 March 2018 ------------------------------------------------------------------------
++ Brand new template 'Banyan'.
+# Can not browse category when Directory's View Access Level is set to non-Public.
+# Error when searching for "Pending" listings in back-end.
+# Error 403 during save listing when (1) 'Allow owner to modify listing' is set to No and; (2) Modifying listing as Manager.
+# Parse URL function in Core Description does not parse HTTPS URL correctly.
+# Fix bug in showing incorrect number of listings in 'browse by' results.
+# Claim button not showing if the listing owner is assigned additional non-claimable user groups.
+# Fix reflected XSS vulnerabilities in filter result pages.
+# MT Importer: Fix inability to import values with 0 through CSV.
+# Fix bug in Date field where it is showing even when left empty.
++ New Share with WhatsApp.
+# Fix PHP 7.2 Warning on count()-ing non-countable types.
+# Don't override mFieldTypeNumber getInpitValue function so that it can have default value.
+
+version 3.9.8 - 13 July 2017 ------------------------------------------------------------------------
++ Youtube fieldtype now supports playlist.
+# Allow editing listing even when users reached or exceeded permitted number of listings.
+# Make Number based custom field taggable.
++ Search by Tag now supports filtering by category.
+
+version 3.9.7 - 16 May 2017 ------------------------------------------------------------------------
+# Fix and fatal error when running on PHP 5.4 or earlier.
+# Update Mass Geocode Google Maps version from 3.6 to 3.
+# Fix bug preventing from being able to load additional listings in Mass Geocode.
+# Adds user agent when importing image using "Import Images" tool.
++ mod_mt_lastupdate now also reflects update date & time when a listing is published through 'Start Publishing' date time.
+# Fix the inconsistent listing counts in Search By pages.
+
+version 3.9.6 - 21 March 2017 ------------------------------------------------------------------------
+! Show error when copying a template without name or folder name.
++ mod_mt_alphaindex now shows additional alpha index characters if defined in configuration.
+# 'Cluster Map's Max Zoom Level' is not applied when Cluster Map is hidden by default.
+# RSS showing in New & Updated page regardless of RSS configuration.
+! Secondary categories in Category fieldtype are now ordered alphabetically.
+# Fix issue with Social Sharing buttons that appears scrunched.
+# Fix bug affecting SEF URLs of listing summary's 'Read more'.
++ Add 'My Subscription' to register Access Key and view subscription status.
+
+version 3.9.5 - 16 January 2017 ------------------------------------------------------------------------
++ Add support for Greek characters in Tags field.
++ Add a configurable max zoom level for cluster maps.
++ Add support for adding city, state, country and postcode to page and open graph title.
+# Fix Spy directory listing search filter removing spaces.
+# Fix mobile layout when showing category images in Index page.
+- Remove unused elements support in Web link field type.
+# Fix issue with Fancybox when site is using jQuery 2.
+! No longer impose maximum of 6 character limit for e-mail hostname.
++ Show modified data & time in back-end edit listing page.
+# Fix bug in Search on Number based custom fields when using Slider search.
+# Don't remove Joomla's Meta Description & Keywords in Root view if these are not set in language override.
+! Disable scroll wheel in cluster maps.
+# Fix bug affect onContentChangeState event hook where it is triggered every time a listing is modified.
++ onContentAfterSave, onContentAfterDelete: Add listing name to the object passed during trigger.
++ New onAfterNewListingApproved event hook. This is triggered when a new listing is approved.
++ CSS files are not editable in back-end UI.
++ Add support for "Max. allowed characters." in Text based custom fields.
+# Fix missing prefix and suffix text when using Listing Details Style 2 and onwards.
+# Fix bug in mass geocoding when listing name or address contain newlines.
+# Fix bug where only one related category can only be added at a time.
+# Fix RSS icon showing in listing pages that does not have RSS feed.
+# Remove Associated Listing custom fields from Top Listings fields selection.
+
+version 3.9.4 - 1 November 2016 ------------------------------------------------------------------------
+# Fix mod_mt_filter where cookies stored for search value aren't cleared when auto search is enabled.
+# Fix mod_mt_filter where reset does not clear slider's value.
+# Fix number based fields not showing values during edit.
+# Fix bug where hidden fields' value are not carried over when submitting modification for approval.
+# Fix PHP 7 compatibility in RSS function.
+# Fix bug causing counter values in custom fields to empty when saving listings.
+
+version 3.9.3 - 12 October 2016 ------------------------------------------------------------------------
+# Fix bug causing "Template" setting in back-end Edit Listing showing template paths instead of folder names.
+# Fix missing slider base parameter in Number and Number based field types.
++ Add owner & reviewer name to e-mail sent to listing owner when a new review is added.
+# Fix slider search's auto search feature trigger other filter.
++ Use Itemid in Search module (mod_mt_search).
+# Fix for social buttons' CSS box.
+
+version 3.9.2 - 14 September 2016 ------------------------------------------------------------------------
+# Fix bug causing search completion to not work when allow_json_output is disabled.
+# Fixed a fatal error when submitting review.
+# Fixed bug affecting Name field being de-assigned when saving category in back-end.
+# Fixed missing Google Maps API in front-end edit listing page.
+
+version 3.9.1 - 31 August 2016 ------------------------------------------------------------------------
+# Fix bug causing Captcha to appear when changing category in back-end.
+# Fix bug causing JSON related query not to work when allow_json_output is disabled.
+
+version 3.9.0 - 26 August 2016 ------------------------------------------------------------------------
+# Fix incorrect custom Publish Up datetime when creating new listings.
++ Adds support for cluster maps.
++ Number based fields now defaults to a Slider based ranged search.
++ Filter module (mod_mt_filter) now has auto search.
+! Number fieldtype now uses number input field.
+! E-mails sent through contact and recommended form now originates from the site's sender name & email.
+! Google Maps in listing details page now uses API Keys.
+# Fix bug affect page's META data being converted to HTML Entities twice.
++ Support for renewing listings when they are nearing their expiration date.
++ New cron controller that execute scheduled tasks within Mosets Tree's context. Hook name: onMTreeExecuteCron
+# Fix non-working config for keyword search toggle.
+# Fix bug affecting "Search By" when values are numeric.
+! "Search By" values are now sorted naturally instead of frequency.
++ Listing Owners page now supports category.
++ mod_mt_owners now links to 'Read more...' page.
++ JSON output support.
+! Don't show Reviews data in Listing Owners page when Reviews are disabled.
++ E-mails to admin for pending reviews now contains URL to the listing.
++ Featured core field can now be made editable in front-end.
+# Fix missing title in Listing Owners page.
+# Fix bug affecting newly copied category having the same alias as original category.
+
+version 3.8.6 - 8 June 2016 ------------------------------------------------------------------------
+# Fix non-working listing parameters.
+# Undo the changes to Text Editor fieldtype to fix issue with non-TinyMCE editor.
+# Fix typo that refers to minimum size in Image field type. It should refer maximum size.
+# Fixed RSS link not using correct Itemid.
+
+version 3.8.5 - 31 May 2016 ------------------------------------------------------------------------
++ Supports RSS feed for owners' favourite listings.
+# Fix bug preventing template installation.
+# Fix listalpha pages not using fe_num_of_alpha config.
+# Fix pagination bug when paginating Top Listings pages created through Joomla's Menu.
+# Fix missing COM_MTREE_CATEGORY_URL language key.
+# Fix RSS feed PHP Notices when using custom fields.
+# Fix bug affecting simple search ordering.
+# Fix bug where a custom created date can not be saved when creating new listing.
++ Add additional module positions to allow publishing module to a specific listing using position name as follows: listing-footer-id#, listing2-footer-id# and listing3-footer-id#, where # is the listing ID.
+# Fix error when searching with random sorting.
+! Undo the changes to WYSIWYG editor that retains value when changing category.! Undo the changes to WYSIWYG editor that retains value when changing category.
+
+version 3.8.4 - 18 April 2016 ------------------------------------------------------------------------
++ Supports Page Heading when defined and enabled in Home's menu item.
+# Text based fields does not trim text based on maxDetailsChars parameter.
+! Coredesc's ellipsis is now overridable.
+# Fixed publish_up not following timezone.
+# Core modified field not outputting datetime with local timezone.
+# mod_mt_stats now links to Listing Owners page
+# Fix mismatch in owners count.
+# Fix unintended behaviour where entered data are encoded during onChange event.
+
+version 3.8.3 - 11 April 2016 ------------------------------------------------------------------------
+# Fix pagination issue with Top Listings when limit is different from fe_num_of_all config.
+# Fixed listalpha not being ordered.
+# Fixed missing reCaptcha.
+# Fixed bug where fields values are not retained when changing category.
++ Ability to sort by more core fields in All Listings, Advanced Search and Filter Search results page.
+# Fix bug affecting changing of owner when editing listings in back-end.
++ Supports individual listing reviews RSS feed.
+
+version 3.8.2 - 15 March 2016 ------------------------------------------------------------------------
+# Fix collation error in listalpha under Joomla 3.5.
++ Attachments now return noindex and nofollow header. Configurable through hidden config.
+! Core description field now uses maxlength attribute when max characters are configured.
+
+version 3.8.1 - 8 March 2016 ------------------------------------------------------------------------
+# Fix a fatal error when running under PHP 5.4.
+
+version 3.8.0 - 7 March 2016 ------------------------------------------------------------------------
++ PHP 7 compatibility.
++ Joomla 3.5 compatibility.
++ Keyword search in Filters.
+# Include Itemid and use SEF URL when sending URLs in approved listing e-mail.
+# Fixed PHP Notices in adjacentListing::getListing and mtAppendPathWay method.
+# Fixed root's pagination.
++ Taggable values now has unique class name.
++ An indicator is shown in "Notes' tab when there are listing notes while editing listing in back-end.
+# mod_mt_search: Use module language strings instead of component's in search completion.
+# Fixed Search completion's thumbnail in Firefox.
+# Fixed non-default template setting not being used in Index page.
++ Year core field now accepts elements.
+# mod_mt_listing: "Only Sub-cats listing" setting not limiting to active category.
+# Fixed Index page where it does not respect the new "Show 'Add Listing' link" config.
++ Add secondary sorting in All Listings page.
++ Add new audio player field type.
+! Now uses Google Maps 3.x release version.
+# Fix PHP Warning on mod_mt_alphaindex.
+! Alpha List in Index is not mobile-responsive.
+! User's profile page now shows owner name instead of username.
++ mod_mt_owners: New module showing listing owners.
++ SEF URL for attachments.
+# mod_mt_listings: Prefix & Suffix display text now shows in module.
++ New Joomla Form Field: mtfield.
++ New event: onAfterCreateListing
++ New hidden config to redirect user to a custom URL when submitting a new listing for approval.
+# Images are now saved according to the initial upload order.
+# Rebuilding tree now retains categories custom ordering.
+
+version 3.7.1 - 21 December 2015 ------------------------------------------------------------------------
+# mod_mt_menu: Random, Listing Owners and Advanced Search menu item not highlighted when active.
+# mod_mt_search: Missing search completion results thumbnails.
++ Make mselectmultiple and multipledates fields use placeholder.
++ Additional support for top level category language overrides.
+# Search completion not working when 2 or more mod_mt_search modules are published with the same parent category.
+# Fixed missing mselectmultiple fieldtype directory.
+# Fixed permission issue when loading fields through JSON request.
+# Fixed missing module class suffix support in Search module.
+
+version 3.7.0 - 23 November 2015 ------------------------------------------------------------------------
++ SEO improvement to allow sprintf to searchby and sub-category's title and header.
+# Category custom field not showing primary category by repeating secondary category.
+# Fix Description field's parse URL parameter to prevent it from parsing IMG element src attribute.
+! Adds nofollow attribute links created from linkcreator.
++ Adds support for detecting https in parsing description field's URL.
+! Clicking on listing summary reviews goes directly to listing details reviews section.
+! Only listing with review has linkable reviews count.
++ Listing ID field is now searchable.
++ mod_mt_listings now can have up to 3 filters.
++ RSS now outputs raw custom fields data as part of description.
++ Add Telephone, Multiple Dates & Listings fieldtype.
++ Super Users can now manage (edit & delete) published listings in front-end.
+# Fix the missing 'remove' icon in listing details view.
++ New permission type called 'Manager'. Manager allows you to assign user groups to manage listings in front-end. This is overridable in top level categories.
++ Adds a menu item type for "All Listings".
++ Adds "Alternative Layout" option to all modules.
+# Fix bug where a listing can not be saved when there is another required field for different edit access level.
++ Added links to view listing page from back-end.
+^ mod_mt_search: Drop-down categories now only show top level categories for the current user who is authorized to access.
+^ Advanced Search and Edit Listing's categories option now only show top level categories for the current user who is authorized to access.
++ Adds a new config to control when to show "Add your listing here" link.
++ Adds a new config to limit the number of listings a user can have.
++ Add Year & Date field as sorting options.
++ mod_mt_search: Search completion for matching listings and categories name.
++ Dedicated page showing all listing owners.
++ New top listings type: Random Listings
++ Adds 2 new core fields: firstname, lastname
++ Ability to show additional core fields in back-end's listings column.
+# MT Importer: Fix inability to recognize existing selectmultiple custom fields when importing CSV data.
+# Fix styling in back-end categories search results.
+# Category field not showing the correct category for primary category in summary view.
++ Ability to navigate next or previous listing in listing details view.
+! Addresses now displays according to ordering.
++ Listings' pending approval e-mails to admin now contains direct link to review listings in back-end.
+^ Searching with empty keyword in mod_mt_search now brings you to All Listings page.
+^ Minimum search characters' configuration is now visible.
+# Remove link in listing summary image when listing is pending for approval.
++ Approval e-mails for new & updated listing now contain links to the listing.
+# Fix recommend e-mail where user's name is stripped of space.
++ New option to sort listing based on one column only.
+^ Always auto focus Name field when adding or editing a listing.
++ Select Multiple fields now has the option to use Single Select List or Multiple Select List for their search type.
+# Fix pagination issue when searching through Advanced search menu item.
+
+version 3.6.6 - 9 September 2015 ------------------------------------------------------------------------
+# Fix empty alias when creating listing from back-end.
+# mosets_kinabalu: Fix footer positioning.
+# Update install SQL file to fix assets lft & rgt value that affects admin login when Mosets Tree is uninstalled.
+# Fixed missing publishing data when saving in back-end.
+# Add Vimeo fieldtype.
+# Fix DateTime error when adding new listing in back-end under Joomla 3.4.4.
+# Fix PHP 5.3 incompatibility by removing the use of short array syntax.
+# Fix 'Size' setting in custom fields not having any effects in actual fields.
+
+version 3.6.5 - 1 September 2015 ------------------------------------------------------------------------
+# Cookies are not set when viewing a listing page.
+! Rename the term 'Hits' to 'Unique Pageviews' to better reflect the stored data.
+! Rename the term 'Visited' to 'Website Clicks'.
+# Correct the config name and adds explanation to 'hit_lag'.
+! Import Images tool now downloads multiple images (3) asynchronously.
+# Removing listings does not remove listing association.
++ MT Importer: Supports importing listing association using 'link_id1' column.
+# Fix problem in changing category in Edit Listing page using iPad.
+! Use scheme-less relative URI in loading Youtube video.
+# 3.6.0 upgrade fails due to duplicate column name.
++ Add parameter to disable thousand separator in number based field type.
+! Don't use main index template page by default when creating new category in back-end UI.
+# Surface limit_max_chars config for simple search.
++ mod_mt_search: Advanced Search link now uses parent_cat_id.
+! Rename 'Search By' to 'Browse By' in language strings.
++ mod_mt_menu: Add 'Browse By Tag'.
++ mod_mt_menu: Add 'Advanced Search'.
++ Add a description(COM_MTREE_SEARCH_BY_DESC) to page_searchBy.
+# Listing details style 3: Only center main image.
+
+version 3.6.4 - 12 August 2015 ------------------------------------------------------------------------
+! COM_MTREE_CLAIM_EMAIL, COM_MTREE_REPORT_EMAIL, COM_MTREE_REVIEW_TITLE
+# Votes, Visited & Views reset to 1 when values are 1,000 or more after saving a listing in back-end.
+! Claim e-mail sent to administrator now contains information about claimant: Name, Username & E-mail.
+# Back-end simple search now follows the ordering as configured in Configuration.
++ Add E-mail field to Report Listing form.
+# Unable to submit review report.
++ mod_mt_stats: Now show total number of owners. All total counts now links to respective pages.
+# Incorrect default format for Month & Year fieldtype.
+# Audio Player custom field does not auto start and loop.
+# Disable search toggle for Owner core field.
+# MT Importer: Add support for importing from SobiPro 1.1.
+
+version 3.6.3 - 14 July 2015 ------------------------------------------------------------------------
++ COM_MTREE_CONFIGNAME_USE_CAPTCHA_RECOMMEND
+# Fix ACL bug when Review listing permission is set to Public requires login.
+! Center listing details style 3 main image.
++ Mosets Tree Transifex project is now available at: https://www.transifex.com/projects/p/mosets-tree/
++ Captcha support for Recommend action.
+# Fixed PHP's Strict Standards notice in Savant2's Options plugin.
+! Refactor the way scripts and stylsheets are loaded to enable compression and SSL.
+! Use scheme-less relative URI in loading Google Maps javascript.
+! Google Maps in front-end now relies on Google Maps javascript library to detect on document ready instead of jQuery's.
+
+version 3.6.2 - 19 June 2015 ------------------------------------------------------------------------
+! COM_MTREE_CONFIGNAME_SEF_VIEWREVIEWS, COM_MTREE_CONFIGNAME_SEF_VIEWREVIEW
+# Update assets lft & rgt value to fix admin login issue when Mosets Tree is uninstalled.
+# Revert the access check behaviour pre-ACL to direct user to login page when an action is performed by non-logged in user.
+# Fix regression bug affecting attachment download.
+# Fix error when using profile picture due to non-matching library name used.
+# Fix inability to save predefined e-mail replies in Configuration.
+
+version 3.6.1 - 11 June 2015 ------------------------------------------------------------------------
++ COM_MTREE_CONFIGNAME_SHOW_SHARE_WITH_LINKEDIN
+! Make Contact Owner, Recommend and Report Listing publicly accessible.
+# Adds missing prevent_rate_own_listing and prevent_review_own_listing config.
+# Fix inconsistent ACL check in page_writeReview.tpl.php.
+# Fix back-end orderup and orderdown icon's alignment in Firefox.
++ Edit view level support for accessing fields when adding/modifying listings.
+- Removes custom legacy 'Access Level' support in Web link field type.
+# Fix missing COM_MTREE_FROM and COM_MTREE_TO language key in back-end.
++ Top Listings module (mod_mt_listings) now supports specifying multiple category IDs (separated by commas).
++ Adds support LinkedIn social sharing.
++ Update Profile Picture package to 2.0.0.
+
+version 3.6.0 - 27 May 2015 ------------------------------------------------------------------------
++ COM_MTREE_PERMISSION_LISTING_CREATE_TITLE, COM_MTREE_PERMISSION_LISTING_CREATE_DESC, COM_MTREE_PERMISSION_CATEGORY_CREATE_TITLE, COM_MTREE_PERMISSION_CATEGORY_CREATE_DESC, COM_MTREE_PERMISSION_LISTING_CLAIM_TITLE, COM_MTREE_PERMISSION_LISTING_CLAIM_DESC, COM_MTREE_YOU_ARE_NOT_AUTHORIZED_TO_ACCESS_THIS_LISTING, COM_MTREE_PAGE_TITLE_ADD_LISTING_TO, COM_MTREE_CONFIGNAME_PREVENT_REVIEW_OWN_LISTING, COM_MTREE_CONFIGNAME_PREVENT_RATING_OWN_LISTING, COM_MTREE_MOBILE, COM_MTREE_CONTACTPERSON, COM_MTREE_YEAR
+- COM_MTREE_CONFIGNAME_USER_ADDLISTING, COM_MTREE_CONFIGNAME_USER_ADDCATEGORY, COM_MTREE_CONFIGNAME_USER_REPORT_REVIEW, COM_MTREE_CONFIGNAME_USER_CONTACT, COM_MTREE_CONFIGNAME_USER_RATING, COM_MTREE_CONFIGNAME_USER_REVIEW, COM_MTREE_CONFIGNAME_USER_REPORT, COM_MTREE_CONFIGNAME_USER_RECOMMEND, COM_MTREE_PLEASE_LOGIN_BEFORE_REVIEW, COM_MTREE_PLEASE_LOGIN_BEFORE_RECOMMEND, COM_MTREE_PLEASE_LOGIN_BEFORE_CONTACT, COM_MTREE_PLEASE_LOGIN_BEFORE_RATE, COM_MTREE_PLEASE_LOGIN_BEFORE_CLAIM, COM_MTREE_PLEASE_LOGIN_TO_VIEW_MORE_INFORMATION_ABOUT_THIS_LISTING
++ Joomla ACL support.
++ mod_mt_menu: Adds 'Automatic' setting to Add Listing and Add Category link.
+! Listing details access control is now a config based on Joomla's Access Levels.
+# Fix back-end orderup and orderdown icon's alignment.
+# Bring back tooltip in Configuration items.
++ Adds new configuration to control the view access level on directory and top level categories.
++ Add Twitter Card support.
++ Add Pinterest On Hover Pin.
++ Add Facebook Like.
++ Adds social sharing buttons: E-mail, Facebook, Twitter, Google Plus & Pinterest.
++ Refactor routines that output custom fields in sub_listingDetails template file in to a separate template file at sub_listingDetailsFields.tpl.php.
++ Price, Hits, Visited, Votes field and Number field type now supports number format (decimals, decimal point, thousand separator) and option of 4 type of search format: Exact, Contains, From X To Y and Exactly/More Than/Less Than X.
++ Rating field field now supports additional search format and a new option to output as value.
++ Add dropdown search field type to Tags field.
++ Category fieldtype now shows secondary categories with option to show category as breadcrumbs.
++ Adds 4 new core fields: date, year, mobile & contactperson.
+
+version 3.5.13 - 30 April 2015 ------------------------------------------------------------------------
+# Listings in Most Favoured and Most Review list shows category from cat_id=1.
+# Listing summary in Home view shows category.
+# Date custom field 'required' state is not present after changing category in Add Listing form.
+# Prefix & Suffix text in Add Listing form now shows in independent lines.
+# Fix 'Strict Standards' PHP warning in mod_mt_stats module.
+# Rename schema attribute 'publishDate' to 'datePublished'.
+# Captcha field type now works with reCAPTCHA version 2.0 that is supported by Joomla 3.4.
+# Fix 404 issue when using custom sef_reviews_page alias.
+# Improve structured data markup.
+# Update and refactor sup.* CSS.
+# Fix "Undefined property" PHP Notice in mod_mt_listings module's back-end.
+# Fix incorrect path used in mod_mt_search module's action.
+# Fix missing thumbnail in listing summary when first ordered image are removed.
+# Fix SEF URL issue when viewing through link created using Menu Manager.
+# Fix division by zero warning when type_of_listings_in_index_count is 0.
+# Filter and mod_mt_filter forms are now responsive.
+
+version 3.5.12 - 10 December 2014 ------------------------------------------------------------------------
++ Adds limitbox for back-end search and advanced search results.
+# When Contact Owner is available to Registered Users only, hide the form in details page when viewed by non-logged in user.
+# Returns 404 when visiting a listing with no website.
++ Adds 'contains' filter condition to Top Listings 3.0 module.
+# Unset view query parameter in router's build function.
+# Fix 'false' output from Associated Listing custom field when changing category while editing listing.
+# Fix Vanity URL 'Go' button to prevent it from submitting form.
+# Fields are not updated when changing category due to PHP Notices.
+
+version 3.5.11 - 24 September 2014 ------------------------------------------------------------------------
+# Fix 'Go' bug in corewebsite and mweblink fieldtype when opening websites with non-latin characters.
+! Use space instead of non-breaking space in checkbox field type.
+# plg_search_mtree: Fixed Itemid detection in MT search plugin URLs.
+# Fix no ordering bug when 'sort' parameter is passed to listlisting URLs.
+# Server-side required fields check now skip hidden fields.
+# Fixed unreadable attachment in front-end due to usage of deprecated API.
+# Fix bug where searching between 2 dates does not work.
+# Fix default File custom field where attachments are not saved.
+# Number field type now search based on float instead of integer to support decimal numbers.
+
+version 3.5.10 - 14 July 2014 ------------------------------------------------------------------------
+# Fix mod_mt_browse module's PHP warning on calling non-static methods.
+# Associated Listing's Input HTML now is sorted by Name.
+# Copying listings now copies its listing association.
+# Search By results now displays listings regardless of whether it is assigned to a category as primary or secondary category.
+# Fix offset bug in created/publish_up/publish_down datetime when saving listing.
+^ No longer returns 404 when viewing a listing reviews page when there are no reviews.
+# Category configuration override now saves _order2 configs.
++ Adds fieldtype class to fields row in summary and details view.
+# Fix minor bug preventing files from being downloaded by non-logged in users.
++ Youtube field type: Allows additional Youtube parameter for customization.
++ Improved javascript regex for validating URLs in corewebsite and weblink field type.
+
+version 3.5.9 - 19 May 2014 ------------------------------------------------------------------------
+# Fixed locale bug in date based field type.
+# Fixed bug where spaces are stripped in report message.
+# FIxed missing rev_id and link_id in reply review form.
+# Google Maps now works in SSL/https.
+# mod_mt_listings: Fixed hidden thumbnails when viewed in IE8.
++ Enable lightbox in print view.
+# Fixed bug affecting Fast Add submission.
+# Fixed bug where category image and description are not shown when category is set to use index template page.
+# Fields' prefixes and suffixes now takes raw input, including HTML elements.
+
+version 3.5.8 - 25 March 2014 ------------------------------------------------------------------------
+# Fixed a regression affecting Move/Copy categories task.
+# Fixed bug where %H:%M:%S values are not saved in listing core date fields.
+# Fixed bug preventing Spidering URLs with non-string characters.
+# Adds output separator parameter to Checkbox field.
++ Shows error message when submitted listings does not contain all required fields.
+# MT Importer: Fixed error when importing properties without assigned agent.
+# Fixed bug where having a required file based custom field in front-end prevents listing from being saved during edit.
++ Adds parameter to select search field type in Tags field. Defaults to Text.
++ List Listings pages now displays listings regardless of whether it is assigned to a category as primary or secondary category.
++ Adds link_created index to #__mt_links
+
+version 3.5.7 - 12 March 2014 ------------------------------------------------------------------------
++ Modularize Report and Reply review templates.
+# Fixed SQL error when no custom fields are assigned to directory or category.
+# Fixed Profile Picture plugin issue on accessing files.
++ Generates sh404sef URL in back-end when sh404sef is enabled.
+# Fixed missing language string in profile picture plugin.
+# Fixed coredesc and texteditor fieldtype when loading non-TinyMCE editor.
+# Update sub_listingDetailsStyle# template file to include metadata in listing container.
++ page_advSearch.tpl.php now insert fieldtype and field ID to field controls.
+# Fixed Add Listing validation.
+# mosets_kinabalu: Fixed inconsistent A target in header bar.
+# Add additional &tmpl=component query to categories.list and fields.list ajax call.
+# Fixed inconsistent form names. Use mtForm now, in place of adminForm in Edit Listing.
+
+version 3.5.6 - 4 February 2014 ------------------------------------------------------------------------
++ COM_MTREE_THIS_FEATURE_IS_NOT_AVAILABLE_IN_DEMO_MODE
+# Fixed mod_mt_search bug when limiting to a category.
+# Listing Details style 2 - 8 now uses #field_x ID in custom fields output.
+# Fixed pagination bug in search-by URLs links when keyword contains space.
++ mod_mt_alphaindex: New parameter to limit alpha index to a category.
+# Fix bug in listalpha's 0-9 SEF URLs.
+! Force load mootools using JHtml::_('behavior.framework') when captcha is enabled.
++ Add description to mod_mt_filter fields option.
+# Add additional validation to make sure required fields are filled in before accepting front-end submission.
+# Add Demo Mode.
+
+version 3.5.5 - 20 December 2013 ------------------------------------------------------------------------
+# Brought back checkbox to apply custom template to all sub categories.
+# Fixed error when submitting listings as a non-logged in user.
+# Checkbox and Tags fields now have the options to do a 'Match All' or 'Match Any' search.
+# Hide Delete link in front-end when user_allowdelete is set to No.
+# Fix incorrect label in Image field type's size parameter.
++ Update coreprice field with a new parameter to hide the field when price is 0.
+
+version 3.5.4 - 19 November 2013 ------------------------------------------------------------------------
+! COM_MTREE_USE_MAIN_INDEX_TEMPLATE_PAGE
++ MOD_MT_LISTINGS_VALUE_RANDOM_LISTING2
+# Misc. fixes on Google Maps.
+# Fixed back-end search stripping spaces.
+# mod_mt_categories: Fixed syntax error.
++ Adds 'Search Category' parameter to 'Category' field type.
++ Adds 'btn btn-small' class to listing's summary action links.
++ Loads Bootstrap Framework by default.
+# Search results page now loads custom template.
+! Price core field is now stored as DOUBLE(12,2).
+# Fixed missing 'Use Index Template page' option in category.
+! Captcha is now disabled by default.
+! Delete link is only visible when listing is published and approved.
++ mod_mt_listings: Added a new random listing type that shuffles listings the conventional way.
+
+version 3.5.3 - 28 October 2013 ------------------------------------------------------------------------
++ MOD_MT_TAGCLOUD_FIELD_SORT_BY_LABEL, MOD_MT_TAGCLOUD_FIELD_SORT_BY_DESC, MOD_MT_TAGCLOUD_FIELD_SORT_BY_VALUE_ALPHA, MOD_MT_TAGCLOUD_FIELD_SORT_BY_VALUE_FREQ
+# Fixed reordering in front-end.
+# Removed PHP short tag in sub_listingDetails.tpl.php
+# Prevents installation on unsupported Joomla version.
++ Option to define the ordering of tags (alpha|freq).
++ mod_mt_tagcloud: Option to show all tags.
++ mod_mt_tagcloud: Option to configure the ordering of tags (alpha|freq). Defaults to alpha.
++ Now compatible with PHP 5.4.
++ Adds limit boxes to back-end screens.
+
+version 3.5.2 - 19 October 2013 ------------------------------------------------------------------------
+! Fixed bug preventing category from being saved in back-end Edit Listing screen.
+# Search using equal operator in Select List custom fields.
+# Fixed redirected URL in Weblink's Go buttons.
+# Fixed missing closing DIV tag in sub_subCats.tpl.php template.
++ Loads Bootstrap CSS by default.
+# Hide Category Configuration in back-end's sub categories edit form.
+# Moved mod_mt_filter style to a separate CSS file in /media
+# Improve filter module output.
+
+version 3.5.1 - 11 October 2013 ------------------------------------------------------------------------
+# Removed PHP short tag in sub_listingSummary.tpl.php
+! Fixed bug preventing main category from being saved in back-end Edit Category screen.
+! Canonical link generation in category and listing view have been removed. This is not generated by Joomla SEF plugin.
+# Fixed error in Copy Template.
++ templates/[template name]/print.css
++ Adds print.css support to templates to improve print styling.
++ searchby pages now loads custom template as defined by category.
+# Implement missing mttemplate form field.
+# Implement Bootstrap grid system to kinabalu subListingDetails Style 2 - 7.
+! Image thumbnails now show standard small image. No longer uses grid system.
+# Improved print output.
+
+version 3.5.0 - 27 September 2013 ------------------------------------------------------------------------
++ Compatible with Joomla 3.1 and 3.2
++ Uses Bootstrap CSS Framework
++ Layout is now responsive.
++ COM_MTREE_CATEGORY_CONFIGURATION, COM_MTREE_PARAMETERS, COM_MTREE_REVIEW_TEXT, COM_MTREE_CUSTOM_FIELD_SETTINGS, COM_MTREE_EDIT_FIELD_CATEGORIES_ASSIGNMENT, COM_MTREE_EDIT_FIELD_CATEGORIES_ASSIGNMENT_INSTRUCTIONS, COM_MTREE_SEARCH_CATEGORIES
+! COM_MTREE_PUBLISHING -> COM_MTREE_LISTING_PUBLISHING, COM_MTREE_NOTES -> COM_MTREE_LISTING_NOTES
+- COM_MTREE_DELETE_LISTINGS_MSG, COM_MTREE_MOVE_LISTINGS_MSG, COM_MTREE_COPY_LISTINGS_MSG, COM_MTREE_APPROVE_AND_PUBLISH_LISTING_MSG
++ Associated listing field type no longer have search available as an option.
+
+version 3.0.11 - 2 September 2013 ------------------------------------------------------------------------
+- COM_MTREE_PLEASE_ENTER_A_VALID_USERNAME
++ en-GB.fld_vanityurl.ini
+# Localise Month and Year fiedtype during Input and Output.
+# Fixed missing closing > in mtext field type input HTML.
+# Fixed language typo: COM_MTREE_IMPORT_IMAGES_DONE
+# Fixed issue with importing images from Weblink fields when wrapper type is not 'http'. Also optmized the import operation.
+# Fixed pagination issue with searchby pages.
+# Fixed js bug that allows saving category without name in back-end.
+# Fixed Text Editor field type bug when editor is set to none.
++ Text Editor field type now supports content plugins.
+# Fixed bug where listings are shown, when 'Show Listings' is set to No and category is set to use index template page.
+# Fixed bug in 'Number of listings under top level cats.' template parameter when sets to 'ALL'.
+# Fixed pagination issue when a top level category uses list limit that is different from global's.
+# Fixed publish_up offset bug when saving a link in back-end.
+
+version 3.0.10 - 8 July 2013 ------------------------------------------------------------------------
++ en-GB.fld_corefeatured.ini, en-GB.fld_year.ini
++ FLD_COREFEATURED_FEATURED_ONLY, FLD_COREFEATURED_NON_FEATURED_ONLY, FLD_YEAR_EXACTLY, FLD_YEAR_AFTER, FLD_YEAR_BEFORE
+# Fixed partial template fallback from m2 to kinabalu.
+# Fixed incorrect fields layout issue with mod_mt_listings.
+# Fixed issue with HTML elements being stripped when approving modification in back-end.
+# No longer show profile picture's filler image when the Profile Picture plugin is disabled.
+# Fixed validation bug when submitting reviews as public.
+# Fixed 404 errors caused by incorrect path in jquery.fancybox-1.3.4.css for loading image assets.
+# Fixed 'Array' string appearing on Visit action link.
+# Fixed bug in Checkbox field type where caption appears even when it is configured to show in Edit Screen only.
+# Corrects Listing ID in e-mail sent to admin during modification approval.
+
+version 3.0.9 - 20 May 2013 ------------------------------------------------------------------------
+! COM_MTREE_CONFIGNAME_FE_NUM_OF_ALL
+- COM_MTREE_CONFIGNAME_FE_NUM_OF_SEARCHRESULTS
+# Removed fe_num_of_searchresults config to use fe_num_of_all config for consistency.
+# Fixed non-working checks on required Captcha field.
+# Make corepostcode fieldtype taggable.
+# Fixed issue with filtering hidden fields.
+! Renamed field type language files: en-GB.fld_mdate.ini, en-GB.fld_mfile.ini, en-GB.fld_memail.ini, en-GB.fld_mnumber.ini, en-GB.fld_mweblink.ini to: en-GB.fld_date.ini, en-GB.fld_file.ini, en-GB.fld_email.ini, en-GB.fld_number.ini, en-GB.fld_weblink.ini.
+# Fixed bug in loading field type language file when language keys reside in parent fieldtype class.
+# Fixed bug where filter search criteria are not removed after a 'Reset'.
+
+version 3.0.8 - 6 May 2013 ------------------------------------------------------------------------
+- COM_MTREE_PLEASE_ENTER_A_VALID_NUMBER, COM_MTREE_EXACTLY_ON, COM_MTREE_BETWEEN, COM_MTREE_EMAIL_PLEASE_ENTER_A_VALID_EMAIL, COM_MTREE_PLEASE_ENTER_A_VALID_URL, COM_MTREE_NUMBER_OF_VISITS, COM_MTREE_NUMBER_OF_VIEWS, COM_MTREE_CONTAINS_FILE
++ FLD_FILE_NUMBER_OF_VIEWS
+# Added the missing 'home' view for the new Home item type.
++ Adds a new Date format: 'June 1, 2007'
+# Fixed router that deals with cached segments data producing incorrect URL when used without Itemid.
+! Change the default minimum width and height to 300px.
+# Fixed Reply Review title.
++ Adds 'auto' option to mod_mt_listing module's image size.
+# Removed PHP short tag in page_advSearch.tpl.php.
++ Adds fullscreen capability to Youtube fieldtype.
+# 'searchword' query string in Search SEF URL now appears searchword field instead of as part of SEF URL.
+# Fixed validation bug in IE browser.
+# Youtube field type now uses IFRAME to embed video.
+! Number fieldtype is now taggable.
++ en-GB.fld_mnumber.ini, en-GB.fld_mdate.ini, en-GB.fld_memail.ini, en-GB.fld_mweblink.ini
+# Presents login form when accessing My Page while not logged in.
+# Fixed Mosets Tree's back-end title to show as text string.
+# Make Text field type's size editable.
+
+version 3.0.7 - 9 April 2013 ------------------------------------------------------------------------
++ COM_MTREE_MENU_TASK_NAME_HOME, COM_MTREE_MENU_TASK_MSG_HOME, COM_MTREE_ALL_LISTINGS_SORT_OPTION_-LINK_FEATURED, COM_MTREE_CONFIGNOTE_NOTE_ADVANCED_SEARCH, COM_MTREE_CONFIGNOTE_NOTE_SIMPLE_SEARCH, COM_MTREE_CONFIGNAME_ADVANCED_SEARCH_SORT_BY
+- COM_MTREE_CONFIGNAME_ALLOW_OWNER_RATE_OWN_LISTING, COM_MTREE_CONFIGNAME_ALLOW_OWNER_REVIEW_OWN_LISTING
+# Fixed ambiguous 'ordering' column when using this as listing' ordering.
+# Fixed pagination bug in all listing page.
+! Rating field now outputs star images.
+! mod_mt_listings: link_rating is hardcoded to not show caption.
+# Fixed bug in sub_images.tpl.php when no mootools is loaded. Use jQuery instead.
++ Added option to use rel=nofollow in corewebsite field.
+! Remove allow_owner_review_own_listing config as it duplicate user_review (value 2) config.
+! Remove allow_owner_rate_own_listing config as it duplicate user_rate (value 2) config.
++ Added a new menu item type for 'Home'.
++ Added additional listing sorting option for 'Featured First'.
++ Added new config to set the default sorting of Advanced Search Results page.
+# Fixed bug in router when viewing an owner with username that contains dash.
+# Make 'Notify' tab visible. It was hidden on new MT 3 installation.
+# Fixed bug in add listing redirects where cat_id is not present.
+
+version 3.0.6 - 26 March 2013 ------------------------------------------------------------------------
+! Category canonical URL now supports pagination instead of pointing back to page 1 of a category.
+# Fixed an error when submitting reviews.
+# Fixed bug where secondary categories are not saved when listing modifications are sent for approval.
++ New mod_mt_listings module that will replace mod_mt_listing.
+# Fixed jQuery conflict when using mod_mt_filter.
++ Now sets 'jQuery' variable to 'true' in JApplication.
++ Added a new 'Module Assignment' parameter to modules to allow selective inclusion, exclusion, complete inclusion and complete exclusion. These allows a predictable behaviour when new categories are added in the future.
+# Fixed getJSOnInit bug in texteditor fieldtype that causes listing to not able to save.
++ Adds a new parameter convertSpecialCharsInSummary to coredesc fieldtype make the use of htmlspecialchars function configurable in summary view.
+# Fixed 3.0.0 upgrade bug that causes attachment folder to not update correctly, causing users not able to save image/file attachments.
+# Fixed bug affecting uploading attachments and images for modification approval.
+# Fixed bug not searching correct category through mod_mt_search module when the existing page is a Mosets Tree Category menu item.
+# Fixed simple search bug involving space and colon.
+# Fixed advanced search form not correctly searching a selected category.
+# Fixed bug affecting router.php where 2 or more categories share the same alias.
+# Core meta keys and meta description fields can be set as a required field now.
+
+version 3.0.5 - 28 February 2013 ------------------------------------------------------------------------
+# Fixed 'Locate Listings in Map' feature where markers are not showing.
++ COM_MTREE_YOU_CANNOT_ENTER_MORE_THAN_ONE_EMAIL_ADDRESS, COM_MTREE_CONFIGNAME_SEF_ASSOCIATED_LISTING_PAGE, COM_MTREE_CONFIGDESC_FIRST_SEARCH_ORDER1
+- COM_MTREE_PATHWAY_ADVSEARCH2
+# Fixed routing issue when a identical alias exists inside a non-root category that has a defined menu item.
+# Fixed error in termsandconditions field type when outputing its value in front-end.
+# Fixed search bug in termsandconditions field type.
+# Fixed listing details template file to prevent it from displaying fields that does not have values.
+# Fixed a bug in back-end where user is not redirected to the last visited page number in category.
+# Fixed viewreviews SEF URLs.
+# Fixed associated listing pagination SEF URLs.
+# Removed detection method for imagemagick and netpbm. Both image libraries are not longer supported.
+# Fixed in advanced search where a custom field is not searched if it's not filter searchable.
+# Fixed SEF URL where sub-categories are not taking parent category's Itemid.
+# mod_mt_categories_expanding: Fixed 'print_cat_recursive' method already exists error.
+# Fixed bug that shows custom field in summary view even when it has no value.
+# Fixed missing image when a listing's modification is sent for approval.
+# Fixed missing custom fields data when a listing's modification is sent for approval.
+
+version 3.0.4 - 5 February 2013 ------------------------------------------------------------------------
+! Set core telephone field's 'Show link' option to 'No' by default.
+# Fixed Skype field type script's URL.
+! Updated sub_contactOwnerForm.tpl.php and sub_userProfile.tpl.php to use MText to allow language override based on top level category.
++ Show reviewer's profile photo beside reviews.
+# Fixed bug where 'fe_num_of_associated' is hidden in upgrade copy.
+# Fixed upgrade script that affects user upgrading from version before 3.0.
+# Fixed bug in coredesc field type where field is required whenever it's using Wysiwyg editor.
+# Fixed bug causing reviews to appear multiple time (viewusersreview_cache) when a listing is assigned to 2 or more categories.
+! Inline javascript for rating and light box is wrapped inside domready event to prevent it from executing before jQuery javascript is loaded.
+# Fixed bug where fields are not assigned to categories created through back-end fast add and front-end category submission. Now these categories will be mapped to fields that are mapped to Root category.
+# Fixed bug where images are not saved and assigned to the listing when listing modification is sent for approval.
+
+version 3.0.3 - January 2013 ------------------------------------------------------------------------
+# Fixed bug where multiple cat_id parameter presents in Advanced Search form.
+# Fixed bug where 'alpha_index_additional_chars' is hidden in new install.
+# Adds missing '#__mt_links_associations' in uninstall's DROP query.
+# Fixed PHP warning when retuning empty advanced search results in back-end.
+# Fixed fatal error in back-end's advanced search when routine attempts to load reviews count.
+# Removed debug echo in viewusersreview_cache routine.
+# Fixed back-end publish up date not saving.
+# Fixed hardcoded string in Filter dropdown and Print title.
+# Removed javascript comment in page_writeReview.tpl.php to resolve javascript issue when newlines are stripped in this template file.
+# Fixed empty #__fields_map table on new install.
+
+version 3.0.2 - January 2013 ------------------------------------------------------------------------
+# Removed explicitly added Itemid in custom fields.
+# Fixed untranslated Root text in mod_mt_dtree.
+# Fixed core website field's Spider, where it's not updating the correct element ID.
+# Fixed upgrade script that fails to ALTER TABLE to add use_placeholder and is_file column. Also added new fieldtypes that are missing in 3.0.0 upgrade.
+# Fixed 'Array' string appearing in Vist action link in listing details page.
+# Fixed bug affecting user's reviews and favourites appearing more than once on their user page.
+# Fixed bug affecting category description not showing parsed results from plugins.
++ COM_MTREE_CONFIGNAME_FE_NUM_OF_REVIEWS_IN_LISTING_PAGE
++ Surface 'fe_num_of_reviews_in_listing_page' in config to control the initial number of reviews shown in listing page.
+
+version 3.0.1 - January 2013 ------------------------------------------------------------------------
+# Fixed fatal error in calling finfo_file in PHP < 5.3.
+# mod_mt_menu: Fixed 'Show All Listings' toggle not working.
+! sub_listings.tpl.php now always shows pagenavigation footer as long as there is at least one listing.
+! Removes pageNav from page_subCatIndex.tpl.php. Page navigation links is now produced in sub_listings.tpl.php template file only.
+# Removes a stray slash in Add Listing template file.
+# Fixed fatal error in callback format used in call_user_func_array function.
+# Fixed back-end advanced search layout.
+# Fixed missing review count in back-end's advanced search results.
+# Fixed missing overridable configurations in top level categories when upgrade from prior version.
+! 3.0.1 upgrade script now reverts MT template to kinabalu if using M2.
+# Fixed missing validation in fields that uses textarea element or editor.
+# Fixed missing sef_listings SEF config.
+# Removed extra &Itemid= cruft in coredesc's field's 'Read more' link.
+
+version 3.0.0 - December 2012 ------------------------------------------------------------------------
+! js, img and attachments moved to /media/com_mtree
+! jQuery updated to 1.8
+! jQuery UI updated to 1.8.24
++ Added the ability to define relationship between top level categories and custom fields a.k.a. Ability to have custom fields that are assigned to specific top level categories.
++ Added support for Mosets Tree menu types.
+^ Field types are now file based instead of stored in database.
++ Added new slug type: Link ID & Alias Hybrid
++ mod_mt_menu: Added link for My Reviews
++ Added ability to specify alias for custom fields.
++ Added new page listing all tags attached to a custom field (page_searchByTags.tpl.php).
++ Added new page listing all taggable fields (page_searchBy.tpl.php).
++ Now logs new listings submissions and listing modifications.
++ Now uses HTML5 elements in E-mail, Weblink, Telephone and Tags custom field.
++ Schema.org is now used to markup Listing Ratings (AggregateRating), Review Ratings (Rating), Listings (Thing) and Reviews (Review).
++ Added ability to allow top category to over ride configurations.
++ Adds Open Graph Protocol (http://ogp.me/) support in listing pages.
+^ Speeds up SEF URL routing by reducing the number of SQL queries made.
++ Adds ability to custom order categories.
++ Map can be toggle on/off in individual listings.
+^ Complete reviews are now available on separate page at task=viewreviews.
++ New template files: page_reviews.tpl.php, page_review.tpl.php, sub_ownerProfile.tpl.php.
++ Permalink for individual review.
++ Categories and Listings associations.
+! Google Maps updated to version 3.6.
+! Replaced all _NOT_EXISTS error with proper 404 status error.
+! Updated language files to conform with Joomla 1.6 language standard recommendations.
++ Added support for field type's language file (xx-XX.fld_*.ini).
+! Package wide changes to language files.
+- Removed support for Google Maps and Map Quest
++ Adds "All Listings" page.
++ Refactored and complete missing pathways.
++ Adds ability to filter listings in "All Listings" pages.
++ Adds support for placeholder text in text-based input field.
++ Ability to toggle New, Popular and Featured badge.
+! Dropped support for netpbm, Imagemagick and GD1 Library.
++ A new extension plugin that handles fieldtype installation.
++ Description field now shows prefix and suffix text in details view.
+! All front-end ajax calls has been converted to use JSON data type response.
++ Contact form now uses JForm to generate its form. 
++ Adds onMTreeListingContactPrepareForm and onMTreeListingContactSubmit events.
++ Adds multiple attribute to Image upload to allow more than one file selection to upload more than one image at a time.
++ Adds inline validation to front and back-end add/edit form.
++ Adds config to specify minimum dimension for uploaded images.
++ mod_mt_search now retains searchword and uses placeholder text.
++ Adds new mod_mt_filter module.
++ Adds ability to show/hide module to selected top level categories and MT pages.
++ Fast Add is back.
++ Adds config to show/hide categories.
++ Now uses sprintf to print listcats and viewlink page title.
++ Core created and core modified field now can include time and accepts custom date time format.
++ Actions that require login now redirects user to login form.
++ Listalpha now supports non-latin characters.
++ Adds "All Categories" page.
++ Telephone number can be configured to be linkable.
++ Root's meta description and keywords can be defined through COM_MTREE_METADESC_ROOT and COM_MTREE_METAKEY_ROOT.
+! Updated Finder/Smart Search support for Joomla 2.5.
+# Category descriptions are now supported in page_index.tpl.php.
++ Configurable setting to viewowner's default page.
+# Changing category is now possible when front-end is offline.
++ Custom fields now supports default value.
+- Removed Digg fieldtype.
+# Onlinevideo fieldtype is converted to Youtube fieldtype.
++ Vanity URL fieldtype.
++ Merge Web Link and Enhanced Web Link field type in to a single field type - Web Link (mweblink).
++ Web links that uses internal redirects now keep track of click throughs.
++ Merge Text, Multi-line textbox and Enhanced Text field type in to a single field type - Text (mtext).
++ New field type: Text Editor (texteditor).
+! Field type's XML handling is done through JForm instead of MParameter.
+# Depreceate usage of JParameter in place of JForm and JRegistry.
++ Terms &mp; Conditions fieldtype.
++ Merge Checkbox with Image and Checkbox field type in to a single field type - Checkbox (mcheckbox).
++ Updated Video Player fieldtype to support only h264 video through HTML5 or Flash.
++ The number of visits are now shown beside a Weblink field.
++ File field type now has configurable maximum file size limit.
++ mod_mt_search now defaults to search listings only. Can be re-configured to search categories.
+# Uploading an unreadable image file now produce a descriptive error.
++ Adds BCC option to Contact e-mail.
++ New config to require upload of at least one image.
++ Adds a configurable limit on the number of secondary categories a user can assign their listing to.
++ Listing owners are now notified when review is added with no-approval required.
++ Add option to show Top Listings in index page.
+# mod_mt_listing: When set to show image, listings without images are shown with filler. 
++ Captcha fieldtype.
++ Rollback ability when a form is not validated after submission.
+! Disable scrollwheel in Google Maps by default.
++ Owner pages now support and show User Profile and Profile Picture.
++ Adds configurable support for Captcha in Review, Contact Owner, Report Listing, Report Review.
++ Adds rel=nofollow attribute to Print, Visit and Map action link.
++ Spy: Adds the ability to remove reviews and ratings of a listing.
++ Adds a mt-editlink-right module position in back-end Edit Link page.
++ Improvement on mass geocoding to support loading up to 1000 listings at a time.
++ Mass geocode now supports the latest version of Safari, Opera, Firefox and Chrome.
++ Banned word filter now applies to report and review.
++ Configurable option to show Contact Owner form in details page.
++ Configurable option to show User Profile in Listings Details page.
++ Adds sub_contactOwnerForm.tpl.php template file.
++ mod_mt_votedbest module now show rating as stars.
++ New configuration to disable jQuery in front-end.
++ Initial support top level category specific language strings.
++ mod_mt_listing: Adds support for dropdown layout.
++ mod_mt_listing: Adds support for A-Z ordered listings.
++ Adds support for showing alphabetically ordered (A-Z) listings in listlisting routine.
++ Added a new Tools section in back-end.
++ Added 'Rebuild Thumbnails' tool.
++ Added 'Import Images' tool.
++ mt_importer: Now automatically a Text-based custom field for data that is not assigned to any pre-existing core/non-core fields.

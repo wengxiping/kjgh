@@ -1,0 +1,42 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "CustomerId",
+				"type": "text",
+				"title": "Customer ID",
+				"tooltip": "Enter your Customer ID from SaferPay",
+				"default": ""
+			},
+			{
+				"name": "TerminalId",
+				"type": "text",
+				"title": "Terminal ID",
+				"tooltip": "Enter the Terminal ID provided to you by SaferPay",
+				"default": ""
+			},
+			{
+				"name": "username",
+				"type": "text",
+				"title": "SaferPay Username",
+				"tooltip": "Enter the username used to login into SaferPay",
+				"default": ""
+			},
+			{
+				"name": "password",
+				"type": "text",
+				"title": "SaferPay Password",
+				"tooltip": "Enter the password used to login into SaferPay",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			}
+		]
+	}
+]

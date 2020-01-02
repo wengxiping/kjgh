@@ -1,0 +1,56 @@
+.t3-footer {
+    background: #343648;
+    color: #a5a7af;
+    padding: 20px 0 !important;
+}
+.t3-copyright {
+    border-top: none !important;
+    font-size: 12px;
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+header#t3-header {
+    background-color: #205da7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+.t3-mainnav .navbar-nav li a, .t3-mainnav .navbar-nav li span {
+    color: #fff;
+}
+.t3-mainnav .navbar-nav li a .caret, .t3-mainnav .navbar-nav li span .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+    color: #555;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none;
+    box-shadow: none; 
+}
+.navbar .nav>li>a {
+    padding:6px 15px 10px; 
+    text-shadow: none;
+}
+.navbar .nav li.dropdown-toggle {
+	background-color: transparent;
+}
+
+element.style {
+}
+.navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    color: #f9676b;
+    background-color: transparent;
+}
+.navbar .nav li.dropdown>.dropdown-toggle .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.navbar .nav li.dropdown.open>.dropdown-toggle .caret, .navbar .nav li.dropdown.active>.dropdown-toggle .caret, .navbar .nav li.dropdown.open.active>.dropdown-toggle .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.hs-home-zj .t3-mainbody {
+	      background-image: url(..//images/bg-search.jpg);
+	
+}

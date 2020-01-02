@@ -1,0 +1,139 @@
+//** Listings
+
+@import "settings";
+
+//-----------------------------------------------------------------------------
+// Container for group of listings. For example in category pages or top
+// listings pages.
+//
+.mt-listings {
+
+  // The bar that shows how many listings out of total that is currently
+  // showing in the page. Also contain links to "This Category" and "All
+  // Category".
+  //
+  // @at-root directive causes the rule set below are emitted to the root so
+  // that pages other that mt-listings can use them.
+  @at-root {
+    .mt-listings-pages, .mt-pages-links {
+      background-color:#F2F2F2;
+      clear:both;
+      margin-bottom: $standard_vertical_spacing;
+      //margin-bottom: 40px;
+      overflow:hidden;
+      position:relative;
+      //text-align:right;
+      padding:6px $padding_left_listings_inner_box;
+
+      // Style for the strings that shows "Results 1 - 10 of 76"
+      .mt-x-listings {
+        color:#606060;
+        float:left;
+        //margin:2px 0 0;
+        margin:0;
+        padding:0;
+      }
+
+      // Shows the option for showing "This Category" or "All Listings"
+      .category-scope {
+        float:right;
+      }
+    }
+  }
+
+  // Filter box
+  .mt-filter {
+    position:relative;
+    margin: 0 0 $standard_vertical_spacing 0;
+    padding: 6px $padding_left_listings_inner_box;
+    background-color: #F2F2F2;
+    overflow:hidden;
+
+    .control-group {
+      margin-bottom: $standard_vertical_spacing;
+    }
+
+    .mt-filter-component {
+      .control-label {
+        padding:5px 10px;
+      }
+
+      .button-send, .button-reset {
+        float:left;
+        margin-right:.5em;
+        display: inline;
+      }
+
+    }
+
+    //#listings .filterinput ul, #mtForm .advanced-search ul, .modMtFilter .filterinput ul {
+    //.mt-filter-input ul, .modMtFilter .mt-filter-input ul {
+    .mt-filter-input ul {
+      list-style: none inside;
+      margin-left: 0;
+    }
+
+  }
+
+  // An empty container to give top spacing just before the start of listing
+  // summaries.
+  .mt-listings-spacing-top {
+    height: 20px;
+    display: block;
+    clear: both;
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Sort by
+//
+.mt-sort-by {
+  display:inline-block;
+  float:right;
+  margin-bottom: $standard_vertical_spacing;
+
+  label {
+    display:inline;
+  }
+  select {
+    width: auto;
+    margin-bottom: 1px;
+  }
+
+}
+
+//-----------------------------------------------------------------------------
+// Pagination
+//
+.mt-pagination {
+  display: block;
+  overflow: hidden;
+  padding: $padding_vertical_listings_inner_box $padding_horizontal_listings_inner_box;
+
+  &.pagination {
+    display: block;
+    background:none;
+    border-top:0;
+    margin:0;
+    padding:0;
+    //padding:0 $padding_left_listings_inner_box;
+  }
+
+  //.pages-links .pagination li {
+  .pagination li {
+    float:left;
+    background:none;
+    padding: 0;
+    min-width: 27px;
+    text-align: center;
+    a {
+      padding:0 $padding_left_listings_inner_box;
+      //border:1px solid red;
+    }
+  }
+
+  .counter {
+    margin: 0;
+  }
+}
+

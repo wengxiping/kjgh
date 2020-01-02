@@ -1,0 +1,25 @@
+{
+	"title": "COM_EASYSOCIAL_MENU_GROUP_ADVERTISEMENTS",
+	"link": "index.php?option=com_easysocial&view=ads",
+	"class": "fas fa-ad",
+	"access": "easysocial.access.ads",
+	"view": "ads",
+	"active": "layout",
+	"childs":
+	[
+		{
+			"title": "COM_EASYSOCIAL_MENU_ITEM_ADS_ADVERTISERS",
+			"url": {
+				"view": "ads",
+				"layout": "advertisers"
+			}
+		},
+		{
+			"title": "COM_EASYSOCIAL_MENU_ITEM_ADS_ADS",
+			"url": {
+				"view": "ads",
+				"layout": ""
+			}
+		}
+	]
+}

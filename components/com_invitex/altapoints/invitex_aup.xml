@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<altauserpoints type="plugin">
+    <rule>Give Points to users with AUP</rule>
+    <description>Give Points to Inviter and Invitee with AUP</description>
+    <component>com_invitex</component>
+    <plugin_function>invitex_aup</plugin_function>
+    <fixed_points>false</fixed_points>
+</altauserpoints>

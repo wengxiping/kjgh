@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="item1">
+        <field type="spacer" class="h2" name="rstbox-spacer-animation" label="COM_RSTBOX_TRIGGER"/>
+        <field name="position" type="list" 
+            default="bottom-right" 
+            label="COM_RSTBOX_ITEM_BOX_POSITION" 
+            description="COM_RSTBOX_ITEM_BOX_POSITION_DESC">
+                <option value="top-left">COM_RSTBOX_ITEM_BOX_POSITION_TOPLEFT</option>
+                <option value="top-center">COM_RSTBOX_ITEM_BOX_POSITION_TOPCENTER</option>
+                <option value="top-right">COM_RSTBOX_ITEM_BOX_POSITION_TOPRIGHT</option>
+                <option value="bottom-left">COM_RSTBOX_ITEM_BOX_POSITION_BOTTOMLEFT</option>
+                <option value="bottom-center">COM_RSTBOX_ITEM_BOX_POSITION_BOTTOMCENTER</option>
+                <option value="bottom-right">COM_RSTBOX_ITEM_BOX_POSITION_BOTTOMRIGHT</option>
+                <option value="center">COM_RSTBOX_ITEM_BOX_POSITION_CENTER</option>
+        </field>
+        <field name="triggermethod" type="list" 
+            label="COM_RSTBOX_ITEM_TRIGGER" 
+            description="COM_RSTBOX_ITEM_TRIGGER_DESC"
+            default="pageload">
+                <option value="pageheight">COM_RSTBOX_ITEM_TRIGGER_PAGEHEIGHT</option>
+                <option value="element">COM_RSTBOX_ITEM_TRIGGER_ELEMENT</option>
+                <option value="pageready">COM_RSTBOX_ITEM_TRIGGER_PAGEREADY</option>
+                <option value="pageload">COM_RSTBOX_ITEM_TRIGGER_PAGELOAD</option>
+                <option value="userleave">COM_RSTBOX_ITEM_TRIGGER_USERLEAVE</option>
+                <option value="onclick">COM_RSTBOX_ITEM_TRIGGER_ONCLICK</option>
+                <option value="elementHover">COM_RSTBOX_ITEM_ELEMENT_HOVER</option>
+                <option value="ondemand">COM_RSTBOX_ITEM_TRIGGER_DEMAND</option>
+        </field>
+        <field name="triggerelement" type="text" 
+            showon="triggermethod:element,elementHover,onclick"
+            label="COM_RSTBOX_ITEM_TRIGGER_ELEMENT2" 
+            description="COM_RSTBOX_ITEM_TRIGGER_ELEMENT_DESC"
+            hint="#comments"
+        />
+        <field name="triggerpercentage" type="nrnumber" 
+            class="input-mini" 
+            showon="triggermethod:pageheight"
+            label="COM_RSTBOX_ITEM_TRIGGER_PERCENTAGE" 
+            default="80"
+            hint="80"
+            step="10"
+            max="100"
+            min="0"
+            filter="intval"
+            addon="%"
+            description="COM_RSTBOX_ITEM_TRIGGER_PERCENTAGE_DESC"
+            size="6">
+        </field>
+        <field name="triggerdelay" type="nrnumber" 
+            label="COM_RSTBOX_ITEM_TRIGGER_DELAY" 
+            description="COM_RSTBOX_ITEM_TRIGGER_DELAY_DESC"
+            default="0"
+            hint="0"
+            addon="ms"
+            step="100"
+            min="0"
+            filter="intval"
+            class="input-mini">
+        </field>
+        <field name="preventdefault" type="radio"
+            class="switcher btn-group btn-group-yesno"  
+            showon="triggermethod:onclick"
+            label="COM_RSTBOX_ITEM_TRIGGER_PREVENTDEFAULT" 
+            default="1"
+            description="COM_RSTBOX_ITEM_TRIGGER_PREVENTDEFAULT_DESC">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="exittimer" type="nrnumber" 
+            label="COM_RSTBOX_EXIT_TIMER" 
+            description="COM_RSTBOX_EXIT_TIMER_DESC"
+            default="1000"
+            hint="1000"
+            filter="intval"
+            addon="ms"
+            min="0"
+            step="100"
+            showon="triggermethod:userleave"
+            class="input-mini">
+        </field>
+        <field type="spacer" class="h2" name="rstbox-spacer-line-impressions" label="COM_RSTBOX_ASSIGN_IMPRESSIONS_LIMIT"/>
+        <field type="radio"
+            name="assign_impressions"
+            label="JENABLED" 
+            class="switcher btn-group btn-group-yesno"
+            description="COM_RSTBOX_ASSIGN_IMPRESSIONS_DESC"
+            filter="intval" 
+            size="1" 
+            default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+        <field type="nrtext"
+            name="assign_impressions_list" 
+            description="COM_RSTBOX_LIMIT_DESC"
+            class="input-mini"
+            min="1"
+            addon="COM_RSTBOX_ASSIGN_IMPRESSIONS"
+            label="COM_RSTBOX_LIMIT"
+            default="3"
+            hint="1"
+            showon="assign_impressions:1"
+        />
+        <field name="assign_impressions_param_type" type="list" 
+            label="COM_RSTBOX_ASSIGN_IMPRESSIONS_TYPE"
+            default="session"
+            class="input-medium"
+            showon="assign_impressions:1"
+            description="COM_RSTBOX_ASSIGN_IMPRESSIONS_TYPE_DESC">
+            <option value="session">NR_PER_SESSION</option>
+            <option value="day">NR_PER_DAY</option>
+            <option value="week">NR_PER_WEEK</option>
+            <option value="month">NR_PER_MONTH</option>
+            <option value="0">NR_FOREVER</option>
+        </field>
+        <field type="spacer" class="h2" name="rstbox-spacer-line-onopening" label="COM_RSTBOX_ON_OPENING"/>
+        <field name="closeopened" type="radio" 
+            label="COM_RSTBOX_CLOSE_OPENED" 
+            class="switcher btn-group btn-group-yesno"
+            description="COM_RSTBOX_CLOSE_OPENED_DESC"
+            filter="intval" 
+            size="1" 
+            default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+        <field type="spacer" class="h2" name="rstbox-spacer-line-animation" label="NR_COOKIE"/>
+        <field name="cookie_row_start" type="nr_inline"
+            label="COM_RSTBOX_ITEM_COOKIETYPE"
+            description="COM_RSTBOX_ITEM_COOKIETYPE_DESC"
+        />
+        <field name="cookie" default="30" type="nrnumber"
+            showon="cookietype:seconds,minutes,hours,days"
+            class="input-mini" 
+            hiddenLabel="true"
+            min="0"
+            step="5"
+            label="COM_RSTBOX_ITEM_COOKIE" 
+            description="COM_RSTBOX_ITEM_COOKIE_DESC"
+            size="6"
+        />
+        <field name="cookietype" type="list" 
+            default="never"
+            hiddenLabel="true"
+            class="input-medium"
+            label="COM_RSTBOX_ITEM_COOKIETYPE"
+            description="COM_RSTBOX_ITEM_COOKIETYPE_DESC">
+                <option value="never">NR_NEVER</option>
+                <option value="seconds">NR_SECONDS</option>
+                <option value="minutes">NR_MINUTES</option>
+                <option value="hours">NR_HOURS</option>
+                <option value="days">NR_DAYS</option>
+                <option value="session">NR_SESSION</option>
+                <option value="ever">NR_FOREVER</option>
+        </field>
+        <field name="cookie_row_end" type="nr_inline"
+            end="1"
+        />
+    </fieldset>
+    <fieldset name="item2">
+        <field type="spacer" class="h2" name="rstbox-spacer-animation" label="COM_RSTBOX_ITEM_ANIMATION"/>
+        <field name="animationin" type="groupedlist" 
+            default="rstbox.slideUpIn"
+            description="COM_RSTBOX_ITEM_ANIMATION_TRANS_IN_EFFECT"
+            label="COM_RSTBOX_ITEM_ANIMATION_TRANS_IN_EFFECT_DESC">
+            <group label="Attention Seekers">
+                <option value="callout.bounce">Bounce</option>
+                <option value="callout.shake">Shake</option>
+                <option value="callout.flash">Flash</option>
+                <option value="callout.pulse">Pulse</option>
+                <option value="callout.swing">Swing</option>
+                <option value="callout.tada">Tada</option>
+            </group>
+            <group label="Classic">
+                <option value="transition.fadeIn">fadeIn</option>
+                <option value="transition.swoopIn">swoopIn</option>
+                <option value="transition.whirlIn">whirlIn</option>
+                <option value="transition.shrinkIn">shrinkIn</option>
+                <option value="transition.expandIn">expandIn</option>
+            </group>
+            <group label="Flip">
+                <option value="transition.flipXIn">flipXIn</option>
+                <option value="transition.flipYIn">flipYIn</option>
+                <option value="transition.flipBounceXIn">flipBounceXIn</option>
+                <option value="transition.flipBounceYIn">flipBounceYIn</option>
+            </group>
+            <group label="Bounce">
+                <option value="transition.bounceIn">bounceIn</option>
+                <option value="transition.bounceUpIn">bounceUpIn</option>
+                <option value="transition.bounceDownIn">bounceDownIn</option>
+                <option value="transition.bounceLeftIn">bounceLeftIn</option>
+                <option value="transition.bounceRightIn">bounceRightIn</option>
+            </group>
+            <group label="Slide">
+                <option value="slideDown">slideIn</option>
+                <option value="rstbox.slideUpIn">slideUpIn</option>
+                <option value="rstbox.slideDownIn">slideDownIn</option>
+                <option value="rstbox.slideLeftIn">slideLeftIn</option>
+                <option value="rstbox.slideRightIn">slideRightIn</option>
+                <option value="transition.slideUpIn">slideFadeUpIn</option>
+                <option value="transition.slideDownIn">slideFadeDownIn</option>
+                <option value="transition.slideLeftIn">slideFadeLeftIn</option>
+                <option value="transition.slideRightIn">slideFadeRightIn</option>
+                <option value="transition.slideUpBigIn">slideUpBigIn</option>
+                <option value="transition.slideDownBigIn">slideDownBigIn</option>
+                <option value="transition.slideLeftBigIn">slideLeftBigIn</option>
+                <option value="transition.slideRightBigIn">slideRightBigIn</option>
+            </group>
+            <group label="Perspective">
+                <option value="transition.perspectiveUpIn">perspectiveUpIn</option>
+                <option value="transition.perspectiveDownIn">perspectiveDownIn</option>
+                <option value="transition.perspectiveLeftIn">perspectiveLeftIn</option>
+                <option value="transition.perspectiveRightIn">perspectiveRightIn</option>
+            </group>
+        </field>
+        <field name="animationout" type="groupedlist" 
+            default="rstbox.slideUpOut"
+            description="COM_RSTBOX_ITEM_ANIMATION_TRANS_OUT_EFFECT"
+            label="COM_RSTBOX_ITEM_ANIMATION_TRANS_OUT_EFFECT_DESC">
+            <group label="Classic">
+                <option value="transition.fadeOut">fadeOut</option>
+                <option value="transition.swoopOut">swoopOut</option>
+                <option value="transition.whirlOut">whirlOut</option>
+                <option value="transition.shrinkOut">shrinkOut</option>
+                <option value="transition.expandOut">expandOut</option>
+            </group>
+            <group label="Flip">
+                <option value="transition.flipXOut">flipXOut</option>
+                <option value="transition.flipYOut">flipYOut</option>
+                <option value="transition.flipBounceXOut">flipBounceXOut</option>
+                <option value="transition.flipBounceYOut">flipBounceYOut</option>
+            </group>
+            <group label="Bounce">
+                <option value="transition.bounceOut">bounceOut</option>
+                <option value="transition.bounceUpOut">bounceUpOut</option>
+                <option value="transition.bounceDownOut">bounceDownOut</option>
+                <option value="transition.bounceLeftOut">bounceLeftOut</option>
+                <option value="transition.bounceRightOut">bounceRightOut</option>
+            </group>
+            <group label="Slide">
+                <option value="slideUp">slideOut</option>
+                <option value="rstbox.slideUpOut">slideUpOut</option>
+                <option value="rstbox.slideDownOut">slideDownOut</option>
+                <option value="rstbox.slideLeftOut">slideLeftOut</option>
+                <option value="rstbox.slideRightOut">slideRightOut</option>               
+                <option value="transition.slideUpOut">slideFadeUpOut</option>
+                <option value="transition.slideDownOut">slideFadeDownOut</option>
+                <option value="transition.slideLeftOut">slideFadeLeftOut</option>
+                <option value="transition.slideRightOut">slideFadeRightOut</option>
+                <option value="transition.slideUpBigOut">slideUpBigOut</option>
+                <option value="transition.slideDownBigOut">slideDownBigOut</option>
+                <option value="transition.slideLeftBigOut">slideLeftBigOut</option>
+                <option value="transition.slideRightBigOut">slideRightBigOut</option>
+            </group>
+            <group label="Perspective">
+                <option value="transition.perspectiveUpOut">perspectiveUpOut</option>
+                <option value="transition.perspectiveDownOut">perspectiveDownOut</option>
+                <option value="transition.perspectiveLeftOut">perspectiveLeftOut</option>
+                <option value="transition.perspectiveRightOut">perspectiveRightOut</option>
+            </group>
+        </field>
+        <field name="duration" type="nrnumber" 
+            default="400" 
+            hint="400" 
+            class="input-mini"
+            addon="ms"
+            step="100"
+            min="0"
+            filter="intval"
+            label="COM_RSTBOX_ANIMATION_DURATION"
+            description="COM_RSTBOX_ANIMATION_DURATION_DESC">
+        </field>
+        <field type="spacer" class="h2" name="rstbox-spacer-line-autoclose" label="Auto Close"/>
+        <field name="autohide" type="radio" 
+            label="COM_RSTBOX_ITEM_AUTOHIDE" 
+            showon="triggermethod:pageheight,element"
+            class="switcher btn-group btn-group-yesno"
+            description="COM_RSTBOX_ITEM_AUTOHIDE_DESC"
+            filter="intval" 
+            size="1" 
+            default="1">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>  
+        <field name="autoclose" type="radio" 
+            label="COM_RSTBOX_ITEM_AUTOCLOSE" 
+            class="switcher btn-group btn-group-yesno"
+            description="COM_RSTBOX_ITEM_AUTOCLOSE_DESC"
+            filter="intval" 
+            size="1" 
+            default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>  
+        <field name="autoclosevalue" default="0" type="nrnumber" 
+            showon="autoclose:1"
+            class="input-mini" 
+            filter="intval"
+            addon="ms"
+            step="100"
+            min="0"
+            label="COM_RSTBOX_ITEM_AUTOCLOSE_VALUE" 
+            description="COM_RSTBOX_ITEM_AUTOCLOSE_DESC_VALUE_DESC"
+        />
+    </fieldset>
+</form>

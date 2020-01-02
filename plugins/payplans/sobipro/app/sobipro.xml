@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <name>SobiPro </name>
+    <icon>sobipro.png</icon>
+    <description>
+		SobiPro can be used by administrators to restrict the listings and featured listings published by actively subscribed users.
+	&lt;br/&gt;
+	&lt;br/&gt;
+	Reference Link:&lt;a href="http://www.readybytes.net/payplans/apps.html#/app/pp-sobipro"&gt;Sobi Pro&lt;/a&gt;
+	</description>
+	<help>If you made any changes in App parameters then those changes will not be applicable to those users who are already using that functionality.&lt;br/&gt;
+	For eg. If you change  No. of allowed entries from 2 to 5 then it will not be applied to those who has already subscribed to the plan attached with this app. 
+	</help>
+<alias>pp-sobipro</alias>
+</config>

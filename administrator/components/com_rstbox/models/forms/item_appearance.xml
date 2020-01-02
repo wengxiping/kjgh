@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="appearance1">
+        <field type="spacer" class="h2" name="rstbox-spacer-box" label="Box"/>
+        <field name="width" type="text" 
+            default="500px" 
+            hint="500px"
+            class="input-small" 
+            label="NR_WIDTH"
+            description="COM_RSTBOX_ITEM_WIDTH_DESC"
+            size="10"
+        />  
+        <field name="height" type="text" 
+            default="auto" 
+            hint="300px" 
+            class="input-small" 
+            label="NR_HEIGHT"
+            description="COM_RSTBOX_ITEM_HEIGHT_DESC"
+            size="10"
+        />
+        <field name="padding" type="text" 
+            default="20px" 
+            label="NR_PADDING" 
+            description="NR_PADDING_DESC"
+            class="input-medium" 
+        />
+        <field name="textcolor" type="color"
+            format="rgba"
+            default="rgba(51, 51, 51, 1)"
+            label="NR_TEXT_COLOR"
+            description="NR_COLOR_DESC"
+        />
+        <field name="backgroundcolor" type="color" 
+            default="rgba(255, 255, 255, 1)"
+            keywords="transparent,none"
+            format="rgba"
+            label="NR_BACKGROUND_COLOR"
+            description="NR_BACKGROUND_COLOR_DESC"
+        />
+        <field name="aligncontent" type="list" 
+            label="COM_RSTBOX_ALIGN_CONTENT"
+            class="input-medium"
+            description="COM_RSTBOX_ALIGN_CONTENT_DESC" 
+            default="">
+            <option value="">Top Left</option>
+            <option value="act acc">Top Center</option>
+            <option value="act acr">Top Right</option>
+            <option value="acm acl">Middle Left</option>
+            <option value="acm acc">Middle Center</option>
+            <option value="acm acr">Middle Right</option>
+            <option value="acb acl">Bottom Left</option>
+            <option value="acb acc">Bottom Center</option>
+            <option value="acb acr">Bottom Right</option>
+        </field>
+        <field name="boxshadow" type="list" 
+            default="1"
+            class="input-medium"
+            label="COM_RSTBOX_ITEM_BOXSHADOW"
+            description="COM_RSTBOX_ITEM_BOXSHADOW_DESC">
+            <option value="none">NR_NONE</option>
+            <option value="1">Style 1</option>
+            <option value="2">Style 2</option>
+            <option value="3">Style 3</option>
+        </field>
+        <field type="spacer" class="h2" name="rstbox-spacer-line-border" label="COM_RSTBOX_BORDER"/>
+        <field name="bordertype" type="list" 
+            default="solid" 
+            class="input-medium"
+            label="COM_RSTBOX_ITEM_BORDERSTYLE"
+            description="COM_RSTBOX_ITEM_BORDERSTYLE_DESC">
+            <option value="none">None</option>
+            <option value="solid">Solid</option>
+            <option value="dotted">Dotted</option>
+            <option value="dashed">Dashed</option>
+            <option value="inset">Inset</option>
+            <option value="outset">Outset</option>
+            <option value="groove">Groove</option>
+            <option value="ridge">Ridge</option>
+            <option value="hidden">Hidden</option>
+        </field>
+        <field name="bordercolor" type="color"
+            default="rgba(46, 198, 100, 1)"
+            format="rgba"
+            label="NR_COLOR"
+            description="NR_COLOR_DESC"
+        />
+        <field name="borderwidth" type="text" 
+            default="15px" 
+            label="NR_WIDTH"
+            description="COM_RSTBOX_ITEM_BORDERWIDTH_DESC"
+            class="input-medium"
+        />
+        <field name="borderradius" type="text" 
+            default="0px" 
+            label="COM_RSTBOX_ITEM_BORDERRADIUS"
+            description="COM_RSTBOX_ITEM_BORDERRADIUS_DESC"
+            size="10"
+            class="input-medium"
+        />
+    </fieldset>
+    <fieldset name="appearance2">
+        <field type="spacer" class="h2" name="rstbox-spacer-background-overlay" label="COM_RSTBOX_ITEM_OVERLAY"/>
+        <field name="overlay" type="radio" 
+            label="JENABLED" 
+            description="COM_RSTBOX_ITEM_OVERLAY_DESC" 
+            class="switcher btn-group btn-group-yesno switcher" 
+            filter="intval" 
+            size="1" 
+            default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+        <field name="overlay_color" type="color" 
+            default="rgba(0, 0, 0, 0.8)"
+            keywords="none, transparent"
+            format="rgba"
+            label="NR_COLOR"
+            showon="overlay:1"
+            description="NR_BACKGROUND_COLOR_DESC" 
+        /> 
+        <field name="overlayclick" type="radio" 
+            showon="overlay:1"
+            label="COM_RSTBOX_ITEM_OVERLAY_CLICK" 
+            description="COM_RSTBOX_ITEM_OVERLAY_CLICK_DESC" 
+            class="switcher btn-group btn-group-yesno switcher" 
+            filter="intval" 
+            size="1" 
+            default="1">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field> 
+
+        <field type="spacer" class="h2" name="rstbox-spacer-line-bg-image" label="NR_BGIMAGE"/>
+
+        <field name="bgimage" type="radio" 
+            label="JENABLED" 
+            description="NR_BGIMAGE_DESC" 
+            class="switcher btn-group btn-group-yesno switcher"  
+            filter="intval" 
+            size="1" 
+            default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field> 
+        <field name="bgimagefile" type="media"
+            label="NR_BGIMAGE_FILE"
+            class="input-large"
+            showon="bgimage:1"
+            description="NR_BGIMAGE_FILE_DESC" 
+            directory=""
+        />
+        <field name="bgrepeat" type="list"
+            showon="bgimage:1"
+            class="input-medium"
+            label="NR_BGIMAGE_REPEAT"
+            description="NR_BGIMAGE_REPEAT_DESC" 
+            default="Repeat">
+                <option value="No-repeat">No-repeat</option>
+                <option value="Repeat">Repeat</option>
+                <option value="Repeat-x">Repeat-x</option>
+                <option value="Repeat-y">Repeat-y</option>
+        </field> 
+        <field name="bgsize" type="list" 
+            showon="bgimage:1"
+            class="input-medium"
+            label="NR_BGIMAGE_SIZE"
+            description="NR_BGIMAGE_SIZE_DESC" 
+            default="Auto">
+                <option value="Auto">Auto</option>
+                <option value="Cover">Cover</option>
+                <option value="Contain">Contain</option>
+                <option value="100% 100%">100% 100%</option>
+        </field> 
+        <field name="bgposition" type="list"
+            showon="bgimage:1"
+            label="NR_BGIMAGE_POSITION"
+            class="input-medium"
+            description="NR_BGIMAGE_POSITION_DESC" 
+            default="Left Top">
+                <option value="Left Top">Left Top</option>
+                <option value="Left Center">Left Center</option>
+                <option value="Left Bottom">Left Bottom</option>
+                <option value="Right Top">Right Top</option>
+                <option value="Right Center">Right Center</option>
+                <option value="Right Bottom">Right Bottom</option>
+                <option value="Center Top">Center Top</option>
+                <option value="Center Center">Center Center</option>
+                <option value="Center Bottom">Center Bottom</option>
+        </field> 
+        <field type="spacer" class="h2" name="rstbox-spacer-line-close-button" label="Close Button"/>
+        <fields name="closebutton">
+            <field name="hide" type="radio" 
+                label="COM_RSTBOX_ITEM_HIDE_CLOSE_BUTTON" 
+                description="COM_RSTBOX_ITEM_HIDE_CLOSE_BUTTON_DESC" 
+                class="switcher btn-group btn-group-yesno" 
+                filter="intval" 
+                size="1" 
+                default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+            </field>
+            <field name="source" type="list" 
+                label="COM_RSTBOX_CB_TYPE" 
+                description="COM_RSTBOX_CB_TYPE_DESC"
+                class="input-medium"
+                showon="hide:0"
+                default="icon">
+                    <option value="icon">NR_ICON</option>
+                    <option value="image">NR_IMAGE</option>
+            </field>
+            <field name="color" type="color"
+                label="NR_COLOR"
+                description="NR_COLOR_DESC"
+                format="rgba"
+                default="rgba(174, 174, 174, 1)"
+                showon="source:icon[AND]hide:0"
+            />
+            <field name="hover" type="color"
+                label="NR_COLOR_HOVER"
+                description="NR_COLOR_DESC"
+                format="rgba"
+                default="rgba(128, 128, 128, 1)"
+                showon="source:icon[AND]hide:0"
+            />
+            <field name="size" type="nrnumber"
+                label="NR_FONT_SIZE"
+                description="NR_FONT_SIZE_DESC"
+                default="24"
+                step="2"
+                addon="px"
+                class="input-mini"
+                showon="source:icon[AND]hide:0"
+            />
+            <field name="image" type="media"
+                label="NR_IMAGE_SELECT"
+                description="COM_RSTBOX_CB_IMAGE_DESC"
+                class="input-large"
+                showon="source:image[AND]hide:0"
+            />
+            <field name="delay" type="nrnumber"
+                label="COM_RSTBOX_CB_DELAY"
+                description="COM_RSTBOX_CB_DELAY_DESC"
+                default="0" 
+                class="input-mini"
+                addon="ms"
+                min="0"
+                step="50"
+                filter="intval"
+                showon="hide:0">
+            </field>
+        </fields>
+    </fieldset>
+</form>

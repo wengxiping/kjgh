@@ -1,0 +1,12 @@
+
+[
+	{
+		"title"			: "COM_INVITEX_POINTS_INVITE_SENT_TITLE",
+		"alias"			: "invite_sent",
+		"description"	: "COM_INVITEX_POINTS_INVITE_SENT_TITLE_DESC",
+		"command"		: "invite_sent",
+		"extension"		: "com_invitex",
+		"state"			: true,
+		"points"		: 7
+	}
+]

@@ -1,0 +1,109 @@
+.acm-video .video-content {
+  padding-right: 128px;
+}
+@media (max-width: 991px) {
+  .acm-video .video-content {
+    min-height: 0 !important;
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 767px) {
+  .acm-video .video-content {
+    padding-right: 0;
+  }
+}
+.acm-video .title-lead {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.acm-video .video-intro {
+  margin-top: 32px;
+}
+.acm-video .video-action {
+  margin-top: 64px;
+  display: block;
+  font-weight: 700;
+}
+.acm-video .video-action span.fa {
+  font-size: 9px;
+}
+.acm-video .video-player {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .acm-video .video-player {
+    padding: 0;
+  }
+}
+.acm-video .video-player .btn-play {
+  background: linear-gradient(135deg, #000000, #000000);
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  margin-left: -65px;
+  margin-top: -65px;
+  width: 130px;
+}
+@media (max-width: 767px) {
+  .acm-video .video-player .btn-play {
+    height: 64px;
+    line-height: 64px;
+    margin-left: -32px;
+    margin-top: -32px;
+    width: 64px;
+  }
+}
+.acm-video .video-player .video-wrapper {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .acm-video .video-player .video-wrapper {
+    position: static;
+  }
+}
+.acm-video .video-player .video-wrapper.playing .btn-play {
+  display: none;
+}
+.acm-video .video {
+  position: relative;
+  padding-bottom: 56.25%;
+  
+  height: 0;
+}
+.acm-video .video span {
+  background: #5eb663;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.acm-video .video span.fa {
+  background: transparent;
+  display: inline-block;
+  position: unset;
+}
+.acm-video .video .img-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 100%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.acm-video .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,229 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.section-inner {
+  background-size: cover;
+  background-position: center center;
+}
+
+.acm-pricing {
+	section {
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-size: cover;
+	}
+
+	.pricing-title {
+		color: @white;
+	  font-size: @font-size-h1;
+	  font-weight: @font-weight-normal;
+	  line-height: 1;
+	  margin: 0 0 @t3-global-margin;
+	  text-align: center;
+	}
+
+	.blockline:after, .blockline:before {
+		background-color: @white;
+	}
+
+	.pricing-caption {
+		color: @white;
+		text-transform: uppercase;
+		font-weight: @font-weight-thin;
+		display: inline-block;
+    font-size: @font-size-base;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+	}
+
+	.pricing-desc {
+		color: @white;
+    font-size: @font-size-large;
+		margin-bottom: 0;
+		.opacity(0.8);
+	}
+
+	&.style-light {
+		.pricing-title,
+		.pricing-caption,
+		.pricing-desc {
+			color: @gray-dark;
+		}
+
+		.blockline:after, .blockline:before {
+			background-color: @gray-dark;
+		}
+	}
+}
+
+
+// PRICING TABLE
+// ---------------------------------------
+.pricing-table {
+  padding-top: @t3-global-padding * 2;
+  color: @text-color;
+
+  .col {
+    margin-bottom: @t3-global-margin * 2;
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 0;
+    }
+
+    // Remove padding of the column
+    // ----------------------------
+    &.no-padding {
+      @media (min-width: 768px) {
+        padding: 0;
+      }      
+    }
+
+    // Typography's Pricing table
+    // --------------------------
+    .big-number {
+      display: block;
+      font-size: @font-size-h1;
+      margin-left: -@t3-global-margin;
+      margin-right: -@t3-global-margin;
+      background: @gray-lighter;
+      padding-top: @t3-global-padding;
+      padding-bottom: @t3-global-padding;
+
+      sup {
+        top: -@t3-global-margin;
+        font-size: @font-size-base;
+      }
+
+      sub {
+        bottom : 0;        
+        font-size: @font-size-base;
+      }
+    }
+
+    .btn {
+
+    }
+
+
+    // Header of column
+    // ----------------
+    .col-header {
+      background: @white;
+      border-radius: 3px 3px 0 0;
+      border-bottom: 0;
+      color: @text-color;
+      padding: @t3-global-padding * 1.5 @t3-global-padding;
+
+      h2, .h2 {
+      	font-size: @font-size-h3;
+        margin-bottom: @t3-global-margin * 1.5;
+        font-weight: @font-weight-lighter;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+
+    // Body of column
+    // --------------
+    .col-body {
+      background: @white;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 @t3-global-margin * 3;
+      padding: 0;
+
+      // Mobile view
+      @media (max-width: @screen-xs-max) {
+        margin: 0 @t3-global-margin;
+      }
+
+      li {
+        font-size: @t3-font-size-bigger;
+        padding: 0 0 (@t3-global-padding / 2) ;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+
+        &.row1 {
+        }
+
+        i {
+          margin-right: @t3-global-margin/2;
+          color: @brand-primary;
+        }
+
+        &.no i {
+          color: @red;
+        }
+
+
+        &.no {
+          color: @gray-light;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+
+    // Footer of column
+    // ----------------
+    .col-footer {
+      background: @white;
+      padding: @t3-global-padding * 2;
+    }
+
+  }
+
+  
+  // Feature column
+  // --------------
+  .col-featured {
+    z-index: 1;
+
+    .col-header,
+    .col-body,
+    .col-footer {
+      background: #fbe57c;
+    }
+
+    // Larger margin on Tablet / Desktop
+    @media screen and (min-width: @screen-md) {
+      margin-top: -(@t3-global-margin * 2);
+    }   
+
+    .col-header {
+      background: #fbe57c;
+      padding: 44px @t3-global-padding;
+      position: relative;
+
+      &:before {
+        content: "";
+        top: 0;
+        right: 0;
+        width: 52px;
+        height: 54px;
+        position: absolute;
+        background: url("../../../images/ico/featured-ltr.png") no-repeat left top;
+      }
+    }
+
+    .big-number {
+      background: #fbf2d2;
+    }
+
+    &.col ul li i {
+      color: @gray-dark;
+    }
+  }
+}

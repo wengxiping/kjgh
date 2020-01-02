@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+	<name>listings</name>
+	<caption>Listings</caption>
+	<author>Lee Cher Yeong</author>
+	<creationDate>October 2015</creationDate>
+	<copyright>(C) 2015 Mosets Consulting. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>1.0.2</version>
+	<description>Allows you to select listings within your directory and show them as part of a listing.</description>
+	<useElements>0</useElements>
+	<useSize>0</useSize>
+	<taggable>0</taggable>
+	<fileset>
+		<files folder="." target="administrator/components/com_mtree/fieldtypes/listings">
+			<filename>listings.php</filename>
+			<filename>listings.xml</filename>
+		</files>
+	</fileset>
+    <config>
+        <fields>
+            <fieldset name="basic" addfieldpath="/administrator/components/com_mtree/elements">
+                <field name="placeholder" type="text" default="Select listings" label="Placeholder Text" />
+                <field
+                        name="category"
+                        type="mtcategory"
+                        label="Category"
+                        description="By default, the field will make all listings from your directory available for selection. You can change this to limit the selection." />
+				<field name="showImage" type="radio" default="1" class="btn-group" label="Show Image" description="Set whether to show listing image on output.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="imageOutputWidth" type="text" default="80" label="Image Output Width (in px)" />
+				<field name="imageOutputHeight" type="text" default="80" label="Image Output Height (in px)" />
+				<field name="inputHtmlSizeInPx" type="text" default="370" label="Input Element Size (in px)" description="The size of input element in px. By default, this is set to 370" />
+                <field name="fields" type="mtfields" default="" label="Show Fields" description="Select the fields you want to display in output."/>
+            </fieldset>
+        </fields>
+    </config>
+	<updateservers>
+		<server type="extension">http://update.mosets.com/mtree/fieldtypes/listings.xml</server>
+	</updateservers>
+</extension>

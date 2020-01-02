@@ -1,0 +1,408 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       JA BUILDER
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+// ------------------------------------
+// JOOMLA! SPECIFIC STYLES
+// ------------------------------------
+
+//
+// Generic Styles
+// -------------------------
+.page-header {
+  border: 0;
+  margin-top: @spacing*2;
+  margin-bottom: @spacing / 2;
+  padding-bottom: 0;
+
+  h2 {
+    margin: 0;
+    font-size: @font-size-h2;
+
+    a {
+      color: @text-color;
+      &:hover, &:focus, &:active {
+        color: @link-hover-color;
+      }
+    }
+  }
+}
+
+// Article Rows
+.items-row {
+  .item-image {
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.items-row .item {
+  .clearfix();
+}
+
+
+// Article Titles
+// -------------------------
+
+// Item Header
+// -----------
+h2.item-title,
+.item-title h2 {
+  margin: 0;
+}
+
+
+// Article Aside
+// -------------------------
+.article-info {
+  margin: @spacing/4 0 @spacing;
+  font-size: @font-size-small;
+  color: @gray-light;
+
+  a {
+    // Link states
+    &:hover, &:focus, &:active {
+    }
+  }
+  
+  .article-info-term {
+    display: none;
+  }
+  
+  dd {
+    display: inline-block;
+    margin-right: 10px;
+    white-space: nowrap;
+
+    &:after {
+      content: "/";
+      display: inline-block;
+      color: lighten(@gray-light, 10%);
+      font-weight: normal;
+      margin-left: 5px;
+    }
+
+    // Separator
+    &:after {
+      color: @gray-light;
+      font-size: @font-size-base;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+    // Hide the icons
+    .fa, [class^="icon-"], [class*=" icon-"] {
+      display: none;
+    }
+
+    div {
+      display: inline-block;
+    }
+  }
+
+}
+
+// Author
+.createdby {
+  font-weight: 700;
+}
+
+// Category Name
+.category-name {
+}
+
+// URL
+.article-url {
+}
+
+// Publish Date
+.published {
+}
+
+// Modified Date
+.modifydate {
+}
+
+// Article Desciption
+.contentdescription {
+}
+
+.contentdescription p {
+}
+
+// Item image
+.item .item-image,
+.items-leading .item-image {
+  margin-right: @spacing;
+  margin-top:  10px;
+}
+
+// Item details
+// -------------------------
+.item-page {
+  .article-info {
+    margin-bottom: @spacing;
+  }
+
+  .item-image {
+    margin: 0 0 @spacing 0;
+
+    &.pull-left {
+      margin-right: @spacing;
+    }
+
+    &.pull-right {
+      margin-left: @spacing;
+    }
+  }
+}
+
+
+// Read more
+.readmore {
+  text-align: right;
+
+  a {
+    border-radius: 0;
+    color: @gray-light;
+    font-size: @font-size-small;
+    padding: 0;
+    text-transform: uppercase;
+
+    &:hover, &:focus, &:active {
+      color: @link-hover-color;
+      border-bottom: 1px solid @link-hover-color;
+    }
+  }
+}
+
+// Tags
+.tags.inline {
+  padding-left: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+
+    > a {
+      color: @label-color;
+
+      &:hover, &:focus, &:active {
+        color: @label-link-hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+// Item More 
+.items-more {
+  margin-top: @line-height-computed;
+}
+
+// Pagianation
+// -----------
+.pagination {
+  width: 100%;
+  .clearfix();
+
+  .counter {
+    color: @gray;
+    float: right;
+  }
+
+  ul {
+    border: 1px solid @border-color;
+    border-radius: 2px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      magrin: 0 (@spacing / 4) 0 0;
+
+      a,
+      span {
+        border-right: 1px solid @border-color;
+        color: @text-color;
+        display: block;
+        padding: (@spacing / 4) (@spacing / 2);
+        &:hover, &:focus, &:active {
+          background-color: @gray-lighter;
+          color: @link-hover-color;
+          text-decoration: none;
+        }
+      }
+
+      &:last-child {
+        a, span {
+          border-right: 0;
+        }
+      }
+    }
+
+    span.pagenav {
+      background-color: @gray-lightest;
+      color: @gray-light;
+      &:hover, &:focus, &:active {
+        background-color: transparent;
+        color: @gray-light;
+      }
+    }
+  }
+}
+
+
+//
+// LOGIN
+// ------------------------------------
+.login-wrap {
+  background-color: @gray-lightest;
+  border: 1px solid @border-color;
+  padding: @spacing;
+  margin: (@spacing * 3) auto;
+  width: 480px;
+
+  @media screen and (max-width: @screen-xs-max) {
+    width: auto;
+  }
+  // Header
+  .page-headder {
+  }
+
+  // Description
+  .login-description {
+  }
+
+  // Login Form
+  form {
+
+    fieldset {
+    }
+
+    .control-label {
+      text-align: left;
+      padding-top: 0;
+    }
+
+    label {
+      margin-bottom: @spacing / 4;
+      text-align: left;
+      font-size: @font-size-small;
+    }
+
+    .control-group {
+      margin-bottom: @spacing / 2;
+
+      input[type="text"],
+      input[type="password"] {
+        box-shadow: none;
+        padding: (@spacing / 5) (@spacing / 2);
+        width: 100%;
+      }
+
+      .checkbox {
+        padding-top: 0;
+        label {
+          text-transform: none;
+        }
+        input[type="checkbox"] {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &.form-horizontal .control-label {
+      text-align: left;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  // Links
+  .other-links {
+    margin-bottom: 0 !important;
+
+    ul {
+      padding: 0;
+      margin-top: @spacing / 2;
+      margin-bottom: 0;
+
+      li {
+        padding: 5px 0;
+        list-style: none;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        a {
+          color: @gray;
+          font-weight: normal;
+
+          &:hover, &:focus, &:active {
+            color: @link-hover-color;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+
+//
+// LOGIN
+// ------------------------------------
+.registration,
+.profile-edit,
+.reset,
+.remind {
+  margin: (@spacing * 3) 0;
+
+  .well {
+    box-shadow: none;
+    border: 1px solid @border-color;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .form-horizontal .control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 160px;
+    font-size: @font-size-small;
+  }
+
+  .form-horizontal .controls {
+    margin-left: 180px;
+  }
+
+  .form-horizontal .control-group {
+    margin-bottom: @spacing/2;
+    .clearfix();
+  }
+
+  .control-group {
+    .btn + .btn {
+      margin-left: @spacing/2;
+    }
+  }
+}

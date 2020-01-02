@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Events Style 1</title>
+	<sampledata></sampledata>
+	<fields name="event">
+		<fieldset name="event_info" label="EVENT_INFO_LABEL" description="EVENT_INFO_DESC">
+			<field name="data" type="jalist">
+				<item name="event-time" type="text" size="40" default="" label="EVENT_TIME_LABEL" description="EVENT_TIME_DESC" required="1" />
+				<item name="event-name" type="text" size="40" default="" label="EVENT_NAME_LABEL" description="EVENT_NAME_DESC" required="1" />
+				<item name="event-description" type="text" size="40" default="" label="EVENT_DESCRIPTION_LABEL" description="EVENT_DESCRIPTION_DESC" />
+				<item name="event-link" type="text" size="40" default="" label="EVENT_LINK_LABEL" description="EVENT_LINK_DESC" />
+			</field>
+    </fieldset>
+	</fields>
+</form>

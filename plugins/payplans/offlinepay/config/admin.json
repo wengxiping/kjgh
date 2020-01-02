@@ -1,0 +1,51 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "bankname",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_OFFLINE_BANK_NAME_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_OFFLINE_BANK_NAME_DESC",
+				"default": ""
+			},
+			{
+				"name": "account_name",
+				"type": "text",
+				"title": "COM_PP_APP_OFFLINE_ACCOUNT_NAME_LABEL",
+				"tooltip": "COM_PP_APP_OFFLINE_ACCOUNT_NAME_DESC",
+				"default": ""
+			},			
+			{
+				"name": "account_number",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_OFFLINE_ACCOUNT_NUBMER_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_OFFLINE_ACCOUNT_NUBMER_DESC",
+				"default": ""
+			},
+			{
+				"name": "payment_method",
+				"type": "offlinePayment",
+				"multiple": true,
+				"allowAll": true,
+				"title": "COM_PP_APP_OFFLINE_PAYMENT_METHODS_LABEL",
+				"tooltip": "COM_PP_APP_OFFLINE_PAYMENT_METHODS_DESC",
+				"default": []
+			},			
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_OFFLINE_ALLOW_RECURRING_CANCEL",
+				"tooltip": "COM_PAYPLANS_APP_OFFLINE_ALLOW_RECURRING_CANCEL_DESC",
+				"default": false
+			},
+			{
+				"name": "notify_users",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_OFFLINE_NOTIFY_USERS",
+				"tooltip": "COM_PAYPLANS_APP_OFFLINE_NOTIFY_USERS_DESC",
+				"default": false
+			}
+		]
+	}
+]

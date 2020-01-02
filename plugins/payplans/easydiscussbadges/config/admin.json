@@ -1,0 +1,14 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "badges",
+				"type": "easydiscussBadges",
+				"title": "COM_PAYPLANS_APP_EASYDISCUSS_APPLIED_BADGES_ON_SUBSCRIPTION_ACTIVE",
+				"tooltip": "COM_PAYPLANS_APP_EASYDISCUSS_APPLIED_BADGES_ON_SUBSCRIPTION_ACTIVE_DESC",
+				"default": []
+			}
+		]
+	}
+]

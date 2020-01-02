@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<fieldset id="preferences" name="preferences" label="COM_JREALTIME_PREFERENCES" addfieldpath="/administrator/components/com_jrealtimeanalytics/framework/html"> 
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_GENERAL"/>
+		<field name="daemonrefresh" type="list" default="6" label="COM_JREALTIME_SERVERLOAD_DAEMONREFRESH" description="COM_JREALTIME_SERVERLOAD_DAEMONREFRESH_DESC">
+			<option value="1">100%</option>
+			<option value="2">80%</option>
+			<option value="4">60%</option>
+			<option value="6">40%</option>
+			<option value="8">20%</option>
+			<option value="12">15%</option>
+			<option value="15">10%</option>
+			<option value="20">5%</option>
+			<option value="30">2%</option>
+			<option value="60">1%</option>
+		</field>
+		<field name="realtimerefresh" type="list" default="6" label="COM_JREALTIME_SERVERLOAD_REALSTATSREFRESH" description="COM_JREALTIME_SERVERLOAD_REALSTATSREFRESH_DESC">
+			<option value="1">100%</option>
+			<option value="2">80%</option>
+			<option value="4">60%</option>
+			<option value="6">40%</option>
+			<option value="8">20%</option>
+			<option value="12">15%</option>
+			<option value="15">10%</option>
+			<option value="20">5%</option>
+			<option value="30">2%</option>
+			<option value="60">1%</option>
+		</field>
+   		<field name="maxlifetime_session" type="text" size="10" default="10" label="COM_JREALTIME_MAXINACTIVITYTIME" description="COM_JREALTIME_MAXINACTIVITYTIME_DESC" />
+   		<field name="daemontimeout" type="list" default="0" label="COM_JREALTIME_SERVERLOAD_DAEMONTIMEOUT" description="COM_JREALTIME_SERVERLOAD_DAEMONTIMEOUT_DESC">
+			<option value="0">COM_JREALTIME_DAEMON_NOTIMEOUT</option>
+			<option value="5">COM_JREALTIME_DAEMON_TIMEOUT_5MIN</option>
+			<option value="10">COM_JREALTIME_DAEMON_TIMEOUT_10MIN</option>
+			<option value="15">COM_JREALTIME_DAEMON_TIMEOUT_15MIN</option>
+			<option value="20">COM_JREALTIME_DAEMON_TIMEOUT_20MIN</option>
+			<option value="30">COM_JREALTIME_DAEMON_TIMEOUT_30MIN</option>
+			<option value="45">COM_JREALTIME_DAEMON_TIMEOUT_45MIN</option>
+			<option value="60">COM_JREALTIME_DAEMON_TIMEOUT_60MIN</option>
+			<option value="90">COM_JREALTIME_DAEMON_TIMEOUT_90MIN</option>
+			<option value="120">COM_JREALTIME_DAEMON_TIMEOUT_120MIN</option>
+		</field>
+		<field name="guestprefix" type="text" size="10" default="Visitor" label="COM_JREALTIME_GUESTPREFIX" description="COM_JREALTIME_GUESTPREFIX_DESC" />
+		<field name="cpanelstats_period_interval" type="list" default="day" label="COM_JREALTIME_CPANELSTATS_PERIOD_INTERVAL" description="COM_JREALTIME_CPANELSTATS_PERIOD_INTERVAL_DESC">
+			<option value="day">COM_JREALTIME_LASTDAY</option>
+			<option value="week">COM_JREALTIME_LASTWEEK</option>
+			<option value="month">COM_JREALTIME_LASTMONTH</option>
+		</field>
+		<field name="geolocation_mode" class="btn-group" type="radio" default="ip" label="COM_JREALTIME_GEOLOCATION_MODE" description="COM_JREALTIME_GEOLOCATION_MODE_DESC">
+   			<option value="ip">COM_JREALTIME_IP_BASED</option>              
+   			<option value="browser">COM_JREALTIME_BROWSER_BASED</option>
+   		</field>
+		<field name="heatmap_status" class="btn-group" type="radio" default="1" label="COM_JREALTIME_HEATMAP_ONOFF" description="COM_JREALTIME_HEATMAP_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="heatmap_max_valid_width" type="text" default="350" label="COM_JREALTIME_HEATMAP_MAX_ELEMENT_WIDTH" description="COM_JREALTIME_HEATMAP_MAX_ELEMENT_WIDTH_DESC" />
+		<field name="heatmap_max_valid_height" type="text" default="50" label="COM_JREALTIME_HEATMAP_MAX_ELEMENT_HEIGHT" description="COM_JREALTIME_HEATMAP_MAX_ELEMENT_HEIGHT_DESC" />
+		<field name="registration_email" type="text" default="" size="50" label="COM_JREALTIME_REGISTRATION_EMAIL_FORUPDATES" description="COM_JREALTIME_REGISTRATION_EMAIL_FORUPDATES_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_REPORT"/>
+		<field name="default_period_interval" type="list" default="week" label="COM_JREALTIME_DEFAULT_PERIOD_INTERVAL" description="COM_JREALTIME_DEFAULT_PERIOD_INTERVAL_DESC">
+			<option value="day">COM_JREALTIME_DAY</option>
+			<option value="week">COM_JREALTIME_WEEK</option>
+			<option value="month">COM_JREALTIME_MONTH</option>
+		</field>
+		<field name="details_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_DETAILS_ONOFF" description="COM_JREALTIME_DETAILS_ONOFF_DESC">
+	   			<option value="0">JNO</option>              
+	   			<option value="1">JYES</option>
+   		</field>
+		<field name="geolocation_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_GEOLOCATION_ONOFF" description="COM_JREALTIME_GEOLOCATION_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="os_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_OS_ONOFF" description="COM_JREALTIME_OS_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="browser_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_BROWSER_ONOFF" description="COM_JREALTIME_BROWSER_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="device_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_DEVICE_ONOFF" description="COM_JREALTIME_DEVICE_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="landing_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_LANDING_ONOFF" description="COM_JREALTIME_LANDING_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="leaveoff_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_LEAVEOFF_ONOFF" description="COM_JREALTIME_LEAVEOFF_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="visitsbypage_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_VISITSBYPAGE_ONOFF" description="COM_JREALTIME_VISITSBYPAGE_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="visitsbyuser_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_VISITSBYUSER_ONOFF" description="COM_JREALTIME_VISITSBYUSER_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="visitsbyip_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_VISITSBYIP_ONOFF" description="COM_JREALTIME_VISITSBYIP_ONOFF_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+   		<field name="referral_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_REFERRAL_ONOFF" description="COM_JREALTIME_REFERRAL_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="searchkeys_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_SEARCHKEYS_ONOFF" description="COM_JREALTIME_SEARCHKEYS_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="xtd_singleuser_stats" class="btn-group" type="radio" default="0" label="COM_JREALTIME_XTD_SINGLEUSERSTATS_ONOFF" description="COM_JREALTIME_XTD_SINGLEUSERSTATS_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="show_usergroup" class="btn-group" type="radio" default="0" label="COM_JREALTIME_SHOW_USERGROUP_ONOFF" description="COM_JREALTIME_SHOW_USERGROUP_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="show_referral" class="btn-group" type="radio" default="0" label="COM_JREALTIME_SHOW_REFERRAL_ONOFF" description="COM_JREALTIME_SHOW_REFERRAL_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+	</fieldset> 
+	
+	<fieldset id="exclusions" name="exclusions" label="COM_JREALTIME_EXCLUSIONS" addfieldpath="/administrator/components/com_jrealtimeanalytics/framework/html" addrulepath="/administrator/components/com_jrealtimeanalytics/framework/html/validate"> 
+   		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_EXCLUSIONS_BY_IPADDRESS"/>
+   		<field name="ipaddress" type="ipaddress" validate="ipaddress" hint="xxx.xxx.xxx.xxx" size="10" default="" label="COM_JREALTIME_IPADDRESS" description="COM_JREALTIME_IPADDRESS_DESC" /> 
+   		
+   		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_EXCLUSIONS_BY_IPRANGE"/>
+   		<field name="iprange_start" type="ipaddress" validate="ipaddress" hint="xxx.xxx.xxx.xxx" size="10" default="" label="COM_JREALTIME_IPRANGE_START" description="COM_JREALTIME_IPRANGE_START_DESC" /> 
+   		<field name="iprange_end" type="ipaddress" validate="ipaddress" hint="xxx.xxx.xxx.xxx" size="10" default="" label="COM_JREALTIME_IPRANGE_END" description="COM_JREALTIME_IPRANGE_END_DESC" /> 
+		<field name="ip_multiple" type="textarea" hint="xxx.xxx.xxx.xxx" default="" rows="5" label="COM_JREALTIME_IP_MULTIPLE" description="COM_JREALTIME_IP_MULTIPLE_DESC" />
+		<field name="iprange_multiple" type="textarea" hint="xxx.xxx.xxx.xxx-xxx.xxx.xxx.xxx" default="" rows="5" label="COM_JREALTIME_IPRANGE_MULTIPLE" description="COM_JREALTIME_IPRANGE_MULTIPLE_DESC" />
+
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_EXCLUSIONS_BY_PAGES"/>
+		<field name="daemon_exclusions" type="menumultiselect" default="0" size="20" multiple="multiple" label="COM_JREALTIME_DAEMON_EXCLUSIONS" description="COM_JREALTIME_DAEMON_EXCLUSIONS_DESC" />
+	
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_EXCLUSIONS_BY_USERGROUPS"/>
+  		<field name="groups_exclusions" type="aclgroupsmultiselect" default="0" size="10" multiple="multiple" label="COM_JREALTIME_EXCLUSIONS_GIDS" description="COM_JREALTIME_EXCLUSIONS_GIDS_DESC" />
+  		
+  		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_EXCLUSIONS_BY_COUNTRYCODE"/>
+  		<field name="countrycode_exclusions" type="countryexcludemultiselect" default="0" size="10" multiple="multiple" label="COM_JREALTIME_EXCLUSIONS_BY_COUNTRYCODE_CODES" description="COM_JREALTIME_EXCLUSIONS_BY_COUNTRYCODE_CODES_DESC" />
+	
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_EXCLUSIONS_BY_USERAGENT"/>
+  		<field name="useragents_exclusions" type="text" default="googlebot,bingbot,acontbot,baiduspider,slurp,google,duckduckbot,yandexbot,Sogou,facebookexternalhit,ia_archiver" label="COM_JREALTIME_EXCLUSIONS_BY_USERAGENTS" description="COM_JREALTIME_EXCLUSIONS_BY_USERAGENTS_DESC" />	
+	</fieldset>
+	
+	<fieldset id="modulestatus" name="modulestatus" label="COM_JREALTIME_MODULE_STATUS" addfieldpath="/administrator/components/com_jrealtimeanalytics/framework/html"> 
+		<field class="module_rendering_ctrl" type="modulestatus" label="COM_JREALTIME_MODULE_STATUS_ENABLED" description="COM_JREALTIME_MODULE_STATUS_ENABLED_DESC" />
+   		<field name="daily_stats" class="btn-group" type="radio" default="1" label="COM_JREALTIME_LOAD_DAILY_STATS" description="COM_JREALTIME_LOAD_DAILY_STATS_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="realtime_stats" class="btn-group" type="radio" default="0" label="COM_JREALTIME_LOAD_REALTIME_STATS" description="COM_JREALTIME_LOAD_REALTIME_STATS_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="visualmap_stats" class="btn-group" type="radio" default="0" label="COM_JREALTIME_SHOW_VISUALMAP_STATS" description="COM_JREALTIME_SHOW_VISUALMAP_STATS_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="visitors_counter" class="btn-group" type="radio" default="0" label="COM_JREALTIME_SHOW_VISITORS_COUNTER" description="COM_JREALTIME_SHOW_VISITORS_COUNTER_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="visitors_counter_position" class="btn-group" type="radio" default="0" label="COM_JREALTIME_SHOW_VISITORS_COUNTER_POSITION" description="COM_JREALTIME_SHOW_VISITORS_COUNTER_POSITION_DESC">
+   			<option value="0">COM_JREALTIME_POSITION_DEFAULT</option>              
+   			<option value="1">COM_JREALTIME_POSITION_ALWAYS_BOTTOM</option>
+   		</field>
+   		<field name="module_default_period_interval" type="list" default="day" label="COM_JREALTIME_DEFAULT_PERIOD_INTERVAL" description="COM_JREALTIME_DEFAULT_PERIOD_INTERVAL_DESC">
+			<option value="day">COM_JREALTIME_DAY</option>
+			<option value="week">COM_JREALTIME_WEEK</option>
+			<option value="month">COM_JREALTIME_MONTH</option>
+			<option value="custom">COM_JREALTIME_CUSTOM_RANGE</option>
+		</field>
+   		<field name="module_start_date" default="" type="calendar" label="COM_JREALTIME_STARTDATE_STATS" description="COM_JREALTIME_STARTDATE_STATS_DESC"/>
+   		<field name="module_end_date" default="" type="calendar" label="COM_JREALTIME_ENDDATE_STATS" description="COM_JREALTIME_ENDDATE_STATS_DESC"/>
+	</fieldset>
+	
+	<fieldset id="advanced" name="advanced" label="COM_JREALTIME_ADVANCED" addfieldpath="/administrator/components/com_jrealtimeanalytics/framework/html"> 
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_SYSTEMSTATUS"/>
+		<field name="gdpr_integration" class="btn-group" type="radio" default="0" label="COM_JREALTIME_GDPR_INTEGRATION" description="COM_JREALTIME_GDPR_INTEGRATION_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="gcenabled" class="btn-group" type="radio" default="1" label="COM_JREALTIME_GARBAGEONOFF" description="COM_JREALTIME_GARBAGEONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="probability" type="list" size="1" default="20" label="COM_JREALTIME_GARBAGEPROB" description="COM_JREALTIME_GARBAGEPROB_DESC" >
+   			<option value="50">COM_JREALTIME_GARBAGEPROB_HIGHEST</option> 
+   			<option value="30">COM_JREALTIME_GARBAGEPROB_HIGH</option>
+   			<option value="20">COM_JREALTIME_GARBAGEPROB_MEDIUM</option>
+   			<option value="5">COM_JREALTIME_GARBAGEPROB_LOW</option>
+   		</field> 
+   		
+   		<field name="gc_serverstats_enabled" class="btn-group" type="radio" default="0" label="COM_JREALTIME_GARBAGE_SERVERSTATS_ONOFF" description="COM_JREALTIME_GARBAGE_SERVERSTATS_ONOFF_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+  		<field name="gc_serverstats_period" type="text" size="10" default="24" label="COM_JREALTIME_GARBAGE_SERVERSTATS_PERIOD" description="COM_JREALTIME_GARBAGE_SERVERSTATS_PERIOD_DESC" />
+   		
+   		<field name="caching" class="btn-group" type="radio" default="0" label="COM_JREALTIME_ENABLE_CACHING" description="COM_JREALTIME_ENABLE_CACHING_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="cache_lifetime" type="text" size="10" default="60" label="COM_JREALTIME_CACHE_LIFETIME" description="COM_JREALTIME_CACHE_LIFETIME_DESC" />
+		
+		<field name="offset_type" class="btn-group" type="radio" default="joomla" label="COM_JREALTIME_OFFSET_TYPE" description="COM_JREALTIME_OFFSET_TYPE_DESC">
+   			<option value="joomla">COM_JREALTIME_OFFSET_JOOMLA</option>              
+   			<option value="server">COM_JREALTIME_OFFSET_SERVER</option>
+   		</field>
+   		
+   		<field name="anonymize_ipaddress" class="btn-group" type="radio" default="0" label="COM_JREALTIME_ANONYMIZE_IPADDRESS" description="COM_JREALTIME_ANONYMIZE_IPADDRESS_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="gdpr_ip_pseudonymisation" class="btn-group" type="radio" default="0" label="COM_JREALTIME_GDPR_IP_PSEUDONYMISATION" description="COM_JREALTIME_GDPR_IP_PSEUDONYMISATION_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="direct_track_extensions" type="extensions" default="0" size="10" multiple="multiple" label="COM_JREALTIME_DIRECT_TRACK_EXTENSIONS" description="COM_JREALTIME_DIRECT_TRACK_EXTENSIONS_DESC" />
+   		<field name="shared_session_support" class="btn-group" type="radio" default="1" label="COM_JREALTIME_SHARED_SESSION_SUPPORT" description="COM_JREALTIME_SHARED_SESSION_SUPPORT_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="geolocation_php_func" class="btn-group" type="list" default="file" label="COM_JREALTIME_GEOLOCATION_PHP_FUNC" description="COM_JREALTIME_GEOLOCATION_PHP_FUNC_DESC">
+   			<option value="file">COM_JREALTIME_GEOLOCATION_PHP_FUNC_FILE</option>
+   			<option value="curl">COM_JREALTIME_GEOLOCATION_PHP_FUNC_CURL</option>              
+   		</field>
+   		<field name="cloudflare_ip_masking" class="btn-group" type="radio" default="0" label="COM_JREALTIME_CLOUDFLARE_IP_MASKING" description="COM_JREALTIME_CLOUDFLARE_IP_MASKING_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="backend_host_info" class="btn-group" type="radio" default="0" label="COM_JREALTIME_BACKEND_HOST_INFO" description="COM_JREALTIME_BACKEND_HOST_INFO_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="backend_geolocation_service" class="btn-group" type="list" default="geoiplookup" label="COM_JREALTIME_BACKEND_GEOLOCATION_SERVICE" description="COM_JREALTIME_BACKEND_GEOLOCATION_SERVICE_DESC">
+   			<option value="geoiplookup">COM_JREALTIME_BACKEND_GEOLOCATION_SERVICE_GEOIPLOOKUP</option>
+   			<option value="ipapi">COM_JREALTIME_BACKEND_GEOLOCATION_SERVICE_IPAPI</option>              
+   		</field>
+   		<field name="stats_geolocation_service" class="btn-group" type="list" default="geoplugin" label="COM_JREALTIME_STATS_GEOLOCATION_SERVICE" description="COM_JREALTIME_STATS_GEOLOCATION_SERVICE_DESC">
+   			<option value="geoplugin">COM_JREALTIME_STATS_GEOLOCATION_SERVICE_GEOPLUGIN</option>
+   			<option value="ipapi">COM_JREALTIME_STATS_GEOLOCATION_SERVICE_IPAPI</option>              
+   		</field>
+   		
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_REPORT_BYEMAIL_SETTINGS"/>
+		<field name="report_mailfrom" type="text" size="80" default="" label="COM_JREALTIME_REPORT_MAILFROM" description="COM_JREALTIME_REPORT_MAILFROM_DESC"/>
+		<field name="report_fromname" type="text" size="80" default="" label="COM_JREALTIME_REPORT_FROMNAME" description="COM_JREALTIME_REPORT_FROMNAME_DESC"/>
+		<field name="report_byemail" class="btn-group" type="radio" default="0" label="COM_JREALTIME_REPORT_BYEMAIL" description="COM_JREALTIME_REPORT_BYEMAIL_DESC">
+   			<option value="0">JNO</option>   
+   			<option value="1">JYES</option>            
+   		</field>
+   		<field name="report_addresses" type="text" class="wide" default="" label="COM_JREALTIME_REPORT_ADDRESSES" description="COM_JREALTIME_REPORT_ADDRESSES_DESC"/>
+   		<field name="report_format" type="list" default="emailxls" label="COM_JREALTIME_REPORT_FORMAT" description="COM_JREALTIME_REPORT_FORMAT_DESC" >
+   			<option value="emailxls">COM_JREALTIME_REPORT_FORMAT_XLS</option> 
+   			<option value="emailcsv">COM_JREALTIME_REPORT_FORMAT_CSV</option>
+   			<option value="emailpdf">COM_JREALTIME_REPORT_FORMAT_PDF</option>
+   		</field>
+   		<field name="report_frequency" type="list" default="7" label="COM_JREALTIME_REPORT_FREQUENCY" description="COM_JREALTIME_REPORT_FREQUENCY_DESC" >
+   			<option value="1">COM_JREALTIME_REPORT_FREQUENCY_BYDAY</option> 
+   			<option value="7">COM_JREALTIME_REPORT_FREQUENCY_BYWEEK</option>
+   			<option value="30">COM_JREALTIME_REPORT_FREQUENCY_BYMONTH</option>
+   		</field>
+   		<field name="overview_report_type" type="list" default="0" label="COM_JREALTIME_OVERVIEW_REPORT_TYPE" description="COM_JREALTIME_OVERVIEW_REPORT_TYPE_DESC" >
+   			<option value="0">COM_JREALTIME_OVERVIEW_REPORT_TYPE_FULLYEAR</option> 
+   			<option value="1">COM_JREALTIME_OVERVIEW_REPORT_TYPE_CURRENT_MONTH</option>
+   		</field>
+		<field name="report_script_jquery_onload_event" class="btn-group" type="radio" default="0" label="COM_JREALTIME_REPORT_SCRIPT_LOADING" description="COM_JREALTIME_REPORT_SCRIPT_LOADING_DESC">
+   			<option value="0">COM_JREALTIME_JAVASCRIPT</option>   
+   			<option value="1">COM_JREALTIME_JQUERY</option>            
+   		</field>
+
+   		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_EXCLUSIONS_JAVASCRIPT_MANAGEMENT"/>
+		<field name="includejquery" class="btn-group" type="radio" default="1" label="COM_JREALTIME_INCLUDE_JQUERY" description="COM_JREALTIME_INCLUDE_JQUERY_DESC">
+			<option value="0">JNO</option>              
+			<option value="1">JYES</option>
+		</field>
+   		<field name="noconflict" class="btn-group" type="radio" default="1" label="COM_JREALTIME_JQUERY_NOCONFLICT" description="COM_JREALTIME_JQUERY_NOCONFLICT_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field> 
+		<field name="scripts_loading" type="list" default="defer" label="COM_JREALTIME_SCRIPTS_LOADING" description="COM_JREALTIME_SCRIPTS_LOADING_DESC">
+   			<option value="dom">COM_JREALTIME_DOM_ORDER</option>              
+   			<option value="defer">COM_JREALTIME_DEFER</option>
+   			<option value="async">COM_JREALTIME_ASYNC</option>
+   		</field>
+		<field name="start_application_event" class="btn-group" type="list" default="afterroute" label="COM_JREALTIME_START_APPLICATION_EVENT" description="COM_JREALTIME_START_APPLICATION_EVENT_DESC">
+   			<option value="afterroute">COM_JREALTIME_START_APPLICATION_EVENT_AFTER_ROUTE</option>
+   			<option value="afterdispatch">COM_JREALTIME_START_APPLICATION_EVENT_AFTER_DISPATCH</option>              
+   		</field>
+		<field name="cbnoconflict" class="btn-group" type="radio" default="1" label="COM_JREALTIME_CBNOCONFLICT" description="COM_JREALTIME_CBNOCONFLICT_DESC">
+   			<option value="0">JNO</option>   
+   			<option value="1">JYES</option>            
+   		</field>
+   		<field name="enable_debug" class="btn-group" type="radio" default="0" label="COM_JREALTIME_ENABLE_DEBUG" description="COM_JREALTIME_ENABLE_DEBUG_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+	</fieldset>
+	
+	<fieldset name="google_analytics" id="google_analytics" label="COM_JREALTIME_GOOGLE_ANALYTICS_SETTINGS">
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_GOOGLE_PREFERRED_DOMAIN"/>
+		<field name="ga_domain" type="text" default="" label="COM_JREALTIME_GOOGLE_DOMAIN" description="COM_JREALTIME_GOOGLE_DOMAIN_DESC"/>
+		<field name="wm_domain" type="text" default="" label="COM_JREALTIME_GOOGLE_WMDOMAIN" description="COM_JREALTIME_GOOGLE_WMDOMAIN_DESC"/>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_JREALTIME_GOOGLE_APP_CREDENTIALS"/>
+		<field name="ga_api_key" type="text" size="70" default="" label="COM_JREALTIME_GOOGLE_APIKEY" description="COM_JREALTIME_GOOGLE_APIKEY_DESC"/>
+		<field name="ga_client_id" type="text" size="70" default="" label="COM_JREALTIME_GOOGLE_CLIENTID" description="COM_JREALTIME_GOOGLE_CLIENTID_DESC"/>
+		<field name="ga_client_secret" type="text" size="70" default="" label="COM_JREALTIME_GOOGLE_SECRET" description="COM_JREALTIME_GOOGLE_SECRET_DESC"/>
+	</fieldset>
+
+	<fieldset name="permissions" id="permissions" label="COM_JREALTIME_PERMISSIONS">
+		<field name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			validate="rules"
+			filter="rules"
+			component="com_jrealtimeanalytics"
+			section="component" />
+ 	</fieldset>
+</config>

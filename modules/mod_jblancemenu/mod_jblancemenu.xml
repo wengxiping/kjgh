@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_jblancemenu</name>
+	<creationDate>23 January 2016</creationDate>
+	<author>JoomBri Team</author>
+	<copyright>Copyright (C) 2012 - 2019 BriTech Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joombri.in</authorEmail>
+	<authorUrl>www.joombri.in</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_JBLANCE_DESC_MENU_MODULE</description>
+	
+	<files>
+		<filename module="mod_jblancemenu">mod_jblancemenu.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancemenu.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jblancemenu.sys.ini</language>
+	</languages>
+	
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_MENU" />
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="menutype" type="menu" default="joombri" label="MOD_JBLANCE_LABEL_SELECT_MENU" description="MOD_JBLANCE_DESC_SELECT_MENU" />
+
+				<field name="fixed" type="list" default="" label="MOD_JBLANCE_LABEL_FIXED" description="MOD_JBLANCE_DESC_FIXED">
+					<option value="">MOD_JBLANCE_OPTION_NO</option>
+					<option value="navbar-fixed-top">MOD_JBLANCE_OPTION_FIXED_TOP</option>
+					<option value="navbar-fixed-bottom">MOD_JBLANCE_OPTION_FIXED_BOTTOM</option>
+				</field>
+				
+				<field name="logout" type="menuitem" disable="separator,alias,heading,url" label="MOD_JBLANCE_LABEL_LOGOUT_REDIRECTURL" description="MOD_JBLANCE_DESC_LOGOUT_REDIRECTURL" >
+					<option value="">JDEFAULT</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

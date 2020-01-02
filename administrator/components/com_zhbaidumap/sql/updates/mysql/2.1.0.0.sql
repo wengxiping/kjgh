@@ -1,0 +1,1 @@
+ALTER TABLE `#__zhbaidumaps_maps` ADD `mapstyles` text NOT NULL;

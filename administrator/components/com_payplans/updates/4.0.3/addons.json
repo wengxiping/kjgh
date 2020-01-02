@@ -1,0 +1,17 @@
+[
+	{
+		"table": "#__payplans_planaddons",
+		"index": "idx_published",
+		"query": "ALTER TABLE `#__payplans_planaddons` ADD INDEX `idx_published` (`published`);"
+	},
+	{
+		"table": "#__payplans_planaddons",
+		"index": "idx_dates",
+		"query": "ALTER TABLE `#__payplans_planaddons` ADD INDEX `idx_dates` (`start_date`, `end_date`);"
+	},
+	{
+		"table": "#__payplans_planaddons",
+		"index": "idx_avaible_dates",
+		"query": "ALTER TABLE `#__payplans_planaddons` ADD INDEX `idx_avaible_dates` (`published`, `start_date`, `end_date`);"
+	}
+]

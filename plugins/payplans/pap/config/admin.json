@@ -1,0 +1,42 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "papUrl",
+				"type": "text",
+				"title": "PAP Full URL",
+				"tooltip": "Please add your PAP URL here (e.g. https://www.your-pap-url.com)",
+				"default": ""
+			},
+			{
+				"name": "accountId",
+				"type": "text",
+				"title": "Account ID",
+				"tooltip": "Please add your PAP Account Id here. The default value of account id is default1",
+				"default": "default1"
+			},
+			{
+				"name": "urlParameter",
+				"type": "text",
+				"title": "Affiliate ID Parameter",
+				"tooltip": "Enter URL parameter name for 'Affiliate ID' that you have set in your PAP account's configuration->URL Parameter Names",
+				"default": "a_aid"
+			},
+			{
+				"name": "papScript",
+				"type": "textarea",
+				"title": "PAP Script",
+				"tooltip": "Please copy and paste PAP script here. Do not include any script tags in this section. Only insert code enclosed between script tag.",
+				"default": ""
+			},
+			{
+				"name": "debug",
+				"type": "toggler",
+				"title": "Debug Post Affiliate Pro Connection",
+				"tooltip": "When this option is activated, the debug message will be thrown on the screen when initiating a connectiong with Post Affiliate Pro",
+				"default": false
+			}
+		]
+	}
+]

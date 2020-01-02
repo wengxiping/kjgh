@@ -1,0 +1,35 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchant_key",
+				"type": "text",
+				"title": "Merchant Key",
+				"tooltip": "Enter the Merchant Key provided by PayU Turkey",
+				"default": ""
+			},
+			{
+				"name": "secret_key",
+				"type": "text",
+				"title": "Secret Key",
+				"tooltip": "Enter the Secret Key provided by PayU Turkey",
+				"default": ""
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"tooltip": "COM_PP_ALLOW_RECURRING_CANCELLATION_DESC",
+				"default": false
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

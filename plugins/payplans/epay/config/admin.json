@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchant_id",
+				"type": "text",
+				"title": "Merchant Number",
+				"tooltip": "Please enter Merchant Number provided by ePay.",
+				"default": ""
+			},
+			{
+				"name": "api_password",
+				"type": "text",
+				"title": "API Password",
+				"tooltip": "Please enter Api Password",
+				"default": ""
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"tooltip": "COM_PP_ALLOW_RECURRING_CANCELLATION_DESC",
+				"default": false
+			}
+		]
+	}
+]

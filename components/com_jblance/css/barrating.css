@@ -1,0 +1,44 @@
+/******* brating *******/
+
+.brating .br-widget {
+    height: 24px;
+}
+
+.brating .br-widget a {
+    background: url('../images/zan.png') no-repeat;
+    width: 24px;
+    height: 18px;
+    display: block;
+    float: left;
+    background-position-y: -20px;
+}
+
+
+
+/* .brating .br-widget a.br-active {
+    background: url('../images/zan.png') no-repeat;
+    background-position-y: -20px;
+} */
+
+.brating .br-widget a:hover,
+.brating .br-widget a.br-active,
+.brating .br-widget a.br-selected {
+    background: url('../images/zan.png') no-repeat;
+    /* background-position-y: -20px; */
+}
+
+.brating .br-widget .br-current-rating {
+    line-height: 1.1;
+    float: left;
+    padding: 0 20px 0 20px;
+    color: #646464;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio : 1.5),
+(min-resolution: 192dpi) {
+    .brating .br-widget a {
+        background: url('../images/star@2x.png');
+        background-size: 24px 48px;
+    }
+}

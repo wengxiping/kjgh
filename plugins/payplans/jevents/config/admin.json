@@ -1,0 +1,106 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "published",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_USER_ENABLED",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_USER_ENABLED_DESC",
+				"default": false
+			},
+			{
+				"name": "cancreate",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CAN_CREATE_EVENTS",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CAN_CREATE_EVENTS_DESC",
+				"default": false
+			},
+			{
+				"name": "canedit",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CAN_EDIT_EVENTS",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CAN_EDIT_EVENTS_DESC",
+				"default": false
+			},
+			{
+				"name": "canpublishown",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CAN_PUBLISH_OWN",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CAN_PUBLISH_OWN_DESC",
+				"default": false
+			},
+			{
+				"name": "canpublishall",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CAN_PUBLISH_ALL",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CAN_PUBLISH_ALL_DESC",
+				"default": false
+			},
+			{
+				"name": "candeleteown",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CAN_DELETE_OWN_EVENTS",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CAN_DELETE_OWN_EVENTS_DESC",
+				"default": false
+			},
+			{
+				"name": "candeleteall",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CAN_DELETE_ALL_EVENTS",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CAN_DELETE_ALL_EVENTS_DESC",
+				"default": false
+			},
+			{
+				"name": "canuploadimages",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CAN_UPLOAD_IMAGES",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CAN_UPLOAD_IMAGES_DESC",
+				"default": false
+			},
+			{
+				"name": "canuploadmovies",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_UPLOAD_FILES",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_UPLOAD_FILES_DESC",
+				"default": false
+			},
+			{
+				"name": "cancreateown",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CREATE_OWN_EXTRAS",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CREATE_OWN_EXTRAS_DESC",
+				"default": false
+			},
+			{
+				"name": "cancreateglobal",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_JEVENTS_CREATE_GLOBAL_EXTRAS",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_CREATE_GLOBAL_EXTRAS_DESC",
+				"default": false
+			},
+			{
+				"name": "eventslimit",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_JEVENTS_EVENTS_LIMIT",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_EVENTS_LIMIT_DESC",
+				"default": ""
+			},
+			{
+				"name": "extraslimit",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_JEVENTS_EXTRAS_LIMIT",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_EXTRAS_LIMIT_DESC",
+				"default": ""
+			},
+			{
+				"name": "categories",
+				"type": "custom",
+				"path": "plugins:/payplans/jevents/elements/categories",
+				"title": "COM_PAYPLANS_APP_JEVENTS_APPLICABLE_CATEGORIES",
+				"tooltip": "COM_PAYPLANS_APP_JEVENTS_APPLICABLE_CATEGORIES_DESC",
+				"default": ""
+			}
+		]
+	}
+]

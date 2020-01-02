@@ -1,0 +1,75 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.acm-parallax {
+	.parallax-showcase-item {
+		position: relative;
+		overflow: hidden;
+		height: @grid-gutter-width * 20;
+
+		// Tablet view
+		@media (max-width: @screen-md-max) {
+			height: @grid-gutter-width * 15;
+		}
+
+		// Mobile view
+		@media (max-width: @screen-xs-max) {
+			height: @grid-gutter-width * 7;
+		}
+
+		// Video Background
+		#video-bg {
+			position: relative;
+
+			// Mobile view
+			@media (max-width: @screen-xs-max) {
+				top: 50%;
+				transform: translateY(-50%)!important;
+				  -webkit-transform: translateY(-50%)!important;
+			}
+		}
+	}
+
+	// Mask Background
+	.mask-bg {
+		bottom: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.opacity(0.5);
+
+		// Mobile view
+		@media (max-width: @screen-xs-max) {
+			display: none;
+		}
+
+		&.has-bg {
+			background: linear-gradient(45deg, #486acd, #f9676b);
+		}
+	}
+
+	// Parallax Text
+	.parallax-action {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+
+		// Title
+		h2 {
+			color: @white;
+			font-size: @font-size-h1;
+			margin-top: 0;
+			margin-bottom: @grid-gutter-width;
+		}
+	}
+}
+

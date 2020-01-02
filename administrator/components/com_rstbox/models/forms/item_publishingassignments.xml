@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="mirror">
+        <field name="mirror" type="radio" 
+            label="COM_RSTBOX_MIRROR_ASSIGNMENTS" 
+            description="COM_RSTBOX_MIRROR_ASSIGNMENTS_DESC" 
+            class="switcher btn-group btn-group-yesno"
+            default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+        </field>
+        <field name="mirror_box" type="boxes"
+            label="COM_RSTBOX_BOX"
+            description="COM_RSTBOX_MIRROR_ASSIGNMENTS_BOX_DESC"
+            excludeeditingbox="true"
+            showon="mirror:1"
+        />
+    </fieldset>
+    <fieldset name="publishingAssignments">
+        <field name="assignmentMatchingMethod" type="list" 
+            label="NR_ASSIGN_MATCHING_METHOD" 
+            description="NR_ASSIGN_MATCHING_METHOD_DESC" 
+            class="input-small" 
+            default="and">
+                <option value="and">JALL</option>
+                <option value="or">NR_ANY</option>
+        </field>
+        <field name="assignmentMatchingMethod" type="list" 
+            label="NR_ASSIGN_MATCHING_METHOD" 
+            description="NR_ASSIGN_MATCHING_METHOD_DESC" 
+            class="input-small" 
+            default="and">
+                <option value="and">JALL</option>
+                <option value="or">NR_ANY</option>
+        </field>
+        <!-- Menu -->
+        <fieldset name="menu">
+            <field name="assign_menu" type="assignmentselection" 
+                label="NR_MENU_ITEMS"
+                description="NR_MENU_ITEMS_DESC" 
+            />
+            <field name="assign_menu_list" type="nrmenuitems"
+                multiple="true" 
+                label="NR_SELECTION" 
+                description="NR_MENU_ITEMS_DESC" 
+            />
+            <field name="assign_menu_param_noitem" type="radio" 
+                label="NR_ASSIGN_MENU_NOITEM" 
+                description="NR_ASSIGN_MENU_NOITEM_DESC" 
+                class="switcher btn-group" 
+                filter="intval" 
+                size="1" 
+                default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="assign_menu_param_inc_children" type="list" 
+                label="NR_ASSIGN_MENU_CHILD" 
+                description="NR_ASSIGN_MENU_CHILD_DESC" 
+                class="btn-group input-small"
+                filter="intval" 
+                size="1" 
+                default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+                <option value="2">JONLY</option>
+            </field>
+        </fieldset>
+        <!-- URL -->
+        <fieldset name="url">
+            <field name="assign_urls" type="assignmentselection"
+                label="NR_ASSIGN_URLS"
+                description="NR_ASSIGN_URLS_DESC2"
+            />
+            <field name="assign_urls_list" type="textarea" 
+                label="NR_ASSIGN_URLS_LIST" 
+                description="NR_ASSIGN_URLS_DESC"
+                class="span-12 input-full"
+                hint="/blog/welcome-to-our-site"
+                rows="5"
+            />
+            <field name="assign_urls_param_regex" type="radio" 
+                label="NR_ASSIGN_URLS_REGEX" 
+                description="NR_ASSIGN_URLS_REGEX_DESC" 
+                class="switcher btn-group"
+                filter="intval" 
+                default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+            </field>
+        </fieldset>
+        <!-- Joomla! Articles -->
+        <fieldset name="article">
+            <field name="assign_contentarticles" type="assignmentselection" 
+                label="NR_ARTICLES"
+                description="NR_ASSIGN_ARTICLE_DESC"
+            />
+            <field name="assign_contentarticles_list" type="nrtext" 
+                label="NR_SELECTION" 
+                description="NR_ARTICLES_DESC"
+                hint="Enter comma separated ids"
+            />
+        </fieldset>
+        <!-- Joomla! Article Categories -->
+        <fieldset name="articlecategories">
+            <field name="assign_contentcats" type="assignmentselection"
+                label="NR_CATEGORIES"
+                description="NR_ASSIGN_ARTICLE_CATEGORIES_DESC"
+            />
+            <field name="assign_contentcats_list" type="nr_content" 
+                group="categories" 
+                multiple="true" 
+                default=""
+                label="NR_SELECTION" 
+                description="NR_CATEGORIES_DESC"
+            />
+            <field name="assign_contentcats_param_inc_children" type="list"
+                default="0"
+                label="NR_ALSO_ON_CHILD_ITEMS"
+                description="NR_ALSO_ON_CHILD_ITEMS_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+                <option value="2">NR_ONLY</option>
+            </field>
+            <field name="assign_contentcats_param_inc" type="list" 
+                multiple="true"
+                default="inc_articles" 
+                label="NR_PAGE_TYPES" 
+                description="NR_PAGE_TYPES_DESC"
+                class="hasChosen">
+                <option value="inc_categories">NR_CATEGORIES</option>
+                <option value="inc_articles">NR_ARTICLES</option>
+            </field>
+        </fieldset>
+        <!-- Components -->
+        <fieldset name="components">
+            <field name="assign_components" type="assignmentselection"
+                label="NR_ASSIGN_COMPONENTS"
+                description="NR_ASSIGN_COMPONENTS_DESC2"
+            />
+            <field name="assign_components_list" type="nrcomponents" 
+                label="NR_SELECTION"
+                description="NR_ASSIGN_COMPONENTS_DESC"
+                multiple="true" 
+                frontend="true"
+                class="hasChosen"
+            />
+        </fieldset>
+        <!-- Datetime -->
+        <fieldset name="datetime">
+            <field name="assign_datetime" type="assignmentselection" 
+                label="NR_DATETIME"
+                description="NR_ASSIGN_DATETIME_DESC"
+            />
+            <field name="assign_datetime_param_publish_up" type="calendar"
+                filter="user_utc"
+                format="%Y-%m-%d %H:%M"
+                default="0000-00-00 00:00"
+                hint="0000-00-00 00:00"
+                label="NR_START_PUBLISHING"
+                description="NR_START_PUBLISHING_DESC"
+            />
+            <field name="assign_datetime_param_publish_down" type="calendar" 
+                filter="user_utc"
+                format="%Y-%m-%d %H:%M"
+                default="0000-00-00 00:00"
+                hint="0000-00-00 00:00"
+                label="NR_FINISH_PUBLISHING"
+                description="NR_FINISH_PUBLISHING_DESC"
+            />
+        </fieldset>
+        <!-- Time Range -->
+        <fieldset name="timerange">
+            <field name="assign_timerange" type="assignmentselection" 
+                label="NR_ASSIGN_TIMERANGE"
+                description="NR_ASSIGN_TIMERANGE_DESC"
+            />
+            <field name="assign_timerange_param_publish_up" type="nr_time" 
+                label="NR_START_TIME"
+                description="NR_START_PUBLISHING_TIMERANGE_DESC"
+            />
+            <field name="assign_timerange_param_publish_down" type="nr_time" 
+                label="NR_END_TIME"
+                description="NR_FINISH_PUBLISHING_TIMERANGE_DESC"
+            />
+        </fieldset>
+        <!-- User Group -->
+        <fieldset name="usergroup">
+            <field name="assign_usergroups" type="assignmentselection"
+                label="NR_ACCESSLEVEL"
+                description="NR_ASSIGN_USERGROUP_DESC"
+            />
+            <field name="assign_usergroups_list" type="nrgrouplevel" 
+                multiple="true"
+                label="NR_SELECTION" 
+                description="NR_ACCESSLEVEL_DESC"
+            />
+        </fieldset>
+        <!-- Device -->
+        <fieldset name="device">
+            <field name="assign_devices" type="assignmentselection"
+                label="NR_ASSIGN_DEVICES"
+                description="NR_ASSIGN_DEVICES_DESC2"
+            />
+            <field name="assign_devices_list" type="nrdevice" 
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_DEVICES_DESC" 
+                multiple="true"
+                class="hasChosen col-md-4"
+            />
+            <field name="assign_devices_note" type="note"
+                class="well-note"
+                description="NR_ASSIGN_DEVICES_NOTE"
+            />
+        </fieldset>
+        <!-- Browser -->
+        <fieldset name="browser">
+            <field name="assign_browsers" type="assignmentselection"
+                label="NR_ASSIGN_BROWSERS"
+                description="NR_ASSIGN_BROWSERS_DESC2"
+            />
+            <field name="assign_browsers_list" type="nrbrowser"
+                label="NR_SELECTION"
+                description="NR_ASSIGN_BROWSERS_DESC"
+                multiple="true"
+                class="hasChosen"
+            />
+        </fieldset>
+        <!-- Operating System -->
+        <fieldset name="os">
+            <field name="assign_os" type="assignmentselection"
+                label="NR_ASSIGN_OS"
+                description="NR_ASSIGN_OS_DESC2"
+            />
+            <field name="assign_os_list" type="nros"
+                label="NR_SELECTION"
+                description="NR_ASSIGN_OS_DESC"
+                multiple="true"
+                class="hasChosen"
+            />
+        </fieldset>
+        <!-- URL Referrer -->
+        <fieldset name="referrer">
+            <field name="assign_referrer" type="assignmentselection"
+                label="NR_ASSIGN_REFERRER"
+                description="NR_ASSIGN_REFERRER_DESC2"
+            />
+            <field name="assign_referrer_list" type="textarea" 
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_REFERRER_DESC"
+                class="span-12 input-full"
+                rows="5"
+                hint="www.facebook.com"
+            />
+            <field name="assign_referrer_note" type="note"
+                class="well-note"
+                description="NR_ASSIGN_REFERRER_NOTE"
+            />
+        </fieldset>
+        <!-- Languages -->
+        <fieldset name="languages">
+            <field name="assign_lang" type="assignmentselection"
+                label="NR_ASSIGN_LANGS"
+                description="NR_ASSIGN_LANGS_DESC"
+            />
+            <field name="assign_lang_list" type="contentlanguage" 
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_LANGS_LIST_DESC" 
+                multiple="true"
+                class="hasChosen"
+            />
+        </fieldset>
+        <!-- Time on Site -->
+        <fieldset name="timeonsite">
+            <field name="assign_timeonsite" type="assignmentselection"
+                label="NR_ASSIGN_TIMEONSITE"
+                description="NR_ASSIGN_TIMEONSITE_DESC"
+            />
+            <field name="assign_timeonsite_list" type="nrnumber" 
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_TIMEONSITE_DESC"
+                filter="intval"
+                hint="360"
+                class="input-small"
+                addon="seconds"
+                min="0"
+                step="100"
+            /> 
+        </fieldset>
+        <!-- Viewed Other Box -->
+        <fieldset name="onotherbox">
+            <field name="assign_onotherbox" type="assignmentselection"
+                label="COM_RSTBOX_ASSIGN_ON_OTHER_BOX"
+                description="COM_RSTBOX_ASSIGN_ON_OTHER_DESC"
+            /> 
+            <field name="assign_onotherbox_list" type="boxes"
+                label="NR_SELECTION"
+                description="COM_RSTBOX_SELECT_BOX"
+                multiple="true"
+                excludeeditingbox="true"
+                class="hasChosen"
+            />
+        </fieldset>
+        <!-- Pageviews -->
+        <fieldset name="pageviews">
+            <field name="assign_pageviews" type="assignmentselection"
+                label="NR_ASSIGN_PAGEVIEWS"
+                description="NR_ASSIGN_PAGEVIEWS_DESC"
+            />
+            <field name="assign_pageviews_list" type="list"
+                label="NR_MATCH"
+                description="NR_MATCH_DESC"
+                class="input-medium">
+                <option value="exactly">NR_EXACTLY</option>
+                <option value="fewer">NR_FEWER_THAN</option>
+                <option value="greater">NR_GREATER_THAN</option>
+            </field>
+            <field name="assign_pageviews_param_views" type="number"
+                label="NR_ASSIGN_PAGEVIEWS_VIEWS" 
+                description="NR_ASSIGN_PAGEVIEWS_VIEWS_DESC"
+                filter="intval"
+                class="input-mini"
+                hint="3"
+                min="0"
+            />
+        </fieldset>
+        <!-- Cookie -->
+        <fieldset name="cookie">
+            <field name="assign_cookiename" type="assignmentselection"
+                label="NR_COOKIE"
+                description="NR_ASSIGN_COOKIENAME_NAME_DESC2"
+            />
+            <field name="assign_cookiename_param_name" type="text"
+                label="NR_ASSIGN_COOKIENAME_NAME"
+                description="NR_ASSIGN_COOKIENAME_NAME_DESC"
+            />
+            <field name="assign_cookiename_list" type="list"
+                label="NR_MATCH"
+                description="NR_MATCH_DESC"
+                default="exists"
+                class="input-medium">
+                <option value="exists">NR_EXISTS</option>
+                <option value="equal">NR_IS_EQUAL</option>
+                <option value="contains">NR_CONTAINS</option>
+                <option value="starts">NR_STARTS_WITH</option>
+                <option value="ends">NR_ENDS_WITH</option>
+            </field>
+            <field name="assign_cookiename_param_content" type="text"
+                label="NR_ASSIGN_COOKIENAME_CONTENT"
+                description="NR_ASSIGN_COOKIENAME_CONTENT_DESC"
+                class="input-large"
+                showon="assign_cookiename_list:equal,contains,starts,ends"
+            />
+        </fieldset>
+        <!-- AkeebaSubs -->
+        <fieldset name="akeebasubs">
+            <field name="assign_akeebasubs" type="assignmentselection"
+                label="NR_AKEEBASUBS"
+                description="NR_ASSIGN_AKEEBASUBS_DESC"
+            />
+            <field name="assign_akeebasubs_list" type="akeebasubs" 
+                label="NR_AKEEBASUBS_LEVELS" 
+                description="NR_AKEEBASUBS_LEVELS_DESC"
+                multiple="true"
+            />
+        </fieldset>
+        <!-- AcyMailing -->
+        <fieldset name="acymailing">
+            <field name="assign_acymailing" type="assignmentselection"
+                label="NR_ACYMAILING"
+                description="NR_ASSIGN_ACYMAILING_DESC"
+            />
+            <field name="assign_acymailing_list" type="acymailing" 
+                label="NR_ACYMAILING_LIST" 
+                description="NR_ACYMAILING_LIST_DESC"
+                multiple="true"
+            />
+        </fieldset>
+        <!-- ConvertForms -->
+        <fieldset name="convertforms" addfieldpath="administrator/components/com_convertforms/models/forms/fields">
+            <field name="assign_convertforms" type="assignmentselection"
+                label="NR_CONVERTFORMS"
+                description="NR_ASSIGN_CONVERTFORMS_DESC"
+            />
+            <field name="assign_convertforms_list" type="campaigns" 
+                label="NR_CONVERTFORMS_LIST" 
+                description="NR_CONVERTFORMS_LIST_DESC"
+                multiple="true"
+            />
+        </fieldset>
+        <!-- Custom PHP -->
+        <fieldset name="php">
+            <field name="assign_php" type="assignmentselection"
+                label="NR_ASSIGN_PHP"
+                description="NR_ASSIGN_PHP_DESC2"
+            />
+            <field name="assign_php_list" type="textarea" 
+                label="NR_PHPCODE" 
+                description="NR_ASSIGN_PHP_DESC"
+                filter="raw"
+                class="span-12 input-full"
+                rows="5"
+            />
+            <field name="assign_php_note" type="note" 
+                class="well-note"
+                description="COM_RSTBOX_ASSIGN_PHP_NOTE"
+            />
+        </fieldset>
+        <!-- Geo Country -->
+        <fieldset name="country">
+            <field name="assign_geo_country" type="assignmentselection" 
+                label="NR_ASSIGN_COUNTRIES"
+                description="NR_ASSIGN_COUNTRIES_DESC2"
+            />
+            <field name="assign_geo_country_list" type="nr_geo"
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_COUNTRIES_DESC"
+                multiple="true"
+                showselect="false"
+                class="hasChosen"
+            />
+        </fieldset>
+        <!-- Geo Continent -->
+        <fieldset name="continent">
+            <field name="assign_geo_continent" type="assignmentselection"
+                label="NR_ASSIGN_CONTINENTS"
+                description="NR_ASSIGN_CONTINENTS_DESC2"
+            />
+            <field name="assign_geo_continent_list" type="nr_geo"
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_CONTINENTS_DESC"
+                multiple="true"
+                geo="continents"
+                showselect="false"
+                class="hasChosen"
+            />
+        </fieldset>
+        <!-- IP Address -->
+        <fieldset name="ipaddress">
+            <field name="assign_ip_addresses" type="assignmentselection"
+                label="NR_IPADDRESS"
+                description="NR_ASSIGN_IP_ADDRESSES_DESC2"
+            />
+            <field name="assign_ip_addresses_list" type="textarea" 
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_IP_ADDRESSES_DESC"
+                filter="raw"
+                class="span-12 input-full"
+                rows="5"
+                hint="180.150.1.6"
+            />
+        </fieldset>
+        <!-- User ID -->
+        <fieldset name="userid">
+            <field name="assign_user_id" type="assignmentselection"
+                label="NR_ASSIGN_USER_ID"
+                description="NR_ASSIGN_USER_ID_DESC"
+            />
+            <field name="assign_user_id_list" type="text" 
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_USER_ID_SELECTION_DESC"
+                hint="545,555,556"
+            />
+        </fieldset>
+        <!-- K2 Items -->
+        <fieldset name="k2_items">
+            <field name="assign_k2_items" type="assignmentselection"
+                label="NR_ASSIGN_K2_ITEMS"
+                description="NR_ASSIGN_K2_ITEMS_DESC"
+            />
+            <field name="assign_k2_items_list" type="nrtext"
+                label="NR_SELECTION"
+                description="NR_ASSIGN_K2_ITEMS_LIST_DESC"
+                hint="Enter comma separated ids"
+            />
+            <field name="assign_k2_items_param_cont_keywords" type="textarea" 
+                label="NR_CONTENT_KEYWORDS" 
+                description="NR_ASSIGN_K2_ITEMS_CONTENT_KEYWORDS_DESC"
+                class="span12"
+                rows="5"
+                hint="keyword1, keyword2, keyword3"
+            />
+            <field name="assign_k2_items_param_meta_keywords" type="textarea" 
+                label="NR_META_KEYWORDS" 
+                description="NR_ASSIGN_K2_ITEMS_META_KEYWORDS_DESC"
+                class="span12"
+                rows="5"
+                hint="keyword1, keyword2, keyword3"
+            />            
+        </fieldset>
+        <!-- K2 Pagetypes -->
+        <fieldset name="k2_pagetypes">
+            <field name="assign_k2_pagetypes" type="assignmentselection"
+                label="NR_PAGE_TYPE"
+                description="NR_ASSIGN_K2_PAGETYPES_DESC"
+            />
+            <field name="assign_k2_pagetypes_list" type="nrk2"
+                label="NR_SELECTION"
+                description="NR_ASSIGN_PAGE_TYPES_DESC"
+                group="pagetypes"
+                multiple="true"
+            />       
+        </fieldset>
+        <!-- K2 Tags -->
+        <fieldset name="k2_tags">
+            <field name="assign_k2_tags" type="assignmentselection"
+                label="NR_TAG"
+                description="NR_ASSIGN_K2_TAGS_DESC"
+            />
+            <field name="assign_k2_tags_list" type="nrk2"
+                label="NR_SELECTION"
+                description="NR_ASSIGN_TAGS_DESC"
+                group="tags"
+                multiple="true"
+            />    
+        </fieldset>
+        <!-- K2 Categories -->
+        <fieldset name="k2_cats">
+            <field name="assign_k2_cats" type="assignmentselection"
+                label="NR_CATEGORIES"
+                description="NR_ASSIGN_K2_CATEGORIES_DESC"
+            />
+            <field name="assign_k2_cats_list" type="nrk2" 
+                label="NR_SELECTION" 
+                description="NR_ASSIGN_CATEGORY_DESC"
+                group="categories" 
+                multiple="true" 
+            />
+            <field name="assign_k2_cats_param_inc_children" type="radio"
+                class="btn-group btn-group-yesno"
+                default="0"
+                label="NR_ALSO_ON_CHILD_ITEMS"
+                description="NR_ALSO_ON_CHILD_ITEMS_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+                <option value="2">NR_ONLY</option>
+            </field>
+            <field name="assign_k2_cats_param_inc" type="list" 
+                multiple="true"
+                default="inc_items" 
+                label="NR_PAGE_TYPES" 
+                description="NR_PAGE_TYPES_DESC">
+                <option value="inc_categories">NR_ASSIGN_K2_CATEGORIES_CATEGORIES_OPTION</option>
+                <option value="inc_items">NR_ASSIGN_K2_CATEGORIES_ITEMS_OPTION</option>
+            </field>
+        </fieldset>
+    </fieldset>
+</form>

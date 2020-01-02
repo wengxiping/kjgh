@@ -1,0 +1,7 @@
+[
+	{
+		"table": "#__payplans_subscription",
+		"index": "idx_userid",
+		"query": "ALTER TABLE `#__payplans_subscription` ADD INDEX `idx_userid` (`user_id`);"
+	}
+]

@@ -1,0 +1,314 @@
+[
+	{
+		"title" : "Dashboard",
+		"link"  : "index.php?option=com_payplans&view=dashboard",
+		"class" : "fa-home",
+		"access": "",
+		"view"  : "dashboard"
+	},
+	{
+		"title" : "Settings",
+		"link"  : "index.php?option=com_payplans&view=config",
+		"class" : "fa-cog",
+		"access": "config",
+		"view"  : "config",
+		"childs": [
+			{
+				"title": "General",
+				"link": "index.php?option=com_payplans&view=config&layout=general",
+				"view": "config",
+				"layouts": ["general"]
+			},
+			{
+				"title": "Invoices",
+				"link": "index.php?option=com_payplans&view=config&layout=invoices",
+				"view": "config",
+				"layouts": ["invoices"]
+			},
+			{
+				"title": "Plans",
+				"link": "index.php?option=com_payplans&view=config&layout=plans",
+				"view": "config",
+				"layouts": ["plans"]
+			},
+			{
+				"title": "Discounts",
+				"link": "index.php?option=com_payplans&view=config&layout=discounts",
+				"view": "config",
+				"layouts": ["discounts"]
+			},
+			{
+				"title": "Layout",
+				"link": "index.php?option=com_payplans&view=config&layout=layout",
+				"view": "config",
+				"layouts": ["layout"]
+			},
+			{
+				"title": "System",
+				"link": "index.php?option=com_payplans&view=config&layout=system",
+				"view": "config",
+				"layouts": ["system"]
+			}
+		]
+	},
+	{
+		"title" : "Orders",
+		"link"  : "index.php?option=com_payplans&view=subscription",
+		"class" : "fa-shopping-cart",
+		"access": "orders",
+		"view"  : "subscription",
+		"childs": [
+			{
+				"title": "Subscriptions",
+				"link": "index.php?option=com_payplans&view=subscription",
+				"view": "subscription",
+				"layouts": ["form", "default"]
+			},
+			{
+				"title": "Invoices",
+				"link": "index.php?option=com_payplans&view=invoice",
+				"view": ["invoice", "transaction"]
+			},
+			{
+				"title": "Custom Details",
+				"link": "index.php?option=com_payplans&view=subscription&layout=customdetails",
+				"view": "subscription",
+				"layouts": ["customdetails", "customdetailsform"]
+			}
+		]
+	},
+	{
+		"title" : "Statistics",
+		"link"  : "index.php?option=com_payplans&view=analytics",
+		"class" : "fa-chart-line",
+		"access": "statistics",
+		"view"  : "analytics",
+		"childs": [
+			{
+				"title": "Sales",
+				"link": "index.php?option=com_payplans&view=analytics&layout=sales",
+				"view"  : "analytics",
+				"layouts": ["sales"]
+			},
+			{
+				"title": "Growth",
+				"link": "index.php?option=com_payplans&view=analytics&layout=growth",
+				"view"  : "analytics",
+				"layouts": ["growth"]
+			},
+			{
+				"title": "Renewals",
+				"link": "index.php?option=com_payplans&view=analytics&layout=renewals",
+				"view"  : "analytics",
+				"layouts": ["renewals"]
+			},
+			{
+				"title": "Upgrades",
+				"link": "index.php?option=com_payplans&view=analytics&layout=upgrades",
+				"view"  : "analytics",
+				"layouts": ["upgrades"]
+			}
+		]
+	},
+	{
+		"title" : "Plans",
+		"link"  : "index.php?option=com_payplans&view=plan",
+		"class" : "fa-box-open",
+		"access": "plans",
+		"view"  : "plan",
+		"childs": [
+			{
+				"title": "Plans",
+				"link": "index.php?option=com_payplans&view=plan",
+				"view": "plan"
+			},
+			{
+				"title": "Groups",
+				"link": "index.php?option=com_payplans&view=group",
+				"view": "group"
+			},
+			{
+				"title": "Upgrades",
+				"link": "index.php?option=com_payplans&view=upgrades",
+				"view": "upgrades"
+			},
+			{
+				"title": "Renewals",
+				"link": "index.php?option=com_payplans&view=renewals",
+				"view": "renewals"
+			},
+			{
+				"title": "Dynamic Modifier",
+				"link": "index.php?option=com_payplans&view=modifiers",
+				"view": "modifiers"
+			},
+			{
+				"title": "Addons",
+				"link": "index.php?option=com_payplans&view=addons",
+				"view": "addons"
+			},
+			{
+				"title": "Plan Assignment",
+				"link": "index.php?option=com_payplans&view=assigns",
+				"view": "assigns"
+			},
+			{
+				"title": "Advanced Pricing",
+				"link": "index.php?option=com_payplans&view=advancedpricing",
+				"view": "advancedpricing"
+			},
+			{
+				"title": "Limit Subscription",
+				"link": "index.php?option=com_payplans&view=limitsubscription",
+				"view": "limitsubscription"
+			}
+		]
+	},
+	{
+		"title": "Discounts",
+		"link": "index.php?option=com_payplans&view=discounts",
+		"class": "fa-tags",
+		"view": "discounts",
+		"access": "discounts",
+		"childs": [
+			{
+				"title": "Discounts",
+				"link": "index.php?option=com_payplans&view=discounts",
+				"view": "discounts",
+				"layouts": ["default", "form"]
+			},
+			{
+				"title": "Coupon Generator",
+				"link": "index.php?option=com_payplans&view=discounts&layout=generator",
+				"view": "discounts",
+				"layouts": ["generator"]
+			}
+		]
+	},
+	{
+		"title" : "Payment Methods",
+		"link"  : "index.php?option=com_payplans&view=gateways",
+		"class" : "fa-credit-card",
+		"access": "gateways",
+		"view"  : "gateways"
+	},
+	{
+		"title" : "Apps",
+		"link"  : "index.php?option=com_payplans&view=app",
+		"class" : "fa-hdd",
+		"access": "apps",
+		"view"  : "app"
+	},
+	{
+		"title": "Users",
+		"link": "index.php?option=com_payplans&view=user",
+		"class": "fa-user",
+		"access": "users",
+		"view": "user",
+		"childs": [
+			{
+				"title": "Users",
+				"link": "index.php?option=com_payplans&view=user",
+				"view": "user",
+				"layouts": ["default", "form"]
+			},
+			{
+				"title": "Custom Details",
+				"link": "index.php?option=com_payplans&view=user&layout=customdetails",
+				"view": "user",
+				"layouts": ["customdetails", "customdetailsform"]
+			},
+			{
+				"title": "Download Requests",
+				"link": "index.php?option=com_payplans&view=user&layout=downloads",
+				"view": "user",
+				"layouts": ["downloads"]
+			}
+		]
+	},
+	{
+		"title": "Notifications",
+		"link": "index.php?option=com_payplans&view=notifications",
+		"class": "fa-at",
+		"view": "notifications",
+		"access": "notifications",
+		"childs": [
+			{
+				"title": "Notifications",
+				"link": "index.php?option=com_payplans&view=notifications",
+				"view": "notifications",
+				"layouts": ["default", "form"]
+			},
+			{
+				"title": "Templates",
+				"link": "index.php?option=com_payplans&view=notifications&layout=templates",
+				"view": "notifications",
+				"layouts": ["templates", "editFile"]
+			}
+		]
+	},
+	{
+		"title": "Referrals",
+		"link": "index.php?option=com_payplans&view=referrals",
+		"class": "fa-retweet",
+		"access": "referrals",
+		"view": "referrals"
+	},
+	{
+		"title": "Languages",
+		"link": "index.php?option=com_payplans&view=languages",
+		"class": "fa-globe",
+		"access": "languages",
+		"view": "languages"
+	},
+	{
+		"title": "Automation",
+		"link": "index.php?option=com_payplans&view=automation",
+		"class": "fa-magic",
+		"access": "automation",
+		"view": "automation"
+	},
+	{
+		"title" : "Logs",
+		"link"  : "index.php?option=com_payplans&view=log",
+		"class" : "fa-archive",
+		"access": "logs",
+		"view"  : "log",
+		"childs": [
+			{
+				"title": "Audit Logs",
+				"link": "index.php?option=com_payplans&view=log",
+				"view": "log",
+				"layouts": ["default"]
+			},
+			{
+				"title": "Payment Notifications",
+				"link": "index.php?option=com_payplans&view=log&layout=payments",
+				"view": "log",
+				"layouts": ["payments"]
+			}
+		]
+	},
+	{
+		"title": "Reports",
+		"link": "index.php?option=com_payplans&view=reports",
+		"class": "far fa-file-excel",
+		"access": "reports",
+		"view": "reports",
+		"childs": [
+			{
+				"title": "Export",
+				"link": "index.php?option=com_payplans&view=reports&layout=export",
+				"view": "reports",
+				"layouts": ["export"]
+			},
+			{
+				"title": "PDF Invoice",
+				"link": "index.php?option=com_payplans&view=reports&layout=pdfinvoice",
+				"view": "reports",
+				"layouts": ["pdfinvoice"]
+			}
+		]
+	}
+]
+

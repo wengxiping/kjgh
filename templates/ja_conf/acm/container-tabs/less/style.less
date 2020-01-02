@@ -1,0 +1,119 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// CONTAINER TABS
+// ------------------
+.acm-container-tabs {
+  position: relative;
+
+  .section-title {
+    max-width: @grid-gutter-width * 5;
+
+    .title-lead {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  // Tab Nav
+  .container-tabs-nav {
+    position: relative;
+
+    .nav-tabs {
+      border: 0;
+      bottom: -@t3-global-margin / 2;
+      position: absolute;
+      right: 0;
+      max-width: @grid-gutter-width * 10;
+
+      // Tablet/mobile view
+      @media (max-width: @screen-sm-max) {
+        position: relative;
+        margin-top: @t3-global-margin / 2;
+      }
+
+      > li {
+        margin-left: @t3-global-margin / 2;
+        margin-right: 0;
+        margin-bottom: @t3-global-margin / 2;
+
+        // Mobile/tablet view
+        @media (max-width: @screen-sm-max) {
+          margin-left: 0;
+          margin-right: @t3-global-margin / 2;
+        }
+
+        > a {
+          background: @brand-light;
+          border-radius: 40px;
+          border: 0;
+          color: @inverse-color;
+          margin: 0;
+          font-size: @font-size-h6;
+          font-family: @headings-font-family-intro;
+          font-weight: 700;
+          padding: @t3-global-padding / 2 @t3-global-padding;
+          line-height: 1;
+          text-transform: uppercase;
+
+          &:hover,&:focus,&:active {
+            background: darken(@brand-light,2%);
+          }
+        }
+
+        &.active > a {
+          background: @brand-primary;
+
+          &:before {
+            border-width: 6px;
+            border-style: solid;
+            border-color: @brand-primary transparent transparent transparent;
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -6px;
+          }
+        }
+
+        // compatible j4
+        > a.active {
+          background: @brand-primary;
+
+          &:before {
+            border-width: 6px;
+            border-style: solid;
+            border-color: @brand-primary transparent transparent transparent;
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -6px;
+          }
+        }
+      }
+    }
+  }
+
+  // Tab Contents
+  .tab-content {
+    margin-top: @grid-gutter-width;
+  }
+  
+  .tab-pane {
+    display: none;
+  	.section-inner {
+  		padding: (@t3-global-padding * 3) 0 0;
+  	}
+
+    &.active {
+      display: block;
+    }
+  }
+}

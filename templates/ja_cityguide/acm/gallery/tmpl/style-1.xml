@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Gallery Style 1</title>
+	<sampledata></sampledata>
+	<fields name="basic">
+		<fieldset name="col" label="GALLERY_COL_LABEL" description="GALLERY_COL_DESC" >      
+			<field name="number_col" type="list" label="GALLERY_NUMBER_COL_LABEL" description="GALLERY_NUMBER_COL_DESC">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</field>
+
+			<field name="view_type" type="list" label="ACM_VIEW_TYPE_LABEL" description="ACM_VIEW_TYPE_DESC" default="0">
+				<option value="0">Grid</option>
+				<option value="1">Slideshow</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="gallery" label="GALLERY_LABEL" description="GALLERY_DESC" multiple="1">
+			<field name="gallery-image" type="media" default="" label="GALLERY_LABEL" description="GALLERY_DESC"></field>
+		</fieldset>
+	</fields>
+</form>

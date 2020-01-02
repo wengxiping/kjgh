@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="administrator" method="upgrade">
+	<name>JA Builder Admin Menu</name>
+	<author>Joomlart</author>
+	<creationDate>March 14, 2017</creationDate>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.0</version>
+	<description>JA Builder Admin Menu</description>
+	<files>
+		<filename module="mod_jabuilder_admin_menu">mod_jabuilder_admin_menu.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+        <language tag="en-GB">en-GB.mod_jabuilder_admin_menu.ini</language>
+    </languages>
+	<scriptfile>script.php</scriptfile>
+	<!-- 
+	<updateservers>
+		<server type="extension" priority="1" name="JA Builder Admin Menu">http://update.joomlart.com/service/tracking/j31/mod_jabuilder_admin_menu.xml</server>
+	</updateservers>
+	-->
+</extension>

@@ -1,0 +1,41 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "public_key",
+				"type": "text",
+				"title": "Publishable API Key",
+				"tooltip": "Enter the Publishable API Key which was provided to you by PIN Payments",
+				"default": ""
+			},
+			{
+				"name": "secret_key",
+				"type": "text",
+				"title": "Secret Key",
+				"tooltip": "Enter the Secret Key which was provided to you by PIN Payments",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			},
+			{
+				"name": "sandbox_secret_key",
+				"type": "text",
+				"title": "Sandbox Secret Key",
+				"tooltip": "If you are testing payments from PIN Payments, enter the Sandbox Secret Key which was provided to you by PIN Payments",
+				"default": ""
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"default": false
+			}
+		]
+	}
+]

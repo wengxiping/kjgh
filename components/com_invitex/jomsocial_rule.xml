@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jomsocial>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<component>com_invitex</component>
+	<rules>
+		<rule>
+			<name>Invitee Registration</name>
+			<description>Give points to inviter when invitee registers on site using Invitation.</description>
+			<action_string>com_invitex.inviter.points</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>User registration through invitation</name>
+			<description>Give points when user registers on site using Invitation</description>
+			<action_string>com_invitex.invitee.points</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+		<rule>
+			<name>Invitation Sent</name>
+			<description>Give points to inviter when inviter send Invitation.</description>
+			<action_string>com_invitex.user.points</action_string>
+			<publish>true</publish>
+			<points>0</points>
+			<access_level>1</access_level>
+		</rule>
+	</rules>
+</jomsocial>

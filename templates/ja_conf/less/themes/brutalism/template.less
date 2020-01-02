@@ -1,0 +1,165 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// GLOBAL STYLE
+// ---------------------
+.title-lead {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.avatar-image {
+  border: 2px solid @black;
+}
+
+.more-link a,
+.blog-featured .readmore,
+.blog .readmore {
+  font-weight: 600;
+}
+
+.btn-light,
+.nav-tabs > li > a,
+.head-right .search .form-control {
+  color: @white;
+}
+
+// Title Intro
+.title-intro {
+  color: @black;
+}
+
+// Mask Image
+.img-mask {
+  .img-wrap {
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    &:hover {
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+// Mega Menu
+div.t3-megamenu {
+  .dropdown-header,
+  .mega-nav .mega-group > .dropdown-header,
+  .dropdown-menu .mega-nav .mega-group > .dropdown-header,
+  .dropdown-menu .active .mega-nav .mega-group > .dropdown-header {
+    color: @white;
+    font-weight: 600;
+
+    &:hover,&:focus,&:active {
+      color: @white;
+    }
+  }
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > span {
+  font-weight: 600;
+}
+
+// MODULE STYLE
+.latestnews.list {
+  .article-field {
+    color: rgba(0,0,0,0.6);
+  }
+}
+
+// ACM STYLE FOR THEME
+// --------------------
+.t3-wrapper {
+  // ACM Hero
+  div.acm-hero .hero-title {
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  // ACM Features
+  .acm-features {
+    &.style-1 {
+      .features-action a {
+        background: transparent;
+        border: 2px solid @brand-light;
+        line-height: @grid-gutter-width - 4px;
+        color: @black;
+
+        &:hover,&:focus,&:active {
+          background: @brand-light;
+          color: @white;
+        }
+      }
+    }
+
+    &.style-2 {
+      .owl-nav > div {
+        background: transparent; 
+        border: 2px solid @brand-light;
+        color: @brand-light;
+        line-height: @grid-gutter-width / 2 - 4px;
+
+        &:hover {
+          color: @white;
+        }
+      }
+    }
+  }
+
+  // ACM Events
+  .acm-events .event-item .event-link a {
+    background: transparent;
+    border: 2px solid @brand-light;
+    color: @brand-light;
+    line-height: @grid-gutter-width / 2 - 4px;
+
+    &:hover,&:focus,&:active {
+      background: @brand-light;
+      color: @white;
+    }
+  }
+
+  // ACM Container Tabs
+  .acm-container-tabs .container-tabs-nav .nav-tabs > li {
+    > a {
+      background: transparent;
+      border: 2px solid @brand-light;
+      color: @brand-light;
+
+      &:hover {
+        color: @white;
+      }
+    }
+
+    &.active > a {
+      color: @white;
+    }
+  }
+}
+
+//Article
+.article-aside {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+//Typo
+.article-content {
+  small,
+  .text-muted {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+
+// Event Booking
+div#eb-category-page-columns .event-date-wrap {
+  color: @white;
+}

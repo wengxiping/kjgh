@@ -1,0 +1,338 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.com_dtregister {
+  // Button style
+  // ------------
+  .dth-btn {
+    border-radius: 50px;
+    border: 0;
+  }
+
+  .dth-btn-primary {
+    background: linear-gradient(135deg, @brand-primary, @brand-secondary);
+    border: 0;
+    color: @white;
+    font-weight: 700;
+    .transition(all 500ms);
+
+    &:hover,&:focus,&:active {
+      background: linear-gradient(135deg, darken(@brand-primary, 3%),darken(@brand-secondary, 3%));
+      color: @white;
+    }
+  }
+
+  // Toolbar
+  .btn-toolbar, .btn-toolbar {
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .event-filters.btn-toolbar {
+    #event-search {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      height: 40px;
+      margin-bottom: 10px;
+      padding: 7px @t3-global-padding;
+    }
+
+    .dth-btn-primary {
+      height: 40px;
+    }
+
+    .pull-right {
+    }
+
+    select {
+      border-radius: 3px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 40px;
+    }
+  }
+
+  // Event list row
+  .eventlist-row + .eventlist-row,
+  .eventlist-row + .eventlist-row {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .eventlist-row {
+    // Event list
+    .event-price {
+      font-weight: 600;
+      border-radius: 25px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .event-footer {
+      color: @text-color;
+    }
+
+    .event-time {
+      padding-right: 120px;
+    }
+  }
+
+  .dt_groupwarning {
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+
+  // DT Register detail
+  // ------------------
+  .dtregister-detail {
+    table {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: @text-color;
+
+      > tbody > tr:nth-of-type(2n+1) {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      th, td {
+        border: 1px solid rgba(255, 255, 255, 0.1);        
+      }
+    }
+
+    .dt-event-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .event-sponsors {
+      .event-sponsor {
+        width: 33.3%;
+
+        .event-sponsor-logo {
+          max-width: none;
+        }
+      }
+    }
+  }
+
+  .btn-groups {
+    #back, #cancel {
+      margin-bottom: 10px;
+    }
+  }
+
+  // Calendar
+  div.cHead div.ftitle {
+    color: @white;
+  }
+
+  .cal-categories {
+    border-top-color: @t3-border-color;
+  }
+
+  div.ctoolbar {
+    #txtdatetimeshow {
+      color: @white;
+    }
+
+    div.fbutton {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:hover, &:focus, &:active {
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      &.fcurrent {
+        background-color: transparent;
+      }
+    }
+  }
+
+  #dvCalMain {
+    background: transparent;
+    border-right: 1px solid @t3-border-color;
+    border-bottom: 1px solid @t3-border-color;
+
+    #gridcontainer {
+      background-color: transparent;
+
+      .mv-daynames-table {
+        background-color: transparent;
+      }
+
+      .mv-daynames-table th {
+        background-color: darken(@body-bg, 2%);
+        border: 1px solid @t3-border-color;
+        color: @white;
+      }
+
+      .st-dtitle {
+        border-color: @t3-border-color;
+        border-left: 0;
+        color: @text-color;
+      }
+
+      .st-bg {
+        border-left: 1px solid rgba(255, 255, 255, 0.01);
+      }
+
+      .st-bg-table .st-bg {
+        border-top: 0;
+      }
+    }
+
+    // Filter day
+    #gridcontainer {
+      .wk-top {
+        background-color: @body-bg;
+        border: 1px solid @t3-border-color;
+
+        .wk-dayname {
+          color: @white;
+        }
+
+        .wk-allday {
+          background-color: transparent;
+          border-color: @t3-border-color;
+
+          .st-c {
+            border-color: @t3-border-color;
+          }
+        }
+      }
+
+      .scolltimeevent {
+        border: 1px solid @t3-border-color;
+
+        .tg-times {
+          background-color: rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid @t3-border-color;
+          color: @white;
+        }
+
+        .tg-time {
+          border-bottom: 1px solid @t3-border-color;
+        }
+
+        .tg-col {
+          border-color: @t3-border-color;
+        }
+
+        .tg-timedevents {
+          background-color: @body-bg;
+        }
+
+        table td {
+          border-color: @t3-border-color;
+        }
+      }
+    }
+
+    .mv-event-container {
+      background-color: @body-bg;
+    }
+  }
+
+
+
+  div.dt_user_box {
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  // Calendar module
+  #dt_calendar table th,
+  #dt_calendar table td {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: @text-color;
+  }
+
+  // EVENT MANAGEMENT
+  // -------------------------------------------
+  div.toolbar,
+  div #toolbar {
+    flex-wrap: wrap;
+
+    .btn {
+      margin-bottom: 10px;
+      padding-top: 8px;
+      padding-bottom: 6px;
+    }
+  }
+
+  [class^="icon-"]::before, [class*=" icon-"]::before {
+    font-family: FontAwesome;
+    font-size: 16px;
+  }
+
+  .icon-new::before {
+    content: "\f055";
+  }
+
+  .table-striped > tbody > tr {
+    td, th {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+
+      .btn {
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+      }
+    }
+  }
+
+  .table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: transparent;
+  }
+
+  table.adminlist {
+    background-color: transparent;
+  }
+
+  table.adminlist,
+  table#invoiceList {
+    th {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      vertical-align: middle;
+    }
+
+    td {
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  // Search module
+  // -------------
+  .module {
+    #dt_search {
+      .form-group {
+        margin-bottom: 0;
+      }
+
+      .inputbox {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+        height: 40px;
+        padding: 7px @t3-global-padding;
+      }
+    }
+  }
+}
+
+
+

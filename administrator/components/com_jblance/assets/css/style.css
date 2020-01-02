@@ -1,0 +1,17 @@
+.table td.right,
+.table th.right {text-align: right; }
+.redfont {color: red; }
+.greenfont {color: green; }
+.bluefont {color: blue; }
+.lineseparator {border-bottom: 1px solid #EFEFEF;margin-bottom: 14px;margin-left: 10px;margin-right: 4px;margin-top: 14px; }
+span.icon-joombri {background-image: url(../../images/jb-white.png); }
+.well.white {background: #fff; }
+
+/* -- CONTROL PANEL STYLES ----------------------------- */
+#dashboard-icons.btn-group { white-space: normal; }
+#dashboard-icons .btn { border-radius: 3px; min-height: 64px; min-width: 90px; overflow: hidden; background-color: transparent; border: 2px solid red; }
+#dashboard-icons .btn:hover { background-color: #ededed; }
+#dashboard-icons .btn { background-image: none; border-color: transparent; box-shadow: none; }
+#dashboard-icons span.title {  text-align: center; font-size: 11px; }
+.icon-big { font-size: 32px; margin-top: 20px; padding-right: 10px; padding-bottom: 20px; color: rgba(85, 85, 85, 1); }
+span.update-badge { display: inline-block; padding: 2px 4px; font-size: 10.998px; font-weight: bold; line-height: 14px; color: #fff; vertical-align: baseline; white-space: nowrap; text-shadow: 0 -1px 0 rgba(0,0,0,0.25); background-color: #999; float: left;position: relative;top: -54px; left: 70px;background-color: #a94442;border-radius: 3px; }

@@ -1,0 +1,72 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "form_type",
+				"type": "lists",
+				"title": "Checkout Type",
+				"tooltip": "Determines the check out behavior for Stripe app",
+				"default": "form",
+				"options": [
+					{
+						"title": "Standard Form",
+						"value": "form"
+					},
+					{
+						"title": "Popup",
+						"value": "form_popup"
+					}
+				]
+			},
+			{
+				"name": "popup_store_name",
+				"type": "text",
+				"title": "Store Name",
+				"tooltip": "Determines the store name that appears on the popup",
+				"default": ""
+			},
+			{
+				"name": "enable_sca",
+				"type":"toggler",
+				"title": "Enable SCA",
+				"tooltip": "Enable it if you want to use SCA for stripe in, it's for Europian countries",
+				"default": false
+			},
+			{
+				"name": "public_key",
+				"type": "text",
+				"title": "Public API Key",
+				"tooltip": "You will need to enter the Public API Key that is provided by Stripe",
+				"default": ""
+			},
+			{
+				"name": "secret_key",
+				"type": "text",
+				"title": "Secret API Key",
+				"tooltip": "You will need to enter the Secret API Key that is provided by Stripe",
+				"default": ""
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"default": true
+			},
+			{
+				"name": "auto_fill_email",
+				"type": "toggler",
+				"title": "Automatically Populate User's E-mail",
+				"tooltip": "When using Stripe popup, you may opt to automatically fill user's e-mail address in the popup form",
+				"default": false
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

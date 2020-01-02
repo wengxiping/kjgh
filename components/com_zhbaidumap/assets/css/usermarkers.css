@@ -1,0 +1,61 @@
+ .bodyInsertProperties,
+ .bodyUpdateProperties
+{
+	padding: 2px;
+	background : #F4F4F4;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertPlacemarkProperties,
+ .bodyUpdatePlacemarkProperties
+{
+	display : block;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertPlacemarkGrpProperties,
+ .bodyUpdatePlacemarkGrpProperties
+{
+	display : none;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertContactProperties,
+ .bodyUpdateContactProperties
+{
+	display : none;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+ .bodyInsertContactAdrProperties,
+ .bodyUpdateContactAdrProperties
+{
+	display : none;
+	padding: 2px;
+	border-collapse: collapse; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #DEDEDE;
+}
+
+.insertPlacemarkBody,
+.updatePlacemarkBody
+ {
+    height: 300px!important;
+    overflow: auto!important;
+}

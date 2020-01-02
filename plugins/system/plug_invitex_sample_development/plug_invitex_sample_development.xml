@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" method="upgrade" type="plugin" group="system">
+	<name>System - InviteX - Sample Development Plugin</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>22nd Oct 2019</creationDate>
+	<version>3.0.12</version>
+	<description>This system plugin is for development process</description>
+	<files>
+		<filename plugin="plug_invitex_sample_development">plug_invitex_sample_development.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config name="params">
+		<fields name="params">
+			<fieldset name="basic" />
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="custom-field" label="Module options" description="">
+      <field name="mask-heading" type="textarea" default="" label="TPL_MASK_HEADING_LABEL" description="TPL_MASK_HEADING_DESC" filter="RAW" />
+
+			<field name="sub-heading" type="textarea" default="" label="TPL_SUB_HEADING_LABEL" description="TPL_SUB_HEADING_DESC" filter="RAW" />
+
+      <field name="padding-top" type="radio"
+        class="btn-group btn-group-yesno"
+        default="1"
+        label="TPL_SPACE_TOP_LABEL"
+        description="TPL_SPACE_TOP_DESC">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+
+      <field name="padding-bottom" type="radio"
+        class="btn-group btn-group-yesno"
+        default="1"
+        label="TPL_SPACE_BOTTOM_LABEL"
+        description="TPL_SPACE_BOTTOM_DESC">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+      </field>
+
+      <field name="module-width" type="list"
+        default="1"
+        label="TPL_WIDTH_OPTION"
+        description="TPL_WIDTH_OPTION_DESC">
+        <option value="0">Full Width</option>
+        <option value="1">Container</option>
+        <option value="2">Container HD</option>
+      </field>
+    </fieldset>
+  </fields>
+</form>

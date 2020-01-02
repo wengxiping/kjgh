@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>PayPlans - Content Seller</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PayPlansContentSeller :&lt;br /&gt; 
+				1) Through this plugin you can control the display of content according to users subscriptions and subscription status.&lt;br /&gt; 
+				2) Also have capability to process tag system &lt;br /&gt; 
+				3) You can use following parameters into tags:- article_id, plan_id, expiration_type, expiration_time, recurrence_count, &lt;br /&gt; 
+				trial_price_1, trial_time_1, trial_price_2, trial_time_2, price.&lt;br /&gt;
+				4) For further details you can follow documentation of content seller plugin.
+	</description>
+	<files>
+		<folder>app</folder>
+		<filename plugin="contentseller">contentseller.php</filename>
+		<filename>contentseller.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

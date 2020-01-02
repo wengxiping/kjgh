@@ -1,0 +1,21 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchantemail",
+				"type": "text",
+				"title": "E-mail Address",
+				"tooltip": "Enter your e-mail address used to sign up with Skrill",
+				"default": ""
+			},
+			{
+				"name": "merchantsecretword",
+				"type": "text",
+				"title": "Secret Word",
+				"tooltip": "Enter the secret word that you have created on Skrill",
+				"default": ""
+			}
+		]
+	}
+]

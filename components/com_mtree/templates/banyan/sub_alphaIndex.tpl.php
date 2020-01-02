@@ -1,0 +1,1 @@
+<div class="mt-alpha-index"><?php echo $this->plugin('listalphaindex', '') ?></div>

@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "client_id",
+				"type": "text",
+				"title": "Merchant ID",
+				"tooltip": "Enter your comPay Merchant ID which can be found in the administration section of comPay",
+				"default": ""
+			},
+			{
+				"name": "store_key",
+				"type": "text",
+				"title": "Store Key",
+				"tooltip": "Enter the Store Key which you have set in comPay",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX_MODE",
+				"tooltip": "COM_PP_SANDBOX_MODE_DESC",
+				"default": false
+			}
+		]
+	}
+]

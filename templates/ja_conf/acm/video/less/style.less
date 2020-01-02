@@ -1,0 +1,139 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// ----------------------------------------
+// VIDEO STYLE
+// ----------------------------------------
+.acm-video {
+  .video-content {
+    padding-right: @grid-gutter-width * 2;
+
+    // Tablet view
+    @media (max-width: @screen-sm-max) {
+      min-height: 0!important;
+      margin-bottom: @grid-gutter-width;
+    }
+
+    // Mobile view
+    @media (max-width: @screen-xs-max) {
+      padding-right: 0;
+    }
+  }
+
+  // Section Title
+  .title-lead {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // Video Intro
+  .video-intro {
+    margin-top: @grid-gutter-width / 2;
+  }
+
+  // Video Link
+  .video-action {
+    margin-top: @grid-gutter-width;
+    display: block;
+    font-weight: 700;
+
+    span.fa {
+      font-size: 9px;
+    }
+  }
+
+  // Player
+  .video-player {
+    position: relative;
+
+    // Tablet view
+    @media (min-width: @screen-md-min) {
+      padding: 0;
+    }
+
+    // Button Play
+    .btn-play {
+      background: linear-gradient(135deg, @brand-primary, @brand-secondary);
+      border-radius: 50%;
+      color: @white;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 130px;
+      line-height: 130px;
+      text-align: center;
+      margin-left: -65px;
+      margin-top: -65px;
+      width: 130px;
+
+      // Mobile view
+      @media (max-width: @screen-xs-max) {
+        height: @grid-gutter-width;
+        line-height: @grid-gutter-width;
+        margin-left: -@grid-gutter-width / 2;
+        margin-top: -@grid-gutter-width / 2;
+        width: @grid-gutter-width;
+      }
+    }
+
+    .video-wrapper {
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+
+      // Tablet view
+      @media (max-width: @screen-sm-max) {
+        position: static;
+      }
+
+      &.playing .btn-play {
+        display: none;
+      }
+    }
+  }
+
+  .video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+
+    span {
+      background: @mask-image;
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+
+      &.fa {
+        background: transparent;
+        display: inline-block;
+        position: unset;
+      }
+    }
+
+    .img-thumb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+      width: 100%;
+      .opacity(0.4);
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

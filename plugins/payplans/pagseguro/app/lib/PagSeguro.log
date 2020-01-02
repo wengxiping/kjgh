@@ -1,0 +1,4 @@
+{2018/05/28 06:05:53} [Info] PaymentService.Register(PaymentRequest(Reference=8XRE0BAJGFYO-8XRE0BAJGFY0,     SenderEmail=null)) - begin 
+{2018/05/28 06:05:58} [Error] PaymentService.Register(PaymentRequest(Reference=8XRE0BAJGFYO-8XRE0BAJGFY0,     SenderEmail=null)) - error [HTTP 401] - UNAUTHORIZED  
+{2018/05/28 06:06:21} [Info] PaymentService.Register(PaymentRequest(Reference=8XRE0BAJGFYO-8XRE0BAJGFY0,     SenderEmail=null)) - begin 
+{2018/05/28 06:06:24} [Error] PaymentService.Register(PaymentRequest(Reference=8XRE0BAJGFYO-8XRE0BAJGFY0,     SenderEmail=null)) - error [HTTP 401] - UNAUTHORIZED  

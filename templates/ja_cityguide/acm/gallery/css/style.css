@@ -1,0 +1,39 @@
+.acm-gallery {
+  overflow: hidden;
+}
+.acm-gallery .item {
+  padding: 0;
+}
+.acm-gallery .owl-carousel {
+  padding: 0;
+}
+.acm-gallery .owl-carousel .item {
+  width: 100%;
+}
+.acm-gallery .owl-controls {
+  margin: 0;
+}
+.acm-gallery .owl-controls .owl-buttons > div {
+  background: #222222;
+  border-radius: 0;
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 24px;
+  margin: 0;
+  margin-top: -24px;
+  padding: 0;
+  line-height: 48px;
+  height: 48px;
+  width: 48px;
+}
+.acm-gallery .owl-controls .owl-buttons > div.owl-next {
+  right: 24px;
+  left: auto;
+}
+.acm-gallery .item-inner {
+  margin: -1px;
+}
+.acm-gallery .item-inner img {
+  width: 100%;
+}

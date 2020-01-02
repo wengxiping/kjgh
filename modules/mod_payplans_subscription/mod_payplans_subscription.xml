@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>Payplans - Subscription</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>MOD_PAYPLANS_SUBSCRIPTION_DESC</description>
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_payplans_subscription">mod_payplans_subscription.php</filename>
+		<filename>mod_payplans_subscription.xml</filename>
+	</files>
+	<config>
+		<fields name="params" addpath="/components/com_payplans/elements">
+			<fieldset name="basic">
+				<field  name="subscribe_status" type="list" default="" required="true" entity="SUBSCRIPTION" multiple="true" useautocomplete="0" label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_SUBSCRIBE_STATUS_LABEL" description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_SUBSCRIBE_STATUS_DESCRIPTION">
+					<option value="0">MOD_PP_SUBSCRIPTION_NO_STATUS</option>
+					<option value="1601">MOD_PP_SUBSCRIPTION_SUBSCRIPTION_ACTIVE</option>
+					<option value="1602">MOD_PP_SUBSCRIPTION_SUBSCRIPTION_HOLD</option>
+					<option value="1603">MOD_PP_SUBSCRIPTION_SUBSCRIPTION_EXPIRED</option>
+				</field> 				
+					
+				<field  name="no_subscription" default="5" type="text" label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_NO_OF_SUBSCRIPTION_LABEL" description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_NO_OF_SUBSCRIPTION_DESCRIPTION">
+				</field>
+				
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" default="" type="text" label="MOD_PAYPLANS_SUBSCRIPTION_PARAM_CLASS_SUFFIX_LABEL" description="MOD_PAYPLANS_SUBSCRIPTION_PARAM_CLASS_SUFFIX_DESCRIPTION">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

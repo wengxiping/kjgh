@@ -1,0 +1,7 @@
+[
+	{
+		"table": "#__payplans_log",
+		"column": "legacy",
+		"query": "ALTER TABLE `#__payplans_log` ADD `legacy` TINYINT NOT NULL DEFAULT '1' AFTER `current_token`;"
+	}
+]

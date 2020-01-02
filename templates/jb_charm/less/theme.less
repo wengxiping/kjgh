@@ -1,0 +1,324 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import "uikit/uikit.less";
+
+/* ========================================================================
+   Warp theme
+ ========================================================================== */
+
+/* Layout
+ ========================================================================== */
+
+.tm-navbar-overlay {
+   background: rgba(0,0,0,.4);
+   z-index: 1;
+}
+
+
+/*
+ * Force vertical scrollbar
+ */
+
+html { overflow-y: scroll; }
+
+/*
+ * Blocks
+ */
+
+.tm-toolbar,
+.tm-headerbar,
+.tm-navbar,
+.tm-footer {
+    margin-top: @global-grid-gutter;
+    margin-bottom: @global-grid-gutter;
+}
+
+/* Only large screens */
+@media (min-width: @breakpoint-xlarge) {
+
+    .tm-headerbar,
+    .tm-navbar,
+    .tm-footer {
+        margin-top: @global-grid-gutter-large;
+        margin-bottom: @global-grid-gutter-large;
+    }
+
+}
+
+/* Only phones */
+@media (max-width: @breakpoint-small-max) {
+
+    .tm-navbar {
+        margin: 0 -@utility-container-padding-horizontal @global-grid-gutter -@utility-container-padding-horizontal;
+        border-width: 0 0 1px 0;
+    }
+
+    .tm-logo-small:hover { text-decoration: none; };
+
+    .tm-navbar:not(.uk-navbar-attached) { border-radius: 0; }
+
+}
+
+/*
+ * Logo small
+ * Remove whitespace caused by vertical centering to prevent logo wrapping into the next line
+ */
+
+.tm-logo-small { letter-spacing: -0.31em; }
+
+/*
+ * Toolbar
+ */
+
+.tm-toolbar .uk-float-left .uk-panel {
+    margin: 0 @global-grid-gutter 0 0;
+    float: left;
+}
+
+.tm-toolbar .uk-float-right .uk-panel {
+    margin: 0 0 0 @global-grid-gutter;
+    float: right;
+}
+
+/*
+ * Headerbar
+ */
+
+.tm-headerbar .tm-logo { float: left; }
+
+.tm-headerbar .uk-panel {
+    max-width: 300px;
+    margin-right: 0;
+    float: right;
+}
+
+/*
+ * Middle
+ */
+
+.tm-main > :nth-child(n+2) { margin-top: @global-grid-gutter; }
+
+.tm-content > :last-child { margin-bottom: 0; }
+
+/*
+ * Footer
+ */
+
+.tm-footer {
+    position: relative;
+    box-sizing: border-box;
+    padding: 25px 0;
+    background: #1d2731;
+    color: #adadae;
+    font-size: 14px;
+    margin-bottom: 0px;
+
+    a { color: #adadae; }
+    a:hover { color: #fff; text-decoration: none; }
+}
+
+.tm-footer .uk-panel + .uk-panel { margin-top: @global-grid-gutter; }
+
+.tm-block-footer-bg + .tm-footer { margin-top: 0; }
+
+/*
+ * To-top scroller
+ */
+
+.tm-totop-scroller {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: @global-z-index;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: @global-color;
+    text-align: center;
+    -webkit-transition: all linear 0.05s;
+    transition: all linear 0.05s;
+}
+
+.tm-totop-scroller:after {
+    content: "\f077";
+    font-family: "FontAwesome";
+}
+
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+
+.tm-totop-scroller:hover,
+.tm-totop-scroller:focus { /* 1 */
+    color: lighten(@global-color, 20%);
+    font-size: 16px;
+    outline: none; /* 2 */
+    text-decoration: none;
+}
+
+/* Active */
+.tm-totop-scroller:active {
+    color: darken(@global-color, 20%);
+    font-size: 11px;
+}
+
+
+/* Blog
+ ========================================================================== */
+
+/*
+ * Leading article
+ * Joomla only
+ */
+
+.tm-leading-article .uk-article:last-child {
+    padding-bottom: @article-margin-top;
+    border-bottom: 1px solid @base-hr-border;
+}
+
+
+/* Error
+ ========================================================================== */
+
+.tm-error-icon { font-size: 250px; }
+
+.tm-error-headline { font-size: 100px; }
+
+
+/* Offline
+ ========================================================================== */
+
+.tm-offline { width: 300px; }
+
+
+/* Socialbuttons
+ ========================================================================== */
+
+ .tm-socialbuttons {
+
+     line-height: 1;
+
+     > div {
+         margin-right: 10px;
+         float: left;
+     }
+ }
+
+
+/* WordPress only
+ ========================================================================== */
+
+.alignleft {
+    display: block;
+    margin-right: @utility-align-horizontal;
+    float: left;
+}
+
+.alignright {
+    display: block;
+    margin-left: @utility-align-horizontal;
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//customised
+@media (min-width: @breakpoint-xlarge) {
+    .tm-navbar {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+}
+
+.tm-toolbar {
+
+    box-sizing: border-box;
+    padding: 10px 0;
+    height: 42px;
+    background: #fff;
+    color: #9a9a9c;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    //a { color: #9a9a9c; }
+    //a:hover { color: #62615f; }
+
+}
+
+.tm-navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.tm-navbar-container + .tm-hero-container {
+  	 margin-top: -25px;
+}
+
+.tm-hero-container + .uk-container {
+  	 margin-top: 25px;
+}
+
+.tm-content {
+    border-radius: 6px;
+    padding: 50px;
+    box-shadow: 0 5px 8px 0 rgba(160, 166, 168, 0.35);
+    background: #ffffff;
+}
+
+.uk-panel-box { 
+	border-radius: 6px;
+	box-shadow: 0 5px 8px 0 rgba(160, 166, 168, 0.35); 
+}
+
+.uk-light, .uk-light h1 {
+	color: #fff;
+}
+
+.uk-dropdown {
+border-radius: 6px;
+	box-shadow: 0 5px 8px 0 rgba(160, 166, 168, 0.35); 
+}
+
+.uk-navbar-nav > li {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+@media (min-width: 960px) {
+  .uk-navbar-nav > li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.uk-navbar-nav > li > a {
+  position: relative;
+  padding: 0;
+}
+.uk-navbar-nav > li > a:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: @global-secondary-background;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+}
+.uk-navbar-nav > li:hover > a:before,
+.uk-navbar-nav > li > a:focus:before,
+.uk-navbar-nav > li.uk-open > a:before {
+  width: 100%;
+}
+.uk-navbar-nav > li.uk-active > a:before {
+    width: 100%;
+}
+
+* + ul { margin-top: 0px; }

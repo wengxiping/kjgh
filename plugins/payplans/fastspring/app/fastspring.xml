@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <name>fastspring</name>
+    <creationDate>31st October 2019</creationDate>
+    <author>Team Stackideas</author>
+    <authorEmail>support@stackideas.com</authorEmail>
+    <authorUrl>https://stackideas.com</authorUrl>
+    <copyright>2009 - 2017 Stack Ideas Private Limited</copyright>
+    <license>GNU General Public License v2</license>
+    <tags>payment</tags>
+    <description></description>
+	<help>
+	<![CDATA[
+		Payplans Fastspring Integration with Pop-up storefront for fixed payments only.
+     ]]>	
+	</help>
+	<fields name="app_params">
+		<fieldset name="app_params" addfieldpath="/plugins/payplans/fastspring/fastspring/app/fastspring/elements"> 
+				<field	name="storefront_url" 	
+						default="" 		
+						type="text" 	
+						size="50" 
+						label="COM_PAYPLANS_PAYMENT_APP_FASTSPRING_STOREFRONT_URL"  
+						description="COM_PAYPLANS_PAYMENT_APP_FASTSPRING_STOREFRONT_URL_DESC" 
+						/>
+
+				<field	name="access_key" 	
+						default="" 		
+						type="text" 	
+						size="50" 
+						label="COM_PAYPLANS_PAYMENT_APP_FASTSPRING_ACCESS_KEY"  
+						description="COM_PAYPLANS_PAYMENT_APP_FASTSPRING_ACCESS_KEY_DESC" 
+						/>
+
+			<field  name="plan_product_mapping"
+					type="xiPlanmapping"
+					label="COM_PAYPLANS_PAYMENT_APP_FASTSPRING_PLAN_MAPPING"
+					default=""
+					description="COM_PAYPLANS_PAYMENT_APP_FASTSPRING_PLAN_MAPPING_DESC"
+					/>
+						
+		        		
+        	</fieldset>	
+	</fields>
+
+<alias>pp-fastspring</alias>
+<documentation></documentation>
+<version>4.0.15</version>
+</config>

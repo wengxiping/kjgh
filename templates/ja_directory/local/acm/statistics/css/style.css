@@ -1,0 +1,28 @@
+.uber-stats .stats-list {
+  color: #4c5560;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .uber-stats .stats-list > li {
+    margin-bottom: 26px;
+  }
+  .uber-stats .stats-list > li:last-child {
+    margin-bottom: 0;
+  }
+}
+.uber-stats .stats-item-icon {
+  display: block;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 13px;
+}
+.uber-stats .stats-item-counter {
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+}
+.uber-stats .stats-subject {
+  text-transform: uppercase;
+}

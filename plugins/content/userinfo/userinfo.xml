@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" type="plugin" group="content" method="upgrade">
+	<name>Content - InviteX - User Information</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>22nd Oct 2019</creationDate>
+	<version>3.0.12</version>
+	<description>This plugin is used to show custon landing pae.</description>
+	<files>
+		<filename plugin="userinfo">userinfo.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

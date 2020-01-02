@@ -1,0 +1,42 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "jusertypeOnActive",
+				"type": "usergroups",
+				"title": "User Type For Active Subscription",
+				"tooltip": "Determine the user type that the user should belong to when the subscription is active",
+				"default": ""
+			},
+			{
+				"name": "jusertypeOnHold",
+				"type": "usergroups",
+				"title": "User Type For On Hold Subscription",
+				"tooltip": "Determine the user type that the user should belong to when the subscription is on hold",
+				"default": ""
+			},
+			{
+				"name": "jusertypeOnExpire",
+				"type": "usergroups",
+				"title": "User Type For Expire Subscription",
+				"tooltip": "Determine the user type that the user should belong to when the subscription is expire",
+				"default": ""
+			},
+			{
+				"name": "removeFromDefault",
+				"type": "toggler",
+				"title": "Remove From Default User Group",
+				"tooltip": "Determine if you would like to remove the default user group of the user upon activating the subscription.",
+				"default": ""
+			},
+			{
+				"name": "removeFromGroup",
+				"type": "usergroups",
+				"title": "Forcefully Remove Usergroup",
+				"tooltip": "Determine if the system should forcefully remove all of the selected usergroups from the user once the user subscription become active",
+				"default": ""
+			}
+		]
+	}
+]

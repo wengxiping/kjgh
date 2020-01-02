@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `#__realtimeanalytics_serverstats`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_realstats`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_countries_map`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_referral`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_searches`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_eventstats`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_eventstats_track`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_categories`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_heatmap`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_heatmap_clicks`;
+DROP TABLE IF EXISTS `#__realtimeanalytics_google`;

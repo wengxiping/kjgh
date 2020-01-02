@@ -1,0 +1,21 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "paygateid",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYGATE_PAYGATE_ID",
+				"tooltip": "COM_PAYPLANS_APP_PAYGATE_PAYGATE_ID_DESC",
+				"default": ""
+			},
+			{
+				"name": "encryption_key",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYGATE_MERCHANT_ENCRYPTION_KEY",
+				"tooltip": "COM_PAYPLANS_APP_PAYGATE_MERCHANT_ENCRYPTION_KEY_DESC",
+				"default": ""
+			}
+		]
+	}
+]

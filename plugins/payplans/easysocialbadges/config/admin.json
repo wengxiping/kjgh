@@ -1,0 +1,22 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "badges",
+				"type": "easysocialBadges",
+				"title": "COM_PAYPLANS_APP_EASYSOCIAL_APPLIED_BADGES_ON_SUBSCRIPTION_ACTIVE",
+				"tooltip": "COM_PAYPLANS_APP_EASYSOCIAL_APPLIED_BADGES_ON_SUBSCRIPTION_ACTIVE_DESC",
+				"attributes": "multiple='true'",
+				"default": ""
+			},
+			{
+				"name": "removeBadges",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_EASYSOCIAL_REMOVE_BADGES_ON_SUBSCRIPTION_EXPIRE",
+				"tooltip": "COM_PAYPLANS_APP_EASYSOCIAL_REMOVE_BADGES_ON_SUBSCRIPTION_EXPIRE_DESC",
+				"default": ""
+			}
+		]
+	}
+]

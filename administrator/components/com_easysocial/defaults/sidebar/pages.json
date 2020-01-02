@@ -1,0 +1,37 @@
+{
+	"title"	: "COM_EASYSOCIAL_MENU_GROUP_PAGES",
+	"link"	: "index.php?option=com_easysocial&view=pages",
+	"access": "easysocial.access.pages",
+	"class"	: "fa fa-briefcase",
+	"view"	: "pages",
+	"counter": "pages/getPendingCount",
+	"active": "layout",
+	"childs":
+	[
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_PAGES_PAGES",
+			"url"	:
+			{
+				"view"	: "pages",
+				"layout": ""
+			}
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_PAGES_CATEGORIES",
+			"url"	:
+			{
+				"view"	: "pages",
+				"layout": "categories"
+			}
+		},
+		{
+			"title"	: "COM_EASYSOCIAL_MENU_ITEM_PENDING",
+			"url"	:
+			{
+				"view"	: "pages",
+				"layout": "pending"
+			},
+			"counter"	: "pages/getPendingCount"
+		}
+	]
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+    <name>PayPlans-Redirect Non-Subscribers</name>
+   	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>
+		<![CDATA[
+
+		]]>
+	</description>
+
+	<files>
+		<filename plugin="redirectnonsubscriber">redirectnonsubscriber.php</filename>
+		<filename>redirectnonsubscriber.xml</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field	name="non_subscriber_details"
+						default=""
+						type="spacer"
+						label="&lt;br&gt;Enter Details For Redirecting Non-Subscribers (Logged in Users who doesn't have any plan):"
+						description="Enter Here Details For Redirecting Those users whom current have no active subscription">
+				</field>
+
+				<field	name="non_subscriber_option"
+						default=""
+						type="text"
+						label="Option of URL:"
+						description="Enter Option to be redirected">
+				</field>
+
+				<field	name="non_subscriber_view"
+						default=""
+						type="text"
+						label="View of URL:"
+						description="Enter View to be redirected">
+				</field>
+
+				<field	name="non_subscriber_task"
+						default=""
+						type="text"
+						label="Task of URL:"
+						description="Enter Task to be redirected">
+				</field>
+				
+				<!--Details For Visitor Users-->
+				<field	name="visitor_details"
+						default=""
+						type="spacer"
+						label="&lt;br&gt;Enter Details For Redirecting Visitors (For Non Logged in Users):"
+						description="Enter Here Details For Redirecting Those users whom are not Registered-Users of your Site">
+				</field>
+
+				<field	name="visitor_option"
+						default=""
+						type="text"
+						label="Option of URL:"
+						description="Enter Option to be redirected">
+				</field>
+
+				<field	name="visitor_view"
+						default=""
+						type="text"
+						label="View of URL:"
+						description="Enter View to be redirected">
+				</field>
+
+				<field	name="visitor_task"
+						default=""
+						type="text"
+						label="Task of URL:"
+						class=""
+						description="Enter Task to be redirected">
+				</field>
+
+				<field	name="essential_information"
+						default=""
+						type="spacer"
+						label="&lt;br&gt;Note :- Option and View are required fields while task is an optional field. "
+						description="This can work only for logged in users with no plan and for vistors (Not logged in Users). If user have any active plan then this plugin doesn't work">
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+

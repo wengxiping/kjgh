@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Invitation Stats">
+		<message><![CDATA[Statistic view]]></message>
+		<options var="task">
+			<default name="Invitation Stats" msg="Invitation Stats" />
+		</options>
+	</view>
+</metadata>

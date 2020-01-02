@@ -1,0 +1,198 @@
+[
+	{
+		"name": "ACYMailing",
+		"element": "acymailing",
+		"description": "Automatically adds user to different mailing lists that exists in AcyMailing according to their subscription plans and subscription status.",
+        "documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/acymailing"
+	},
+	{
+		"name": "ACYMailing 6",
+		"element": "acymailing6",
+		"description": "It's integrated with AcyMailing version 6.x. Automatically adds user to different mailing lists that exists in AcyMailing according to their subscription plans and subscription status.",
+        "documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/acymailing"
+	},
+	{
+		"name": "AltaUserPoints (AUP)",
+		"element": "aup",
+		"description": "Assigns AltaUserPoints (AUP) based on user's active subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/buyaup"
+	}, 
+	{
+		"name": "AltaUserPoints (AUP) Discount",
+		"element": "aupdiscount",
+		"description": "Converts AltaUserPoints (AUP) points into discount.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/aupdiscount"
+	},
+	{
+		"name": "Basic Tax",
+		"element": "basictax",
+		"description": "Allows you to apply different taxation rates for the different countries.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/basictax"
+	},
+	{
+		"name": "EasyBlog Post Submission Restriction",
+		"element": "easyblogsubmission",
+		"description": "Restricts the allowed number of blog submissions in EasyBlog based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/easyblog"
+	},
+	{
+		"name": "EasyBlog Category Access Restriction",
+		"element": "easyblog",
+		"description": "Disallow user access to selected EasyBlog categories depending on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/easyblog"
+	},
+	{
+		"name": "Content ACL",
+		"element": "contentacl",
+		"description": "Allow or disallow user access to the available content (articles or categories) on the site depending on user subscription.",		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/contentacl"
+	},
+	{
+		"name": "EasyDiscuss Badges",
+		"element": "easydiscussbadges",
+		"description": "Assign EasyDiscuss badges to users whenever they subscribe to and activate certain plans.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/easydiscuss"
+	},
+	{
+		"name": "EasySocial Profile Types",
+		"element": "easysocialprofiletype",
+		"description": "Assigns EasySocial profile type to users based on their subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/easysocialprofiletype"
+	},
+	{
+		"name": "EasySocial Badges",
+		"element": "easysocialbadges",
+		"description": "Assign EasySocial badges to users whenever they subscribe to and activate certain plans.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/easysocialprofiletype"
+	},
+	{
+		"name": "EasySocial Points",
+		"element": "easysocialpoints",
+		"description": "Allocate EasySocial points to users when they purchased a specific plan in PayPlans.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/easysocialprofiletype"
+	},
+	{
+		"name": "European Union Value Added Tax (EU VAT)",
+		"element": "euvat",
+		"description": "Allows you to assign different taxation rates for both personal or business based on EU standards.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/euvat"
+	},
+	{
+		"name": "Google Analytics",
+		"element": "ganalytics",
+		"description": "Allows you to track user behavior across your e-commerce store on Google Analytics.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/ganalytics"
+	},
+	{
+		"name": "JEvents",
+		"element": "jevents",
+		"description": "Restrict category access and perform specific tasks based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/jdownloads"
+	},
+	{
+		"name": "JomSocial MultiProfile Types",
+		"element": "jsmultiprofile",
+		"description": "Assign JomSocial multi-profile type according to user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/jsmultiprofile"
+	},
+	{
+		"name": "Joomla User Type",
+		"element": "jusertype",
+		"description": "Allows you to assign Joomla user groups according to user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/jusertype"
+	},
+	{
+		"name": "JReviews",
+		"element": "jreview",
+		"description": "Restricts media uploads and the number of post submissions for a particular category based on user subscription.",		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/jreview"
+	},
+	{
+		"name": "Kunena",
+		"element": "kunena",
+		"description": "Assign specific category access in Kunena based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/kunenaforum"
+	},
+	{
+		"name": "K2 Category Access Control",
+		"element": "k2category",
+		"description": "Grants user access to different categories in K2 depending on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/k2"
+	},
+	{
+		"name": "K2 Item Access Control",
+		"element": "k2item",
+		"description": "Grants user access to different items and categories in K2 depending on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/k2"
+	},
+	{
+		"name": "K2 Usergroup Access Control",
+		"element": "k2usergroup",
+		"description": "Assigns different K2 user groups based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/k2"
+	},
+	{
+		"name": "MailChimp",
+		"element": "mailchimp",
+		"description": "Assigns users to different mailing lists based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/mailchimp"
+	},
+	{
+		"name": "Mailster",
+		"element": "mailster",
+		"description": "Assign users to different mailing lists based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/mailsternewsletter"
+	},
+	{
+		"name": "Menu Access",
+		"element": "menuaccess",
+		"description": "Displays menu items based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/menuaccess"
+	},
+	{
+		"name": "Module Access",
+		"element": "moduleaccess",
+		"description": "Displays modules based on user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/moduleaccess"
+	},
+	{
+		"name": "Mosets Tree",
+		"element": "mtree",
+		"description": "Limits the number of submissions of total listing, featured listing, and category listing based on plans.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/mtree"
+	},
+	{
+		"name": "Phoca Download",
+		"element": "phoca",
+		"description": "Assigns access and upload rights for specific categories according to user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/phocadownload"
+	},
+	{
+		"name": "Post Affiliate Pro",
+		"element": "pap",
+		"description": "Keeps track of clicks and sales in PayPlans.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/pap"
+	},
+	{
+		"name": "SobiPro",
+		"element": "sobipro",
+		"description": "Controls the number of entries a user can submit depending on their subscribed plans.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/sobipro"
+	},
+	{
+		"name": "Terms & Conditions",
+		"element": "tos",
+		"description": "Create multiple terms and conditions for different plans across the site.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/virtuemart"
+	},
+	{
+		"name": "VirtueMart",
+		"element": "virtuemart",
+		"description": "Assign specific Shopper Groups to users based on their subscription status.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/virtuemart"
+	},
+	{
+		"name": "ZOO",
+		"element": "zoo",
+		"description": "Manage the visibility and post submission access for specific ZOO categories according to user subscription.",
+		"documentation": "https:\/\/stackideas.com\/docs\/payplans\/apps\/zoo"
+	}
+]

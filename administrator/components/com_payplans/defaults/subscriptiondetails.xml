@@ -1,0 +1,24 @@
+<config>
+	<fields name="subscriptionparams">
+		<fieldset name="subscriptionparams">
+			<field name= "address" type = "textarea" rows = "4" cols = "25" label = "Shipping Adress"/>
+
+			<field name = "contact" type = "radio" default = "0" class = "btn-group" label = "Contact me before shipping"> 
+				<option value= "0"> No </option>
+				<option value= "1"> Yes </option>
+			</field>
+
+			<field name="work" type="text" size="30" label="Work Phone" />
+
+			<field name="mobile" type="text" size="30" label="Mobile Phone"/>
+
+			<field name= "reference" type = "list" label = "Reference">
+				<option value = "0"> Website </option>
+				<option value = "1"> Newsletter </option>
+				<option value = "2"> Online Advertisement </option>
+				<option value = "3"> TV Ad </option>
+			</field>
+
+		</fieldset>
+	</fields>
+</config>

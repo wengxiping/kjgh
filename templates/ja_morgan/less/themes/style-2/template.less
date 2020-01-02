@@ -1,0 +1,230 @@
+/**
+* $JA#COPYRIGHT$
+*/
+
+// Top bar
+.t3-topbar {
+	border: 1px solid @hr-border;
+
+	ul.list-info {
+		border-left-color: @hr-border;
+
+		li {
+			border-right-color: @hr-border;
+
+			a {
+				&:hover {
+					color: @brand-secondary;
+				}
+			}
+		}
+	}
+}
+
+// Header
+.t3-header {
+	background: transparent;
+	margin-bottom: -@grid-gutter-width;
+	position: relative;
+	z-index: 100;
+}
+
+.head-info {
+	display: flex;
+	justify-content: space-between;
+	padding: @grid-gutter-width 0;
+	align-items: center;
+
+	.logo {
+		// Mobile view
+		@media (max-width: @screen-xs-max){
+			width: 100%;
+		}
+	}
+
+	.wrap-info {
+		ul {
+			padding: 0;
+			margin: 0;
+			display: flex;
+
+			li {
+				list-style: none;
+				padding: 0 @grid-gutter-width / 3;
+
+				+li {
+					margin-left: @grid-gutter-width * 2;
+					text-align: left;
+
+					// Mobile view
+					@media (max-width: @screen-sm-max){
+						margin-left: @grid-gutter-width / 2;
+					}
+				}
+
+				h5 {
+					color: #aaa;
+					font-size: @font-size-h6;
+					font-weight: 400;
+					margin-bottom: @t3-global-margin / 6;
+					margin-top: 0;
+				}
+
+				span {
+					color: @gray-dark;
+					font-size: @font-size-h5;
+					font-weight: 500;
+				}
+
+				a {
+					border-bottom: 1px solid @hr-border;
+					color: @gray-dark;
+					font-weight: 500;
+
+					&:hover {
+						color: @brand-primary;
+						border-bottom-color: @brand-primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+.head-menu {
+	background-color: @brand-secondary;
+	border-radius: @border-radius-base;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: relative;
+
+	// Mobile view
+	@media (max-width: @screen-sm-max){
+		justify-content: flex-end;
+	}
+
+	// Menu
+	.t3-mainnav {
+		border: none;
+		border-radius: @border-radius-base;
+	}
+
+	// Navbar
+	.navbar-default .navbar-nav {
+		> li {
+			padding: 0 20px; 
+
+			> a,
+			> span {
+				margin-left: 0;
+				padding-left: 0;
+				padding-right: 0;
+				position: relative;
+
+				// Mobile view
+				@media (max-width: @screen-sm-max){
+					color: @text-color;
+				}
+
+				&:before {
+					background: @white;
+					bottom: -1px;
+					content: "";
+					position: absolute;
+					left: 0;
+					height: 2px;
+					width: 0;
+					.transition(400ms all);
+				}
+
+				&:hover {
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+
+			&.active,
+			&.open {
+				> a,
+				> span {
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	// Search
+	.headright {
+		.head-search  {
+			.search,
+	  		.form-search {
+	  			height: @navbar-height;
+	    		width: @navbar-height;
+
+	  			.form-control,
+	    		.search-query {
+	    			background-image: url('../../@{t3-image-path}/ico/search-inverse.png');
+	    			background-position: 24px center;
+	    			border: 0;
+	    			border-radius: 0;
+	    			border-left: 1px solid rgba(255, 255, 255, 0.2);
+	    			color: @white;
+	    			padding: 0 0 0 @navbar-height;
+	    			height: @navbar-height;
+	    			width: @navbar-height;
+	    			.placeholder(@white);
+
+	    			&:focus {
+	    				border: 0;
+	    				border-left: 1px solid rgba(255, 255, 255, 0.2);
+				        width: @grid-gutter-width * 7;
+				        padding-right: @t3-global-padding;
+				        .transition(all 500ms);
+
+				        // Mobile view
+				        @media (max-width: @screen-xs-max) {
+				          width: @grid-gutter-width * 4;
+				        }
+	    			}
+	    		}
+	  		}
+		}
+
+		.navbar-toggle {
+			background: transparent;
+			border-left: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 0;
+			color: @white;
+			height: @grid-gutter-width * 2;
+			margin: 0;
+			width: @grid-gutter-width * 2;
+		}
+
+		// Button canvas
+		.navbar-navigation {
+			.off-canvas-toggle {
+				border-left: 1px solid rgba(255, 255, 255, 0.2);
+				border-radius: 0;
+				line-height: @grid-gutter-width * 2;
+				background: transparent;
+				margin: 0;
+				width: @grid-gutter-width * 2;
+				height: @grid-gutter-width * 2;
+			}
+		}
+	}
+}
+
+.t3-hero {
+	.t3-module {
+		margin: 0;
+	}
+}
+
+#system-message-container {
+	margin-top: @t3-global-margin * 2;
+}

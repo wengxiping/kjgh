@@ -1,0 +1,37 @@
+{
+	"title"  : "COM_EASYSOCIAL_MENU_GROUP_EVENTS",
+	"link"   : "index.php?option=com_easysocial&view=events",
+	"access" : "easysocial.access.events",
+	"class"  : "far fa-calendar-alt",
+	"view"   : "events",
+	"counter": "events/getPendingCount",
+	"active" : "layout",
+	"childs" :
+	[
+		{
+			"title" : "COM_EASYSOCIAL_MENU_ITEM_EVENTS_EVENTS",
+			"url"   :
+			{
+				"view"  : "events",
+				"layout": ""
+			}
+		},
+		{
+			"title" : "COM_EASYSOCIAL_MENU_ITEM_EVENTS_CATEGORIES",
+			"url"   :
+			{
+				"view"  : "events",
+				"layout": "categories"
+			}
+		},
+		{
+			"title" : "COM_EASYSOCIAL_MENU_ITEM_PENDING",
+			"url"   :
+			{
+				"view"  : "events",
+				"layout": "pending"
+			},
+			"counter"   : "events/getPendingCount"
+		}
+	]
+}

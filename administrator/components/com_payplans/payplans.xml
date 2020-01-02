@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>PayPlans</name>
+	<creationDate>31st October 2019</creationDate>
+	<author>Stack Ideas Sdn Bhd</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2019 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>GPL License v2</license>
+	<version>4.0.15</version>
+	<description>PayPlans is a paid membership and subscription system for Joomla!</description>
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_payplans.ini</language>
+	</languages>
+	<scriptfile>script.php</scriptfile>
+	<administration>
+		<menu link="option=com_payplans" img="../media/com_payplans/images/payplans-16x16.png">COM_PAYPLANS</menu>
+		<submenu>
+			<menu view="config">COM_PP_ADMIN_SUBMENU_SETTINGS</menu>
+			<menu view="subscription">COM_PP_ADMIN_SUBMENU_SUBSCRIPTIONS</menu>
+			<menu view="analytics">COM_PP_ADMIN_SUBMENU_STATISTICS</menu>
+			<menu view="plan">COM_PP_ADMIN_SUBMENU_PLANS</menu>
+			<menu view="discounts">COM_PP_ADMIN_SUBMENU_DISCOUNTS</menu>
+			<menu view="gateways">COM_PP_ADMIN_SUBMENU_PAYMENT_METHODS</menu>
+			<menu view="app">COM_PP_ADMIN_SUBMENU_APPS</menu>
+			<menu view="user">COM_PP_ADMIN_SUBMENU_USERS</menu>
+			<menu view="notifications">COM_PP_ADMIN_SUBMENU_NOTIFICATIONS</menu>
+			<menu view="referrals">COM_PP_ADMIN_SUBMENU_REFERRALS</menu>
+			<menu view="languages">COM_PP_ADMIN_SUBMENU_LANGUAGES</menu>
+			<menu view="automation">COM_PP_ADMIN_SUBMENU_AUTOMATION</menu>
+			<menu view="log">COM_PP_ADMIN_SUBMENU_LOGS</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>languages</folder>
+			<folder>setup</folder>
+			<file>access.xml</file>
+			<file>config.xml</file>
+			<file>setup.html</file>
+			<file>payplans.php</file>
+			<file>payplans.xml</file>
+			<file>script.php</file>
+		</files>
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_payplans.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_payplans.sys.ini</language>
+		</languages>
+	</administration>
+	<updateservers>
+		<server type="extension" name="Payplans Update Site">https://stackideas.com/jupdates/manifest/payplans</server>
+	</updateservers>
+</extension>

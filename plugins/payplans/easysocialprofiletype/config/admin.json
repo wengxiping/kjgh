@@ -1,0 +1,28 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "esprofiletypeOnactive",
+				"type": "easysocialProfileType",
+				"title": "COM_PAYPLANS_APP_EASYSOCIALPROFILETYPE_SET_PROFILETYPE_LABEL_ON_ACTIVE",
+				"tooltip": "COM_PAYPLANS_APP_EASYSOCIALPROFILETYPE_SET_PROFILETYPE_ON_ACTIVE_DESC",
+				"default": ""
+			},
+			{
+				"name": "esprofiletypeOnHold",
+				"type": "easysocialProfileType",
+				"title": "COM_PAYPLANS_APP_EASYSOCIALPROFILETYPE_SET_PROFILETYPE_LABEL_ON_HOLD",
+				"tooltip": "COM_PAYPLANS_APP_EASYSOCIALPROFILETYPE_SET_PROFILETYPE_ON_HOLD_DESC",
+				"default": ""
+			},
+			{
+				"name": "esprofiletypeOnExpire",
+				"type": "easysocialProfileType",
+				"title": "COM_PAYPLANS_APP_EASYSOCIALPROFILETYPE_SET_PROFILETYPE_LABEL_ON_EXPIRE",
+				"tooltip": "COM_PAYPLANS_APP_EASYSOCIALPROFILETYPE_SET_PROFILETYPE_ON_EXPIRE_DESC",
+				"default": ""
+			}
+		]
+	}
+]

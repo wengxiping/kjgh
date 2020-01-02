@@ -1,0 +1,45 @@
+// --------------------------
+// ACM CTA STYLE 2
+// --------------------------
+.acm-cta.style-2 {
+	padding-top: @grid-gutter-width * 2;
+
+	.acm-cta-image {
+		img {
+			height: auto;
+			width: auto;
+		}
+	}
+
+	.acm-cta-intro {
+		padding: 0;
+		margin-top: @t3-global-margin * 4;
+
+		// Tablet/Mobile view
+		@media (max-width: @screen-sm-max) {
+			margin-top: 0;
+			margin-bottom: @t3-global-margin * 2;
+		}
+
+		// Mobile view
+		@media (max-width: @screen-xs-max) {
+			padding: 0 @t3-global-padding;
+		}
+
+		h3 {
+			color: @gray-darker;
+			font-weight: @font-weight-medium;
+		}
+
+		.section-intro {
+			color: @gray-dark;
+			width: 85%;
+		}
+	}
+
+	// Button
+	.acm-cta-buttons {
+		margin-top: @t3-global-margin * 1.5;
+	}
+
+}

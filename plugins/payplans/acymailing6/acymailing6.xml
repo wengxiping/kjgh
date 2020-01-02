@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>PayPlans - Acy Mailing 6</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>
+	<![CDATA[
+		PayPlans integration with Acy Mailing version 6 newsletter system.
+	]]>
+	</description>
+	<files>
+		<folder>app</folder>
+		<folder>config</folder>
+		<folder>tmpl</folder>
+		<filename plugin="acymailing6">acymailing6.php</filename>
+		<filename>acymailing6.xml</filename>
+	</files>
+</extension>

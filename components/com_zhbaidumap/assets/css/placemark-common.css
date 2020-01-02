@@ -1,0 +1,39 @@
+/* Image Carousel */
+
+/* Set Background Color */
+.carousel-inner {
+  background: #A9A9A9!important;  
+}
+
+
+/* Set Image Alignment Horizontally*/
+.carousel-inner { 
+	text-align: center!important; 
+}
+
+.carousel .item > img {
+	display: inline-block!important; 
+}
+
+.carousel-caption {
+	text-align: left!important; 
+}
+
+
+.zhbdm-placemarkCarouselImg img {
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+}
+
+.zhbdm-placemarkDetailImg {
+	padding:5px;
+}
+
+.zhbdm-placemarkDetailMap {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:300px;
+}
+

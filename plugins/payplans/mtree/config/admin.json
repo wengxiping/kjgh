@@ -1,0 +1,48 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "category_to_restrict",
+				"type": "dependency",
+				"title": "Apply Restrictions On",
+				"tooltip": "This determines restrictions rule to be applied on selected category or all categories",
+				"default": "restrict_specific",
+				"options": [
+					{
+						"title": "Any Category",
+						"value": "any"
+					},
+					{
+						"title": "Specific Categories",
+						"value": "restrict_specific",
+						"for": "data-restrict-specific"
+					}
+				]
+			},
+			{
+				"name": "restrict_specific",
+				"type": "custom",
+				"path": "plugins:/payplans/mtree/elements/categories",
+				"title": "COM_PAYPLANS_APP_JOOMLA_ARTICLE_SUBMISSION_SELECT_CATEGORY",
+				"tooltip": "COM_PAYPLANS_APP_JOOMLA_ARTICLE_SUBMISSION_SELECT_CATEGORY_DESCRIPTION",
+				"attributes": "data-restrict-specific",
+				"default": "0"
+			},
+			{
+				"name": "publish_listings_on_active",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_MTREE_PUBLISH_LISTINGS_ON_ACTIVE",
+				"tooltip": "COM_PAYPLANS_APP_MTREE_PUBLISH_LISTINGS_ON_ACTIVE_DESC",
+				"default": "0"
+			},
+			{
+				"name": "featured_listings_on_active",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_MTREE_FEATURED_LISTINGS_ON_ACTIVE",
+				"tooltip": "COM_PAYPLANS_APP_MTREE_FEATURED_LISTINGS_ON_ACTIVE_DESC",
+				"default": "0"
+			}
+		]
+	}
+]

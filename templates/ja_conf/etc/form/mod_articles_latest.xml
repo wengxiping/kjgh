@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="more-menu" label="Options" description="">
+
+      	<field name="mod-avatar" type="radio"
+                  class="btn-group btn-group-yesno"
+                  default="1"
+                  label="TPL_ENABLE_AVATAR"
+                  description="TPL_ENABLE_AVATAR_DESC">
+                  <option value="0">JNO</option>
+                  <option value="1">JYES</option>
+            </field>
+
+            <field name="mod-created" type="radio" 
+                  class="btn-group btn-group-yesno"
+                  default="1"
+                  label="TPL_ENABLE_CREATED"
+                  description="TPL_ENABLE_CREATED_DESC">
+                  <option value="0">JNO</option>
+                  <option value="1">JYES</option>
+            </field>
+
+            <field name="show-readmore" type="radio" 
+                  class="btn-group btn-group-yesno"
+                  default="1"
+                  label="TPL_SHOW_BUTTON_READMORE"
+                  description="TPL_SHOW_BUTTON_READMORE">
+                  <option value="0">JNO</option>
+                  <option value="1">JYES</option>
+            </field>
+
+            <field name="mod-menu" type="menuitem" 
+                  label="TPL_MENU_READMORE"
+                  description="TPL_MENU_READMORE_DESC">
+            </field>
+
+            <field
+              name="module-heading"
+              type="text"
+              label="TPL_MODULE_SUB_HEADING"
+              description="TPL_MODULE_SUB_HEADING_DESC"
+              default=""/>
+    </fieldset>
+  </fields>
+</form>

@@ -1,0 +1,7 @@
+
+#example-widget-container input[type='radio']{
+display:none;
+}
+#example-widget-container  .img_container{
+width :60px;
+}

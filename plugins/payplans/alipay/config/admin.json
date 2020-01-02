@@ -1,0 +1,35 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "seller_email",
+				"type": "text",
+				"title": "Merchant Account",
+				"tooltip": "Enter the Merchant Account's e-mail address which was provided by AliPay",
+				"default": ""
+			},
+			{
+				"name": "partner",
+				"type": "text",
+				"title": "Merchant UID/PID",
+				"tooltip": "Enter the merchant UID/PID that is provided by AliPay in this section",
+				"default": ""
+			},
+			{
+				"name": "private_key",
+				"type": "text",
+				"title": "MD5 Signature Key",
+				"tooltip": "Enter the MD5 Signature Key which was provided by AliPay in this section",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "Sandbox",
+				"tooltip": "Determines if sandbox mode should be enabled for testing purposes",
+				"default": false
+			}
+		]
+	}
+]

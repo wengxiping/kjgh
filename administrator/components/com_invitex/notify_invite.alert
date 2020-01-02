@@ -1,0 +1,12 @@
+[
+	{
+		"element"	: "notify_invite",
+		"rule"	: "abcd",
+		"value"	:
+		{
+			"email"		: false,
+			"system"	: true,
+			"core"		: true
+		}
+	}
+]

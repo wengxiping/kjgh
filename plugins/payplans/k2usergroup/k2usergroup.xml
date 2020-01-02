@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>PayPlans - K2 User Group Access</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PayPlans Usergroup Integration with K2</description>
+	<files>
+		<folder>app</folder>
+		<folder>config</folder>
+		<folder>tmpl</folder>
+		<filename plugin="k2usergroup">k2usergroup.php</filename>
+		<filename>k2usergroup.xml</filename>
+	</files>
+</extension>

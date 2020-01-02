@@ -1,0 +1,150 @@
+//** Add Listing
+
+.mt-add-listing {
+
+  //-----------------------------------------------------------------------------
+  // Container for all the categories that assigned to the current listing.
+  // This includes primary and secondary category.
+  //
+  ul.linkcats {
+    list-style:disc inside;
+    margin:0 0 3px;
+    padding:0;
+
+    li {
+      background:none;
+      list-style-type:none;
+      padding:0;
+    }
+
+    // Links to the "remove" button that removes a secondary category
+    // assignment.
+    a:link, a:visited {
+      color:#fff;
+      margin-right:5px;
+      text-decoration:none;
+      clear:none;
+      background-color:#999;
+      padding:0 3px;
+    }
+
+    a:hover {
+      background-color:#4c4c4c;
+    }
+
+    // "Change Category" link to toggle the category selection box.
+    #lcmanage {
+      font-weight: normal;
+    }
+
+    // The selection box for assignment category to a listing. On initiation,
+    // this box is hidden until it is manually toggled by user. This container
+    // primarily serve as the main element to toggling between
+    // hidden/not hidden.
+    #mc_con {
+      display:none;
+    }
+
+    // Container that contains the selected pathway and the selection box.
+    #mc_selectcat {
+      width:250px;
+      margin:5px 0;
+    }
+
+    // Shows the currently selected path way.
+    #mc_active_pathway {
+      background-color:#FFF;
+      width:100%;
+      color:#000;
+    }
+
+    // The main SELECT element that dynamically displays categories available
+    // for selection.
+    #browsecat {
+      width:100%;
+      margin:5px 0 0;
+      padding:0;
+    }
+
+  }
+
+  //-----------------------------------------------------------------------------
+  // Container for all the fields available for filling up.
+  //
+  .mt-add-listing-fields {
+
+  }
+
+  //-----------------------------------------------------------------------------
+  // Map in Add Listing page.
+  //
+  #mapcon {
+
+  }
+
+  //-----------------------------------------------------------------------------
+  // Images section in Add Listing.
+  //
+  #imagescon {
+
+    // Show the "Choose File" file input element for user to choose file to
+    // upload.
+    #uploadimages {
+      overflow:hidden;
+      clear:both;
+      list-style-type:none;
+      margin:0;
+      padding:10px 0 0;
+
+      // Individual "Choose File" file input.
+      li {
+        margin:0 0 10px;
+      }
+
+    }
+
+    // Images that has already been uploaded. These are shown in thumbnail
+    // form, with a checked for removal purposes.
+    #sortableimages {
+      width:600px;
+      list-style-type:none;
+      overflow:hidden;
+      margin:10px 0 0;
+      padding:0;
+
+      // Individual image.
+      li {
+        float:left;
+        list-style-position:outside;
+        list-style-type:none;
+        text-align:center;
+        margin:0 0 13px;
+        padding:0;
+
+        // Contains a checkbox that are selected by default. Use unselect this
+        // checkbox to mark an image for deletion.
+        input {
+          position:relative;
+          left:20px;
+          top:10px;
+          vertical-align:top;
+          z-index:1;
+          margin:0;
+          padding:0;
+        }
+      }
+    }
+
+
+  }
+
+  // A note for reminding user that certain fields are marked as required.
+  .required-note {
+    color: #666;
+  }
+
+  #mapcon, #imagescon {
+    margin-top:2em;
+  }
+
+}

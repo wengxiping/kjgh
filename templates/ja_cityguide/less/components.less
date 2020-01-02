@@ -1,0 +1,1007 @@
+/**
+* $JA#COPYRIGHT$
+*/
+ 
+
+// --------------------------------------------------
+// BOOTSTRAP COMPONENTS STYLES
+// --------------------------------------------------
+
+//
+// TITLES
+// --------------------------------------------------
+
+// Page header
+// -----------
+.page-header {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: 0 0 @line-height-computed;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
+.page-title,
+.page-header h1 {
+  line-height: 1;
+  margin: 0;
+}
+
+
+// Page Subheader
+// --------------
+.page-subheader {
+  border-bottom: 1px solid @t3-border-color;
+  margin: 0 0 @line-height-computed;
+  .clearfix();
+}
+
+.page-subtitle,
+.page-subheader h2 {
+  line-height: 1;
+  margin: 0;
+}
+
+.page-header + .page-subheader {
+  margin-top: -@line-height-computed; //If there is page header, then omit the space before page subheader
+}
+
+
+// Article Header
+// --------------
+.article-header {
+}
+
+.article-title,
+.article-header h1 {
+  margin: 0 0 @line-height-computed 0;
+  font-size: @font-size-h2;
+
+  // Mobile view
+  @media (max-width: @screen-xs-max) {
+    font-size: @font-size-h3;
+  }
+
+  a {
+    color: @headings-color;
+
+    &:hover,&:focus,&:active {
+      color: @blue;
+    }
+  }
+}
+
+// Smaller "Article Title" in Blog and List layout
+h2.article-title,
+.article-header h2 {
+}
+
+
+// Item Header
+// -----------
+.item-title {
+  font-weight: bold;
+}
+
+// 
+// CATEGORY COLORS
+// ---------------------------------------------------
+.cat-purple {
+  background: @purple !important;
+}
+
+.cat-red {
+  background: @red !important;
+}
+
+.cat-green {
+  background: @green !important;
+}
+
+.cat-pink {
+  background: @pink !important;
+}
+
+.cat-blue {
+  background: @blue !important;
+}
+
+.cat-orange {
+  background: @orange !important;
+}
+
+.cat-yellow {
+  background: @yellow !important;
+}
+
+.cat-cyan {
+  background: @cyan !important;
+}
+
+
+//
+// MASHEAD & JUMBOTRON
+// --------------------------------------------------
+
+// Jumbotron (jumbotron.less)
+// --------------------------
+.jumbotron {
+
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+
+  p {
+    // Remove margin on last paragraph
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .container & {
+    border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  @media screen and (min-width: @grid-float-breakpoint) {
+    .container & {
+    }
+    h1 {
+    }
+  }
+
+}
+
+// Mashead
+// --------
+.masthead {
+  padding: (@t3-global-padding * 2) 0;
+  text-align: center;
+
+  p {
+    // Remove margin on last paragraph
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: @grid-float-breakpoint) {
+    padding: (@t3-global-padding * 4) 0;
+
+    h1 {
+      font-size: @font-size-base * 7;
+    }
+
+    p {
+      font-size: @font-size-base * 2;
+    }
+
+    // Bigger mashead btn
+    .btn-lg {
+      margin-top: @line-height-computed;
+      padding: 18px 42px;
+      font-size: @font-size-base * 1.5;
+    }
+  }
+
+}
+
+
+// T3 Jumbotron Primary
+// --------------------
+.jumbotron-primary {
+  background-color: @brand-primary;
+  color: lighten(@brand-primary, 50%);
+  h1, h2, h3 {
+    color: @white;
+  }
+  p {
+    color: @white;
+  }
+  .btn-primary {
+    border-color: #fff;
+  }
+}
+
+
+
+//
+// LABELS & BADGES
+// --------------------------------------------------
+
+// Labels (labels.less)
+// --------------------
+
+.label {
+
+  // Add hover effects, but only for links
+  &[href] {
+    &:hover,
+    &:focus {
+    }
+  }
+
+  // Empty labels collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+}
+
+// Colors
+// Contextual variations (linked labels get darker on :hover)
+
+.label-default {
+}
+
+.label-primary {
+}
+
+.label-success {
+}
+
+.label-info {
+}
+
+.label-warning {
+}
+
+.label-danger {
+}
+
+
+// Badges (badges.less)
+// --------------------
+
+// Base classes
+.badge {
+
+  // Empty badges collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+}
+
+// Hover state, but only for links
+a.badge {
+  &:hover,
+  &:focus {
+  }
+}
+
+// Quick fix for labels/badges in buttons
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+// Quick fix for labels/badges in page-header- NNTH
+.page-header {
+  .label, .badge {
+    vertical-align: middle;
+  }
+}
+
+
+
+//
+// THUMBNAILS  (thumbnails.less)
+// --------------------------------------------------
+
+// Mixin and adjust the regular image class
+.thumbnail {
+  > img {
+  }
+}
+
+// Add a hover state for linked versions only
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+}
+
+// Image captions
+.thumbnail .caption {
+}
+
+
+
+//
+// ALERTS (alerts.less)
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+.alert {
+
+  // Headings for larger alerts
+  h4 {
+    color: inherit;
+  }
+
+  // Provide class for links that match alerts
+  .alert-link {
+  }
+
+  &.alert-message {
+    background: @alert-success-bg;
+    border: 1px solid @alert-success-border;
+    color: @alert-success-text;
+  }
+}
+
+
+// Dismissable alerts
+// ------------------
+.alert-dismissable {
+}
+
+
+// Alternate styles
+// ---------------
+.alert-success {
+}
+
+.alert-info {
+}
+
+.alert-warning {
+}
+
+.alert-danger {
+}
+
+
+
+//
+// MEDIA OBJECTS (media.less)
+// Source: http://stubbornella.org/content/?p=497
+// --------------------------------------------------
+
+// Common styles
+// -------------------------
+.media,
+.media .media {
+}
+
+.media:first-child {
+  margin-top: 0;
+}
+
+.media-object {
+  display: block;
+}
+
+.media-heading {
+  margin: 0 0 5px;
+}
+
+
+// Media image alignment
+// -------------------------
+.media {
+  > .pull-left {
+    margin-right: 10px;
+  }
+  > .pull-right {
+    margin-left: 10px;
+  }
+}
+
+
+// Media list variation
+// -------------------------
+.media-list {
+}
+
+
+
+//
+// LIST GROUP (list-groups.less)
+// --------------------------------------------------
+// Base class
+//
+// Easily usable on <ul>, <ol>, or <div>.
+.list-group {
+  // No need to set list-style: none; since .list-group-item is block level
+}
+
+
+// Individual list items
+// -------------------------
+.list-group-item {
+
+  // first and last items
+  &:first-child {
+  }
+  &:last-child {
+  }
+
+  // Align badges within list items
+  > .badge {
+    float: right;
+  }
+  > .badge + .badge {
+    margin-right: 5px;
+  }
+}
+
+// Linked list items
+a.list-group-item {
+
+  .list-group-item-heading {
+  }
+
+  // Hover state
+  &:hover,
+  &:focus {
+  }
+
+  // Active class on item itself, not parent
+  &.active,
+  &.active:hover,
+  &.active:focus {
+
+    // Force color to inherit for custom content
+    .list-group-item-heading {
+      color: inherit;
+    }
+    .list-group-item-text {
+      color: lighten(@list-group-active-bg, 40%);
+    }
+  }
+}
+
+// Custom content options
+// -------------------------
+.list-group-item-heading {
+}
+
+.list-group-item-text {
+}
+
+
+
+//
+// PANELS (panels.less)
+// --------------------------------------------------
+// Base class
+.panel {
+}
+
+// Panel contents
+.panel-body {
+}
+
+
+// Optional heading
+.panel-heading {
+  > .dropdown .dropdown-toggle {
+    color: inherit;
+  }
+}
+
+// Within heading, strip any `h*` tag of it's default margins for spacing.
+.panel-title {
+  > a {
+    color: inherit;
+  }
+}
+
+// Optional footer (stays gray in every modifier class)
+.panel-footer {
+}
+
+
+// Collapsable panels (aka, accordion)
+.panel-group {
+
+  .panel {
+    + .panel {
+    }
+  }
+
+  .panel-heading {
+    + .panel-collapse .panel-body {
+    }
+  }
+
+  .panel-footer {
+    + .panel-collapse .panel-body {
+    }
+  }
+
+}
+
+
+// Contextual variations
+.panel-default {
+}
+
+.panel-primary {
+}
+
+.panel-success {
+}
+
+.panel-warning {
+}
+
+.panel-danger {
+}
+
+.panel-info {
+}
+
+
+
+//
+// WELLS (wells.less)
+// --------------------------------------------------
+// Base class
+.well {
+  blockquote {
+  }
+}
+
+// Sizes
+.well-lg {
+}
+
+.well-sm {
+}
+
+
+
+//
+// MODALS (modals.less)
+// --------------------------------------------------
+// Container that the modal scrolls within
+.modal {
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+}
+
+// Actual modal
+.modal-content {
+}
+
+// Modal background
+.modal-backdrop {
+  // Fade for backdrop
+  &.fade { .opacity(0); }
+  &.in { .opacity(.5); }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+}
+// Close icon
+.modal-header .close {
+}
+
+// Title text within header
+.modal-title {
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+}
+
+// Footer (for actions)
+.modal-footer {
+}
+
+// Scale up the modal
+@media screen and (min-width: @screen-sm-min) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+  }
+}
+
+// Responsive Video
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-wrap iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+//
+// TOOLTIPS (tooltips.less)
+// --------------------------------------------------
+
+// Base class
+.tooltip {
+}
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+}
+
+// Arrows
+.tooltip-arrow {
+}
+
+// 
+// MEGA FILTER
+// ------------------------------------------------
+.ja-megafilter-wrap {
+  &.row {
+    margin-left: -@grid-gutter-width / 2;
+    margin-right: -@grid-gutter-width / 2;
+
+    > div {
+      padding-right: @grid-gutter-width / 2;
+      padding-left: @grid-gutter-width / 2;
+    }
+  }
+  
+  // Grid Reset on tablet
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .sidebar-main {
+      width: 33.33333333%;
+    }
+
+    .main-content {
+      width: 66.66666667%;
+    }
+  }
+
+  // Menu Toggle
+  .ja-mg-sidebar {
+    margin-bottom: @t3-global-margin / 2;
+
+    .sidebar-toggle {
+      background: @brand-primary;
+      border-radius: @border-radius-base;
+      text-transform: none;
+      font-weight: 600;
+      letter-spacing: 0;
+
+      &:hover,&:focus,&:active {
+        background: darken(@brand-primary,10%);
+      }
+    }
+  }
+
+  // Toolbar
+  .ja-toolbar-wrapper {
+    .orderby-displaynumber {
+      background: @white;
+      border-radius: @border-radius-base;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border: 1px solid @t3-border-color;
+      color: @headings-color;
+      font-weight: 600;
+      padding: @grid-gutter-width * 0.75 @grid-gutter-width;
+      margin-bottom: @grid-gutter-width;
+
+      > div {
+        display: inline-block;
+        padding: @grid-gutter-width * 0.25 0;
+        width: auto!important;
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+      select {
+        height: @line-height-computed * 1.5;
+        padding: 0 5px;
+        margin: 0 @t3-global-margin / 6;
+        width: auto;
+      }
+    }
+
+    .toolbar-sorter .action {
+      background: @white;
+      border: 1px solid @t3-border-color;
+      border-radius: @border-radius-base;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      color: @headings-color;
+      line-height: @line-height-computed * 1.5 - 2;
+      font-size: 11px;
+      height: @line-height-computed * 1.5;
+      width: @line-height-computed * 1.5;
+
+      &:hover,&:focus,&:active {
+        color: @brand-primary;
+      }
+    }
+
+    .toolbar-amount {
+      box-shadow: none;
+      color: @headings-color;
+      font-size: @font-size-base;
+      line-height: @line-height-computed * 1.5;
+      height: auto;
+      text-transform: none;
+
+      // Normal Screen
+      @media (max-width: @screen-md-max) {
+        margin-left: @t3-global-margin;
+        float: none;
+        position: static;
+        transform: translate(0);
+          -webkit-transform: translate(0);
+      }
+
+      .toolbar-number {
+        line-height: @line-height-computed * 1.5;
+        vertical-align: top;
+      }
+    }
+
+    // Layout Options
+    .jamg-layout-chooser span {
+      border: 1px solid @t3-border-color;
+      border-radius: @border-radius-base;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      color: @headings-color;
+      padding: 0;
+      line-height: @line-height-computed * 1.5;
+      margin-left: @t3-global-margin / 2;
+      height: @line-height-computed * 1.5;
+      width: @line-height-computed * 1.5;
+
+      &.active,
+      &:hover {
+        color: @brand-primary;
+        cursor: pointer;
+      }
+    }
+
+    // Toolbar Top
+    &.toolbar-top {
+      .pages {
+        display: none;
+      }
+    }
+
+    // Toolbar Bottom
+    &.toolbar-bottom {
+      border: 0;
+      padding-top: 0;
+
+      .orderby-displaynumber {
+        margin-bottom: 0;
+        margin-top: @grid-gutter-width;
+      }
+    }
+  }
+
+  // Filter
+  .filter-content {
+    background: @white;
+    border: 1px solid @t3-border-color;
+    border-radius: @border-radius-base;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: @grid-gutter-width;
+
+    .input-text {
+      box-shadow: 0 0 6px rgba(0,0,0,0.1) inset;
+      border-radius: @input-border-radius;
+    }
+
+    .filter-field + .filter-field {
+      border-top: 1px solid @t3-border-color;
+      margin-top: @grid-gutter-width;
+      padding-top: @grid-gutter-width;
+    }
+
+    // Filter Current
+    > .filter-current {
+      margin-bottom: @grid-gutter-width;
+      padding-bottom: @grid-gutter-width;
+      position: relative;
+
+      &:before {
+        background: @t3-border-color;
+        bottom: 0;
+        content: "";
+        left: -@grid-gutter-width;
+        right: -@grid-gutter-width;
+        height: 1px;
+        position: absolute;
+      }
+
+      .btn-default {
+        background: @brand-primary;
+        border-color: @brand-primary;
+        color: @white;
+        padding: @padding-small-vertical @padding-small-horizontal;
+      }
+
+      .filter-actions {
+        text-align: left;
+      }
+    }
+
+    // Filter Category
+    .filter-items .item.lv-2 {
+      background: none;
+      padding-left: 0;
+    }
+
+    // Filter Range
+    .filter-range .filter-options-content .ui-slider-horizontal {
+      background: @blue;
+
+      .ui-slider-range {
+        background: darken(@gray-lightest,3%);
+      }
+      .ui-slider-handle {
+        margin-left: -1px;
+        top: -4px;
+      }
+    }
+
+    // Title
+    .block-subtitle {
+      border: 0;
+      padding: 0;
+      text-transform: none;
+      font-size: @font-size-h3;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    // Option
+    .filter-options-title {
+      margin-bottom: @grid-gutter-width / 1.5;
+
+      span {
+        background: transparent;
+        color: @headings-color;
+        display: block;
+        padding: 0;
+        font-family: @font-family-sub;
+        font-size: 11px;
+        letter-spacing: 0;
+
+        &::after {
+          content: "\f0d7";
+          color: @headings-color;
+          position: static;
+          float: right;
+          line-height: 1;
+        }
+      }
+
+      &.collapsed span::after {
+        content: "\f0d8";
+      }
+    }
+  }
+
+  // List Filter
+  .row {
+    margin-left: -@grid-gutter-width / 2;
+    margin-right: -@grid-gutter-width / 2;
+
+    > div {
+      padding-left: @grid-gutter-width / 2;
+      padding-right: @grid-gutter-width / 2;
+    }
+  }
+
+  .ja-products-wrapper {
+    .product-item .product-item-info {
+      border: 1px solid @t3-border-color;
+      border-radius: @border-radius-base;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      padding: @grid-gutter-width;
+
+      // Thumb
+      .thumb:first-child {
+        .product-image-container {
+          border-radius: @border-radius-base @border-radius-base 0 0;
+          margin: -@grid-gutter-width;
+          margin-bottom: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .product-item-actions {
+        margin-top: @t3-global-margin/2;
+      }
+
+      // Category
+      .cat {
+        color: @blue;
+        font-family: @font-family-sub;
+        font-weight: 600;
+        font-size: @font-size-h6;
+        text-transform: uppercase;
+      }
+
+      // Button
+      .btn {
+        border: 0;
+        box-shadow: none;
+        color: @brand-primary;
+        font-size: @font-size-h6;
+        padding: 0;
+
+        &:hover,&:focus,&:active {
+          background: transparent;
+          color: darken(@brand-primary,10%);
+        }
+      }
+    }
+
+    // View List
+    &.list {
+      .list .product-item {
+        margin-bottom: @grid-gutter-width;
+
+        .product-item-info {
+          border: 1px solid @t3-border-color;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+          padding: @grid-gutter-width @grid-gutter-width @grid-gutter-width @grid-gutter-width * 10;
+
+          @media (max-width: @screen-xs-max){
+            padding: @t3-global-margin @t3-global-margin/2 @t3-global-margin 190px;
+          }
+
+          &.no-image {
+            padding: @grid-gutter-width;
+          }
+
+          .product-item-details {
+            overflow: visible;
+          }
+
+          .thumb {
+            position: absolute;
+            left: @t3-global-margin;
+            top: @t3-global-margin;
+            width: 100%;
+            height: auto;
+
+            .product-item-photo {
+              border: 0;
+              margin-right: @grid-gutter-width / 2;
+              top: 0;
+              right: 100%;
+              left: auto;
+              padding: 0;
+              position: static;
+
+              .product-image-container {
+                border-radius: @border-radius-base;
+                margin: 0;
+
+                img {
+                  max-width: @grid-gutter-width * 8;
+
+                  @media (max-width: @screen-xs-max){
+                    max-width: 145px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

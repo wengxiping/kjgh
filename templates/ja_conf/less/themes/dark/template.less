@@ -1,0 +1,55 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+
+// GLOBAL STYLE
+// ---------------------
+.title-lead {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+// Mask Image
+.img-mask {
+  .img-wrap {
+    &:before {
+      display: none;
+    }
+
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    &:hover {
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+
+// ACM STYLE FOR THEME
+// --------------------
+.t3-wrapper {
+  // ACM Hero
+  .acm-hero .hero-title {
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  // ACM Video
+  .acm-video .video {
+    span {
+      background: transparent;
+    }
+
+    .img-thumb {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+  }
+}

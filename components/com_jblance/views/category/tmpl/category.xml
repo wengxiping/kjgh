@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="categoryList">
+        <message><![CDATA[Shows list of category]]></message>
+    </layout>
+    <state>
+        <name>CategoryList</name>
+        <description>Category</description>
+    </state>
+    <!-- Add fields to the parameters object for the layout. -->
+    <fields name="params">
+        <fieldset name="advanced" label="COM_MENUS_OP_FEATURED_OPTIONS">
+            <field
+                    name="num_columns"
+                    type="number"
+                    label="COM_JBLANCE_NUM_COLUMNS_LABEL"
+                    description="COM_JBLANCE_NUM_COLUMNS_DESC"
+                    useglobal="true"
+                    default="4"
+            />
+        </fieldset>
+    </fields>
+</metadata>

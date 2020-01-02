@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="payplans" method="upgrade">
+	<name>PayPlans - EasyBlog</name>
+	<version>4.0.15</version>
+	<creationDate>31st October 2019</creationDate>
+	<author>StackIdeas</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2018 Stack Ideas Sdn Bhd. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>
+	<![CDATA[
+		PayPlans integration with the most popular blogging extension for Joomla.
+	]]>
+	</description>
+	<files>
+		<folder>app</folder>
+		<folder>config</folder>
+		<filename plugin="easyblog">easyblog.php</filename>
+		<filename>easyblog.xml</filename>
+	</files>
+</extension>

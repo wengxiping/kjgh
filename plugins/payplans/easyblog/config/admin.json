@@ -1,0 +1,14 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "addToCategoryOnActive",
+				"type": "easyblogCategories",
+				"title": "COM_PAYPLANS_APP_EASYBLOG_ADD_TO_CATEGORY",
+				"tooltip": "COM_PAYPLANS_APP_EASYBLOG_ADD_TO_CATEGORY_DESC",
+				"default": ""
+			}
+		]
+	}
+]

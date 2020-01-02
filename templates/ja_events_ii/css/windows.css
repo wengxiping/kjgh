@@ -1,0 +1,10 @@
+.window body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.window .window-mainbody {
+  max-height: 100%;
+  padding: 20px;
+  overflow: auto;
+}

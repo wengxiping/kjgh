@@ -1,0 +1,21 @@
+/**
+ * @version     SVN: <svn_id>
+ * @package     Invitex
+ * @subpackage  mod_inviters
+ * @author      Techjoomla <extensions@techjoomla.com>
+ * @copyright   Copyright (c) 2009-2015 TechJoomla. All rights reserved.
+ * @license     GNU General Public License version 2 or later.
+ */
+
+.inviter-box{
+border: 1px solid #dadada;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+margin: 0 0 15px;
+padding: 10px;
+background: #fafafa;
+}

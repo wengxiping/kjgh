@@ -1,0 +1,57 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "merchant_id",
+				"type": "text",
+				"title": "Merchant ID",
+				"tooltip": "Enter the Merchant ID provided by Quickpay. This is necessary to setup the integrations",
+				"regex": "/^[0-9]{8}$/",
+				"default": ""
+			},
+			{
+				"name": "payment_key",
+				"type": "text",
+				"title": "Payment Window Key",
+				"tooltip": "Enter the Payment Window Key from Quickpay. This can be obtained under the Integration section of Quickpay",
+				"default": ""
+			},
+			{
+				"name": "agreement_id",
+				"type": "text",
+				"title": "Payment Window Agreement ID",
+				"tooltip": "Enter the Payment Window Agreement ID from Quickpay",
+				"default": ""
+			},
+			{
+				"name": "apiuserkey",
+				"type": "text",
+				"title": "API User API Key",
+				"tooltip": "Enter the API Key for the API User. This can be obtained under the Integration section of Quickpay",
+				"default": ""
+			},
+			{
+				"name": "private_key",
+				"type": "text",
+				"title": "Private Key",
+				"tooltip": "Enter the Private Key provided by Quickpay",
+				"default": ""
+			},
+			{
+				"name": "allow_recurring_cancel",
+				"type": "toggler",
+				"title": "COM_PP_ALLOW_RECURRING_CANCELLATION",
+				"tooltip": "COM_PP_ALLOW_RECURRING_CANCELLATION_DESC",
+				"default": false
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]

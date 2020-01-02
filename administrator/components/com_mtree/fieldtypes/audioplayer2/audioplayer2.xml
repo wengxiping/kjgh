@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+	<name>audioplayer2</name>
+	<caption>Audio Player 2.0</caption>
+	<author>Lee Cher Yeong</author>
+	<creationDate>February 2016</creationDate>
+	<copyright>(C) 2016-present Mosets Consulting. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Audio Player 2.0 allows users to upload audio files and play the music from within the listing page. Provides basic playback options such as play, pause and volume control. Made possible by http://mediaelementjs.com.</description>
+	<useElements>0</useElements>
+	<useSize>0</useSize>
+	<taggable>0</taggable>
+	<isFile>1</isFile>
+	<fileset>
+		<files folder="." target="administrator/components/com_mtree/fieldtypes/audioplayer2">
+			<filename>audioplayer2.php</filename>
+			<filename>audioplayer2.xml</filename>
+		</files>
+		<files folder="media" target="media/com_mtree/fieldtypes/audioplayer2">
+			<filename>background.png</filename>
+			<filename>bigplay.fw.png</filename>
+			<filename>bigplay.svg</filename>
+			<filename>controls-ted.png</filename>
+			<filename>controls-wmp-bg.png</filename>
+			<filename>controls-wmp.png</filename>
+			<filename>controls.fw.png</filename>
+			<filename>controls.png</filename>
+			<filename>controls.svg</filename>
+			<filename>flashmediaelement.swf</filename>
+			<filename>jumpforward.png</filename>
+			<filename>loading.gif</filename>
+			<filename>mediaelement-and-player.min.js</filename>
+			<filename>mediaelementplayer.css</filename>
+			<filename>silverlightmediaelement.xap</filename>
+			<filename>skipback.png</filename>
+		</files>
+	</fileset>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.fld_audioplayer2.ini</language>
+	</languages>
+	<config>
+		<fields>
+			<fieldset name="basic">
+
+				<field name="audiowidth" type="text" default="300" label="Audio Player's Width" description="Specify the width of the audio player in px."/>
+				<field name="autoplay" type="radio" default="0" class="btn-group" label="Auto Start" description="Automatically start playing the audio track.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="displayfilename" type="radio" default="1" class="btn-group" label="Display Filename" description="Display the audio's filename below the player.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="loop" type="radio" default="0" class="btn-group" label="Loop" description="The track will be looped indefinitely">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension">http://update.mosets.com/mtree/fieldtypes/audioplayer2.xml</server>
+	</updateservers>
+</extension>

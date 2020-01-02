@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="params">
+    <fieldset name="custom-field" label="JA Extra Fields" description="">
+      <field name="number_item" type="text" default="" label="TPL_NUMBER_ITEM_LABEL" description="TPL_NUMBER_ITEM_DESC" filter="RAW" />
+    </fieldset>
+  </fields>
+</form>

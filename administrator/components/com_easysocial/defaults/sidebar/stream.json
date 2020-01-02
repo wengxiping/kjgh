@@ -1,0 +1,27 @@
+{
+	"title": "COM_EASYSOCIAL_MENU_GROUP_STREAMS",
+	"link": "index.php?option=com_easysocial&view=stream",
+	"class": "fa fa-stream",
+	"access": "easysocial.access.stream",
+	"view": "stream",
+	"active": "layout",
+	"childs":
+	[
+		{
+			"title": "COM_EASYSOCIAL_MENU_GROUP_STREAMS",
+			"url": {
+				"view": "stream",
+				"layout": ""
+			},
+			"childs": []
+		},
+		{
+			"title": "COM_ES_MENU_BACKGROUND",
+			"url": {
+				"view": "stream",
+				"layout": "background"
+			},
+			"childs": []
+		}
+	]
+}

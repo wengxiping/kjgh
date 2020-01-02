@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" type="module" client ="site" method="upgrade">
+	<name>Inviters</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>5th Nov 2018</creationDate>
+	<version>3.0.10</version>
+	<description />
+	<languages folder="language/en-GB/">
+		<language tag="en-GB">en-GB.mod_inviters.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_inviters">mod_inviters.php</filename>
+		<filename>helper.php</filename>
+		<filename>mod_inviters.php</filename>
+		<filename>mod_inviters.css</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config name="params">
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="no_of_inviters_to_show" type="text" default="5" label="No of inviters to show" description="No of inviters to show" />
+				<field name="sort_by" class="btn-group" default="acc" type="list" label="Order By " description="Order By">
+					<option value="acc">Total Accepted</option>
+					<option value="total_sent">Total Sent</option>
+				</field>
+				<field name="ordering" class="btn-group" default="-1" type="list" label="Ordering Direction" description="Ordering Direction">
+					<option value="1">Ascending</option>
+					<option value="-1">Descending</option>
+				</field>
+				<!--<field name="inviter_type" type="list" default="top" label="Select Inviters to show" description="Select Inviters to show"> <option value="recent">Recent</option> <option value="top">Top</option> </field> <field name="inviter_condition" type="list" default="1" label="Select condition for Top Inviters" description="Select condition for Top Inviters"> <option value="sent">Invite Sent</option> <option value="accepted">Invite Accepted</option> </field> <field name="inviter_condition" type="list" default="1" label="Select condition for Top Inviters" description="Select condition for Top Inviters"> <option value="sent">Invite Sent</option> <option value="accepted">Invite Accepted</option> </field> -->
+				<field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

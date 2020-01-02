@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Follow</title>
+	<sampledata><![CDATA[
+        {":type":"uber:footer","footer":{"jatools-layout-footer":"style-1","footer[footer-background]":["light-color"],"footer[img]":[""],"footer[enable-breadcrumbs]":["0"],"footer[enable-backtotop]":["0"],"footer[footer-left-position]":["footer-1"],"footer[footer-right-position]":["footer-2"],"footer[full-width]":["0"],"footer[facebook]":["joomlart"],"footer[google-plus]":["joomlart"],"footer[twitter]":["joomlart"],"footer[pinterest]":["joomlart"],"footer[linkedin]":["joom-solutions"]}}
+    ]]></sampledata>
+	
+    <fields name="follow">
+			
+			<fieldset name="social" label="SOCIAL_LABEL" description="SOCIAL_DESC" multiple="0">
+				<field name="facebook" type="text" size="40" default="" label="FACEBOOK_LABEL" description="FACEBOOK_DESC"></field>
+				<field name="google-plus" type="text" size="40" default="" label="GOOGLE_PLUS_LABEL" description="GOOGLE_PLUS_DESC"></field>
+				<field name="twitter" type="text" size="40" default="" label="TWITTER_LABEL" description="TWITTER_DESC"></field>
+				<field name="pinterest" type="text" size="40" default="" label="PINTEREST_LABEL" description="PINTEREST_DESC"></field>
+				<field name="linkedin" type="text" size="40" default="" label="LINKEDIN_LABEL" description="LINKEDIN_DESC"></field>
+			</fieldset> 
+			
+    </fields>
+</form>

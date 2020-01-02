@@ -1,0 +1,53 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "subject",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_TOS_SUBJECT" , 
+				"tooltip": "COM_PAYPLANS_APP_TOS_SUBJECT_DESC",
+				"default": "" 
+			},
+			{
+				"name": "filter",
+				"type": "dependency",
+				"title": "COM_PAYPLANS_APP_TOS_FILTER",
+				"tooltip": "COM_PAYPLANS_APP_TOS_FILTER_DESC",
+				"default": "custom_content",
+				"options": [
+					{
+						"title": "COM_PAYPLANS_APP_TOS_CUSTOM_CONTENT",
+						"value": "custom_content",
+						"for": "data-custom-content"
+					},
+					{
+						"title": "COM_PAYPLANS_APP_TOS_JOOMLA_ARTICLE",
+						"value": "joomla_article",
+						"for": "data-joomla-article"
+					}
+				]
+			},
+			{
+				"name": "custom_content",
+				"type": "editor",
+				"title": "COM_PAYPLANS_APP_TOS_CUSTOM_CONTENT",
+				"tooltip": "COM_PAYPLANS_APP_TOS_CUSTOM_CONTENT_DESC",
+				"attributes": "data-custom-content",
+				"default": ""
+			},
+			{
+				"name": "joomla_article",
+				"type": "joomlaArticle",
+				"title": "COM_PP_CONTENTACL_SELECT_JOOMLA_ARTICLE",
+				"tooltip": "COM_PP_CONTENTACL_SELECT_JOOMLA_ARTICLE_DESC",
+				"attributes": "data-joomla-article",
+				"default": "",
+				"options": {
+					"multiple": false
+				}
+				
+			}
+		]
+	}
+]

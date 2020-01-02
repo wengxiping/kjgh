@@ -1,0 +1,49 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "pointsType",
+				"type": "lists",
+				"title": "Points Source",
+				"tooltip": "Determines the points source to be used to purchase plans from PayPlan",
+				"default": "easysocial",
+				"options": [
+					{
+						"title": "Alta User Points",
+						"value": "aup"
+					},
+					{
+						"title": "EasySocial Points",
+						"value": "easysocial"
+					},
+					{
+						"title": "Jomsocial Karma",
+						"value": "karma"
+					}
+				]
+			},
+			{
+				"name": "easysocial_points",
+				"type": "text",
+				"title": "Points Cost (EasySocial)",
+				"tooltip": "This determines the total number of points needed",
+				"default": "0"
+			},
+			{
+				"name": "aup_points",
+				"type": "text",
+				"title": "Points Cost (Altauserpoints)",
+				"tooltip": "This determines the total number of points needed",
+				"default": "0"
+			},
+			{
+				"name": "karma_points",
+				"type": "text",
+				"title": "Points Cost (Jomsocial karma)",
+				"tooltip": "This determines the total number of points needed",
+				"default": "0"
+			}
+		]
+	}
+]

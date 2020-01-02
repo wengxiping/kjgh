@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="general_settings" label="GLOBAL_SET" description="" addfieldpath="/administrator/components/com_invitex/assets/elements">
+		<!--Global Settings-->
+		<field name="invite_methods" default="manual" type="invitemethods" multiple="multiple" label="ALLOWED_INVITE_METHODS" description="ALLOWED_INVITE_METHODS_DESC" />
+		<field name="invitex_default_message" default="Please check this awesome site!" type="textarea" label="OPTIONAL_MESSAGE" description="OPTIONAL_MESSAGE_DES" />
+		<!--API Settings-->
+		<field menu="hide" name="hint_api_settings" type="legend" default="API_SET" label="" description="" hint="INV_FOLLOW_API_DOC" />
+		<field name="invite_apis" default="50" type="apilist" multiple="multiple" label="SELECT_API" description="SELECT_API_DES" />
+		<field menu="hide" name="" type="legend" default="COM_INVITEX_DISPLAY_SET" label="" description="" />
+		<field name="inv_look" default="2" class="btn-group" type="list" label="INV_LOOK" description="INV_LOOK_DESC">
+			<option value="1">INV_FB</option>
+			<option value="0">INV_NEW</option>
+			<option value="2">INV_BLACK_WHITE</option>
+		</field>
+		<field name="show_menu" class="btn-group" default="1" type="radio" label="SHOW_MENU_BAR" description="SHOW_MENU_BAR_DES">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="bssetupInstruction" type="Bssetup"  label="COM_INVITEX_BS_SETUP_INSTRUCTION" description="COM_INVITEX_BS_SETUP_INSTRUCTION_DES" />
+		<field name="currentBSViews" class="btn-group" type="radio" default="bs2" description="COM_INVITEX_CURR_BS_VIEWS_DESC" label="COM_INVITEX_CURR_BS_VIEWS" >
+			<option value="bs2">COM_INVITEX_BS2</option>
+			<option value="bs3">COM_INVITEX_BS3</option>
+		</field>
+		<field name="loadBootstrap" class="btn-group" type="radio" default="0" description="COM_INVITEX_BOOTSTRAP_LOAD_DESC" label="COM_INVITEX_BOOTSTRAP_LOAD" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<!--Cron and Batch Settings-->
+		<field menu="hide" name="" type="legend" default="BATCH_SET" label="" description="" />
+		<field name="use_sys" class="btn-group" default="0" type="radio" label="USE_SYS_PLUG" description="USE_SYS_PLUG_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="from_address" default="" type="text" label="FROM_ADDRESS" description="FROM_ADDRESS_DESC" />
+		<field name="enb_batch" class="btn-group" default="1" type="radio" label="ENB_BATCH" description="ENB_BATCH_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="inviter_percent" default="30" type="text" label="PER_GOES_INV" description="PER_GOES_INV_DESC" />
+		<field name="private_key_cronjob" type="cron" label="PRIVATE_KEY_CRON" description="PRIVATE_KEY_CRON_DESC" />
+		<field name="cron_get" type="cron" label="CRON_JOB" description="CRON_JOB_DESC" />
+		<!--Guest Settings-->
+		<field menu="hide" name="hint_guest_settings" type="legend" default="COM_INVITEX_GUEST_SETTINGS" label="" description="" hint="INV_CAPTCHA_MESSAGE" />
+		<field name="guest_invitation" class="btn-group" default="0" type="radio" label="INV_GUEST_INVITATION" description="INV_GUEST_INVITATION_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<!--Import and Limit Settings-->
+		<field menu="hide" name="hint_import_settings" type="legend" default="COM_INVITEX_IMPORT_SETTINGS" label="" description="" hint="" />
+		<field name="global_value" default="180" type="text" label="MAX_SENDS" description="MAX_SENDS_DESC" />
+		<field name="per_user_invitation_limit" default="40" type="text" label="PER_USER_INVITATION_LIMIT" description="PER_USER_INVITATION_LIMIT_DES" />
+		<field name="expiry" default="90" type="text" label="INVITE_VALIDITY" description="INVITE_VALIDITY_DESC" />
+		<field name="enb_load_more" class="btn-group" default="0" type="radio" label="ENB_LOAD_MORE" description="ENB_LOAD_MORE_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="store_contact" class="btn-group" default="0" type="radio" label="SEND_FRIENDS_ON_SITE_TYPE_INVITAION" description="SEND_FRIENDS_ON_SITE_TYPE_INVITAION_DES">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="contacts_at_first_instance" default="20" type="text" label="NUMBER_OF_CONTACTS_AT_FIRST_INSTANCE" description="NUMBER_OF_CONTACTS_AT_FIRST_INSTANCE_DESC" />
+		<!--Reminder Settings-->
+		<field menu="hide" name="" type="legend" default="AUTO_REM_SET" id="show_automated_remonder_id" label="" description="" />
+		<field menu="hide" name="show_automated_remonder_name" id="show_automated_remonder_desc" type="header" class="show_notes show_automated_remonder" default="" label="" description="" />
+		<field name="send_auto_remind" class="btn-group" default="0" type="radio" label="SEND_AUTO_REMIND" description="SEND_AUTO_REMIND_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="rem_after_days" default="10" type="text" label="REM_AFTER_DAYS" description="REM_AFTER_DAYS_DESC" />
+		<field name="rem_repeat_times" default="1" type="text" label="REPEAT_TIMES" description="REPEAT_TIMES_DESC" />
+		<field name="rem_every" default="1" type="text" label="REM_EVERY" description="REM_EVERY_DESC" />
+		<!--
+		     <field name="manual_emailtags" class="btn-group" default="1" type="radio" label="COM_INVITEX_MANUAL_EMAIL_TAGS" description="COM_INVITEX_MANUAL_EMAIL_TAGS">
+		     <option value="1">COM_INVITEX_YES</option>
+		     <option value="0">COM_INVITEX_NO</option>
+		     </field>
+		-->
+		<!--Domain Settings-->
+		<field menu="hide" name="" type="legend" default="DOMAIN_VAL" label="" description="" />
+		<field name="allow_domain_validation" class="btn-group" default="0" type="radio" label="ALLOW_DOMAIN_VALIDATION" description="ALLOW_DOMAIN_VALIDATION_DES">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="invite_domains" default="" placeholder="" type="textarea" label="ALLOWED_DOMAINS" description="ALLOWED_DOMAINS_DES" />
+		<field name="include_site_domain" class="btn-group" default="0" type="radio" label="INCLUDE_SITE_DOMAIN_FOR_VALIDATION" description="INCLUDE_SITE_DOMAIN_FOR_VALIDATION_DES">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<!--Layout Settings-->
+		<!--
+		     <field menu="hide" name="" type="legend" default="LAYOUT_SET" label="" description="" />
+		-->
+		<!--Log Settings-->
+		<field menu="hide" name="" type="legend" default="COM_INVITEX_MAINTAIN_LOGS_SETTINGS" label="" description="" />
+		<field name="enable_log" class="btn-group" default="0" type="radio" label="COM_INVITEX_MAINTAIN_LOGS" description="COM_INVITEX_MAINTAIN_LOGS_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<!--Broadcast  Settings-->
+	</fieldset>
+	<fieldset name="inv_easysocial_tab" description="" label="COM_INVITEX_INTEGRATAION">
+		<field name="reg_direct" class="btn-group" default="Joomla" type="integrations" label="REG_DIR" description="REG_DIR_DESC" />
+		<field menu="hide" name="" type="legend" default="COM_INVITEX_EASYSOCIAL_SETTING" label="" description="" />
+		<field name="estoolbar" class="btn-group" default="0" type="radio" label="ESTOOLBAR" description="ESTOOLBAR_DES">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<!--
+
+		     <field name="es_fix_js_error" class="btn-group" default="1" type="radio" label="ES_FIX_JS_ERROR" description="ES_FIX_JS_ERROR">
+		     <option value="1">COM_INVITEX_YES</option>
+		     <option value="0">COM_INVITEX_NO</option>
+		     </field>
+		-->
+		<field name="override_easysocial_invitemenu" class="btn-group" default="0" type="radio" label="INV_EASYSOCIAL_OVERRIDE_INVITE_VIEW" description="INV_EASYSOCIAL_OVERRIDE_INVITE_VIEW_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field menu="hide" name="" type="legend" default="COM_INVITEX_JOMSOCIAL_SETTING" label="" description="" />
+		<field name="jstoolbar" class="btn-group" default="0" type="radio" label="JSTOOLBAR" description="JSTOOLBAR_DES">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field menu="hide" name="" type="legend" default="COM_INVITEX_ACTIVITY_INTEGR_SETTING" hint="COM_INVITEX_ACTIVITY_INTEGR_SETTING_HINT" label="" description="" />
+		<field name="integrate_activity_stream" type="list" multiple="multiple" label="INTEGRATE_JS_ACTIVITY_STREAM" description="INTEGRATE_JS_ACTIVITY_STREAM_DESC">
+			<option value="1">TOTAL_NUM_INVITED_BY_USER</option>
+			<option value="0">USER_FOUND_NEW_FRIENDS</option>
+			<option value="2">COM_INVITEX_ACT_POST_AFTER_POINTS</option>
+		</field>
+		<field menu="hide" name="" type="legend" default="INV_SHOW_NOTIFICATION_FOR" hint="INV_SHOW_NOTIFICATION_FOR_HINT" label="" description="" />
+		<field name="joined_friend_notification" class="btn-group" default="0" type="radio" label="INV_NEW_FRIEND_JOINED" description="INV_NEW_FRIEND_JOINED_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="invite_accepted_notification" class="btn-group" default="0" type="radio" label="INV_INVITE_ACCEPTED" description="INV_INVITE_ACCEPTED_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field menu="hide" name="point_label_inv" type="legend" id="point_label_inv" default="COM_INVITEX_POINT_SETTINGS" label="" description="" />
+		<field name="pt_option" class="btn-group" default="no" type="integrations" label="INTEGRATION_PT" description="INTEGRATION_PT_DESC" />
+		<field menu="hide" name="point_note_desc" type="pointnote" id="point_note_desc" default="" label="" description="" />
+		<field menu="hide" name="point_label_inv_guide" type="legend" id="point_label_inv_hint_guide" hint="" label="" description="" />
+		<field menu="hide" name="" class="point_system_integration_display point_system_integration_display_for_alta" type="legend" id="point_label_inv_sent" default="COM_INVITEX_POINT_SETTINGS_SENT" label="" description="" />
+		<field name="inviter_point" class="point_system_integration_display point_system_integration_display_for_alta" default="5" type="text" label="POINTS_INVITER" description="POINTS_INVITER_DESC" />
+		<field name="invitee_point" class="point_system_integration_display point_system_integration_display_for_alta" default="10" type="text" label="POINTS_INVITEE" description="POINTS_INVITEE_DESC" />
+		<field menu="hide" name="point_system_integration_display_for_alta_name" id="point_system_integration_display_for_alta_id" class="point_system_integration_display point_system_integration_display_for_alta" type="legend" default="INV_POINTS_AFTER_EVERY_INVITE" label="" description="" />
+		<!--
+		     <field name="allow_point_after_invite" class="btn-group" default="0" type="radio" label="INV_POINTS_AFTER_EVERY_INVITE" description="INV_POINTS_AFTER_EVERY_INVITE_DESC">
+		     <option value="1">COM_INVITEX_YES</option>
+		     <option value="0">COM_INVITEX_NO</option>
+		     </field>
+		-->
+		<field class="point_system_integration_display point_system_integration_display_for_alta" name="inviter_point_after_invite" id="inviter_point_after_invite" default="5" type="text" label="POINTS_INVITER" description="POINTS_INVITER_DESC" />
+		<field menu="hide" name="" type="legend" default="GOOGLE_ANALYTICS_SET" label="" description="" />
+		<field name="ga_campaign_enable" class="btn-group" default="1" type="radio" label="GA_CAMPAIGN_ENABLE" description="GA_CAMPAIGN_ENABLE_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="ga_campaign_name" default="Invitations" type="text" label="GA_CAMPAIGN_NAME" description="GA_CAMPAIGN_NAME_DESC" />
+		<field name="ga_campaign_source" default="invitex" type="text" label="GA_CAMPAIGN_SRC" description="GA_CAMPAIGN_SRC_DESC" />
+		<field name="ga_campaign_medium" default="email" type="text" label="GA_CAMPAIGN_MED" description="GA_CAMPAIGN_MED_DESC" />
+		<field menu="hide" name="" type="legend" default="COM_INVITEX_URL_SHORTEN" label="" description="" />
+		<field name="urlapi" class="btn-group" default="0" type="radio" label="ENABLE_URL_API" description="ENABLE_URL_API_DES">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="url_apikey" default="" type="text" label="URL_API" description="URL_API_DES" showon="urlapi:1"/>
+		<field name="url_apikey_bitly" default="" type="text" label="URL_API_BITLY" description="URL_API_BITLY_DES" showon="urlapi:1"/>
+		<field menu="hide" name="" type="legend" default="BROADCAST_ACTIVITY_SET" label="" description="" />
+		<field name="broadcast_activity_stream" class="btn-group" default="0" type="radio" label="INTEGRATE_BROADCAST_ACTIVITY_STREAM" description="INTEGRATE_BROADCAST_ACTIVITY_STREAM_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+	</fieldset>
+	<fieldset name="registration_specific" description="" label="GEN_SET" addfieldpath="/administrator/components/com_invitex/assets/elements">
+		<!--
+		     <field menu="hide" name="" type="legend" default="GEN_SET" label="" description="" />
+		-->
+		<field name="invitation_during_reg" class="btn-group" default="0" type="radio" label="INVITAION_DURING_REG" description="INVITAION_DURING_REG_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="landing_page_reg" class="btn-group" default="Joomla" type="integrations" label="INVITAION_LANDING_PAGE" description="INVITAION_LANDING_PAGE_DES" />
+		<field name="invite_only" class="btn-group" default="0" type="radio" label="INV_ONLY" description="INV_ONLY_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="reg_only_invite_email" class="btn-group" default="0" type="radio" label="COM_INVITEX_ONLY_INVITED_EMAIL" description="COM_INVITEX_ONLY_INVITED_EMAIL_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="any_invitation_url" default="" type="text" label="ANY_INVITATION_URL" description="ANY_INVITATION_URL_DES" />
+		<!--Login Settings-->
+		<field menu="hide" name="" type="legend" default="INV_LOGIN_SETTINGS" label="" description="" />
+		<field name="invite_after_login" onclick="show_invite_after_login_div(this.value)" class="btn-group" default="0" type="radio" label="INV_INVITE_AFTER_LOGIN" description="INV_INVITE_AFTER_LOGIN_DESC">
+			<option value="1">COM_INVITEX_YES</option>
+			<option value="0">COM_INVITEX_NO</option>
+		</field>
+		<field name="select_mothod_for_invite" class="btn-group" default="0" type="list" label="INV_SELECT_MOTHOD_FOR_INVITE" description="INV_SELECT_MOTHOD_FOR_INVITE_DESC">
+			<option value="1">FIRST_LOGIN</option>
+			<option value="0">EVERY_LOGIN</option>
+			<option value="2">COM_INVITEX_REDIRECT_EVERY_NEW_USER</option>
+		</field>
+		<field name="redirect_url_after_login" default="" type="text" label="INV_REDIRECTURL_AFTER_LOGIN" description="INV_REDIRECTURL_AFTER_LOGIN_DESC" />
+	</fieldset>
+	<fieldset name="inv_openinviter_tab" description="" label="OI_CONFIG" addfieldpath="/administrator/components/com_invitex/assets/elements">
+		<field name="oi_download" type="openinviterdownload" label="" description="" />
+		<field name="oi_update" type="openinviterupdate" label="AUTO_UPDATE" description="AUTO_UPDATE_DESC" />
+		<field name="oi_update_cron" type="cron" label="AUTO_UPDATE_CRON" description="AUTO_UPDATE_CRON_DESC" />
+		<!--
+		     <field name="oi_transport" type="openinvitertransportmethod" label="TRANS_METHOD" description="TRANS_METHOD_DESC"/>
+		-->
+		<field name="selections" multiple="true" id="selectionssocial" type="openinvitersocialprovider" label="COM_INVITEX_OI_PLG_SOCIAL" description="COM_INVITEX_OI_PLG_SOCIAL_DESC" />
+		<field name="selections" multiple="true" id="selectionsemail" type="openinviteremailprovider" label="COM_INVITEX_OI_PLG_EMAIL" description="COM_INVITEX_OI_PLG_EMAIL_DESC" />
+	</fieldset>
+	<!-- Privacy Settings - Start -->
+	<fieldset name="privacy_settings" label="COM_INVITEX_PRIVACY_POLICY_SETTINGS" description="">
+		<field name="invitationTermsAndConditions" class="btn-group" type="radio" default="0" description="COM_INVITEX_INVITAION_TERMS_N_CONDITIONS_DESC" label="COM_INVITEX_INVITAION_TERMS_N_CONDITIONS">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="tNcArticleId" class="btn-group" type="number" default="0" showon="invitationTermsAndConditions:1" description="COM_INVITEX_INVITAION_TERMS_N_CONDITIONS_ARTICLE_ID_DESC" label="COM_INVITEX_INVITAION_TERMS_N_CONDITIONS_ARTICLE_ID" />
+	</fieldset>
+	<!-- Privacy Settings - End -->
+	<fieldset name="updates" label="COM_INVITEX_OPTIONS_UPDATES_LBL">
+		<field name="downloadid" type="text" default="" size="30" label="COM_INVITEX_OPTIONS_DOWNLOADID_LBL" description="COM_INVITEX_OPTIONS_DOWNLOADID_DESC" />
+	</fieldset>
+	<fieldset name="permissions" description="JCONFIG_PERMISSIONS_DESC" label="JCONFIG_PERMISSIONS_LABEL">
+		<field name="rules" type="rules" component="com_invitex" class="inputbox" filter="rules" validate="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component" />
+	</fieldset>
+</config>

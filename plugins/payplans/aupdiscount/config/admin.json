@@ -1,0 +1,77 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "max_aup",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_MAX_AUP",
+				"tooltip": "COM_PAYPLANS_APP_MAX_AUP_DESC",
+				"default": "12"
+			},
+			{
+				"name": "min_aup",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_MIN_AUP",
+				"tooltip": "COM_PAYPLANS_APP_MIN_AUP_DESC",
+				"default": ""
+			},
+			{
+				"name": "ratio",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_AUP_RATIO",
+				"tooltip": "COM_PAYPLANS_APP_AUP_RATIO_DESC",
+				"default": ""
+			},
+			{
+				"name": "round",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_AUP_ROUND",
+				"tooltip": "COM_PAYPLANS_APP_AUP_ROUND_DESC",
+				"default": ""
+			},
+			{
+				"name": "allowed_quantity",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_DISCOUNT_ALLOWED_QUANTITY",
+				"tooltip": "COM_PAYPLANS_APP_DISCOUNT_ALLOWED_QUANTITY_DESC",
+				"default": ""
+			},
+			{
+				"name": "publish_start",
+				"type": "calendar",
+				"title": "COM_PAYPLANS_APP_DISCOUNT_PUBLISH_START",
+				"tooltip": "COM_PAYPLANS_APP_DISCOUNT_PUBLISH_START_DESC",
+				"default": ""
+			},
+			{
+				"name": "publish_end",
+				"type": "calendar",
+				"title": "COM_PAYPLANS_APP_DISCOUNT_PUBLISH_END",
+				"tooltip": "COM_PAYPLANS_APP_DISCOUNT_PUBLISH_END_DESC",
+				"default": ""
+			},
+			{
+				"name": "reusable",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_DISCOUNT_REUSABLE",
+				"tooltip": "COM_PAYPLANS_APP_DISCOUNT_REUSABLE_DESC",
+				"default": true			
+			},
+			{
+				"name": "onlyFirstRecurringDiscount",
+				"type": "toggler",
+				"title": "COM_PAYPLANS_APP_DISCOUNT_ONLY_FIRST_RECURRING_DISCOUNT",
+				"tooltip": "COM_PAYPLANS_APP_DISCOUNT_ONLY_FIRST_RECURRING_DISCOUNT_DESC",
+				"default": true
+			},
+			{
+				"name": "totalConsumption",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_DISCOUNT_EDIT_CONSUMPTION",
+				"tooltip": "COM_PAYPLANS_APP_DISCOUNT_EDIT_CONSUMPTION_DESC",
+				"default": 0
+			}
+		]
+	}
+]

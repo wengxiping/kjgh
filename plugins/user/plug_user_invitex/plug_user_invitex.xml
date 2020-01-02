@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" method="upgrade" type="plugin" group="user">
+	<name>User - InviteX - Registration</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>22nd Oct 2019</creationDate>
+	<version>3.0.12</version>
+	<description>This is user plug-in will work on after user registration to store user related information for invitex component.</description>
+	<files>
+		<filename plugin="plug_user_invitex">plug_user_invitex.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plug_user_invitex.ini</language>
+	</languages>
+</extension>

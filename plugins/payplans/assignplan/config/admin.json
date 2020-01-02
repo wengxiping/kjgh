@@ -1,0 +1,50 @@
+[
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_BEING_ACTIVATED",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "assignPlan",
+				"type": "plans",
+				"title": "COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_ACTIVE_LABEL",
+				"tooltip": "COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_ACTIVE_DESC",
+				"default": "",
+				"attributes": {
+					"multiple": true
+				}
+			}
+		]
+	},
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_BEING_SET_TO_HOLD",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "setPlanOnHold",
+				"type": "plans",
+				"title": "COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_HOLD_LABEL",
+				"tooltip": "COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_HOLD_DESC",
+				"default": "",
+				"attributes": {
+					"multiple": true
+				}
+			}
+		]
+	},
+	{
+		"title": "COM_PP_WHEN_SUBSCRIPTION_EXPIRED",
+		"key": "app_params",
+		"items": [
+			{
+				"name": "setPlanOnExpire",
+				"type": "plans",
+				"title": "COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_EXPIRE_LABEL",
+				"tooltip": "COM_PAYPLANS_ASSIGNPLAN_PLAN_ON_EXPIRE_DESC",
+				"default": "",
+				"attributes": {
+					"multiple": true
+				}
+			}
+		]
+	}
+]

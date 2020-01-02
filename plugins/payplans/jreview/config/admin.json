@@ -1,0 +1,70 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "add_entry_in",
+				"type": "dependency",
+				"title": "COM_PAYPLANS_APP_JREVIEW_RESTRICTION_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JREVIEW_RESTRICTION_DESC",
+				"default": "any_category",
+				"options": [
+					{
+						"title": "COM_PAYPLANS_APP_JREVIEW_ANY_CATEGORY",
+						"value": "any_category"
+					},
+					{
+						"title": "COM_PAYPLANS_APP_JREVIEW_SPECIFIC_CATEGORY",
+						"value": "specific_category",
+						"for": "data-add-entry-in-category"
+					}
+				]
+
+			},
+			{
+				"name": "add_entry_in_category",
+				"type": "custom",
+				"path": "plugins:/payplans/jreview/elements/categories",
+				"title": "COM_PAYPLANS_APP_JREVIEW_CATEGORIES_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JREVIEW_CATEGORIES_DESC",
+				"default": "",
+				"attributes": "data-add-entry-in-category"
+			},
+			{
+				"name": "no_of_submisssion",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_DESC",
+				"default": 0
+			},
+			{
+				"name": "no_of_images",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_IMAGES_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_IMAGES_DESC",
+				"default": 0
+			},
+			{
+				"name": "no_of_attachment",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_ATTACHMENTS_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_ATTACHMENTS_DESC",
+				"default": 0
+			},
+			{
+				"name": "no_of_audio",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_AUDIO_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_AUDIO_DESC",
+				"default": 0
+			},
+			{
+				"name": "no_of_video",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_video_LABEL",
+				"tooltip": "COM_PAYPLANS_APP_JREVIEW_SUBMISSION_NO_OF_video_DESC",
+				"default": 0
+			}
+		]
+	}
+]

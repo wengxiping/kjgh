@@ -1,0 +1,217 @@
+/*
+$JA#COPYRIGHT$
+*/
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t3/base-bs3/less/off-canvas.less";
+
+
+
+//
+// OFF-CANVAS
+// -------------------------------------
+
+// Toggle Button
+// -------------------
+.off-canvas-toggle {
+  border-radius: 3px;
+  border: 0;
+  padding: 0;
+  width: @navbar-height;
+  height: @navbar-height;
+  line-height: @navbar-height;
+  float: right;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+.t3-off-canvas {
+
+  // Generic
+  // -----------------------------------
+  background: @t3-off-canvas-background;
+  color: @t3-off-canvas-text-color;
+
+
+  // Header
+  // -----------------------------------
+  .t3-off-canvas-header {
+    background: @t3-off-canvas-header-background;
+    color: @t3-off-canvas-header-text-color;
+    padding: 0 0 0 @padding-base-horizontal;
+    height: 35px;
+
+    // Title
+    h2 {
+      margin: 0;
+      line-height: 35px;
+      font-size: @font-size-base;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  }
+
+  // Close Button
+  .close {
+    margin: 0;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    background: darken(@t3-off-canvas-header-background, 20%);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+  // Body
+  // -----------------------------------
+  .t3-off-canvas-body {
+  	background: @gray-darker;
+  	color: @gray;
+    padding: (@padding-base-vertical * 4)  @padding-base-horizontal;
+
+    // Links
+    // ------------
+    a {
+      color: @white;
+      text-decoration: none;
+      padding: @t3-global-padding/4 0;
+
+      &:hover,
+      &:focus {
+        color: @t3-off-canvas-link-color;
+        text-decoration: none;
+      }
+
+      &:focus {
+        .tab-focus();
+      }
+
+      &.btn {
+      	border: 0;
+      	background: none;
+      	font-size: @font-size-base;
+      	padding: @t3-global-padding/2 0;
+      	text-align: left;
+      	.fa,
+      	.caret,
+      	&:before {
+      		display: none;
+      	}
+      }
+    }
+
+    .dropdown-menu .active a {
+      background: transparent;
+    }
+
+
+    // Navigations
+    // ------------
+    .nav {
+
+      > li {
+          border: 1px solid lighten(@gray-darker, 5%);
+          border-radius: 3px;
+          margin-bottom: 3px;
+
+        &:hover, &:active, &:focus {
+          background: lighten(@gray-darker, 5%);
+
+          .nav-child {
+            border-top-color: lighten(@gray-darker, 8%);
+          }
+        }
+
+        > a {
+          padding: 8px @t3-global-padding/2;
+          color: @gray-light;
+          font-weight: @font-weight-normal;
+          text-transform: uppercase;
+
+          &:hover, &:active, &:focus {
+            background: none;
+            color: @white;
+          }
+
+          &.fa {
+            font-family: @font-family-base;
+            line-height: @line-height-base;
+          }
+        }
+
+        &.active > a {
+          color: @brand-primary;
+        }
+      }
+
+    	.nav-child {
+    		padding: 10px 0;
+        margin: 0 @t3-global-margin/2;
+        border-top: 1px solid lighten(@gray-darker, 5%);
+
+    		li {
+    			list-style: none;
+
+          a {
+            color: @gray-light;
+            font-size: @t3-font-size-small;
+
+            &:hover, &:active, &:focus {
+              color: @white;
+            }
+          }
+
+    			.btn {
+
+    			}
+
+          &.active > a {
+            color: @brand-primary;
+          }
+    		}
+    	}
+    	.dropdown-toggle {
+    		.caret {
+    			display: none;
+    		}
+    	}
+    }
+
+    // Dropdown Menu
+    .dropdown-menu {
+    }
+
+
+    // Modules
+    // ------------
+    .t3-module {
+      margin-bottom: @line-height-computed;
+    }
+
+    .module-title  {
+      margin-bottom: @line-height-computed*0.75;
+      color: @gray-light;
+      text-transform: uppercase;
+    }
+
+  // End Off-Canvas Body
+  }
+
+// End Off-Canvas Content Styles
+}

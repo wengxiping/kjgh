@@ -1,0 +1,13 @@
+<metadata>
+	<view title="Plan/Group">
+		<message>Plan/Group Selection</message>
+	</view>
+	<state>
+		<name>Plan/Group Layout</name>
+		<description>Displays Plan/Group Selection Form</description>
+
+		<url addpath="/components/com_payplans/elements">
+			<param name="plan_id" type="plans" label="Plan" addnone="true"/>
+		</url>
+	</state>
+</metadata>

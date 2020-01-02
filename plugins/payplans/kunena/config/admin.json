@@ -1,0 +1,34 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "kunenaCategories",
+				"type": "kunenaCategories",
+				"title": "Accessible Categories (Active Subscription)",
+				"tooltip": "Select categories that can be accessed by the user when they have an active subscription",
+				"default": ""
+			},
+			{
+				"name": "blockaccess",
+				"type": "lists",
+				"title": "Visibility Access to Guest or Non-subscribers",
+				"tooltip": "If, set to None, user will be able to view only category list. If, set to overview, user will be able to view the thread list within this category. If, set to readonly, user will be able to access thread(can't edit or post). If set to ReplyOnly, user can reply on thread but can't create new thread even without having subscription",
+				"default": "none",
+				"options": [{
+					"title": "None",
+					"value": "1"
+				}, {
+					"title": "Overview",
+					"value": "2"
+				}, {
+					"title": "Read Only",
+					"value": "0"
+				}, {
+					"title": "Reply Only",
+					"value": "3"
+				}]
+			}
+		]
+	}
+]

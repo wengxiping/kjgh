@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.2" type="module" client ="site" method="upgrade">
+	<name>Invite Anywhere</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2019 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>5th Nov 2018</creationDate>
+	<version>3.0.10</version>
+	<description><![CDATA[<h2>Invite Anywhere</h2> <h3>Techjoomla.com. For All things Joomla ! </h3> Thank You for downloading this module from <a href="http://www.techjoomla.com">www.techjoomla.com</a>]]></description>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_invite_anywhere.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_invite_anywhere">mod_invite_anywhere.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>element</folder>
+	</files>
+	<config name="params">
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="open_module_in" type="list" default="0" label="OPEN_INVITEX_IN" description="OPEN_INVITEX_IN_DES">
+					<option value="1">Parent Window</option>
+					<option value="2">Other Window</option>
+				</field>
+				<field name="invite_type" type="sql" label="INV_TYPE" description="INV_TYPE_DESC" query="SELECT id,name FROM #__invitex_types" key_field="id" value_field="name" />
+				<field name="button_text" type="text" size="25" default="Invite" label="BUTTON_TEXT" description="BUTTON_TEXT_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="invite_url" type="text" size="61" default="" label="INV_URL" description="INV_URL_DESC" />
+				<field name="custom_code" type="invitetypeswidget" default="" label="CUSTOM_CODE" description="CUSTOM_CODE_DESC" addfieldpath="/modules/mod_invite_anywhere/element" />
+				<field name="catch_action" type="text" size="25" default="" label="CATCH_ACTION" description="CATCH_ACTION_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

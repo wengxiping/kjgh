@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+	    <field name="location" type="text" label="TPL_LOCATION_LABEL" description="TPL_LOCATION_DESC"/>
+
+	    <field name="phone" type="text" label="TPL_PHONE_LABEL" description="TPL_PHONE_DESC"/>
+
+	    <field name="website" type="text" label="TPL_WEBSITE_LABEL" description="TPL_WEBSITE_DESC"/>
+
+	    <field name="map-option" type="list" label="TPL_TARGET_ENABLE_MAP_LABEL" description="TPL_TARGET_ENABLE_MAP_DESC">
+	    	<option value="0">JNO</option>
+	    	<option value="1">JYES</option>
+	    </field>
+
+			<field name="map-lat" showon="map-option:1" type="text" label="TPL_TARGET_LAT_LABEL" description="TPL_TARGET_LAT_DESC"/>
+
+			<field name="map-lon" showon="map-option:1" type="text" label="TPL_TARGET_LON_LABEL" description="TPL_TARGET_LON_DESC"/>
+
+			<field name="map-info" showon="map-option:1" type="text" label="TPL_TARGET_LOCATION_INFO_LABEL" description="TPL_TARGET_LOCATION_INFO_DESC"/>
+
+			<field name="view-type" type="list" label="TPL_VIEW_TYPE_LABEL" description="TPL_VIEW_TYPE_DESC">
+	    	<option value="0">Location</option>
+	    	<option value="1">Hotel</option>
+	    </field>
+
+	    <field name="star-hotel" showon="view-type:1" type="list" label="TPL_STAR_HOTEL_LABEL" description="TPL_STAR_HOTEL_DESC">
+	    	<option value="0">0</option>
+	    	<option value="1">1</option>
+	    	<option value="2">2</option>
+	    	<option value="3">3</option>
+	    	<option value="4">4</option>
+	    	<option value="5">5</option>
+	    </field>
+
+    </fieldset>
+</fields>
+</form>

@@ -1,0 +1,35 @@
+[
+	{
+		"key": "app_params",
+		"items": [
+			{
+				"name": "user_id",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYUNITY_USER_ID",
+				"tooltip": "COM_PAYPLANS_APP_PAYUNITY_USER_ID_DESC",
+				"default": ""
+			},
+			{
+				"name": "user_pwd",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYUNITY_USER_PASSWORD",
+				"tooltip": "COM_PAYPLANS_APP_PAYUNITY_USER_PASSWORD_DESC",
+				"default": ""
+			},
+			{
+				"name": "channel_id",
+				"type": "text",
+				"title": "COM_PAYPLANS_APP_PAYUNITY_CHANNEL_ID",
+				"tooltip": "COM_PAYPLANS_APP_PAYUNITY_CHANNEL_ID_DESC",
+				"default": ""
+			},
+			{
+				"name": "sandbox",
+				"type": "toggler",
+				"title": "COM_PP_SANDBOX",
+				"tooltip": "COM_PP_SANDBOX_DESC",
+				"default": false
+			}
+		]
+	}
+]
